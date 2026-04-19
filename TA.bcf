@@ -4985,10 +4985,12 @@
     <bcf:citekey order="4" intorder="1">higgins2016smartphone</bcf:citekey>
     <bcf:citekey order="5" intorder="1">Caselli2018</bcf:citekey>
     <bcf:citekey order="6" intorder="1">pressman2014</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">laudon2020</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">laudon2020</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">pressman2019</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">BPBI</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">scheer2020defining</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">hoffman2011factors</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">laudon2020</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">laudon2020</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">pressman2019</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">BPBI</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="cms">

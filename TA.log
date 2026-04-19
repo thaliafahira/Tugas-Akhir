@@ -1,13 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  19 APR 2026 16:15
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  19 APR 2026 20:18
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Dinda Thalia Fahira/Downloads/TA-STI-template-1.0/TA-STI-template-1
-.0/TA.tex"
-
-(c:/Users/Dinda Thalia Fahira/Downloads/TA-STI-template-1.0/TA-STI-template-1.0
-/TA.tex
+**./TA.tex
+(TA.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
 
@@ -1515,7 +1511,7 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 
 
 ] (TA.toc
-Underfull \vbox (badness 6608) has occurred while \output is active []
+Underfull \vbox (badness 1430) has occurred while \output is active []
 
 
 
@@ -1537,18 +1533,7 @@ Underfull \vbox (badness 6608) has occurred while \output is active []
 
 [16
 
-] (TA.lot
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Overfull \hbox (58.8302pt too wide) in paragraph at lines 16--16
- \TU/TimesNewRoman(0)/m/n/12 kolom secara fleksibel. Selain itu, tabel ini juga
- menggunakan \TU/lmtt/m/n/12 threeparttable 
- []
-
-)
+] (TA.lot)
 \tf@lot=\write7
 \openout7 = `TA.lot'.
 
@@ -1636,115 +1621,55 @@ Bab I.
 [6]
 Bab II.
 
-Overfull \hbox (1.26251pt too wide) in paragraph at lines 5--8
-[]\TU/TimesNewRoman(0)/m/n/12 Studi literatur biasanya berisi tentang tinjauan 
-pustaka, landasan teori, dan penelitian-
- []
-
-
 
 [7
 
 
 ]
-File: images/gambar1.png Graphic file (type bmp)
-<images/gambar1.png>
-
+File: images/rute2025.png Graphic file (type bmp)
+<images/rute2025.png>
+) (Bab III - Analisis.tex
 
 [8]
-File: images/gambar1.png Graphic file (type bmp)
-<images/gambar1.png>
-
-
-[9]
-
-LaTeX Warning: Reference `tab:tabel3' on page 10 undefined on input line 80.
-
-
-LaTeX Warning: Reference `tab:tabel3' on page 10 undefined on input line 94.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[10] (tables/tabel1.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (tables/longtable1.tex [11] [12])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[14] (listings/binary-search-python.tex
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 7.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 6--227
-
- []
-
-(algorithms/binary-search-alg.tex
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 4.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[15])) (Bab III - Analisis.tex
-
-[16]
-
-[17]
-
-[18
-
-]
 Bab III.
 
 Underfull \vbox (badness 1715) has occurred while \output is active []
 
 
 
-[19
+[9
+
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[20]) (Bab IV - Perancangan.tex
+[10]) (Bab IV - Perancangan.tex
 
-[21]
+[11]
 
-[22
+[12
 
 ]
 Bab IV.
 ) (Bab V - Implementasi.tex
 
-[23
+[13
 
 ]
 
-[24
+[14
 
 ]
 Bab V.
 ) (Bab VI - Evaluasi.tex
 
-[25
+[15
 
 ]
 
-[26
+[16
 
 ]
 Bab VI.
@@ -1755,25 +1680,25 @@ Overfull \hbox (20.82396pt too wide) in paragraph at lines 23--29
 
 
 
-[27
+[17
 
 ]
 
-[28]) (Bab VII - Penutup.tex
+[18]) (Bab VII - Penutup.tex
 
-[29]
+[19]
 
-[30
+[20
 
 ]
 Bab VII.
 )
 
-[31
+[21
 
 ]
 
-[32
+[22
 
 ]
 Overfull \hbox (3.48174pt too wide) in paragraph at lines 410--410
@@ -1788,55 +1713,61 @@ TU/TimesNewRoman(0)/m/it/12 Sistem Informasi Manajemen. \TU/TimesNewRoman(0)/m/
 n/12 Jakarta:
  []
 
-(Lampiran-A.tex
 
-[33
 
-]
+[23
 
-[34
+] (Lampiran-A.tex
 
-]
+[24]
 Lampiran A.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 8.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 (listings/binary-search-python.tex
 
-[35
+[25
+
 
 ])) (Lampiran-B.tex
 
-[36]
+[26]
 Lampiran B.
 )
 
-[37
+[27
 
 
 ]
 
-[38
+[28
 
-] (TA.aux)
+]
+
+Package caption Warning: Unused \captionsetup[algorithm] on input line 316.
+See the caption package documentation for explanation.
+
+(TA.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `TA.out' has not changed.
-(rerunfilecheck)             Checksum: ECCFCBD918BC9E44FAB8CDF1C361CB19;11114.
+(rerunfilecheck)             Checksum: CAE02C8F96C845CD89BE8C04D87C5EF4;10728.
 Package logreq Info: Writing requests to 'TA.run.xml'.
 \openout1 = `TA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34749 strings out of 403197
- 673515 string characters out of 5453038
- 2227849 words of memory out of 5000000
- 62799 multiletter control sequences out of 15000+600000
- 634673 words of font info for 98 fonts, out of 8000000 for 9000
+ 34626 strings out of 403197
+ 670844 string characters out of 5453038
+ 2180444 words of memory out of 5000000
+ 62695 multiletter control sequences out of 15000+600000
+ 632950 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,14n,95p,1276b,6664s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,14n,95p,1197b,6664s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on TA.pdf (68 pages).
+Output written on TA.pdf (58 pages).

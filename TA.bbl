@@ -185,6 +185,46 @@
       \field{pages}{97}
       \range{pages}{1}
     \endentry
+    \entry{hoffman2011factors}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=72a9463a087f8465f70e968745a038c0}{%
+           family={Hoffman},
+           familyi={H\bibinitperiod},
+           given={Martin\bibnamedelima D},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=769725702ffd631b384c8d49e4bbb399}{%
+           family={Fogard},
+           familyi={F\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Human Kinetics, Inc.}%
+      }
+      \strng{namehash}{f115956afcf30431c4f03607acfa955f}
+      \strng{fullhash}{f115956afcf30431c4f03607acfa955f}
+      \strng{fullhashraw}{f115956afcf30431c4f03607acfa955f}
+      \strng{bibnamehash}{f115956afcf30431c4f03607acfa955f}
+      \strng{authorbibnamehash}{f115956afcf30431c4f03607acfa955f}
+      \strng{authornamehash}{f115956afcf30431c4f03607acfa955f}
+      \strng{authorfullhash}{f115956afcf30431c4f03607acfa955f}
+      \strng{authorfullhashraw}{f115956afcf30431c4f03607acfa955f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{International journal of sports physiology and performance}
+      \field{number}{1}
+      \field{title}{Factors related to successful completion of a 161-km ultramarathon}
+      \field{volume}{6}
+      \field{year}{2011}
+      \field{pages}{25\bibrangedash 37}
+      \range{pages}{13}
+    \endentry
     \entry{laudon2020}{book}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=2a3d8893ad04ba3c98081349c47e2f6c}{%
@@ -332,6 +372,70 @@
       \verb{url}
       \verb https://runrepeat.com/state-of-ultra-running
       \endverb
+    \endentry
+    \entry{scheer2020defining}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=4cca6f7a5e5212aa3d658b6f31f8301d}{%
+           family={Scheer},
+           familyi={S\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2aaa2bfb34df83cbee55678bce7846c7}{%
+           family={Basset},
+           familyi={B\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8690fce7ab1f82531c6f878778bfc25e}{%
+           family={Giovanelli},
+           familyi={G\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c0c75cc54e4cac8bd52c5be02c4c2f9}{%
+           family={Vernillo},
+           familyi={V\bibinitperiod},
+           given={Gianluca},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89f8e313c3de5e60891ae3ca3d02647e}{%
+           family={Millet},
+           familyi={M\bibinitperiod},
+           given={Gregoire\bibnamedelima P},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=415949d9af5401c34f4bce9c70be266a}{%
+           family={Costa},
+           familyi={C\bibinitperiod},
+           given={Ricardo\bibnamedelima JS},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {{©} Georg Thieme Verlag KG}%
+      }
+      \strng{namehash}{af0a2716e74ce56f63b876aeee2496c1}
+      \strng{fullhash}{bd8cb1456bb83c28c49eaec57ec1ca12}
+      \strng{fullhashraw}{bd8cb1456bb83c28c49eaec57ec1ca12}
+      \strng{bibnamehash}{bd8cb1456bb83c28c49eaec57ec1ca12}
+      \strng{authorbibnamehash}{bd8cb1456bb83c28c49eaec57ec1ca12}
+      \strng{authornamehash}{af0a2716e74ce56f63b876aeee2496c1}
+      \strng{authorfullhash}{bd8cb1456bb83c28c49eaec57ec1ca12}
+      \strng{authorfullhashraw}{bd8cb1456bb83c28c49eaec57ec1ca12}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{International journal of sports medicine}
+      \field{number}{05}
+      \field{title}{Defining off-road running: a position statement from the ultra sports science foundation}
+      \field{volume}{41}
+      \field{year}{2020}
+      \field{pages}{275\bibrangedash 284}
+      \range{pages}{10}
     \endentry
   \enddatalist
 \endrefsection
