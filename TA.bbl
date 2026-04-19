@@ -1,0 +1,339 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global/global}
+    \entry{BPBI}{misc}{}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{Buku {Praktis} {Bahasa} {Indonesia} 1/{Kata} - {Wikisumber} bahasa {Indonesia}}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://id.wikisource.org/wiki/Buku_Praktis_Bahasa_Indonesia_1/Kata
+      \endverb
+      \verb{url}
+      \verb https://id.wikisource.org/wiki/Buku_Praktis_Bahasa_Indonesia_1/Kata
+      \endverb
+    \endentry
+    \entry{Caselli2018}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6e1c9d8fbc6604a191fed4d2b6569dc8}{%
+           family={Caselli},
+           familyi={C\bibinitperiod},
+           given={Raoni\bibnamedelima Pontes},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b582282827b93e2ea910bd394278ad5d}{%
+           family={Ferreira},
+           familyi={F\bibinitperiod},
+           given={Marcelo\bibnamedelimb Gitirana\bibnamedelima Gomes},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7873c6d21454172b93cec1ebe7906c3a}
+      \strng{fullhash}{7873c6d21454172b93cec1ebe7906c3a}
+      \strng{fullhashraw}{7873c6d21454172b93cec1ebe7906c3a}
+      \strng{bibnamehash}{7873c6d21454172b93cec1ebe7906c3a}
+      \strng{authorbibnamehash}{7873c6d21454172b93cec1ebe7906c3a}
+      \strng{authornamehash}{7873c6d21454172b93cec1ebe7906c3a}
+      \strng{authorfullhash}{7873c6d21454172b93cec1ebe7906c3a}
+      \strng{authorfullhashraw}{7873c6d21454172b93cec1ebe7906c3a}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Product: Management \& Development}
+      \field{number}{1}
+      \field{title}{Systematic proposal for UX centered mobile apps for tracking performance in sports through an application in recreational surfing}
+      \field{volume}{16}
+      \field{year}{2018}
+      \field{pages}{37\bibrangedash 46}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.4322/pmd.2018.004
+      \endverb
+      \verb{urlraw}
+      \verb https://www.pmd.igdp.org.br/article/doi/10.4322/pmd.2018.004
+      \endverb
+      \verb{url}
+      \verb https://www.pmd.igdp.org.br/article/doi/10.4322/pmd.2018.004
+      \endverb
+    \endentry
+    \entry{Hafizh2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ef4d13b051212e7311163ef72c5de482}{%
+           family={Hafizh},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi Naufal},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ef4d13b051212e7311163ef72c5de482}
+      \strng{fullhash}{ef4d13b051212e7311163ef72c5de482}
+      \strng{fullhashraw}{ef4d13b051212e7311163ef72c5de482}
+      \strng{bibnamehash}{ef4d13b051212e7311163ef72c5de482}
+      \strng{authorbibnamehash}{ef4d13b051212e7311163ef72c5de482}
+      \strng{authornamehash}{ef4d13b051212e7311163ef72c5de482}
+      \strng{authorfullhash}{ef4d13b051212e7311163ef72c5de482}
+      \strng{authorfullhashraw}{ef4d13b051212e7311163ef72c5de482}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Wondr ITB Ultra Marathon 2025 Sukses Digelar, Alumni hingga Guru SD Turut Menyumbang untuk Dana Lestari}
+      \field{urlday}{19}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://itb.ac.id/berita/wondr-itb-ultra-marathon-2025-sukses-digelar-alumni-hingga-guru-sd-turut-menyumbang-untuk-dana-lestari/62873
+      \endverb
+      \verb{url}
+      \verb https://itb.ac.id/berita/wondr-itb-ultra-marathon-2025-sukses-digelar-alumni-hingga-guru-sd-turut-menyumbang-untuk-dana-lestari/62873
+      \endverb
+    \endentry
+    \entry{higgins2016smartphone}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6791dc322fb528bcea8e85e713f9bd38}{%
+           family={Higgins},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6791dc322fb528bcea8e85e713f9bd38}
+      \strng{fullhash}{6791dc322fb528bcea8e85e713f9bd38}
+      \strng{fullhashraw}{6791dc322fb528bcea8e85e713f9bd38}
+      \strng{bibnamehash}{6791dc322fb528bcea8e85e713f9bd38}
+      \strng{authorbibnamehash}{6791dc322fb528bcea8e85e713f9bd38}
+      \strng{authornamehash}{6791dc322fb528bcea8e85e713f9bd38}
+      \strng{authorfullhash}{6791dc322fb528bcea8e85e713f9bd38}
+      \strng{authorfullhashraw}{6791dc322fb528bcea8e85e713f9bd38}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{The American journal of medicine}
+      \field{number}{1}
+      \field{title}{Smartphone applications for patients' health and fitness}
+      \field{volume}{129}
+      \field{year}{2016}
+      \field{pages}{11\bibrangedash 19}
+      \range{pages}{9}
+    \endentry
+    \entry{Hochreiter2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=df7486f41bef0110b4b3ff1512667b63}{%
+           family={Hochreiter},
+           familyi={H\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{df7486f41bef0110b4b3ff1512667b63}
+      \strng{fullhash}{df7486f41bef0110b4b3ff1512667b63}
+      \strng{fullhashraw}{df7486f41bef0110b4b3ff1512667b63}
+      \strng{bibnamehash}{df7486f41bef0110b4b3ff1512667b63}
+      \strng{authorbibnamehash}{df7486f41bef0110b4b3ff1512667b63}
+      \strng{authornamehash}{df7486f41bef0110b4b3ff1512667b63}
+      \strng{authorfullhash}{df7486f41bef0110b4b3ff1512667b63}
+      \strng{authorfullhashraw}{df7486f41bef0110b4b3ff1512667b63}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Engineering Proceedings}
+      \field{number}{1}
+      \field{title}{Engineering Proceedings}
+      \field{volume}{82}
+      \field{year}{2024}
+      \field{pages}{97}
+      \range{pages}{1}
+    \endentry
+    \entry{laudon2020}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2a3d8893ad04ba3c98081349c47e2f6c}{%
+           family={Laudon},
+           familyi={L\bibinitperiod},
+           given={Kenneth\bibnamedelima C.},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7104f050b378ef23f0bc36c2b73e5ea2}{%
+           family={Laudon},
+           familyi={L\bibinitperiod},
+           given={Jane\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Jakarta}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education}%
+      }
+      \strng{namehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{fullhash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{fullhashraw}{a99ce1573b42821945806f73f25db5a4}
+      \strng{bibnamehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authorbibnamehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authornamehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authorfullhash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authorfullhashraw}{a99ce1573b42821945806f73f25db5a4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sistem Informasi Manajemen}
+      \field{year}{2020}
+    \endentry
+    \entry{pressman2019}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4d3f81788d99cf425c4b6e0a454baab0}{%
+           family={Pressman},
+           familyi={P\bibinitperiod},
+           given={Roger\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Yogyakarta}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Education}%
+      }
+      \strng{namehash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{fullhash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{fullhashraw}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{bibnamehash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{authorbibnamehash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{authornamehash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{authorfullhash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{authorfullhashraw}{4d3f81788d99cf425c4b6e0a454baab0}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Rekayasa Perangkat Lunak: Pendekatan Praktisi}
+      \field{year}{2019}
+    \endentry
+    \entry{pressman2014}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4d3f81788d99cf425c4b6e0a454baab0}{%
+           family={Pressman},
+           familyi={P\bibinitperiod},
+           given={Roger\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13b3d71ce7fd3614b4e2e9ce804597f3}{%
+           family={Maxim},
+           familyi={M\bibinitperiod},
+           given={Bruce\bibnamedelima R.},
+           giveni={B\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Education}%
+      }
+      \strng{namehash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{fullhash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{fullhashraw}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{bibnamehash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{authorbibnamehash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{authornamehash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{authorfullhash}{da6ec91488daec8c3c9eddf18c78dad8}
+      \strng{authorfullhashraw}{da6ec91488daec8c3c9eddf18c78dad8}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{8}
+      \field{title}{Software Engineering: A Practitioner’s Approach}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://books.google.com/books/about/Software_Engineering.html?id=dXlzCgAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com/books/about/Software_Engineering.html?id=dXlzCgAAQBAJ
+      \endverb
+    \endentry
+    \entry{Ronto2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=438725318b156098f4e1bc2f84044098}{%
+           family={Ronto},
+           familyi={R\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{438725318b156098f4e1bc2f84044098}
+      \strng{fullhash}{438725318b156098f4e1bc2f84044098}
+      \strng{fullhashraw}{438725318b156098f4e1bc2f84044098}
+      \strng{bibnamehash}{438725318b156098f4e1bc2f84044098}
+      \strng{authorbibnamehash}{438725318b156098f4e1bc2f84044098}
+      \strng{authornamehash}{438725318b156098f4e1bc2f84044098}
+      \strng{authorfullhash}{438725318b156098f4e1bc2f84044098}
+      \strng{authorfullhashraw}{438725318b156098f4e1bc2f84044098}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The State of Ultra Running 2020}
+      \field{urlday}{19}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://runrepeat.com/state-of-ultra-running
+      \endverb
+      \verb{url}
+      \verb https://runrepeat.com/state-of-ultra-running
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
