@@ -44,53 +44,45 @@
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \contentsline {section}{\numberline {II.2}ITB Ultra-Marathon}{7}{section.2.2}%
-\contentsline {section}{\numberline {II.3}Sistem \textit {tracker} dalam Perlombaan Lari Jarak Jauh}{8}{section.2.3}%
-\contentsline {section}{\numberline {II.4}\textit {Geographic Information System (GIS)} dan Visualisasi Peta}{8}{section.2.4}%
-\contentsline {section}{\numberline {II.5}\textit {User Interface (UI)} dan \textit {User Experience (UX)}}{8}{section.2.5}%
-\contentsline {section}{\numberline {II.6}Konsep Dasar \textit {Front-End Development}}{8}{section.2.6}%
-\contentsline {subsection}{\numberline {II.6.1}\textit {State Management} dalam Aplikasi \textit {Front-End}}{8}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {II.6.2}Teknologi Integrasi Data}{8}{subsection.2.6.2}%
-\contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{9}{chapter.3}%
-\contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini}{9}{section.3.1}%
+\contentsline {section}{\numberline {II.3}Sistem \textit {tracker} dalam Perlombaan Lari Jarak Jauh}{9}{section.2.3}%
+\contentsline {section}{\numberline {II.4}\textit {Geographic Information System (GIS)} dan Visualisasi Peta}{9}{section.2.4}%
+\contentsline {section}{\numberline {II.5}\textit {User Interface (UI)} dan \textit {User Experience (UX)}}{9}{section.2.5}%
+\contentsline {section}{\numberline {II.6}Konsep Dasar \textit {Front-End Development}}{9}{section.2.6}%
+\contentsline {subsection}{\numberline {II.6.1}\textit {State Management} dalam Aplikasi \textit {Front-End}}{9}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {II.6.2}Teknologi Integrasi Data}{9}{subsection.2.6.2}%
+\contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{11}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini}{11}{section.3.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {III.2}Analisis Kebutuhan}{9}{section.3.2}%
-\contentsline {subsection}{\numberline {III.2.1}Identifikasi Masalah Pengguna}{10}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {III.2.2}Kebutuhan Fungsional}{10}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {III.2.3}Kebutuhan Nonfungsional}{10}{subsection.3.2.3}%
-\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{10}{section.3.3}%
-\contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{10}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{11}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {IV}PERANCANGAN}{13}{chapter.4}%
-\contentsline {chapter}{\numberline {V}IMPLEMENTASI}{15}{chapter.5}%
-\contentsline {chapter}{\numberline {VI}EVALUASI}{17}{chapter.6}%
-\contentsline {section}{\numberline {VI.1}Metode Evaluasi}{17}{section.6.1}%
-\contentsline {section}{\numberline {VI.2}Hasil Evaluasi}{17}{section.6.2}%
-\contentsline {section}{\numberline {VI.3}Pembahasan Hasil Evaluasi}{17}{section.6.3}%
-\contentsline {section}{\numberline {VI.4}Evaluasi Kesalahan Penulisan yang Sering Terjadi}{17}{section.6.4}%
-\contentsline {subsection}{\numberline {VI.4.1}Penggunaan Kata "di mana" atau "dimana"}{17}{subsection.6.4.1}%
+\contentsline {section}{\numberline {III.2}Analisis Kebutuhan}{11}{section.3.2}%
+\contentsline {subsection}{\numberline {III.2.1}Identifikasi Masalah Pengguna}{12}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {III.2.2}Kebutuhan Fungsional}{12}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {III.2.3}Kebutuhan Nonfungsional}{12}{subsection.3.2.3}%
+\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{12}{section.3.3}%
+\contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{12}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{13}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {IV}PERANCANGAN}{15}{chapter.4}%
+\contentsline {chapter}{\numberline {V}IMPLEMENTASI}{17}{chapter.5}%
+\contentsline {chapter}{\numberline {VI}EVALUASI}{19}{chapter.6}%
+\contentsline {section}{\numberline {VI.1}Metode Evaluasi}{19}{section.6.1}%
+\contentsline {section}{\numberline {VI.2}Hasil Evaluasi}{19}{section.6.2}%
+\contentsline {section}{\numberline {VI.3}Pembahasan Hasil Evaluasi}{19}{section.6.3}%
+\contentsline {section}{\numberline {VI.4}Evaluasi Kesalahan Penulisan yang Sering Terjadi}{19}{section.6.4}%
+\contentsline {subsection}{\numberline {VI.4.1}Penggunaan Kata "di mana" atau "dimana"}{19}{subsection.6.4.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {VI.4.2}Penggunaan Kata "sedangkan" dan "sehingga"}{17}{subsection.6.4.2}%
-\contentsline {subsection}{\numberline {VI.4.3}Penggunaan Istilah yang Tidak Baku}{18}{subsection.6.4.3}%
-\contentsline {subsection}{\numberline {VI.4.4}Pemisah Desimal dan Ribuan}{18}{subsection.6.4.4}%
-\contentsline {subsection}{\numberline {VI.4.5}Daftar atau \textit {List}}{18}{subsection.6.4.5}%
-\contentsline {subsection}{\numberline {VI.4.6}Penggunaan Kata "masing-masing" dan "setiap"}{19}{subsection.6.4.6}%
-\contentsline {chapter}{\numberline {VII}PENUTUP}{21}{chapter.7}%
-\contentsline {section}{\numberline {VII.1}Kesimpulan}{21}{section.7.1}%
-\contentsline {section}{\numberline {VII.2}Saran}{21}{section.7.2}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {VI.4.2}Penggunaan Kata "sedangkan" dan "sehingga"}{19}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {VI.4.3}Penggunaan Istilah yang Tidak Baku}{20}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {VI.4.4}Pemisah Desimal dan Ribuan}{20}{subsection.6.4.4}%
+\contentsline {subsection}{\numberline {VI.4.5}Daftar atau \textit {List}}{20}{subsection.6.4.5}%
+\contentsline {subsection}{\numberline {VI.4.6}Penggunaan Kata "masing-masing" dan "setiap"}{21}{subsection.6.4.6}%
+\contentsline {chapter}{\numberline {VII}PENUTUP}{23}{chapter.7}%
+\contentsline {section}{\numberline {VII.1}Kesimpulan}{23}{section.7.1}%
+\contentsline {section}{\numberline {VII.2}Saran}{23}{section.7.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -105,10 +97,18 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {chapter}{Lampiran \numberline {A}KODE PROGRAM}{25}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Perangkat Lunak untuk Akuisisi Data dari Sensor Ultrasonik}{25}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Perangkat Lunak untuk Pengolahan Data Akuisisi dan Visualisasi Hasil Pengukuran Jarak}{26}{section.1.A.2}%
-\contentsline {chapter}{Lampiran \numberline {B}HASIL SURVEI LAPANGAN}{27}{appendix.1.B}%
-\contentsline {section}{\numberline {B.1}Foto Survei Lokasi 1}{27}{section.1.B.1}%
-\contentsline {section}{\numberline {B.2}Foto Survei Lokasi 2}{27}{section.1.B.2}%
-\contentsline {section}{\numberline {B.3}Transkrip Wawancara dengan Narasumber}{27}{section.1.B.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {chapter}{Lampiran \numberline {A}KODE PROGRAM}{27}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Perangkat Lunak untuk Akuisisi Data dari Sensor Ultrasonik}{27}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Perangkat Lunak untuk Pengolahan Data Akuisisi dan Visualisasi Hasil Pengukuran Jarak}{28}{section.1.A.2}%
+\contentsline {chapter}{Lampiran \numberline {B}HASIL SURVEI LAPANGAN}{29}{appendix.1.B}%
+\contentsline {section}{\numberline {B.1}Foto Survei Lokasi 1}{29}{section.1.B.1}%
+\contentsline {section}{\numberline {B.2}Foto Survei Lokasi 2}{29}{section.1.B.2}%
+\contentsline {section}{\numberline {B.3}Transkrip Wawancara dengan Narasumber}{29}{section.1.B.3}%
