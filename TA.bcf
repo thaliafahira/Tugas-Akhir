@@ -4987,10 +4987,32 @@
     <bcf:citekey order="6" intorder="1">pressman2014</bcf:citekey>
     <bcf:citekey order="7" intorder="1">scheer2020defining</bcf:citekey>
     <bcf:citekey order="8" intorder="1">hoffman2011factors</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">laudon2020</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">laudon2020</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">pressman2019</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">BPBI</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">baca2009ubiquitous</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">karahanouglu2021sports</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">el2002introduction</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">kaplan2017understanding</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">gilgen2019rr</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">bollini2017beautiful</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">osmani2023learning</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">marcotte2017responsive</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">maguire2001methods</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">nah2004study</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">longley2015geographic</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">burrough2015principles</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">fu2010web</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">maceachren2001research</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">galitz2007essential</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">maguire2001methods</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">nielsen1994usability</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">maguire2001methods</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">lazuardy2022modern</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">lazuardy2022modern</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">lazuardy2022modern</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">richardson2008restful</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">fielding2000architectural</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">pimentel2012websocket</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">pimentel2012websocket</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">BPBI</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="cms">

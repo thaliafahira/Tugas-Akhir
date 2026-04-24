@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  20 APR 2026 09:15
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  24 APR 2026 23:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1346,7 +1346,15 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'TA.bbl' found.
- (TA.bbl)
+ (TA.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                BPBI
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 331.
 Package biblatex Info: Reference segment=0 on input line 331.
  (1 Halaman Judul.tex
@@ -1511,7 +1519,7 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 
 
 ] (TA.toc
-Underfull \vbox (badness 1430) has occurred while \output is active []
+Underfull \vbox (badness 6608) has occurred while \output is active []
 
 
 
@@ -1634,54 +1642,114 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
 
-[8]) (Bab III - Analisis.tex
+[8]
 
 [9]
 
-[10
-
-]
-Bab III.
-
-Underfull \vbox (badness 1715) has occurred while \output is active []
+[10]
+Underfull \vbox (badness 4779) has occurred while \output is active []
 
 
 
-[11
+[11]
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[12]
+
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 68.
 
 
-
-[12]) (Bab IV - Perancangan.tex
 
 [13]
+Overfull \hbox (2.36052pt too wide) in paragraph at lines 73--74
+\TU/TimesNewRoman(0)/m/n/12 masing dengan karakteristik dan kasus penggunaan ya
+ng berbeda, di antaranya REST
+ []
 
-[14
 
-]
-Bab IV.
-) (Bab V - Implementasi.tex
+Overfull \hbox (2.81552pt too wide) in paragraph at lines 75--76
+\TU/TimesNewRoman(0)/m/n/12 TP yang paling banyak digunakan dalam pengembangan 
+aplikasi web modern. REST
+ []
 
-[15
 
-]
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 79.
+
+
+
+[14]) (Bab III - Analisis.tex
+
+[15]
 
 [16
 
 ]
-Bab V.
-) (Bab VI - Evaluasi.tex
+Bab III.
+
 
 [17
 
 ]
 
-[18
+[18]
+
+[19]
+Underfull \vbox (badness 1412) has occurred while \output is active []
+
+
+
+[20] (tables/masalah-pengguna.tex
+Underfull \hbox (badness 2809) in paragraph at lines 21--23
+\TU/TimesNewRoman(0)/m/n/12 sistem lomba; hanya terse-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\TU/TimesNewRoman(0)/m/n/12 Pemantauan posisi dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+[]|\TU/TimesNewRoman(0)/m/n/12 Tidak ada platform yang
+ []
+
+
+Underfull \hbox (badness 7888) in paragraph at lines 26--28
+\TU/TimesNewRoman(0)/m/n/12 time tentang peserta yang
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+
+[21]) (Bab IV - Perancangan.tex
+
+[22]
+Bab IV.
+) (Bab V - Implementasi.tex
+
+[23
+
+
+]
+
+[24
+
+]
+Bab V.
+) (Bab VI - Evaluasi.tex
+
+[25
+
+]
+
+[26
 
 ]
 Bab VI.
+
+LaTeX Warning: Citation 'BPBI' on page 27 undefined on input line 18.
+
 
 Overfull \hbox (20.82396pt too wide) in paragraph at lines 23--29
  [][] 
@@ -1689,25 +1757,25 @@ Overfull \hbox (20.82396pt too wide) in paragraph at lines 23--29
 
 
 
-[19
+[27
 
 ]
 
-[20]) (Bab VII - Penutup.tex
+[28]) (Bab VII - Penutup.tex
 
-[21]
+[29]
 
-[22
+[30
 
 ]
 Bab VII.
 )
 
-[23
+[31
 
 ]
 
-[24
+[32
 
 ]
 Overfull \hbox (3.48174pt too wide) in paragraph at lines 410--410
@@ -1716,19 +1784,25 @@ Overfull \hbox (3.48174pt too wide) in paragraph at lines 410--410
  []
 
 
-Overfull \hbox (4.9412pt too wide) in paragraph at lines 410--410
-[][]\TU/TimesNewRoman(0)/m/n/12 Laudon, Kenneth C., dan Jane P. Laudon. 2020. \
-TU/TimesNewRoman(0)/m/it/12 Sistem Informasi Manajemen. \TU/TimesNewRoman(0)/m/
-n/12 Jakarta:
+
+[33
+
+]
+
+[34]
+Overfull \hbox (8.40019pt too wide) in paragraph at lines 410--410
+[][]\TU/TimesNewRoman(0)/m/n/12 El-Rabbany, Ahmed. 2002. \TU/TimesNewRoman(0)/m
+/it/12 Introduction to GPS: the global positioning system. \TU/TimesNewRoman(0)
+/m/n/12 Artech
  []
 
+(Lampiran-A.tex
 
+[35]
 
-[25
+[36
 
-] (Lampiran-A.tex
-
-[26]
+]
 Lampiran A.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 8.
@@ -1738,21 +1812,20 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 (listings/binary-search-python.tex
 
-[27
-
+[37
 
 ])) (Lampiran-B.tex
 
-[28]
+[38]
 Lampiran B.
 )
 
-[29
+[39
 
 
 ]
 
-[30
+[40
 
 ]
 
@@ -1765,7 +1838,7 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
 Package rerunfilecheck Info: File `TA.out' has not changed.
-(rerunfilecheck)             Checksum: CAE02C8F96C845CD89BE8C04D87C5EF4;10728.
+(rerunfilecheck)             Checksum: B67F42FC513A9CC38317F43D8DDDFC97;11929.
 
 
 Package biblatex Warning: Please rerun LaTeX.
@@ -1776,12 +1849,12 @@ Package logreq Info: Writing requests to 'TA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34637 strings out of 403197
- 671058 string characters out of 5453038
- 2180500 words of memory out of 5000000
- 62702 multiletter control sequences out of 15000+600000
+ 34732 strings out of 403197
+ 674483 string characters out of 5453038
+ 2183336 words of memory out of 5000000
+ 62794 multiletter control sequences out of 15000+600000
  632950 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,14n,95p,1197b,6664s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,14n,95p,1323b,6331s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on TA.pdf (60 pages).
+Output written on TA.pdf (70 pages).

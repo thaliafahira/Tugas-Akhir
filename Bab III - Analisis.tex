@@ -7,31 +7,110 @@
 \cleardoublepage
 \chapter{ANALISIS MASALAH}
 \label{chap:analisis-masalah}
-Bab ini membahas analisis masalah yang ada pada sistem saat ini, analisis kebutuhan yang diperlukan
-untuk menyelesaikan masalah tersebut, serta analisis pemilihan solusi yang diusulkan. Secara garis besar,
-bab ini membahas hal-hal berikut:
-\begin{enumerate}[1.]
-    \item Deskripsi hasil analisis dari persoalan yang sedang ditangani dalam TA;
-    \item Penjelasan tentang solusi yang ditawarkan (dapat berupa algoritma, konsep desain, formula, atau gabungannya) 
-    pada level konsep dan detail yang cukup untuk merealisasikan solusinya; dan
-    \item Penjelasan tentang pendekatan yang dipilih dalam menyelesaikan persoalan TA.
-\end{enumerate}
-Subbab-subbab dalam bab ini dapat disesuaikan dengan kebutuhan topik TA yang dibahas. Berikut adalah contoh pembagian subbab
-yang dapat digunakan sebagai referensi (judul subbab dapat diubah sesuai dengan hal yang hendak dibahas dalam subbab tersebut).
+Bab ini membahas analisis masalah yang ada pada sistem saat ini, analisis kebutuhan yang diperlukan untuk menyelesaikan masalah tersebut, serta analisis pemilihan solusi yang diusulkan.
 
 \section{Analisis Kondisi Saat Ini}
-Menurut \textcite{laudon2020}, gambarkan terlebih dahulu model konseptual sistem yang ada saat ini. Model konseptual ini berisi berbagai komponen atau subsitem dan interaksi antarsubsistem tersebut. Setelah itu, berikan penjelasan tentang masalah yang ada pada sistem tersebut. Paragraf berikut berisi contoh penjabaran masalah sistem informasi fasilitas kesehatan untuk pasien \autocite{pressman2019}. 
+Untuk memahami akar permasalahan yang telah diuraikan pada bab sebelumnya, dilakukan analisis terhadap kondisi spesifik sistem penyelenggaraan ITB Ultra Marathon yang telah dilaksanakan pada tahun-tahun sebelumnya.
+
+Analisis ini menunjukkan adanya kesenjangan antara kondisi sistem saat ini dengan kondisi ideal yang diharapkan, khususnya dalam aspek penggunaan perangkat, alur pendaftaran peserta dan pelacakan peserta, serta aplikasi yang mendukung mekanisme pengelolaan selama marathon yang mencakup proses monitoring, pencatatan data, serta koordinasi antar pihak yang terlibat selama kegiatan maraton berlangsung.
+\subsection{Pendaftaran dan Pengelolaan Data Peserta}
+Pada penyelenggaraan ITB Ultra Marathon 2025, proses pendaftaran peserta dilakukan secara daring melalui platform yang disediakan oleh partner ITB Ultra-Marathon di tahun tersebut. Platform ini digunakan untuk menerima dan menyimpan data pendaftaran, serta menampilkan informasi peserta dan hasil lomba kepada publik.
+
+Meskipun proses pendaftaran telah berjalan secara digital, sistem yang digunakan sepenuhnya terpisah dari proses operasional lomba yang berlangsung di lapangan. Data peserta yang terdaftar di platform Beyond Run tidak terhubung secara langsung dengan sistem pelacakan dan pencatatan peserta, maupun mekanisme koordinasi panitia selama perlombaan. Akibatnya, setiap kali data peserta dibutuhkan dalam konteks operasional,  panitia harus melakukan proses pengolahan data secara manual dan terpisah. Kondisi ini mencerminkan ketiadaan integrasi antara sistem pendaftaran dengan sistem operasional lomba, yang berimplikasi pada inefisiensi alur kerja panitia serta potensi inkonsistensi data selama perlombaan berlangsung.
+\subsection{Pelacakan Peserta Selama Perlombaan}
+Dalam beberapa penyelenggaraan ITB Ultra Marathon, telah digunakan perangkat timing chip berbasis RFID (Radio Frequency Identification) untuk membantu proses pencatatan waktu dan pelacakan peserta. Chip ini umumnya dipasang pada gelang atau nomor dada (bib) peserta, dan bekerja dengan cara memancarkan sinyal yang dibaca oleh tag reader ketika peserta melewati titik-titik tertentu seperti garis start, garis finish, dan checkpoint di sepanjang rute.
+
+Sistem timing chip terdiri dari tiga komponen utama: chip RFID yang menyimpan identitas peserta, tag reader yang membaca sinyal chip, dan antena yang memperluas jangkauan pembacaan. Sistem ini mampu mencatat waktu secara otomatis tanpa memerlukan kontak langsung, sehingga jauh lebih andal dibandingkan metode manual seperti stopwatch atau pencatatan barcode. Terdapat dua jenis waktu yang dihasilkan: finish time, yaitu waktu total sejak start pertama hingga peserta mencapai garis finish, serta net time, yaitu waktu aktual yang ditempuh peserta sejak ia sendiri melewati garis start.
+
+Meskipun teknologi ini telah digunakan pada beberapa tahun terakhir ITB Ultra-Marathon, penerapannya masih bersifat terbatas dan belum terintegrasi dengan sistem atau aplikasi pendukung lainnya. Data yang dihasilkan oleh chip hanya dimanfaatkan untuk keperluan pencatatan waktu secara lokal, dan tidak tersambung ke platform yang dapat menampilkan informasi tersebut secara real-time.
+
+
+\subsection{Aplikasi dan Alat Bantu yang Digunakan}
+Dalam pelaksanaan ITB Ultra Marathon, belum terdapat aplikasi khusus yang dirancang untuk mendukung keseluruhan proses perlombaan secara terintegrasi. Sebagai gantinya, panitia dan peserta memanfaatkan sejumlah aplikasi umum yang tersedia, namun tidak dirancang untuk konteks perlombaan.
+
+Google Maps digunakan sebagai alat bantu navigasi dan pemantauan lokasi selama perlombaan. Aplikasi ini memanfaatkan teknologi GPS untuk menentukan dan menampilkan posisi pengguna secara real-time pada peta digital, sehingga dapat membantu peserta maupun panitia dalam memahami posisi dan rute yang ditempuh. Namun, Google Maps tidak menyediakan fitur yang relevan untuk kebutuhan operasional lomba, seperti pencatatan checkpoint, validasi kehadiran peserta, pemantauan banyak peserta secara bersamaan, maupun integrasi dengan sistem perlombaan.
+
+Strava digunakan oleh peserta untuk merekam aktivitas lari secara individual. Aplikasi ini mampu mencatat data seperti jarak tempuh, waktu, kecepatan, rute, serta estimasi waktu kedatangan (Estimated Time of Arrival/ETA) berdasarkan performa yang sedang berjalan. Meskipun fitur pelacakan aktivitasnya cukup lengkap untuk kebutuhan pribadi, Strava tidak dirancang untuk pengelolaan perlombaan secara terpusat. Aplikasi ini tidak memungkinkan panitia untuk memantau seluruh peserta secara bersamaan, tidak terintegrasi dengan sistem checkpoint atau relay, dan data yang tercatat hanya dapat diakses oleh pengguna itu sendiri.
+
+Secara keseluruhan, seluruh alat bantu yang digunakan bersifat terpisah satu sama lain dan tidak dirancang untuk memenuhi kebutuhan spesifik perlombaan. Selain itu, data yang dihasilkan oleh perangkat timing chip sebagaimana dibahas pada subbab sebelumnya juga tidak terhubung dengan aplikasi-aplikasi tersebut, sehingga tidak ada satu pun platform yang mampu menyajikan informasi perlombaan secara komprehensif dan terpusat.
+
+\subsection{Identifikasi Kesenjangan dan Implikasi terhadap Fokus Penelitian}
+
+Berdasarkan analisis pada ketiga subbab sebelumnya, dapat diidentifikasi dua kesenjangan utama dalam sistem penyelenggaraan ITB Ultra Marathon saat ini.
+
+Pertama, kesenjangan dalam integrasi data. Data peserta yang berasal dari sistem pendaftaran, data pelacakan dari perangkat \textit{timing chip}, serta data aktivitas yang direkam selama perlombaan tersimpan pada platform-platform yang berbeda dan tidak saling terhubung. Tidak ada mekanisme yang mengintegrasikan sumber-sumber data ini ke dalam satu sistem yang kohesif, sehingga informasi yang dibutuhkan untuk \textit{monitoring} dan pengambilan keputusan selama lomba tidak tersedia secara terpadu.
+
+Kedua, kesenjangan dalam penyajian informasi. Meskipun sebagian data telah berhasil dikumpulkan melalui perangkat dan platform yang ada, belum terdapat antarmuka yang mampu menampilkan informasi tersebut secara \textit{real-time}, interaktif, dan mudah dipahami oleh berbagai pihak yang terlibat --- baik panitia yang membutuhkan gambaran menyeluruh kondisi lomba, peserta yang ingin memantau progres mereka sendiri, maupun pihak pendukung yang ingin mengetahui posisi dan kondisi pelari yang mereka ikuti.
+
+Dari dua kesenjangan tersebut, penelitian ini menetapkan pembagian tanggung jawab yang jelas. Permasalahan integrasi dan pengolahan data diasumsikan ditangani oleh sistem \textit{backend} yang menyediakan data melalui mekanisme \textit{Application Programming Interface} (API). Dengan asumsi ini, fokus penelitian diarahkan sepenuhnya pada perancangan dan pengembangan komponen \textit{frontend} yang mampu mengonsumsi data dari API tersebut dan menyajikannya secara efektif kepada pengguna.
+
+Komponen \textit{frontend} yang dikembangkan diharapkan mampu memenuhi kebutuhan informasi berbagai jenis pengguna secara \textit{real-time} dalam satu platform yang terintegrasi, sehingga menutup kesenjangan penyajian informasi yang selama ini menjadi hambatan dalam penyelenggaraan ITB Ultra Marathon.
+
 \section{Analisis Kebutuhan}
-\lipsum[4]
-\subsection{Identifikasi Masalah Pengguna}
-\lipsum[5]
+Setelah dilakukan analisis terhadap kondisi sistem saat ini, tahap selanjutnya adalah melakukan analisis kebutuhan untuk mengidentifikasi fitur dan karakteristik sistem yang diperlukan dalam mendukung penyelenggaraan ITB Ultra Marathon. Analisis kebutuhan ini bertujuan untuk menerjemahkan permasalahan yang telah diidentifikasi pada subbab sebelumnya menjadi serangkaian kebutuhan yang lebih spesifik dan terstruktur.
+
+Identifikasi kebutuhan dilakukan berdasarkan hasil wawancara dan observasi terhadap proses penyelenggaraan lomba, serta mengacu pada kendala yang dihadapi dalam penggunaan sistem yang ada saat ini. Selanjutnya, kebutuhan sistem akan diklasifikasikan menjadi kebutuhan fungsional dan kebutuhan nonfungsional, yang akan menjadi dasar dalam perancangan dan pengembangan antarmuka aplikasi yang diusulkan.
+
+\subsection{Identifikasi Masalah Pengguna} 
+Pada bagian ini dilakukan proses identifikasi masalah yang dialami oleh pengguna sebagai dasar dalam menentukan solusi yang tepat dalam perancangan aplikasi. Identifikasi dilakukan dengan mengacu pada hasil observasi dan wawancara, sehingga kebutuhan serta kendala yang dihadapi pengguna dapat dipetakan secara lebih akurat.
+
+Berdasarkan kesenjangan yang telah diidentifikasi pada subbab sebelumnya,
+dapat dirumuskan permasalahan spesifik yang dihadapi oleh masing-masing
+kelompok pengguna dalam konteks penyelenggaraan ITB Ultra Marathon.
+
+\subsubsection*{Panitia}
+Panitia merupakan pihak yang bertanggung jawab atas keseluruhan jalannya
+perlombaan, mulai dari pengelolaan data peserta hingga koordinasi operasional
+di lapangan. Dalam kondisi saat ini, panitia tidak memiliki akses terhadap
+informasi lomba secara terpusat dan real-time. Pemantauan posisi dan progres
+peserta harus dilakukan secara manual melalui komunikasi langsung dengan
+petugas di setiap checkpoint, yang rentan terhadap keterlambatan informasi dan
+kesalahan pencatatan. Selain itu, data peserta dari sistem pendaftaran tidak
+terintegrasi dengan data operasional di lapangan, sehingga verifikasi peserta
+di checkpoint memerlukan proses tambahan yang tidak efisien. Ketiadaan
+dashboard terpusat membuat panitia kesulitan dalam mengambil keputusan cepat
+apabila terjadi kondisi darurat atau penyimpangan dari rencana lomba.
+
+\subsubsection*{Peserta}
+Peserta adalah pelari yang mengikuti perlombaan secara langsung. Selama
+perlombaan berlangsung, peserta tidak memiliki akses terhadap informasi
+progres mereka secara objektif dan real-time, seperti posisi saat ini pada
+rute, jarak yang telah ditempuh, estimasi waktu kedatangan di checkpoint
+berikutnya, maupun perbandingan performa dengan peserta lain. Peserta hanya
+dapat mengandalkan aplikasi kebugaran umum seperti Strava yang tidak
+terintegrasi dengan sistem lomba, sehingga data yang ditampilkan tidak
+mencerminkan konteks perlombaan secara akurat, seperti status checkpoint yang
+telah dilewati atau urutan klasemen sementara.
+
+\subsubsection*{Supporter dan Keluarga}
+Supporter dan keluarga pelari membutuhkan informasi mengenai posisi dan
+kondisi peserta yang mereka ikuti selama perlombaan berlangsung. Namun, dalam
+kondisi saat ini, tidak tersedia platform yang memungkinkan mereka memantau
+perkembangan peserta dari jarak jauh secara real-time. Informasi hanya dapat
+diperoleh melalui komunikasi langsung dengan peserta atau panitia, yang tidak
+selalu memungkinkan mengingat kondisi fisik medan dan keterbatasan sinyal di
+sepanjang rute lomba. Ketiadaan akses informasi ini mengurangi ketenangan
+pihak pendukung dan membatasi keterlibatan mereka dalam pengalaman
+perlombaan.
+
+Secara keseluruhan, permasalahan yang dihadapi oleh ketiga kelompok pengguna
+tersebut bersumber pada satu akar yang sama, yaitu tidak tersedianya platform
+yang mampu menyajikan informasi perlombaan secara terpusat, real-time, dan
+disesuaikan dengan kebutuhan masing-masing pihak. Tabel \ref{tab:masalah-pengguna}
+merangkum permasalahan utama yang dihadapi oleh setiap kelompok pengguna.
+
+\input{tables/masalah-pengguna.tex}
+
 \subsection{Kebutuhan Fungsional}
-\lipsum[6]
+Pada bagian ini, disusun kebutuhan fungsional yang berfokus pada perilaku, tampilan, serta interaksi yang harus disediakan oleh front-end aplikasi tracker ITB Ultra Marathon. Kebutuhan ini menggambarkan fitur-fitur utama yang perlu hadir pada antarmuka guna mendukung proses pelacakan, penyajian informasi, serta meningkatkan pengalaman pengguna secara keseluruhan.
+
 \subsection{Kebutuhan Nonfungsional}
-\lipsum[7]
+Pada bagian ini dirumuskan kebutuhan non-fungsional yang berfokus pada kualitas tampilan, performa, aksesibilitas, keamanan antarmuka, serta aspek usability yang wajib dipenuhi oleh front end. Kebutuhan ini memastikan sistem mudah digunakan, cepat, aman, dan mampu menghadirkan pengalaman pengguna yang konsisten selama acara berlangsung
 
 \section{Analisis Pemilihan Solusi}
+Berdasarkan kebutuhan yang telah diidentifikasi, diperlukan analisis terhadap solusi yang dapat memenuhi kebutuhan tersebut. Analisis ini bertujuan untuk menentukan pendekatan terbaik dalam mengembangkan sistem yang mampu mendukung penyelenggaraan ITB Ultra Marathon.
+
+Dalam menentukan solusi yang akan digunakan, dilakukan perbandingan terhadap beberapa alternatif pendekatan yang memungkinkan untuk diimplementasikan.
+
 \subsection{Alternatif Solusi}
-\lipsum[8]
 \subsection{Analisis Penentuan Solusi}
-\lipsum[9]

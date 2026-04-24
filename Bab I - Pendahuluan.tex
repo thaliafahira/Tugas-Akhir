@@ -19,7 +19,7 @@ Saat ini belum tersedia aplikasi yang secara khusus digunakan untuk melakukan pe
 
 \begin{enumerate}
     \item Bagaimana mengembangkan sistem pelacakan dari teknologi \textit{existing} agar mampu menyediakan pemantauan posisi pelari secara akurat, terpusat, dan \textit{real-time} di sepanjang rute ITB Ultra-Marathon?
-    \item Bagaimana merancang sistem \textit{front-end} yang dapat diintegrasikan secara efektif dengan sistem \textit{backend} untuk menyajikan visualisasi data posisi ribuan pelari secara informatif dan responsif?
+    \item Bagaimana merancang sistem \textit{front-end} yang dapat diintegrasikan secara efektif dengan sistem \textit{back-end} untuk menyajikan visualisasi data posisi ribuan pelari secara informatif dan responsif?
     \item Bagaimana membangun sistem antarmuka yang mampu memfasilitasi koordinasi manajemen maraton, termasuk pemantauan dan penanganan situasi darurat di sepanjang rute perlombaan?
 \end{enumerate}
 Aplikasi yang dirancang diharapkan mampu menjadi solusi yang memfasilitasi proses pelacakan peserta secara efisien dan real-time, sehingga dapat membantu berlansungnya kegiatan ITB Ultra-Marathon.
@@ -35,14 +35,14 @@ Keberhasilan dari pelaksanaan tugas akhir ini diukur berdasarkan kriteria-kriter
     \item Pengguna dapat memahami alur navigasi serta membaca informasi pelacakan dengan mudah berdasarkan hasil pengujian yang dilakukan.
     \item Informasi pelacakan seperti posisi peserta, jarak tempuh, dan waktu dapat visualisasikan secara jelas, akurat, mudah dipahami, serta bersifat responsif terhadap pembaruan data.
     \item Tampilan antarmuka berfungsi dengan baik pada perangkat, serta menjaga konsistensi desain.
-    \item Terjalinnya integrasi antara \textit{front-end} dan \textit{backend} yang efektif, di mana data dari API dapat ditampilkan tanpa gangguan signifikan sehingga proses pelacakan dapat dilakukan secara lancar.
+    \item Terjalinnya integrasi antara \textit{front-end} dan \textit{back-end} yang efektif, di mana data dari API dapat ditampilkan tanpa gangguan signifikan sehingga proses pelacakan dapat dilakukan secara lancar.
 \end{enumerate}
 % --- Batasan Masalah ---
 \section{Batasan Masalah}
 Agar pembahasan lebih terarah dan fokus, penelitian ini dibatasi oleh beberapa ruang lingkup sebagai berikut:
 
 \begin{enumerate}
-    \item Tugas akhir ini dikerjakan secara berkelompok yang terdiri dari dua orang mahasiswa, yaitu Dinda Thalia Fahira (NIM 18222055) dan Justin Lawrance (NIM 18222006). Adapun pembagian fokus dari kedua mahasiswa tersebut adalah Thalia fokus pada bagian \textit{front-end} aplikasi dan Justin fokus pada bagian \textit{backend} aplikasi.
+    \item Tugas akhir ini dikerjakan secara berkelompok yang terdiri dari dua orang mahasiswa, yaitu Dinda Thalia Fahira (NIM 18222055) dan Justin Lawrance (NIM 18222006). Adapun pembagian fokus dari kedua mahasiswa tersebut adalah Thalia fokus pada bagian \textit{front-end} aplikasi dan Justin fokus pada bagian \textit{back-end} aplikasi.
     \item Pengembangan aplikasi \textit{tracker} ini dibatasi khusus untuk kebutuhan kegiatan ITB Ultra-Marathon dan tidak mencakup implementasi di luar lingkungan ITB atau skala kegiatan \textit{ultra-marathon} lainnya.
     \item Aplikasi pelacakan ini dikembangkan khusus untuk perangkat \textit{mobile} dengan sistem operasi Android dan tidak mencakup pengembangan untuk sistem operasi iOS.
 \end{enumerate}
@@ -72,7 +72,7 @@ Sistematika penulisan laporan tugas akhir ini disusun secara sistematis untuk me
     \item Bab I Pendahuluan: Menguraikan latar belakang permasalahan, rumusan masalah, tujuan penelitian, batasan masalah , metodologi pengembangan, serta sistematika penulisan laporan.
     \item Bab II Studi Literatur: Memaparkan landasan teori dan kajian pustaka yang relevan, mencakup konsep \textit{ultra-marathon}, pengembangan \textit{front-end}, teknologi pelacakan, serta literatur mengenai sistem pendukung perlombaan lari jarak jauh.
     \item Bab III Analisis: Menjelaskan proses analisis masalah yang terjadi pada sistem pelacakan ITB Ultra-Marathon serta identifikasi kebutuhan fungsional dan non fungsional dari berbagai perspektif pengguna, yaitu peserta, panitia, tim support, dan penonton.
-    \item Bab IV Perancangan: Menguraikan perancangan solusi yang diusulkan, meliputi arsitektur sistem secara menyeluruh, desain antarmuka pengguna, serta perancangan integrasi antara sisi \textit{front-end} dengan \textit{backend}.
+    \item Bab IV Perancangan: Menguraikan perancangan solusi yang diusulkan, meliputi arsitektur sistem secara menyeluruh, desain antarmuka pengguna, serta perancangan integrasi antara sisi \textit{front-end} dengan \textit{back-end}.
     \item Bab V Implementasi: Menjelaskan proses realisasi atau pengkodean antarmuka aplikasi berdasarkan rancangan yang telah dibuat, termasuk penggunaan teknologi, kerangka kerja (\textit{framework}), serta pustaka (\textit{library}) yang digunakan untuk memvisualisasikan data pelacakan.
     \item Bab VI Evaluasi: Berisi laporan mengenai metode pengujian sistem, persiapan skenario pengujian, hasil pengujian fungsionalitas dan \textit{usability}, serta evaluasi kinerja antarmuka dalam menyajikan data secara \textit{real-time}.
     \item Bab VII Kesimpulan dan Saran: Menyampaikan kesimpulan akhir dari seluruh proses pengembangan berdasarkan tujuan yang telah ditetapkan serta saran bagi pengembangan aplikasi di masa mendatang.
