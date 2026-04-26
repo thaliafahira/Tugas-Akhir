@@ -98,19 +98,278 @@ tersebut bersumber pada satu akar yang sama, yaitu tidak tersedianya platform
 yang mampu menyajikan informasi perlombaan secara terpusat, real-time, dan
 disesuaikan dengan kebutuhan masing-masing pihak. Tabel \ref{tab:masalah-pengguna}
 merangkum permasalahan utama yang dihadapi oleh setiap kelompok pengguna.
-
 \input{tables/masalah-pengguna.tex}
 
 \subsection{Kebutuhan Fungsional}
 Pada bagian ini, disusun kebutuhan fungsional yang berfokus pada perilaku, tampilan, serta interaksi yang harus disediakan oleh front-end aplikasi tracker ITB Ultra Marathon. Kebutuhan ini menggambarkan fitur-fitur utama yang perlu hadir pada antarmuka guna mendukung proses pelacakan, penyajian informasi, serta meningkatkan pengalaman pengguna secara keseluruhan.
-
+\input{tables/fr.tex}
 \subsection{Kebutuhan Nonfungsional}
 Pada bagian ini dirumuskan kebutuhan non-fungsional yang berfokus pada kualitas tampilan, performa, aksesibilitas, keamanan antarmuka, serta aspek usability yang wajib dipenuhi oleh front end. Kebutuhan ini memastikan sistem mudah digunakan, cepat, aman, dan mampu menghadirkan pengalaman pengguna yang konsisten selama acara berlangsung
-
+\input{tables/fr.tex}
 \section{Analisis Pemilihan Solusi}
 Berdasarkan kebutuhan yang telah diidentifikasi, diperlukan analisis terhadap solusi yang dapat memenuhi kebutuhan tersebut. Analisis ini bertujuan untuk menentukan pendekatan terbaik dalam mengembangkan sistem yang mampu mendukung penyelenggaraan ITB Ultra Marathon.
 
 Dalam menentukan solusi yang akan digunakan, dilakukan perbandingan terhadap beberapa alternatif pendekatan yang memungkinkan untuk diimplementasikan.
 
 \subsection{Alternatif Solusi}
+Berdasarkan kebutuhan yang telah diidentifikasi, terdapat empat alternatif
+pendekatan yang dapat dipertimbangkan dalam pengembangan sistem pelacakan ITB
+Ultra Marathon.
+
+\subsubsection*{Alternatif 1: Optimalisasi Sistem \textit{Timing Chip} RFID yang Ada}
+Alternatif pertama adalah mengoptimalkan sistem \textit{timing chip} berbasis
+RFID yang telah digunakan pada penyelenggaraan ITB Ultra Marathon sebelumnya.
+Pendekatan ini tidak mengembangkan antarmuka baru, melainkan memperluas
+pemanfaatan infrastruktur RFID yang ada dengan menambahkan lapisan perangkat
+lunak yang mampu mengolah dan meneruskan data dari \textit{tag reader} ke suatu
+sistem terpusat.
+
+Dalam pendekatan ini, data yang dihasilkan oleh chip RFID saat peserta melewati
+\textit{checkpoint} dapat diteruskan secara otomatis ke basis data terpusat,
+yang kemudian dapat diakses oleh panitia melalui antarmuka sederhana.
+Keunggulan utama alternatif ini adalah pemanfaatan infrastruktur yang telah ada
+sehingga tidak memerlukan pengadaan perangkat baru secara menyeluruh, serta
+akurasi pencatatan waktu yang sudah terbukti tinggi.
+
+Namun, sistem RFID pada dasarnya hanya mampu mencatat data pada titik-titik
+\textit{checkpoint} yang dilengkapi \textit{tag reader}, sehingga tidak dapat
+memberikan informasi posisi peserta secara kontinu di antara titik-titik
+tersebut. Selain itu, pendekatan ini tidak menyediakan antarmuka bagi peserta
+maupun \textit{supporter} untuk memantau perlombaan secara mandiri dan
+\textit{real-time}.
+
+\subsubsection*{Alternatif 2: Aplikasi Mobile \textit{Cross-Platform}}
+Pendekatan \textit{cross-platform} memungkinkan pengembangan satu basis kode
+yang dapat dijalankan pada Android maupun iOS menggunakan \textit{framework}
+seperti Flutter atau React Native. Pendekatan ini menawarkan efisiensi
+pengembangan yang lebih baik dibandingkan native, sekaligus tetap dapat
+mengakses sebagian besar fitur perangkat keras seperti GPS dan notifikasi
+melalui \textit{plugin} yang tersedia.
+
+Meskipun demikian, distribusi tetap memerlukan jalur toko aplikasi, dan
+pengguna diwajibkan untuk melakukan instalasi sebelum menggunakan sistem.
+Antarmuka berbasis mobile juga kurang optimal untuk tugas-tugas administratif
+seperti pengunggahan data rute dan pengelolaan peserta yang lebih wajar
+dilakukan dari perangkat \textit{desktop}.
+
+\subsubsection*{Alternatif 3: Aplikasi Web Berbasis Browser}
+Aplikasi web merupakan antarmuka yang dapat diakses langsung melalui peramban
+pada perangkat apa pun tanpa memerlukan proses instalasi. Satu basis kode dapat
+melayani seluruh jenis perangkat melalui desain yang responsif, dan pembaruan
+sistem dapat dilakukan secara terpusat di sisi server.
+
+Kelemahan pendekatan ini terletak pada keterbatasan akses terhadap fitur
+perangkat keras tertentu, seperti pelacakan GPS latar belakang yang diperlukan
+untuk pemantauan posisi peserta secara kontinu selama perlombaan berlangsung,
+serta pengalaman pengguna di perangkat mobile yang umumnya kurang optimal
+dibandingkan aplikasi native.
+
+\subsubsection*{Alternatif 4: Aplikasi Hibrida Web dan Mobile}
+Alternatif keempat menggabungkan aplikasi web untuk fungsi administratif dan
+aplikasi mobile untuk fungsi operasional di lapangan. Aplikasi web difungsikan
+sebagai platform bagi panitia untuk mengelola data perlombaan, termasuk
+mengunggah data rute dalam format GPX (\textit{GPS Exchange Format}) sebagai
+acuan jalur perlombaan. Aplikasi mobile difungsikan sebagai antarmuka bagi
+peserta untuk memantau progres lari, bagi \textit{supporter} dan keluarga untuk
+melacak posisi pelari, serta bagi petugas \textit{checkpoint} untuk memvalidasi
+kehadiran peserta.
+
+Pendekatan ini memungkinkan setiap kelompok pengguna mendapatkan antarmuka yang
+dirancang secara spesifik sesuai konteks penggunaannya. Konsekuensinya,
+kompleksitas pengembangan lebih tinggi karena memerlukan dua basis kode yang
+dikelola secara bersamaan.
+
 \subsection{Analisis Penentuan Solusi}
+
+Penentuan solusi dilakukan menggunakan metode \textit{Analytic Hierarchy
+Process} (AHP) yang dikembangkan oleh Thomas L. Saaty. AHP merupakan metode
+pengambilan keputusan multi-kriteria yang bekerja dengan cara menyusun masalah
+ke dalam hierarki, membandingkan setiap kriteria dan alternatif secara
+berpasangan (\textit{pairwise comparison}), kemudian menghitung bobot prioritas
+masing-masing elemen berdasarkan nilai perbandingan tersebut \cite{Saaty1980}.
+Konsistensi penilaian diukur melalui \textit{Consistency Ratio} (CR), di mana
+nilai CR $\leq$ 0,10 menunjukkan bahwa penilaian yang diberikan cukup konsisten
+dan dapat diterima \cite{Saaty1980}.
+
+\subsubsection*{Penetapan Kriteria}
+
+Kriteria yang digunakan dalam analisis ini ditetapkan berdasarkan kebutuhan dan
+kendala yang telah diidentifikasi sebelumnya:
+
+\begin{enumerate}
+  \item \textbf{C1 --- Performa dan Akses Perangkat Keras}: kemampuan
+  memanfaatkan fitur perangkat seperti GPS berkelanjutan, notifikasi
+  \textit{push}, dan sensor gerak yang krusial untuk penggunaan di lapangan
+  selama perlombaan berlangsung.
+  \item \textbf{C2 --- Kesesuaian Kebutuhan Fungsional}: sejauh mana alternatif
+  mampu mengakomodasi seluruh kebutuhan fungsional yang telah diidentifikasi,
+  termasuk unggah GPX, pelacakan peserta \textit{real-time}, dan pemantauan
+  oleh \textit{supporter}.
+  \item \textbf{C3 --- Aksesibilitas Pengguna}: kemudahan seluruh kelompok
+  pengguna dalam mengakses sistem tanpa hambatan teknis yang berlebihan.
+  \item \textbf{C4 --- Efisiensi Pengembangan}: tingkat kemudahan dan efisiensi
+  sumber daya yang diperlukan; skor lebih tinggi berarti lebih efisien untuk
+  dikembangkan dan dipelihara.
+  \item \textbf{C5 --- Kemudahan Distribusi}: kemudahan menyebarkan sistem
+  kepada pengguna, termasuk kecepatan pembaruan dan jangkauan platform.
+\end{enumerate}
+
+\subsubsection*{Perbandingan Berpasangan Antar Kriteria}
+
+Perbandingan berpasangan antar kriteria dilakukan menggunakan skala Saaty
+(1--9), dengan mempertimbangkan bahwa konteks perlombaan lapangan menjadikan
+performa perangkat keras dan kesesuaian fungsional sebagai prioritas utama.
+Matriks perbandingan berpasangan disajikan pada Tabel \ref{tab:ahp-kriteria}.
+
+\begin{table}[h]
+\centering
+\caption{Matriks Perbandingan Berpasangan Antar Kriteria}
+\label{tab:ahp-kriteria}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Kriteria} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} \\
+\hline
+C1 & 1     & 2     & 3     & 4     & 5 \\
+C2 & 1/2   & 1     & 2     & 3     & 4 \\
+C3 & 1/3   & 1/2   & 1     & 2     & 2 \\
+C4 & 1/4   & 1/3   & 1/2   & 1     & 2 \\
+C5 & 1/5   & 1/4   & 1/2   & 1/2   & 1 \\
+\hline
+\textbf{Jumlah} & 2,283 & 4,083 & 7,000 & 10,500 & 14,000 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Bobot Prioritas Kriteria}
+\label{tab:ahp-bobot-kriteria}
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+\textbf{Kriteria} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} & \textbf{Bobot} \\
+\hline
+C1 & 0,438 & 0,490 & 0,429 & 0,381 & 0,357 & 0,419 \\
+C2 & 0,219 & 0,245 & 0,286 & 0,286 & 0,286 & 0,264 \\
+C3 & 0,146 & 0,122 & 0,143 & 0,190 & 0,143 & 0,149 \\
+C4 & 0,110 & 0,082 & 0,071 & 0,095 & 0,143 & 0,100 \\
+C5 & 0,088 & 0,061 & 0,071 & 0,048 & 0,071 & 0,068 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Uji Konsistensi Kriteria}
+
+$$\lambda_{max} = 5,068$$
+
+$$CI = \frac{5,068 - 5}{4} = 0,017$$
+
+$$CR = \frac{0,017}{1,12} = 0,015$$
+
+Nilai CR = 0,015 $\leq$ 0,10, sehingga penilaian antar kriteria dinyatakan
+\textbf{konsisten}.
+
+\subsubsection*{Perbandingan Berpasangan Antar Alternatif}
+
+Perbandingan berpasangan dilakukan untuk setiap pasang alternatif pada
+masing-masing kriteria. Rasionale penilaian didasarkan pada karakteristik
+teknis setiap alternatif terhadap kriteria yang dinilai.
+
+Pada kriteria \textbf{C1 (Performa dan Akses Perangkat Keras)}, aplikasi
+\textit{cross-platform} dinilai unggul karena mampu mengakses GPS secara
+berkelanjutan, notifikasi \textit{push}, dan sensor perangkat melalui
+\textit{plugin} yang matang, dengan cakupan dua platform sekaligus. Sistem
+RFID unggul untuk pencatatan waktu di \textit{checkpoint} namun tidak mampu
+menyediakan pelacakan posisi kontinu. Aplikasi web memiliki keterbatasan akses
+GPS latar belakang. Pendekatan hibrida memiliki kemampuan serupa dengan
+\textit{cross-platform} namun kompleksitasnya mengurangi konsistensi performa.
+
+Pada kriteria \textbf{C2 (Kesesuaian Kebutuhan Fungsional)}, aplikasi
+\textit{cross-platform} dinilai paling sesuai karena dapat melayani peserta,
+\textit{supporter}, dan petugas lapangan dalam satu aplikasi yang terintegrasi
+di dua platform, termasuk mendukung fitur GPX \textit{viewer} dan klasemen
+\textit{real-time}. Sistem RFID sangat terbatas karena hanya mencatat data
+di titik \textit{checkpoint} tanpa antarmuka pengguna.
+
+Pada kriteria \textbf{C3 (Aksesibilitas Pengguna)}, aplikasi web unggul karena
+tidak memerlukan instalasi sama sekali. Namun \textit{cross-platform} tetap
+kompetitif karena satu instalasi melayani Android dan iOS sekaligus, berbeda
+dengan native yang memerlukan dua aplikasi terpisah.
+
+Pada kriteria \textbf{C4 (Efisiensi Pengembangan)}, \textit{cross-platform}
+unggul karena satu basis kode untuk dua platform, berbeda dengan hibrida yang
+memerlukan dua basis kode berbeda (web dan mobile) yang harus dikelola
+bersamaan.
+
+Pada kriteria \textbf{C5 (Kemudahan Distribusi)}, aplikasi web paling unggul,
+namun \textit{cross-platform} tetap kompetitif karena pembaruan dapat
+didistribusikan secara bersamaan ke kedua platform melalui mekanisme
+\textit{over-the-air update} yang tersedia pada \textit{framework} modern.
+
+Bobot lokal setiap alternatif per kriteria dirangkum pada Tabel
+\ref{tab:ahp-alternatif}.
+
+\begin{table}[h]
+\centering
+\caption{Bobot Lokal Alternatif per Kriteria}
+\label{tab:ahp-alternatif}
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Alternatif} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} \\
+\hline
+Alt. 1 (RFID)         & 0,095 & 0,057 & 0,258 & 0,212 & 0,095 \\
+Alt. 2 (Mobile CP)    & 0,481 & 0,443 & 0,210 & 0,422 & 0,265 \\
+Alt. 3 (Web)          & 0,088 & 0,210 & 0,421 & 0,253 & 0,497 \\
+Alt. 4 (Hibrida)      & 0,336 & 0,290 & 0,111 & 0,113 & 0,143 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Perhitungan Skor Akhir}
+
+\begin{table}[h]
+\centering
+\caption{Skor Akhir AHP dan Peringkat Alternatif}
+\label{tab:ahp-skor-akhir}
+\begin{tabular}{|l|c|c|c|c|c|c|c|}
+\hline
+\textbf{Alternatif} &
+\textbf{C1$\times$0,419} &
+\textbf{C2$\times$0,264} &
+\textbf{C3$\times$0,149} &
+\textbf{C4$\times$0,100} &
+\textbf{C5$\times$0,068} &
+\textbf{Skor} &
+\textbf{Peringkat} \\
+\hline
+Alt. 1 (RFID)      & 0,040 & 0,015 & 0,038 & 0,021 & 0,006 & 0,120 & 4 \\
+Alt. 2 (Mobile CP) & 0,201 & 0,117 & 0,031 & 0,042 & 0,018 & 0,409 & 1 \\
+Alt. 3 (Web)       & 0,037 & 0,055 & 0,063 & 0,025 & 0,034 & 0,214 & 2 \\
+Alt. 4 (Hibrida)   & 0,141 & 0,077 & 0,017 & 0,011 & 0,010 & 0,256 & 3 \\
+\hline
+\end{tabular}
+\end{table}
+
+Berdasarkan hasil perhitungan AHP, \textbf{Alternatif 2 (Aplikasi Mobile
+\textit{Cross-Platform})} memperoleh skor tertinggi sebesar 0,409 dan
+ditetapkan sebagai solusi yang akan dikembangkan dalam penelitian ini.
+
+Alternatif 2 unggul secara dominan pada dua kriteria berbobot terbesar, yaitu
+performa dan akses perangkat keras (C1) serta kesesuaian kebutuhan fungsional
+(C2). Hal ini mencerminkan bahwa dalam konteks perlombaan lapangan seperti ITB
+Ultra Marathon, kemampuan mengakses GPS secara berkelanjutan dan menyajikan
+informasi \textit{real-time} kepada semua kelompok pengguna dalam satu aplikasi
+merupakan faktor penentu yang paling kritis. Pendekatan \textit{cross-platform}
+juga menawarkan efisiensi pengembangan yang signifikan dibandingkan hibrida,
+karena seluruh fungsionalitas dapat dibangun dan dipelihara dalam satu basis
+kode yang berjalan pada Android maupun iOS.
+
+Alternatif 4 (hibrida) menempati peringkat ketiga meskipun secara intuitif
+tampak paling lengkap, karena pemisahan dua basis kode justru meningkatkan
+kompleksitas pengembangan tanpa memberikan keunggulan fungsional yang cukup
+signifikan dibandingkan \textit{cross-platform} dalam konteks penelitian ini.
+Alternatif 1 (RFID) memperoleh skor terendah karena ketidakmampuannya
+menyediakan pelacakan posisi kontinu dan antarmuka mandiri bagi pengguna.
+
+Dengan demikian, aplikasi mobile \textit{cross-platform} dipilih sebagai solusi
+yang paling sesuai untuk memenuhi kebutuhan sistem pelacakan ITB Ultra Marathon
+secara menyeluruh dan efisien.
