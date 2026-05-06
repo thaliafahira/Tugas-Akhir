@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  27 APR 2026 12:20
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  6 MAY 2026 12:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -954,4 +954,1083 @@ File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'chicago-authordate.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... f
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count430
+\c@savedafterword=\count431
+\c@annotator=\count432
+\c@savedannotator=\count433
+\c@author=\count434
+\c@savedauthor=\count435
+\c@bookauthor=\count436
+\c@savedbookauthor=\count437
+\c@commentator=\count438
+\c@savedcommentator=\count439
+\c@editor=\count440
+\c@savededitor=\count441
+\c@editora=\count442
+\c@savededitora=\count443
+\c@editorb=\count444
+\c@savededitorb=\count445
+\c@editorc=\count446
+\c@savededitorc=\count447
+\c@foreword=\count448
+\c@savedforeword=\count449
+\c@holder=\count450
+\c@savedholder=\count451
+\c@introduction=\count452
+\c@savedintroduction=\count453
+\c@namea=\count454
+\c@savednamea=\count455
+\c@nameb=\count456
+\c@savednameb=\count457
+\c@namec=\count458
+\c@savednamec=\count459
+\c@translator=\count460
+\c@savedtranslator=\count461
+\c@shortauthor=\count462
+\c@savedshortauthor=\count463
+\c@shorteditor=\count464
+\c@savedshorteditor=\count465
+\c@labelname=\count466
+\c@savedlabelname=\count467
+\c@institution=\count468
+\c@savedinstitution=\count469
+\c@lista=\count470
+\c@savedlista=\count471
+\c@listb=\count472
+\c@savedlistb=\count473
+\c@listc=\count474
+\c@savedlistc=\count475
+\c@listd=\count476
+\c@savedlistd=\count477
+\c@liste=\count478
+\c@savedliste=\count479
+\c@listf=\count480
+\c@savedlistf=\count481
+\c@location=\count482
+\c@savedlocation=\count483
+\c@organization=\count484
+\c@savedorganization=\count485
+\c@origlocation=\count486
+\c@savedoriglocation=\count487
+\c@origpublisher=\count488
+\c@savedorigpublisher=\count489
+\c@publisher=\count490
+\c@savedpublisher=\count491
+\c@language=\count492
+\c@savedlanguage=\count493
+\c@origlanguage=\count494
+\c@savedoriglanguage=\count495
+\c@pageref=\count496
+\c@savedpageref=\count497
+\shorthandwidth=\skip124
+\shortjournalwidth=\skip125
+\shortserieswidth=\skip126
+\shorttitlewidth=\skip127
+\shortauthorwidth=\skip128
+\shorteditorwidth=\skip129
+\locallabelnumberwidth=\skip130
+\locallabelalphawidth=\skip131
+\localshorthandwidth=\skip132
+\localshortjournalwidth=\skip133
+\localshortserieswidth=\skip134
+\localshorttitlewidth=\skip135
+\localshortauthorwidth=\skip136
+\localshorteditorwidth=\skip137
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\
+blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\
+blx-compat.def
+File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\
+biblatex.def
+File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+\c@textcitecount=\count498
+\c@textcitetotal=\count499
+\c@textcitemaxnames=\count500
+\c@biburlbigbreakpenalty=\count501
+\c@biburlbreakpenalty=\count502
+\c@biburlnumpenalty=\count503
+\c@biburlucpenalty=\count504
+\c@biburllcpenalty=\count505
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count506
+)
+Package biblatex Info: Trying to load bibliography style 'chicago-authordate'..
+.
+Package biblatex Info: ... file 'chicago-authordate.bbx' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-
+chicago\chicago-authordate.bbx
+File: chicago-authordate.bbx 2022/11/17 v 3.18b biblatex bibliography style
+\lositemsep=\skip138
+Package biblatex Info: Delimiter 'revsdnamedelim' in context '' already defined
+, overwriting.
+\cms@tempcnta=\count507
+\cms@tempcntb=\count508
+\c@bbx:relatedcount=\count509
+\c@bbx:relatedtotal=\count510
+)
+Package biblatex Info: Trying to load citation style 'chicago-authordate'...
+Package biblatex Info: ... file 'chicago-authordate.cbx' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-
+chicago\chicago-authordate.cbx
+File: chicago-authordate.cbx 2022/07/02 v 3.18 biblatex citation style
+Package biblatex Info: Trying to load citation style 'chicago-dates-common'...
+Package biblatex Info: ... file 'chicago-dates-common.cbx' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-
+chicago\chicago-dates-common.cbx
+File: chicago-dates-common.cbx 2024/04/15 v 3.20 biblatex citation style
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\citetitle'.
+Package biblatex Info: Redefining '\footfullcite'.
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetexts'.
+\c@cms@punct=\count511
+Package biblatex Info: Delimiter 'dateeradelim' in context '' already defined, 
+overwriting.
+))
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\
+biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2025-09-02 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\
+blx-case-expl3.sty
+Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
+)))
+Package hyperref Info: Option `colorlinks' set `true' on input line 153.
+\c@myequations=\count512
+\cftbeforemyequationsskip=\skip139
+\cftmyequationsindent=\skip140
+\cftmyequationsnumwidth=\skip141
+\c@equdepth=\count513
+\cftbeforeequtitleskip=\skip142
+\cftafterequtitleskip=\skip143
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/listings\
+lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+
+
+Package csquotes Warning: No style for language 'indonesian'.
+(csquotes)                Using fallback style on input line 331.
+
+Package csquotes Info: Redefining alias 'default' -> 'fallback'.
+(TA.aux
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/generic/babel/l
+ocale/en\babel-english.tex)
+Package babel Info: Importing data for english
+(babel)             from babel-en.ini. Reported on input line 54.
+)
+\openout1 = `TA.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 331.
+LaTeX Font Info:    ... okay on input line 331.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 331.
+LaTeX Font Info:    ... okay on input line 331.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 331.
+LaTeX Font Info:    ... okay on input line 331.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 331.
+LaTeX Font Info:    ... okay on input line 331.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 331.
+LaTeX Font Info:    ... okay on input line 331.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 331.
+LaTeX Font Info:    ... okay on input line 331.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 331.
+LaTeX Font Info:    ... okay on input line 331.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 331.
+LaTeX Font Info:    ... okay on input line 331.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 331.
+LaTeX Font Info:    ... okay on input line 331.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 331.
+LaTeX Font Info:    ... okay on input line 331.
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 331.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 331.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 331.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 331.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 331.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 331.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 331.
+LaTeX Font Info:    Redeclaring math accent \check on input line 331.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 331.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 331.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 331.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 331.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 331.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 331.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 3
+31.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 331.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
+331.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
+input line 331.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
+ 331.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
+331.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 331.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 331.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
+input line 331.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
+e 331.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 331.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 331.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/caption\l
+tcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: Fixing longtable code of `floatrow' package.
+Package caption Info: threeparttable package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/floatrow\
+fr-longtable.sty
+Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
+
+\flrow@LT@lasthead=\box72
+\flrow@LT@prelastfoot=\box73
+\c@FBLTpage=\count514
+)
+\c@lstlisting=\count515
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(113.81102pt, 398.3386pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=398.3386pt
+* \textheight=674.33032pt
+* \oddsidemargin=41.54103pt
+* \evensidemargin=13.08827pt
+* \topmargin=-18.78552pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 331.
+Package microtype Info: Applying patch `item' on input line 331.
+Package microtype Info: Applying patch `toc' on input line 331.
+Package microtype Info: Applying patch `eqnum' on input line 331.
+Package microtype Info: Applying patch `footnote' on input line 331.
+Package microtype Info: Applying patch `verbatim' on input line 331.
+LaTeX Info: Redefining \microtypesetup on input line 331.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `TimesNewRoman' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package hyperref Info: Link coloring ON on input line 331.
+(TA.out) (TA.out)
+\@outlinefile=\write4
+\openout4 = `TA.out'.
+
+Package biblatex Info: Trying to load language 'indonesian'...
+Package biblatex Info: ... file 'indonesian.lbx' not found.
+
+
+Package biblatex Warning: Language 'indonesian' not supported.
+(biblatex)                Using dummy definitions on input line 331.
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/
+lbx\english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `TA.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'TA.bbl' found.
+ (TA.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                BPBI
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 331.
+Package biblatex Info: Reference segment=0 on input line 331.
+ (1 Halaman Judul.tex
+File: images/ganesha.jpg Graphic file (type bmp)
+<images/ganesha.jpg>
+
+
+Package datetime2 Warning: Region `bahasai' has ignored 
+(datetime2)                the following settings:
+(datetime2)                showmonthname=true
+ on input line 39.
+
+
+
+[1
+
+
+
+]) (2 Lembar Pengesahan.tex
+
+[2
+
+]) (3 Pernyataan Orisinalitas.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[3]
+
+[4
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
+
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\
+umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/microtype
+\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
+
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\
+umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/microtype
+\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/microtype
+\mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)) (4 Pernyataan Penggunaan AI.tex
+
+[5]
+
+[6
+
+]
+Overfull \hbox (3.43965pt too wide) in paragraph at lines 9--9
+[]|\TU/TimesNewRoman(0)/b/n/12 No.| 
+ []
+
+
+Underfull \hbox (badness 3291) in paragraph at lines 13--13
+[]|\TU/TimesNewRoman(0)/m/n/12 Microsoft Co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\TU/TimesNewRoman(0)/m/n/12 Pencarian informasi
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 21--21
+[]|\TU/TimesNewRoman(0)/m/n/12 Penyusunan kode pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]|\TU/TimesNewRoman(0)/m/n/12 Penyusunan formula
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\TU/TimesNewRoman(0)/m/n/12 Penyusunan kesimpul-
+ []
+
+
+Overfull \hbox (13.72078pt too wide) in paragraph at lines 7--32
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+) (5 Abstrak.tex
+
+[7]
+
+[8
+
+]) (6 Kata Pengantar.tex
+
+[9]
+
+[10
+
+]
+
+[11])
+
+[12]
+
+Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(113.81102pt, 398.3386pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=398.3386pt
+* \textheight=674.33032pt
+* \oddsidemargin=41.54103pt
+* \evensidemargin=13.08827pt
+* \topmargin=-18.78552pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(7 Daftar Isi.tex (TA.toc
+Underfull \vbox (badness 6608) has occurred while \output is active []
+
+
+
+[13
+
+
+])
+\tf@toc=\write5
+\openout5 = `TA.toc'.
+
+) (8 Daftar Gambar.tex
+
+[14] (TA.lof)
+\tf@lof=\write6
+\openout6 = `TA.lof'.
+
+) (9 Daftar Tabel.tex
+
+[15
+
+]
+
+[16
+
+] (TA.lot)
+\tf@lot=\write7
+\openout7 = `TA.lot'.
+
+) (10 Daftar Persamaan.tex
+
+[17]
+
+[18
+
+] (TA.equ)
+\tf@equ=\write8
+\openout8 = `TA.equ'.
+
+) (11 Daftar Algoritma.tex
+
+[19
+
+]
+
+[20
+
+] (TA.loa)
+\tf@loa=\write9
+\openout9 = `TA.loa'.
+
+) (12 Daftar Listing.tex
+
+[21
+
+]
+
+[22
+
+] (TA.lol)
+\tf@lol=\write10
+\openout10 = `TA.lol'.
+
+) (13 Daftar Simbol.tex
+
+[23
+
+]
+
+[24
+
+]
+Overfull \hbox (16.93071pt too wide) in alignment at lines 15--104
+ [] [] [] 
+ []
+
+[25] [26]) (14 Daftar Singkatan.tex
+
+[27]
+
+[28
+
+]
+Overfull \hbox (2.66713pt too wide) in alignment at lines 15--27
+ [] [] [] 
+ []
+
+)
+
+[29]
+
+[30
+
+] (Bab I - Pendahuluan.tex
+Bab I.
+
+
+[1
+
+
+]
+
+[2]
+
+[3]
+
+[4]
+
+[5]) (Bab II - Studi.tex
+
+[6]
+Bab II.
+
+
+[7
+
+
+]
+File: images/rute2025.png Graphic file (type bmp)
+<images/rute2025.png>
+
+
+[8] (tables/kategori.tex)
+
+[9]
+
+[10]
+Underfull \vbox (badness 4779) has occurred while \output is active []
+
+
+
+[11]
+
+[12]
+
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 68.
+
+
+Underfull \vbox (badness 3989) has occurred while \output is active []
+
+
+
+[13]
+Overfull \hbox (2.36052pt too wide) in paragraph at lines 73--74
+\TU/TimesNewRoman(0)/m/n/12 masing dengan karakteristik dan kasus penggunaan ya
+ng berbeda, di antaranya REST
+ []
+
+
+Overfull \hbox (2.81552pt too wide) in paragraph at lines 75--76
+\TU/TimesNewRoman(0)/m/n/12 TP yang paling banyak digunakan dalam pengembangan 
+aplikasi web modern. REST
+ []
+
+
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 79.
+
+
+
+[14]) (Bab III - Analisis.tex
+
+[15]
+
+[16
+
+]
+Bab III.
+
+
+[17
+
+]
+
+[18]
+
+[19]
+Underfull \vbox (badness 1412) has occurred while \output is active []
+
+
+
+[20] (tables/masalah-pengguna.tex
+Underfull \hbox (badness 2809) in paragraph at lines 21--23
+\TU/TimesNewRoman(0)/m/n/12 sistem lomba; hanya terse-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\TU/TimesNewRoman(0)/m/n/12 Pemantauan posisi dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
+[]|\TU/TimesNewRoman(0)/m/n/12 Tidak ada platform yang
+ []
+
+
+Underfull \hbox (badness 7888) in paragraph at lines 26--28
+\TU/TimesNewRoman(0)/m/n/12 time tentang peserta yang
+ []
+
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(tables/fr.tex
+Overfull \hbox (3.45673pt too wide) in alignment at lines 1--5
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 5--10
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 10--14
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 14--17
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 20--20
+[]|\TU/TimesNewRoman(0)/m/n/12 Menampilkan posisi pelari secara \TU/TimesNewRom
+an(0)/m/it/12 real-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]|\TU/TimesNewRoman(0)/m/n/12 Antarmuka menampilkan rute lomba,
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 32--32
+[]|\TU/TimesNewRoman(0)/m/n/12 Menyediakan tampilan untuk membuat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]|\TU/TimesNewRoman(0)/m/n/12 Status Operasional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+[]|\TU/TimesNewRoman(0)/m/n/12 Halaman Informasi
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 17--52
+ [] [] [] 
+ []
+
+
+
+[21] [22]) (tables/fr.tex
+Overfull \hbox (3.45673pt too wide) in alignment at lines 1--5
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 5--10
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 10--14
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 14--17
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 20--20
+[]|\TU/TimesNewRoman(0)/m/n/12 Menampilkan posisi pelari secara \TU/TimesNewRom
+an(0)/m/it/12 real-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]|\TU/TimesNewRoman(0)/m/n/12 Antarmuka menampilkan rute lomba,
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 32--32
+[]|\TU/TimesNewRoman(0)/m/n/12 Menyediakan tampilan untuk membuat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]|\TU/TimesNewRoman(0)/m/n/12 Status Operasional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+[]|\TU/TimesNewRoman(0)/m/n/12 Halaman Informasi
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 17--52
+ [] [] [] 
+ []
+
+[23])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[24]
+
+[25]
+
+LaTeX Warning: Citation 'Saaty1980' on page 26 undefined on input line 189.
+
+
+LaTeX Warning: Citation 'Saaty1980' on page 26 undefined on input line 192.
+
+
+Overfull \hbox (3.20702pt too wide) in paragraph at lines 184--193
+[]\TU/TimesNewRoman(0)/m/n/12 Penentuan solusi dilakukan menggunakan metode \TU
+/TimesNewRoman(0)/m/it/12 Analytic Hierarchy Process \TU/TimesNewRoman(0)/m/n/1
+2 (AHP)
+ []
+
+
+Underfull \vbox (badness 1412) has occurred while \output is active []
+
+
+
+[26]
+Overfull \hbox (3.10272pt too wide) in paragraph at lines 213--215
+[]\TU/TimesNewRoman(0)/b/n/12 C5 — Kemudahan Distribusi\TU/TimesNewRoman(0)/m/n
+/12 : kemudahan menyebarkan sistem kepada peng-
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[27]
+
+[28]
+Overfull \hbox (125.58647pt too wide) in paragraph at lines 333--350
+ [][] 
+ []
+
+
+Overfull \hbox (1.81248pt too wide) in paragraph at lines 352--355
+[]\TU/TimesNewRoman(0)/m/n/12 Berdasarkan hasil perhitungan AHP, \TU/TimesNewRo
+man(0)/b/n/12 Alternatif 2 (Aplikasi Mobile \TU/TimesNewRoman(0)/b/it/12 Cross-
+Platform\TU/TimesNewRoman(0)/b/n/12 )
+ []
+
+
+
+[29]) (Bab IV - Perancangan.tex
+
+[30]
+Bab IV.
+) (Bab V - Implementasi.tex
+
+[31
+
+
+]
+
+[32
+
+]
+Bab V.
+) (Bab VI - Evaluasi.tex
+
+[33
+
+]
+
+[34
+
+]
+Bab VI.
+
+LaTeX Warning: Citation 'BPBI' on page 35 undefined on input line 18.
+
+
+Overfull \hbox (20.82396pt too wide) in paragraph at lines 23--29
+ [][] 
+ []
+
+
+
+[35
+
+]
+
+[36]) (Bab VII - Penutup.tex
+
+[37]
+
+[38
+
+]
+Bab VII.
+)
+
+[39
+
+]
+
+[40
+
+]
+Overfull \hbox (3.48174pt too wide) in paragraph at lines 410--410
+\TU/TimesNewRoman(0)/m/n/12 hingga Guru SD Turut Menyumbang untuk Dana Lestari”
+. Diakses pada Novem-
+ []
+
+
+
+[41
+
+]
+
+[42]
+Overfull \hbox (8.40019pt too wide) in paragraph at lines 410--410
+[][]\TU/TimesNewRoman(0)/m/n/12 El-Rabbany, Ahmed. 2002. \TU/TimesNewRoman(0)/m
+/it/12 Introduction to GPS: the global positioning system. \TU/TimesNewRoman(0)
+/m/n/12 Artech
+ []
+
+(Lampiran-A.tex
+
+[43]
+
+[44
+
+]
+Lampiran A.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 8.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+(listings/binary-search-python.tex
+
+[45
+
+])) (Lampiran-B.tex
+
+[46]
+Lampiran B.
+)
+
+[47
+
+
+]
+
+[48
+
+]
+
+Package caption Warning: Unused \captionsetup[algorithm] on input line 316.
+See the caption package documentation for explanation.
+
+(TA.aux)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `TA.out' has not changed.
+(rerunfilecheck)             Checksum: B67F42FC513A9CC38317F43D8DDDFC97;11929.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                TA
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'TA.run.xml'.
+\openout1 = `TA.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 34750 strings out of 403197
+ 674963 string characters out of 5453038
+ 2183770 words of memory out of 5000000
+ 62806 multiletter control sequences out of 15000+600000
+ 632950 words of font info for 87 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 73i,14n,95p,1402b,6331s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on TA.pdf (78 pages).
