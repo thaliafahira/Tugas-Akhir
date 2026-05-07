@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  6 MAY 2026 12:25
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  7 MAY 2026 07:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1658,9 +1658,6 @@ Underfull \vbox (badness 4779) has occurred while \output is active []
 Package biblatex-chicago Warning: Empty Ibidem citation on input line 68.
 
 
-Underfull \vbox (badness 3989) has occurred while \output is active []
-
-
 
 [13]
 Overfull \hbox (2.36052pt too wide) in paragraph at lines 73--74
@@ -2027,7 +2024,7 @@ Package logreq Info: Writing requests to 'TA.run.xml'.
 Here is how much of TeX's memory you used:
  34750 strings out of 403197
  674963 string characters out of 5453038
- 2183770 words of memory out of 5000000
+ 2183768 words of memory out of 5000000
  62806 multiletter control sequences out of 15000+600000
  632950 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
