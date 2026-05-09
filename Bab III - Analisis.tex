@@ -126,16 +126,15 @@ Pada bagian ini, disusun kebutuhan fungsional yang berfokus pada perilaku, tampi
 Pada bagian ini dirumuskan kebutuhan non-fungsional yang berfokus pada kualitas tampilan, performa, aksesibilitas, keamanan antarmuka, serta aspek usability yang wajib dipenuhi oleh \textit{front-end}. Kebutuhan ini memastikan sistem mudah digunakan, cepat, aman, dan mampu menghadirkan pengalaman pengguna yang konsisten selama acara berlangsung
 \input{tables/nfr.tex}
 \section{Analisis Pemilihan Solusi}
-Berdasarkan kebutuhan yang telah diidentifikasi, diperlukan analisis terhadap solusi yang dapat memenuhi kebutuhan tersebut. Analisis ini bertujuan untuk menentukan pendekatan terbaik dalam mengembangkan sistem yang mampu mendukung penyelenggaraan ITB Ultra Marathon.
+Berdasarkan kebutuhan yang telah diidentifikasi pada tahap sebelumnya, diperlukan analisis terhadap alternatif solusi yang dapat memenuhi kebutuhan tersebut. Analisis ini bertujuan untuk menentukan pendekatan yang paling sesuai dalam pengembangan sistem yang mampu mendukung penyelenggaraan ITB Ultra-Marathon secara efektif.
 
-Dalam menentukan solusi yang akan digunakan, dilakukan perbandingan terhadap beberapa alternatif pendekatan yang memungkinkan untuk diimplementasikan.
+Pada tahap ini, beberapa alternatif solusi terlebih dahulu diidentifikasi berdasarkan kebutuhan pengguna dan kebutuhan sistem yang telah dianalisis. Selanjutnya, setiap alternatif solusi dibandingkan untuk mengetahui tingkat kesesuaiannya terhadap kebutuhan penyelenggaraan ITB Ultra-Marathon, sehingga dapat dipilih solusi yang paling tepat untuk diimplementasikan.
 
 \subsection{Alternatif Solusi}
-Berdasarkan kebutuhan yang telah diidentifikasi, terdapat empat alternatif
-pendekatan yang dapat dipertimbangkan dalam pengembangan sistem pelacakan ITB
-Ultra Marathon.
+Berdasarkan kebutuhan yang telah diidentifikasi, terdapat empat alternatif pendekatan yang dapat dipertimbangkan dalam pengembangan sistem pelacakan ITB Ultra-Marathon.
 
-\subsubsection*{Alternatif 1: Optimalisasi Sistem \textit{Timing Chip} RFID yang Ada}
+\subsubsection{Alternatif 1: Optimalisasi Sistem \textit{Timing Chip} RFID yang Ada}
+
 Alternatif pertama adalah mengoptimalkan sistem \textit{timing chip} berbasis
 RFID yang telah digunakan pada penyelenggaraan ITB Ultra Marathon sebelumnya.
 Pendekatan ini tidak mengembangkan antarmuka baru, melainkan memperluas
@@ -144,59 +143,67 @@ lunak yang mampu mengolah dan meneruskan data dari \textit{tag reader} ke suatu
 sistem terpusat.
 
 Dalam pendekatan ini, data yang dihasilkan oleh chip RFID saat peserta melewati
-\textit{checkpoint} dapat diteruskan secara otomatis ke basis data terpusat,
-yang kemudian dapat diakses oleh panitia melalui antarmuka sederhana.
-Keunggulan utama alternatif ini adalah pemanfaatan infrastruktur yang telah ada
-sehingga tidak memerlukan pengadaan perangkat baru secara menyeluruh, serta
-akurasi pencatatan waktu yang sudah terbukti tinggi.
+\textit{checkpoint} dapat diteruskan secara otomatis ke basis data terpusat
+yang dapat diakses oleh panitia melalui antarmuka sederhana. Keunggulan utama
+alternatif ini adalah pemanfaatan infrastruktur yang telah tersedia sehingga
+tidak memerlukan pengadaan perangkat baru secara menyeluruh, serta akurasi
+pencatatan waktu yang sudah terbukti tinggi.
 
 Namun, sistem RFID pada dasarnya hanya mampu mencatat data pada titik-titik
 \textit{checkpoint} yang dilengkapi \textit{tag reader}, sehingga tidak dapat
 memberikan informasi posisi peserta secara kontinu di antara titik-titik
-tersebut. Selain itu, pendekatan ini tidak menyediakan antarmuka bagi peserta
-maupun \textit{supporter} untuk memantau perlombaan secara mandiri dan
-\textit{real-time}.
+tersebut. Selain itu, pendekatan ini belum mampu menyediakan pengalaman
+pemantauan perlombaan yang interaktif dan \textit{real-time} bagi peserta,
+keluarga, maupun \textit{supporter}.
 
-\subsubsection*{Alternatif 2: Aplikasi Mobile \textit{Cross-Platform}}
-Pendekatan \textit{cross-platform} memungkinkan pengembangan satu basis kode
-yang dapat dijalankan pada Android maupun iOS menggunakan \textit{framework}
-seperti Flutter atau React Native. Pendekatan ini menawarkan efisiensi
-pengembangan yang lebih baik dibandingkan native, sekaligus tetap dapat
-mengakses sebagian besar fitur perangkat keras seperti GPS dan notifikasi
-melalui \textit{plugin} yang tersedia.
+\subsubsection{Alternatif 2: Aplikasi Mobile \textit{Cross-Platform}}
 
-Meskipun demikian, distribusi tetap memerlukan jalur toko aplikasi, dan
-pengguna diwajibkan untuk melakukan instalasi sebelum menggunakan sistem.
-Antarmuka berbasis mobile juga kurang optimal untuk tugas-tugas administratif
-seperti pengunggahan data rute dan pengelolaan peserta yang lebih wajar
-dilakukan dari perangkat \textit{desktop}.
+Alternatif kedua adalah pengembangan aplikasi mobile \textit{cross-platform}
+menggunakan \textit{framework} seperti Flutter atau React Native. Pendekatan
+ini memungkinkan satu basis kode dijalankan pada sistem operasi Android dan
+iOS sehingga proses pengembangan menjadi lebih efisien dibandingkan aplikasi
+native terpisah.
 
-\subsubsection*{Alternatif 3: Aplikasi Web Berbasis Browser}
-Aplikasi web merupakan antarmuka yang dapat diakses langsung melalui peramban
-pada perangkat apa pun tanpa memerlukan proses instalasi. Satu basis kode dapat
-melayani seluruh jenis perangkat melalui desain yang responsif, dan pembaruan
-sistem dapat dilakukan secara terpusat di sisi server.
+Pendekatan ini mendukung akses terhadap fitur perangkat keras seperti GPS,
+notifikasi, dan layanan lokasi latar belakang yang diperlukan untuk pelacakan
+peserta secara \textit{real-time}. Selain itu, antarmuka mobile dinilai paling
+sesuai dengan konteks penggunaan sistem karena mayoritas pengguna, seperti
+peserta, \textit{supporter}, dan keluarga pelari, menggunakan perangkat mobile
+selama perlombaan berlangsung.
 
-Kelemahan pendekatan ini terletak pada keterbatasan akses terhadap fitur
-perangkat keras tertentu, seperti pelacakan GPS latar belakang yang diperlukan
-untuk pemantauan posisi peserta secara kontinu selama perlombaan berlangsung,
-serta pengalaman pengguna di perangkat mobile yang umumnya kurang optimal
-dibandingkan aplikasi native.
+Meskipun pengelolaan administratif seperti pengunggahan rute atau pengelolaan
+data peserta umumnya lebih nyaman dilakukan pada perangkat \textit{desktop},
+kebutuhan tersebut masih dapat dipenuhi melalui antarmuka mobile yang
+disesuaikan. Dengan demikian, pendekatan ini tetap mampu memenuhi kebutuhan
+utama sistem tanpa memerlukan pengembangan aplikasi terpisah untuk platform
+lain.
 
-\subsubsection*{Alternatif 4: Aplikasi Hibrida Web dan Mobile}
-Alternatif keempat menggabungkan aplikasi web untuk fungsi administratif dan
-aplikasi mobile untuk fungsi operasional di lapangan. Aplikasi web difungsikan
-sebagai platform bagi panitia untuk mengelola data perlombaan, termasuk
-mengunggah data rute dalam format GPX (\textit{GPS Exchange Format}) sebagai
-acuan jalur perlombaan. Aplikasi mobile difungsikan sebagai antarmuka bagi
-peserta untuk memantau progres lari, bagi \textit{supporter} dan keluarga untuk
-melacak posisi pelari, serta bagi petugas \textit{checkpoint} untuk memvalidasi
-kehadiran peserta.
+\subsubsection{Alternatif 3: Aplikasi Web Berbasis Browser}
 
-Pendekatan ini memungkinkan setiap kelompok pengguna mendapatkan antarmuka yang
-dirancang secara spesifik sesuai konteks penggunaannya. Konsekuensinya,
-kompleksitas pengembangan lebih tinggi karena memerlukan dua basis kode yang
-dikelola secara bersamaan.
+Alternatif ketiga adalah pengembangan aplikasi web yang dapat diakses langsung
+melalui peramban tanpa memerlukan proses instalasi. Pendekatan ini memungkinkan
+satu sistem digunakan pada berbagai perangkat melalui desain yang responsif,
+serta memudahkan distribusi dan pembaruan aplikasi secara terpusat.
+
+Namun, aplikasi web memiliki keterbatasan dalam mengakses fitur perangkat keras
+tertentu, khususnya pelacakan GPS latar belakang yang diperlukan untuk
+pemantauan posisi peserta secara kontinu selama perlombaan berlangsung.
+Pengalaman penggunaan pada perangkat mobile juga cenderung kurang optimal
+dibandingkan aplikasi mobile khusus.
+
+\subsubsection{Alternatif 4: Aplikasi Hibrida Web dan Mobile}
+
+Alternatif keempat adalah pendekatan hibrida yang menggabungkan aplikasi web
+untuk kebutuhan administratif dan aplikasi mobile untuk kebutuhan operasional
+di lapangan. Aplikasi web digunakan oleh panitia untuk mengelola data lomba,
+mengunggah rute, dan memantau operasional, sedangkan aplikasi mobile digunakan
+oleh peserta, \textit{supporter}, dan keluarga untuk kebutuhan pelacakan dan
+monitoring perlombaan.
+
+Pendekatan ini memungkinkan setiap kelompok pengguna memperoleh antarmuka yang
+lebih sesuai dengan konteks penggunaannya. Namun, pendekatan ini memiliki
+kompleksitas pengembangan dan pemeliharaan yang lebih tinggi karena memerlukan
+dua basis kode yang dikembangkan dan dikelola secara bersamaan.
 
 \subsection{Analisis Penentuan Solusi}
 
