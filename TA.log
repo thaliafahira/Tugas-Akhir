@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  9 MAY 2026 15:07
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  9 MAY 2026 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1769,42 +1769,92 @@ Overfull \hbox (3.45673pt too wide) in alignment at lines 14--17
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
 []|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\TU/TimesNewRoman(0)/m/n/12 Status Operasional
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 37--37
+[]|\TU/TimesNewRoman(0)/m/n/12 Menyediakan tampilan untuk membuat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[]|\TU/TimesNewRoman(0)/m/n/12 Halaman Informasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+[]|\TU/TimesNewRoman(0)/m/n/12 Status Operasional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 61--61
 []|\TU/TimesNewRoman(0)/m/n/12 Menampilkan posisi pelari secara \TU/TimesNewRom
 an(0)/m/it/12 real-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
-[]|\TU/TimesNewRoman(0)/m/n/12 Antarmuka menampilkan rute lomba,
- []
-
-
-Underfull \hbox (badness 1412) in paragraph at lines 32--32
-[]|\TU/TimesNewRoman(0)/m/n/12 Menyediakan tampilan untuk membuat
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]|\TU/TimesNewRoman(0)/m/n/12 Status Operasional
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 []|\TU/TimesNewRoman(0)/m/n/12 Halaman Informasi
  []
 
 
-Overfull \hbox (3.45673pt too wide) in alignment at lines 17--52
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
+[]|\TU/TimesNewRoman(0)/m/n/12 Status Operasional
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 76--76
+[]|\TU/TimesNewRoman(0)/m/n/12 Menampilkan informasi kondisi lomba
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 81--81
+[]|\TU/TimesNewRoman(0)/m/n/12 Dashboard Penjemput-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 91--91
+[]|\TU/TimesNewRoman(0)/m/n/12 Menyediakan notifikasi apabila peserta
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 91--91
+\TU/TimesNewRoman(0)/m/n/12 membutuhkan bantuan atau mengalami
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 17--102
  [] [] [] 
  []
 
-[23]) (tables/fr.tex
+[23] [24]) (tables/nfr.tex
 Overfull \hbox (3.45673pt too wide) in alignment at lines 1--5
  [] [] [] 
  []
@@ -1826,91 +1876,56 @@ Overfull \hbox (3.45673pt too wide) in alignment at lines 14--17
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 19--19
-[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+[]|\TU/TimesNewRoman(0)/m/n/12 Responsivitas Perang-
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 20--20
-[]|\TU/TimesNewRoman(0)/m/n/12 Menampilkan posisi pelari secara \TU/TimesNewRom
-an(0)/m/it/12 real-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
-[]|\TU/TimesNewRoman(0)/m/n/12 Antarmuka menampilkan rute lomba,
- []
-
-
-Underfull \hbox (badness 1412) in paragraph at lines 32--32
-[]|\TU/TimesNewRoman(0)/m/n/12 Menyediakan tampilan untuk membuat
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]|\TU/TimesNewRoman(0)/m/n/12 Status Operasional
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
-[]|\TU/TimesNewRoman(0)/m/n/12 Halaman Informasi
- []
-
-
-Overfull \hbox (3.45673pt too wide) in alignment at lines 17--52
+Overfull \hbox (3.45673pt too wide) in alignment at lines 17--34
  [] [] [] 
  []
 
-
-
-[24])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[25]
+[25])
 
 [26]
 
-LaTeX Warning: Citation 'Saaty1980' on page 27 undefined on input line 206.
+[27]
+
+LaTeX Warning: Citation 'Saaty1980' on page 28 undefined on input line 208.
 
 
-LaTeX Warning: Citation 'Saaty1980' on page 27 undefined on input line 209.
+LaTeX Warning: Citation 'Saaty1980' on page 28 undefined on input line 211.
 
 
-Overfull \hbox (3.20702pt too wide) in paragraph at lines 201--210
+Overfull \hbox (3.20702pt too wide) in paragraph at lines 203--212
 []\TU/TimesNewRoman(0)/m/n/12 Penentuan solusi dilakukan menggunakan metode \TU
 /TimesNewRoman(0)/m/it/12 Analytic Hierarchy Process \TU/TimesNewRoman(0)/m/n/1
 2 (AHP)
  []
 
 
-Underfull \vbox (badness 1412) has occurred while \output is active []
 
-
-
-[27]
-Overfull \hbox (3.10272pt too wide) in paragraph at lines 230--232
+[28]
+Overfull \hbox (3.10272pt too wide) in paragraph at lines 232--234
 []\TU/TimesNewRoman(0)/b/n/12 C5 — Kemudahan Distribusi\TU/TimesNewRoman(0)/m/n
 /12 : kemudahan menyebarkan sistem kepada peng-
+ []
+
+
+
+[29]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (125.58647pt too wide) in paragraph at lines 352--369
+ [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[28]
-
-[29]
-Overfull \hbox (125.58647pt too wide) in paragraph at lines 350--367
- [][] 
- []
-
-
-Overfull \hbox (1.81248pt too wide) in paragraph at lines 369--372
+Overfull \hbox (1.81248pt too wide) in paragraph at lines 371--374
 []\TU/TimesNewRoman(0)/m/n/12 Berdasarkan hasil perhitungan AHP, \TU/TimesNewRo
 man(0)/b/n/12 Alternatif 2 (Aplikasi Mobile \TU/TimesNewRoman(0)/b/it/12 Cross-
 Platform\TU/TimesNewRoman(0)/b/n/12 )
@@ -2052,10 +2067,10 @@ Package logreq Info: Writing requests to 'TA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34762 strings out of 403197
- 675163 string characters out of 5453038
- 2183918 words of memory out of 5000000
- 62817 multiletter control sequences out of 15000+600000
+ 34766 strings out of 403197
+ 675235 string characters out of 5453038
+ 2183919 words of memory out of 5000000
+ 62820 multiletter control sequences out of 15000+600000
  632950 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,14n,95p,1402b,6331s stack positions out of 10000i,1000n,20000p,200000b,200000s
