@@ -1,30 +1,57 @@
-\begin{table}[h]
-\centering
+\begin{longtable}{|p{2.5cm}|p{4cm}|p{7cm}|}
 \caption{Ringkasan Masalah Per Kelompok Pengguna}
-\label{tab:masalah-pengguna}
-\begin{tabular}{|p{2.5cm}|p{4.5cm}|p{5cm}|}
+\label{tab:masalah-pengguna} \\
 \hline
 \textbf{Pengguna} & \textbf{Kebutuhan Utama} & \textbf{Masalah yang Dihadapi} \\
 \hline
-Panitia &
-  Monitoring seluruh peserta secara terpusat dan real-time &
-  Tidak ada dashboard terpusat; pemantauan dilakukan manual
-  melalui komunikasi dengan petugas checkpoint \\
+\endfirsthead
+
 \hline
-Panitia &
-  Verifikasi dan pengelolaan data peserta di lapangan &
-  Data pendaftaran tidak terintegrasi dengan sistem operasional
-  lomba \\
+\textbf{Pengguna} & \textbf{Kebutuhan Utama} & \textbf{Masalah yang Dihadapi} \\
 \hline
-Peserta &
-  Informasi progres dan posisi selama perlombaan &
-  Tidak ada akses ke data real-time yang terintegrasi dengan
-  sistem lomba; hanya tersedia aplikasi umum yang tidak kontekstual \\
+\endhead
+
+Panitia 
+& Monitoring peserta, operasional, dan rute lomba
+& 
+1. Tidak memiliki dashboard terpusat untuk memantau peserta secara real-time. \newline
+2. Koordinasi antarcheckpoint masih dilakukan secara manual. \newline
+3. Data peserta belum terintegrasi dengan operasional lapangan. \newline
+4. Tidak tersedia sistem untuk mengelola dan memantau rute perlombaan secara langsung. \\
 \hline
-Supporter/ Keluarga &
-  Pemantauan posisi dan kondisi peserta dari jarak jauh &
-  Tidak ada platform yang menyediakan informasi real-time
-  tentang peserta yang dipantau \\
+
+Ketua Tim 
+& Koordinasi anggota tim relay dan manajemen tim
+& 
+1. Kesulitan memantau posisi anggota tim secara real-time. \newline
+2. Tidak memiliki estimasi waktu kedatangan (ETA) yang akurat. \newline
+3. Koordinasi pergantian relay masih dilakukan secara manual. \newline
+4. Tidak tersedia fitur untuk mengelola anggota tim dalam satu platform. \\
 \hline
-\end{tabular}
-\end{table}
+
+Peserta (Pelari) 
+& Informasi progres lomba dan pelacakan posisi
+& 
+1. Tidak memiliki akses informasi progres lomba secara real-time. \newline
+2. Posisi peserta di antara checkpoint tidak dapat dipantau. \newline
+3. Sistem checkpoint masih bergantung pada RFID/running chip. \newline
+4. Data aplikasi pendukung tidak terintegrasi dengan sistem lomba. \\
+\hline
+
+Tim Support 
+& Pemantauan lokasi peserta untuk logistik dan bantuan
+& 
+1. Kesulitan mengetahui lokasi peserta secara real-time. \newline
+2. Distribusi logistik dan bantuan darurat menjadi tidak optimal. \newline
+3. Koordinasi antar-jemput peserta relay masih dilakukan secara manual. \\
+\hline
+
+Penonton 
+& Informasi perkembangan peserta selama perlombaan
+& 
+1. Tidak tersedia platform untuk memantau posisi peserta secara real-time. \newline
+2. Informasi perkembangan peserta hanya diperoleh melalui komunikasi manual. \newline
+3. Keterbatasan sinyal menyebabkan informasi sulit diperoleh. \\
+\hline
+
+\end{longtable}
