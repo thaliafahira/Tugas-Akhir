@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  9 MAY 2026 15:28
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  9 MAY 2026 16:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1712,37 +1712,47 @@ Overfull \hbox (23.37357pt too wide) in alignment at lines 1--7
  []
 
 
-Overfull \hbox (23.37357pt too wide) in alignment at lines 7--12
+Overfull \hbox (23.37357pt too wide) in alignment at lines 7--13
  [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
+Overfull \hbox (23.37357pt too wide) in alignment at lines 13--17
+ [] [] [] 
+ []
+
+
+Overfull \hbox (23.37357pt too wide) in alignment at lines 17--20
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 []|\TU/TimesNewRoman(0)/m/n/12 Monitoring peserta,
  []
 
 
-Underfull \hbox (badness 6412) in paragraph at lines 15--16
+Underfull \hbox (badness 6412) in paragraph at lines 23--24
 \TU/TimesNewRoman(0)/m/n/12 operasional, dan rute
  []
 
 
-Underfull \hbox (badness 5189) in paragraph at lines 24--25
+Underfull \hbox (badness 5189) in paragraph at lines 32--33
 \TU/TimesNewRoman(0)/m/n/12 relay dan manajemen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 []|\TU/TimesNewRoman(0)/m/n/12 Peserta (Pela-
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 42--43
+Underfull \hbox (badness 1371) in paragraph at lines 50--51
 []|\TU/TimesNewRoman(0)/m/n/12 Pemantauan lokasi pe-
  []
 
 
-Overfull \hbox (23.37357pt too wide) in alignment at lines 12--57
+Overfull \hbox (23.37357pt too wide) in alignment at lines 20--65
  [] [] [] 
  []
 
@@ -1875,25 +1885,56 @@ Overfull \hbox (3.45673pt too wide) in alignment at lines 14--17
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
-[]|\TU/TimesNewRoman(0)/m/n/12 Responsivitas Perang-
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\TU/TimesNewRoman(0)/m/it/12 Front-end \TU/TimesNewRoman(0)/m/n/12 harus mem
+iliki antarmuka
  []
 
 
-Overfull \hbox (3.45673pt too wide) in alignment at lines 17--34
+Underfull \hbox (badness 1635) in paragraph at lines 21--21
+\TU/TimesNewRoman(0)/m/n/12 serta mendukung akses cepat terhadap
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 24--24
+[]|\TU/TimesNewRoman(0)/m/it/12 Front-end \TU/TimesNewRoman(0)/m/n/12 harus men
+erapkan autentika-
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 33--33
+[]|\TU/TimesNewRoman(0)/m/it/12 Front-end \TU/TimesNewRoman(0)/m/n/12 harus tet
+ap dapat digunakan
+ []
+
+
+Underfull \hbox (badness 2644) in paragraph at lines 36--36
+\TU/TimesNewRoman(0)/m/n/12 mentasi yang memudahkan proses pe-
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 45--45
+\TU/TimesNewRoman(0)/m/n/12 nakan kembali pada berbagai halaman
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 17--53
  [] [] [] 
  []
 
-[25])
-
-[26]
+[25] [26])
 
 [27]
+Underfull \vbox (badness 1412) has occurred while \output is active []
 
-LaTeX Warning: Citation 'Saaty1980' on page 28 undefined on input line 208.
 
 
-LaTeX Warning: Citation 'Saaty1980' on page 28 undefined on input line 211.
+[28]
+
+LaTeX Warning: Citation 'Saaty1980' on page 29 undefined on input line 208.
+
+
+LaTeX Warning: Citation 'Saaty1980' on page 29 undefined on input line 211.
 
 
 Overfull \hbox (3.20702pt too wide) in paragraph at lines 203--212
@@ -1903,26 +1944,25 @@ Overfull \hbox (3.20702pt too wide) in paragraph at lines 203--212
  []
 
 
-
-[28]
 Overfull \hbox (3.10272pt too wide) in paragraph at lines 232--234
 []\TU/TimesNewRoman(0)/b/n/12 C5 — Kemudahan Distribusi\TU/TimesNewRoman(0)/m/n
 /12 : kemudahan menyebarkan sistem kepada peng-
  []
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 
 [29]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+[30]
 Overfull \hbox (125.58647pt too wide) in paragraph at lines 352--369
  [][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Overfull \hbox (1.81248pt too wide) in paragraph at lines 371--374
@@ -1933,17 +1973,14 @@ Platform\TU/TimesNewRoman(0)/b/n/12 )
 
 
 
-[30]) (Bab IV - Perancangan.tex
+[31]) (Bab IV - Perancangan.tex
 
-[31]
-
-[32
-
-]
+[32]
 Bab IV.
 ) (Bab V - Implementasi.tex
 
 [33
+
 
 ]
 
@@ -2069,7 +2106,7 @@ Package logreq Info: Writing requests to 'TA.run.xml'.
 Here is how much of TeX's memory you used:
  34766 strings out of 403197
  675235 string characters out of 5453038
- 2183919 words of memory out of 5000000
+ 2183918 words of memory out of 5000000
  62820 multiletter control sequences out of 15000+600000
  632950 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

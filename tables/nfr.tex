@@ -6,7 +6,7 @@
 
 \caption[]{Kebutuhan Non-Fungsional \textit{Front End} (lanjutan)} \\
 \hline
-Kode & Kebutuhan & Deskripsi \\ \hline
+\textbf{Kode} & \textbf{Kebutuhan} & \textbf{Deskripsi} \\ \hline
 \endhead
 
 \hline
@@ -16,19 +16,38 @@ Kode & Kebutuhan & Deskripsi \\ \hline
 \hline
 \endlastfoot
 
-NF-01 & Responsivitas Perangkat &
-Frontend harus berjalan optimal pada perangkat yang mudah dibawa oleh pengguna (misalnya \textit{smartphone}), sehingga antarmuka dapat digunakan secara efektif selama marathon berlangsung. \\ \hline
 
-NF-02 & Aksesibilitas &
-UI harus mudah dibaca dan tetap jelas di luar ruangan, dengan dukungan kontras tinggi, ukuran teks adaptif, serta kompatibilitas mode gelap maupun terang. \\ \hline
+NF-01 & \textit{Usability} &
+\textit{Front-end} harus memiliki antarmuka yang mudah digunakan, mudah dipahami, serta mendukung akses cepat terhadap fitur utama aplikasi pada perangkat yang dimiliki pengguna. \\ \hline
 
-NF-03 & Keamanan &
-Frontend harus menerapkan perlindungan token, menyembunyikan data sensitif, dan membatasi akses berdasarkan peran pengguna. Sistem tidak boleh menampilkan informasi pelari yang tidak memiliki izin untuk dilihat. \\ \hline
+NF-02 & \textit{Integrity} &
+\textit{Front-end} harus menerapkan autentikasi, pembatasan akses berdasarkan peran pengguna, serta perlindungan terhadap data sensitif pengguna. \\ \hline
 
-NF-04 & Kompatibilitas &
-Frontend harus dapat berjalan dengan baik di sistem operasi iOS dan Android. \\ \hline
+NF-03 & \textit{Efficiency} &
+\textit{Front-end} harus mampu menampilkan data dan memuat halaman secara cepat serta mengoptimalkan penggunaan jaringan selama perlombaan berlangsung. \\ \hline
 
-NF-05 & Performa Waktu Muat &
-Halaman utama harus dapat dimuat dalam waktu kurang dari 3 detik pada jaringan 4G rata-rata, sehingga pengguna dapat mengakses informasi secara cepat dalam kondisi lapangan. \\ \hline
+NF-04 & \textit{Correctness} &
+Informasi yang ditampilkan seperti posisi pelari, ETA, status \textit{checkpoint}, dan data operasional harus sesuai dengan data terbaru dari sistem \textit{backend}. \\ \hline
+
+NF-05 & \textit{Reliability} &
+\textit{Front-end} harus tetap dapat digunakan secara stabil selama perlombaan berlangsung dan mampu menangani gangguan jaringan atau GPS sementara. \\ \hline
+
+NF-06 & \textit{Maintainability} &
+Struktur kode \textit{front-end} harus modular, mudah dipelihara, serta memiliki dokumentasi yang memudahkan proses pengembangan lanjutan. \\ \hline
+
+NF-07 & \textit{Testability} &
+\textit{Front-end} harus mendukung proses pengujian antarmuka dan integrasi API yang memadai. \\ \hline
+
+NF-08 & \textit{Flexibility} &
+\textit{Front-end} harus mampu mendukung penyesuaian tampilan berdasarkan kebutuhan pengguna yang berbeda. \\ \hline
+
+NF-09 & \textit{Reusability} &
+Komponen antarmuka harus dapat digunakan kembali pada berbagai halaman dan fitur untuk menjaga konsistensi desain aplikasi. \\ \hline
+
+NF-10 & \textit{Portability} &
+\textit{Front-end} harus dapat berjalan dengan baik pada berbagai perangkat dan sistem operasi seperti Android. \\ \hline
+
+NF-11 & \textit{Interoperability} &
+\textit{Front-end} harus mampu berintegrasi dengan layanan eksternal seperti API \textit{tracking}, autentikasi, dan layanan peta digital. \\ \hline
 
 \end{longtable}

@@ -112,9 +112,9 @@
 \contentsline {subsection}{\numberline {III.2.1}Identifikasi Masalah Pengguna}{21}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {III.2.2}Kebutuhan Fungsional}{23}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {III.2.3}Kebutuhan Nonfungsional}{25}{subsection.3.2.3}%
-\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{26}{section.3.3}%
-\contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{26}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{28}{subsection.3.3.2}%
+\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{27}{section.3.3}%
+\contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{27}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{29}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {IV}PERANCANGAN}{33}{chapter.4}%
 \contentsline {chapter}{\numberline {V}IMPLEMENTASI}{35}{chapter.5}%
 \contentsline {chapter}{\numberline {VI}EVALUASI}{37}{chapter.6}%
