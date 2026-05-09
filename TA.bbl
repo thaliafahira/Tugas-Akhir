@@ -780,6 +780,58 @@
       \field{pages}{153\bibrangedash 163}
       \range{pages}{11}
     \endentry
+    \entry{Nawrocki2021}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=5683a2dacf16fbd0dd4bba3ddfe93bea}{%
+           family={Nawrocki},
+           familyi={N\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=75420e6149a734a14083f340dc171843}{%
+           family={Wrona},
+           familyi={W\bibinitperiod},
+           given={Krzysztof},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=083ee41d5cdd38639a28bbaa0a212b33}{%
+           family={Marczak},
+           familyi={M\bibinitperiod},
+           given={Marcin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e4ebde2022e2d5580e1829bcc749d1a0}{%
+           family={Szelążek},
+           familyi={S\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{28e798f99a8e0d5980c757751dddfd26}
+      \strng{fullhash}{7226f082c2d48ea20fe81b47f3eeb5ff}
+      \strng{fullhashraw}{7226f082c2d48ea20fe81b47f3eeb5ff}
+      \strng{bibnamehash}{7226f082c2d48ea20fe81b47f3eeb5ff}
+      \strng{authorbibnamehash}{7226f082c2d48ea20fe81b47f3eeb5ff}
+      \strng{authornamehash}{28e798f99a8e0d5980c757751dddfd26}
+      \strng{authorfullhash}{7226f082c2d48ea20fe81b47f3eeb5ff}
+      \strng{authorfullhashraw}{7226f082c2d48ea20fe81b47f3eeb5ff}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE Software}
+      \field{number}{1}
+      \field{title}{Mobile application development approaches for {iOS} and {Android}}
+      \field{volume}{38}
+      \field{year}{2021}
+      \field{pages}{56\bibrangedash 65}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/MS.2019.2938449
+      \endverb
+    \endentry
     \entry{nielsen1994usability}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=753054f71283d85f82cda8e35daf6bac}{%
@@ -1016,6 +1068,38 @@
       \verb https://runrepeat.com/state-of-ultra-running
       \endverb
     \endentry
+    \entry{Saaty1980}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8d8e5331ceb6bdfae0cfaed9a7690800}{%
+           family={Saaty},
+           familyi={S\bibinitperiod},
+           given={Thomas\bibnamedelima L.},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{8d8e5331ceb6bdfae0cfaed9a7690800}
+      \strng{fullhash}{8d8e5331ceb6bdfae0cfaed9a7690800}
+      \strng{fullhashraw}{8d8e5331ceb6bdfae0cfaed9a7690800}
+      \strng{bibnamehash}{8d8e5331ceb6bdfae0cfaed9a7690800}
+      \strng{authorbibnamehash}{8d8e5331ceb6bdfae0cfaed9a7690800}
+      \strng{authornamehash}{8d8e5331ceb6bdfae0cfaed9a7690800}
+      \strng{authorfullhash}{8d8e5331ceb6bdfae0cfaed9a7690800}
+      \strng{authorfullhashraw}{8d8e5331ceb6bdfae0cfaed9a7690800}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Analytic Hierarchy Process: Planning, Priority Setting, Resource Allocation}
+      \field{year}{1980}
+    \endentry
     \entry{scheer2020defining}{article}{}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=4cca6f7a5e5212aa3d658b6f31f8301d}{%
@@ -1079,6 +1163,46 @@
       \field{year}{2020}
       \field{pages}{275\bibrangedash 284}
       \range{pages}{10}
+    \endentry
+    \entry{Vaidya2006}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1278b8aa1b0ba34b9d94f833ab32c7a3}{%
+           family={Vaidya},
+           familyi={V\bibinitperiod},
+           given={Omkarprasad\bibnamedelima S.},
+           giveni={O\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e3576ffe8b83100181050ed0a37722e}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Sushil},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{74d2886b9a305a7cc74bd4f1ebf55506}
+      \strng{fullhash}{74d2886b9a305a7cc74bd4f1ebf55506}
+      \strng{fullhashraw}{74d2886b9a305a7cc74bd4f1ebf55506}
+      \strng{bibnamehash}{74d2886b9a305a7cc74bd4f1ebf55506}
+      \strng{authorbibnamehash}{74d2886b9a305a7cc74bd4f1ebf55506}
+      \strng{authornamehash}{74d2886b9a305a7cc74bd4f1ebf55506}
+      \strng{authorfullhash}{74d2886b9a305a7cc74bd4f1ebf55506}
+      \strng{authorfullhashraw}{74d2886b9a305a7cc74bd4f1ebf55506}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{European Journal of Operational Research}
+      \field{number}{1}
+      \field{title}{Analytic hierarchy process: An overview of applications}
+      \field{volume}{169}
+      \field{year}{2006}
+      \field{pages}{1\bibrangedash 29}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1016/j.ejor.2004.04.028
+      \endverb
     \endentry
   \enddatalist
   \missing{BPBI}

@@ -206,196 +206,77 @@ kompleksitas pengembangan dan pemeliharaan yang lebih tinggi karena memerlukan
 dua basis kode yang dikembangkan dan dikelola secara bersamaan.
 
 \subsection{Analisis Penentuan Solusi}
+Penentuan solusi dilakukan menggunakan metode \textit{Analytic Hierarchy Process} (AHP) yang dikembangkan oleh Thomas L. Saaty. AHP merupakan metode pengambilan keputusan multi-kriteria yang bekerja dengan cara menyusun masalah ke dalam hierarki, membandingkan setiap kriteria dan alternatif secara berpasangan (\textit{pairwise comparison}), kemudian menghitung bobot prioritas masing-masing elemen berdasarkan vektor eigen dari matriks perbandingan tersebut \cite{Saaty1980}. Konsistensi penilaian diukur melalui \textit{Consistency Ratio} (CR), di mana nilai CR $\leq 0{,}10$ menunjukkan bahwa penilaian yang diberikan cukup konsisten dan dapat diterima \cite{Saaty1980}. Metode AHP telah banyak digunakan dalam pemilihan perangkat lunak dan teknologi karena kemampuannya mengakomodasi kriteria kualitatif maupun kuantitatif secara terstruktur \cite{Vaidya2006}.
 
-Penentuan solusi dilakukan menggunakan metode \textit{Analytic Hierarchy
-Process} (AHP) yang dikembangkan oleh Thomas L. Saaty. AHP merupakan metode
-pengambilan keputusan multi-kriteria yang bekerja dengan cara menyusun masalah
-ke dalam hierarki, membandingkan setiap kriteria dan alternatif secara
-berpasangan (\textit{pairwise comparison}), kemudian menghitung bobot prioritas
-masing-masing elemen berdasarkan nilai perbandingan tersebut \cite{Saaty1980}.
-Konsistensi penilaian diukur melalui \textit{Consistency Ratio} (CR), di mana
-nilai CR $\leq$ 0,10 menunjukkan bahwa penilaian yang diberikan cukup konsisten
-dan dapat diterima \cite{Saaty1980}.
-
-\subsubsection*{Penetapan Kriteria}
-
-Kriteria yang digunakan dalam analisis ini ditetapkan berdasarkan kebutuhan dan
-kendala yang telah diidentifikasi sebelumnya:
+\subsubsection{Penetapan Kriteria}
+Kriteria yang digunakan dalam analisis ini ditetapkan berdasarkan kebutuhan dan kendala yang telah diidentifikasi sebelumnya:
 
 \begin{enumerate}
-  \item \textbf{C1 --- Performa dan Akses Perangkat Keras}: kemampuan
-  memanfaatkan fitur perangkat seperti GPS berkelanjutan, notifikasi
-  \textit{push}, dan sensor gerak yang krusial untuk penggunaan di lapangan
-  selama perlombaan berlangsung.
-  \item \textbf{C2 --- Kesesuaian Kebutuhan Fungsional}: sejauh mana alternatif
-  mampu mengakomodasi seluruh kebutuhan fungsional yang telah diidentifikasi,
-  termasuk unggah GPX, pelacakan peserta \textit{real-time}, dan pemantauan
-  oleh \textit{supporter}.
-  \item \textbf{C3 --- Aksesibilitas Pengguna}: kemudahan seluruh kelompok
-  pengguna dalam mengakses sistem tanpa hambatan teknis yang berlebihan.
-  \item \textbf{C4 --- Efisiensi Pengembangan}: tingkat kemudahan dan efisiensi
-  sumber daya yang diperlukan; skor lebih tinggi berarti lebih efisien untuk
-  dikembangkan dan dipelihara.
-  \item \textbf{C5 --- Kemudahan Distribusi}: kemudahan menyebarkan sistem
-  kepada pengguna, termasuk kecepatan pembaruan dan jangkauan platform.
+  \item \textbf{C1: Performa dan Akses Perangkat Keras}: kemampuan memanfaatkan fitur perangkat seperti GPS berkelanjutan, notifikasi \textit{push}, dan sensor gerak yang krusial untuk penggunaan di lapangan selama perlombaan berlangsung.
+  \item \textbf{C2: Kesesuaian Kebutuhan Fungsional}: sejauh mana alternatif mampu mengakomodasi seluruh kebutuhan fungsional yang telah diidentifikasi, termasuk unggah GPX, pelacakan peserta \textit{real-time}, dan pemantauan oleh \textit{supporter}.
+  \item \textbf{C3: Aksesibilitas Pengguna}: kemudahan seluruh kelompok pengguna dalam mengakses sistem tanpa hambatan teknis yang berlebihan.
+  \item \textbf{C4: Efisiensi Pengembangan}: tingkat kemudahan dan efisiensi sumber daya yang diperlukan; skor lebih tinggi berarti lebih efisien untuk dikembangkan dan dipelihara.
+  \item \textbf{C5: Kemudahan Distribusi}: kemudahan menyebarkan sistem kepada pengguna, termasuk kecepatan pembaruan dan jangkauan platform.
 \end{enumerate}
 
-\subsubsection*{Perbandingan Berpasangan Antar Kriteria}
+\subsubsection{Perbandingan Berpasangan Antar Kriteria}
 
-Perbandingan berpasangan antar kriteria dilakukan menggunakan skala Saaty
-(1--9), dengan mempertimbangkan bahwa konteks perlombaan lapangan menjadikan
-performa perangkat keras dan kesesuaian fungsional sebagai prioritas utama.
-Matriks perbandingan berpasangan disajikan pada Tabel \ref{tab:ahp-kriteria}.
+Perbandingan berpasangan antar kriteria dilakukan menggunakan skala Saaty (1--9), dengan mempertimbangkan bahwa konteks perlombaan lapangan menjadikan performa perangkat keras dan kesesuaian fungsional sebagai prioritas utama. Matriks perbandingan berpasangan disajikan pada Tabel \ref{tab:ahp-kriteria}.
+\input{tables/ahp-kriteria.tex}
+\input{tables/ahp-bobot-kriteria.tex}
 
-\begin{table}[h]
-\centering
-\caption{Matriks Perbandingan Berpasangan Antar Kriteria}
-\label{tab:ahp-kriteria}
-\begin{tabular}{|l|c|c|c|c|c|}
-\hline
-\textbf{Kriteria} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} \\
-\hline
-C1 & 1     & 2     & 3     & 4     & 5 \\
-C2 & 1/2   & 1     & 2     & 3     & 4 \\
-C3 & 1/3   & 1/2   & 1     & 2     & 2 \\
-C4 & 1/4   & 1/3   & 1/2   & 1     & 2 \\
-C5 & 1/5   & 1/4   & 1/2   & 1/2   & 1 \\
-\hline
-\textbf{Jumlah} & 2,283 & 4,083 & 7,000 & 10,500 & 14,000 \\
-\hline
-\end{tabular}
-\end{table}
+\subsubsection{Uji Konsistensi Kriteria}
 
-\begin{table}[h]
-\centering
-\caption{Bobot Prioritas Kriteria}
-\label{tab:ahp-bobot-kriteria}
-\begin{tabular}{|l|c|c|c|c|c|c|}
-\hline
-\textbf{Kriteria} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} & \textbf{Bobot} \\
-\hline
-C1 & 0,438 & 0,490 & 0,429 & 0,381 & 0,357 & 0,419 \\
-C2 & 0,219 & 0,245 & 0,286 & 0,286 & 0,286 & 0,264 \\
-C3 & 0,146 & 0,122 & 0,143 & 0,190 & 0,143 & 0,149 \\
-C4 & 0,110 & 0,082 & 0,071 & 0,095 & 0,143 & 0,100 \\
-C5 & 0,088 & 0,061 & 0,071 & 0,048 & 0,071 & 0,068 \\
-\hline
-\end{tabular}
-\end{table}
+$$\lambda_{\max} = \frac{1}{5}\left(\frac{2{,}134}{0{,}419} + \frac{1{,}344}{0{,}264} + \frac{0{,}757}{0{,}149} + \frac{0{,}504}{0{,}100} + \frac{0{,}343}{0{,}068}\right) = 5{,}070$$
 
-\subsubsection*{Uji Konsistensi Kriteria}
+$$CI = \frac{\lambda_{\max} - n}{n - 1} = \frac{5{,}070 - 5}{4} = 0{,}018$$
 
-$$\lambda_{max} = 5,068$$
+$$CR = \frac{CI}{RI} = \frac{0{,}018}{1{,}12} = 0{,}016$$
 
-$$CI = \frac{5,068 - 5}{4} = 0,017$$
+Nilai $RI$ untuk matriks berukuran $n = 5$ adalah 1,12 \cite{Saaty1980}. Nilai $CR = 0{,}016 \leq 0{,}10$, sehingga penilaian antar kriteria dinyatakan \textbf{konsisten}.
 
-$$CR = \frac{0,017}{1,12} = 0,015$$
+\subsubsection{Perbandingan Berpasangan Antar Alternatif}
 
-Nilai CR = 0,015 $\leq$ 0,10, sehingga penilaian antar kriteria dinyatakan
-\textbf{konsisten}.
+Perbandingan berpasangan dilakukan untuk setiap pasang alternatif pada masing-masing kriteria menggunakan skala Saaty yang sama. Rasionale penilaian untuk setiap kriteria dijelaskan sebagai berikut.
 
-\subsubsection*{Perbandingan Berpasangan Antar Alternatif}
+\textbf{Kriteria C1 (Performa dan Akses Perangkat Keras)} 
+Aplikasi \textit{cross-platform} (Alt. 2) dinilai sangat unggul karena mampu mengakses GPS secara berkelanjutan, notifikasi \textit{push}, dan sensor perangkat melalui \textit{plugin} yang matang di dua platform sekaligus \cite{Nawrocki2021}. Pendekatan hibrida (Alt. 4) memiliki kemampuan serupa namun konsistensi performanya lebih rendah karena pengelolaan dua basis kode. Sistem RFID (Alt. 1) unggul dalam akurasi pencatatan waktu di \textit{checkpoint} namun tidak mampu menyediakan pelacakan posisi kontinu. Aplikasi web (Alt. 3) memiliki keterbatasan kritis dalam akses GPS latar belakang.
 
-Perbandingan berpasangan dilakukan untuk setiap pasang alternatif pada
-masing-masing kriteria. Rasionale penilaian didasarkan pada karakteristik
-teknis setiap alternatif terhadap kriteria yang dinilai.
+\input{tables/ahp-alt-c1.tex}
 
-Pada kriteria \textbf{C1 (Performa dan Akses Perangkat Keras)}, aplikasi
-\textit{cross-platform} dinilai unggul karena mampu mengakses GPS secara
-berkelanjutan, notifikasi \textit{push}, dan sensor perangkat melalui
-\textit{plugin} yang matang, dengan cakupan dua platform sekaligus. Sistem
-RFID unggul untuk pencatatan waktu di \textit{checkpoint} namun tidak mampu
-menyediakan pelacakan posisi kontinu. Aplikasi web memiliki keterbatasan akses
-GPS latar belakang. Pendekatan hibrida memiliki kemampuan serupa dengan
-\textit{cross-platform} namun kompleksitasnya mengurangi konsistensi performa.
+\textbf{Kriteria C2 (Kesesuaian Kebutuhan Fungsional)} 
+Aplikasi \textit{cross-platform} (Alt. 2) dinilai paling sesuai karena dapat melayani peserta, \textit{supporter}, dan petugas lapangan dalam satu aplikasi terintegrasi di dua platform, termasuk mendukung fitur GPX \textit{viewer} dan klasemen \textit{real-time}. Hibrida (Alt. 4) juga mampu memenuhi kebutuhan fungsional namun dengan overhead pengembangan lebih tinggi. Aplikasi web (Alt. 3) terbatas pada fitur GPS. Sistem RFID (Alt. 1) sangat terbatas karena hanya mencatat data di titik \textit{checkpoint} tanpa antarmuka pengguna yang memadai.
 
-Pada kriteria \textbf{C2 (Kesesuaian Kebutuhan Fungsional)}, aplikasi
-\textit{cross-platform} dinilai paling sesuai karena dapat melayani peserta,
-\textit{supporter}, dan petugas lapangan dalam satu aplikasi yang terintegrasi
-di dua platform, termasuk mendukung fitur GPX \textit{viewer} dan klasemen
-\textit{real-time}. Sistem RFID sangat terbatas karena hanya mencatat data
-di titik \textit{checkpoint} tanpa antarmuka pengguna.
+\input{tables/ahp-alt-c2.tex}
 
-Pada kriteria \textbf{C3 (Aksesibilitas Pengguna)}, aplikasi web unggul karena
-tidak memerlukan instalasi sama sekali. Namun \textit{cross-platform} tetap
-kompetitif karena satu instalasi melayani Android dan iOS sekaligus, berbeda
-dengan native yang memerlukan dua aplikasi terpisah.
+\textbf{Kriteria C3 (Aksesibilitas Pengguna)} 
+Aplikasi web (Alt. 3) paling unggul karena tidak memerlukan instalasi sama sekali dan dapat diakses dari perangkat apa pun. Sistem RFID (Alt. 1) juga relatif mudah diakses oleh panitia karena infrastrukturnya sudah tersedia. Aplikasi \textit{cross-platform} (Alt. 2) kompetitif karena satu instalasi melayani Android dan iOS sekaligus. Hibrida (Alt. 4) memiliki hambatan akses tertinggi karena mengharuskan pengguna menginstal dua aplikasi berbeda untuk kebutuhan yang berbeda.
 
-Pada kriteria \textbf{C4 (Efisiensi Pengembangan)}, \textit{cross-platform}
-unggul karena satu basis kode untuk dua platform, berbeda dengan hibrida yang
-memerlukan dua basis kode berbeda (web dan mobile) yang harus dikelola
-bersamaan.
+\input{tables/ahp-alt-c3.tex}
 
-Pada kriteria \textbf{C5 (Kemudahan Distribusi)}, aplikasi web paling unggul,
-namun \textit{cross-platform} tetap kompetitif karena pembaruan dapat
-didistribusikan secara bersamaan ke kedua platform melalui mekanisme
-\textit{over-the-air update} yang tersedia pada \textit{framework} modern.
+\textbf{Kriteria C4 (Efisiensi Pengembangan)} 
+Aplikasi \textit{cross-platform} (Alt. 2) paling efisien karena satu basis kode dijalankan di Android dan iOS, mengurangi duplikasi pengembangan secara signifikan \cite{Nawrocki2021}. Aplikasi web (Alt. 3) juga efisien karena hanya memerlukan satu basis kode untuk semua platform. Sistem RFID (Alt. 1) memerlukan pengembangan integrasi tambahan namun memanfaatkan infrastruktur yang sudah ada. Hibrida (Alt. 4) paling tidak efisien karena memerlukan dua basis kode berbeda yang harus dikembangkan dan dipelihara secara bersamaan.
 
-Bobot lokal setiap alternatif per kriteria dirangkum pada Tabel
-\ref{tab:ahp-alternatif}.
+\input{tables/ahp-alt-c4.tex}
 
-\begin{table}[h]
-\centering
-\caption{Bobot Lokal Alternatif per Kriteria}
-\label{tab:ahp-alternatif}
-\begin{tabular}{|l|c|c|c|c|c|}
-\hline
-\textbf{Alternatif} & \textbf{C1} & \textbf{C2} & \textbf{C3} & \textbf{C4} & \textbf{C5} \\
-\hline
-Alt. 1 (RFID)         & 0,095 & 0,057 & 0,258 & 0,212 & 0,095 \\
-Alt. 2 (Mobile CP)    & 0,481 & 0,443 & 0,210 & 0,422 & 0,265 \\
-Alt. 3 (Web)          & 0,088 & 0,210 & 0,421 & 0,253 & 0,497 \\
-Alt. 4 (Hibrida)      & 0,336 & 0,290 & 0,111 & 0,113 & 0,143 \\
-\hline
-\end{tabular}
-\end{table}
+\textbf{Kriteria C5 (Kemudahan Distribusi)} 
+Aplikasi web (Alt. 3) paling unggul karena tidak memerlukan distribusi sama sekali --- pengguna cukup mengakses URL. Aplikasi \textit{cross-platform} (Alt. 2) kompetitif karena pembaruan dapat didistribusikan ke kedua platform secara bersamaan melalui mekanisme \textit{over-the-air update}. Hibrida (Alt. 4) lebih sulit didistribusikan karena memerlukan pembaruan terkoordinasi di dua aplikasi terpisah. Sistem RFID (Alt. 1) memiliki distribusi paling terbatas karena bergantung pada perangkat keras fisik.
 
-\subsubsection*{Perhitungan Skor Akhir}
+\input{tables/ahp-alt-c5.tex}
 
-\begin{table}[h]
-\centering
-\caption{Skor Akhir AHP dan Peringkat Alternatif}
-\label{tab:ahp-skor-akhir}
-\begin{tabular}{|l|c|c|c|c|c|c|c|}
-\hline
-\textbf{Alternatif} &
-\textbf{C1$\times$0,419} &
-\textbf{C2$\times$0,264} &
-\textbf{C3$\times$0,149} &
-\textbf{C4$\times$0,100} &
-\textbf{C5$\times$0,068} &
-\textbf{Skor} &
-\textbf{Peringkat} \\
-\hline
-Alt. 1 (RFID)      & 0,040 & 0,015 & 0,038 & 0,021 & 0,006 & 0,120 & 4 \\
-Alt. 2 (Mobile CP) & 0,201 & 0,117 & 0,031 & 0,042 & 0,018 & 0,409 & 1 \\
-Alt. 3 (Web)       & 0,037 & 0,055 & 0,063 & 0,025 & 0,034 & 0,214 & 2 \\
-Alt. 4 (Hibrida)   & 0,141 & 0,077 & 0,017 & 0,011 & 0,010 & 0,256 & 3 \\
-\hline
-\end{tabular}
-\end{table}
+\subsubsection{Perhitungan Skor Akhir}
 
-Berdasarkan hasil perhitungan AHP, \textbf{Alternatif 2 (Aplikasi Mobile
-\textit{Cross-Platform})} memperoleh skor tertinggi sebesar 0,409 dan
-ditetapkan sebagai solusi yang akan dikembangkan dalam penelitian ini.
+Skor akhir setiap alternatif dihitung sebagai jumlah tertimbang dari bobot lokal pada setiap kriteria dikalikan dengan bobot kriteria yang bersangkutan.
 
-Alternatif 2 unggul secara dominan pada dua kriteria berbobot terbesar, yaitu
-performa dan akses perangkat keras (C1) serta kesesuaian kebutuhan fungsional
-(C2). Hal ini mencerminkan bahwa dalam konteks perlombaan lapangan seperti ITB
-Ultra Marathon, kemampuan mengakses GPS secara berkelanjutan dan menyajikan
-informasi \textit{real-time} kepada semua kelompok pengguna dalam satu aplikasi
-merupakan faktor penentu yang paling kritis. Pendekatan \textit{cross-platform}
-juga menawarkan efisiensi pengembangan yang signifikan dibandingkan hibrida,
-karena seluruh fungsionalitas dapat dibangun dan dipelihara dalam satu basis
-kode yang berjalan pada Android maupun iOS.
+\input{tables/ahp-skor-akhir.tex}
 
-Alternatif 4 (hibrida) menempati peringkat ketiga meskipun secara intuitif
-tampak paling lengkap, karena pemisahan dua basis kode justru meningkatkan
-kompleksitas pengembangan tanpa memberikan keunggulan fungsional yang cukup
-signifikan dibandingkan \textit{cross-platform} dalam konteks penelitian ini.
-Alternatif 1 (RFID) memperoleh skor terendah karena ketidakmampuannya
-menyediakan pelacakan posisi kontinu dan antarmuka mandiri bagi pengguna.
+\subsubsection{Hasil dan Keputusan}
 
-Dengan demikian, aplikasi mobile \textit{cross-platform} dipilih sebagai solusi
-yang paling sesuai untuk memenuhi kebutuhan sistem pelacakan ITB Ultra Marathon
-secara menyeluruh dan efisien.
+Berdasarkan hasil perhitungan AHP, Alternatif 2 (Aplikasi Mobile \textit{Cross-Platform}) memperoleh skor tertinggi sebesar 0,427 dan ditetapkan sebagai solusi yang akan dikembangkan dalam penelitian ini.
+
+Alternatif 2 unggul secara dominan pada dua kriteria berbobot terbesar, yaitu performa dan akses perangkat keras (C1, bobot 0,419) dengan skor lokal 0,497, serta kesesuaian kebutuhan fungsional (C2, bobot 0,264) dengan skor lokal 0,480. Hal ini mencerminkan bahwa dalam konteks perlombaan lapangan seperti ITB Ultra-Marathon, kemampuan mengakses GPS secara berkelanjutan dan menyajikan informasi \textit{real-time} kepada semua kelompok pengguna dalam satu aplikasi merupakan faktor penentu yang paling kritis. Pendekatan \textit{cross-platform} juga menawarkan efisiensi pengembangan yang signifikan dibandingkan hibrida, karena seluruh fungsionalitas dapat dibangun dan dipelihara dalam satu basis kode yang berjalan pada Android maupun iOS \cite{Nawrocki2021}.
+
+Alternatif 3 (web) menempati peringkat kedua dengan skor 0,213, unggul pada kriteria aksesibilitas dan kemudahan distribusi, namun gugur pada kriteria utama akibat keterbatasan akses GPS latar belakang. Alternatif 4 (hibrida) menempati peringkat ketiga dengan skor 0,259 meskipun secara intuitif tampak paling lengkap, karena pemisahan dua basis kode justru meningkatkan kompleksitas pengembangan tanpa memberikan keunggulan fungsional yang cukup signifikan. Alternatif 1 (RFID) memperoleh skor terendah sebesar 0,104 karena ketidakmampuannya menyediakan pelacakan posisi kontinu dan antarmuka mandiri bagi pengguna.
+
+Dengan demikian, aplikasi mobile \textit{cross-platform} dipilih sebagai solusi yang paling sesuai untuk memenuhi kebutuhan sistem pelacakan ITB Ultra-Marathon secara menyeluruh dan efisien.
+
