@@ -1,0 +1,99 @@
+\begin{longtable}{|>{\centering\arraybackslash}m{3.5cm}|>{\centering\arraybackslash}m{3cm}|m{7cm}|}
+\caption{Legenda \textit{Use Case Diagram}}
+\label{tab:legenda-usecase} \\
+\hline
+\textbf{Simbol} & \textbf{Nama} & \multicolumn{1}{c|}{\textbf{Keterangan}} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Simbol} & \textbf{Nama} & \multicolumn{1}{c|}{\textbf{Keterangan}} \\
+\hline
+\endhead
+
+\begin{minipage}[c][1.5cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(20,14)
+    \put(10,12){\circle{4}}
+    \put(10,10){\line(0,-1){4}}
+    \put(6,8){\line(1,0){8}}
+    \put(10,6){\line(-2,-3){2}}
+    \put(10,6){\line(2,-3){2}}
+    \put(5,0){\makebox(10,2){\tiny Actor}}
+  \end{picture}
+\end{minipage} &
+\textit{Actor} &
+Entitas yang berinteraksi dengan sistem \\
+\hline
+
+\begin{minipage}[c][1.5cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(24,14)
+    \put(2,2){\framebox(20,10){}}
+  \end{picture}
+\end{minipage} &
+\textit{System} &
+Sistem yang sedang dikembangkan \\
+\hline
+
+\begin{minipage}[c][1.5cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(28,12)
+    \put(14,6){\oval(26,10)}
+    \put(5,4){\makebox(18,4){\tiny Use Case}}
+  \end{picture}
+\end{minipage} &
+\textit{Use Case} &
+Aktivitas yang dapat dilakukan \textit{actor} pada sistem \\
+\hline
+
+\begin{minipage}[c][1cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(30,6)
+    \put(2,3){\line(1,0){26}}
+  \end{picture}
+\end{minipage} &
+\textit{Association} &
+Relasi antara \textit{actor} dengan \textit{use case} \\
+\hline
+
+\begin{minipage}[c][1cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(30,6)
+    \put(2,3){\vector(1,0){26}}
+  \end{picture}
+\end{minipage} &
+\textit{Generalization} &
+Relasi antara dua \textit{actor} atau dua \textit{use case} yang salah satunya mewarisi sifat dari yang lainnya \\
+\hline
+
+\begin{minipage}[c][1.2cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(30,10)
+    \multiput(2,5)(3,0){9}{\line(1,0){2}}
+    \put(28,5){\vector(1,0){0}}
+    \put(5,7){\makebox(20,3){\tiny $\ll$include$\gg$}}
+  \end{picture}
+\end{minipage} &
+\textit{Include} &
+Relasi antara dua \textit{use case} yang salah satunya merupakan bagian dari \textit{use case} lainnya \\
+\hline
+
+\begin{minipage}[c][1.2cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(30,10)
+    \multiput(2,5)(3,0){9}{\line(1,0){2}}
+    \put(28,5){\vector(1,0){0}}
+    \put(5,7){\makebox(20,3){\tiny $\ll$extend$\gg$}}
+  \end{picture}
+\end{minipage} &
+\textit{Extend} &
+Relasi antara dua \textit{use case} yang salah satunya merupakan perluasan dari \textit{use case} lainnya \\
+\hline
+\end{longtable}
