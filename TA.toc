@@ -127,22 +127,23 @@
 \babel@toc {indonesian}{}\relax 
 \contentsline {subsubsection}{\numberline {III.3.2.1}Penetapan Kriteria}{29}{subsubsection.3.3.2.1}%
 \contentsline {subsubsection}{\numberline {III.3.2.2}Perbandingan Berpasangan Antar Kriteria}{30}{subsubsection.3.3.2.2}%
-\contentsline {subsubsection}{\numberline {III.3.2.3}Uji Konsistensi Kriteria}{30}{subsubsection.3.3.2.3}%
+\contentsline {subsubsection}{\numberline {III.3.2.3}Normalisasi Matriks dan Perhitungan Bobot}{30}{subsubsection.3.3.2.3}%
+\contentsline {subsubsection}{\numberline {III.3.2.4}Uji Konsistensi Kriteria}{30}{subsubsection.3.3.2.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsubsection}{\numberline {III.3.2.4}Perbandingan Berpasangan Antar Alternatif}{31}{subsubsection.3.3.2.4}%
+\contentsline {subsubsection}{\numberline {III.3.2.5}Perbandingan Berpasangan Antar Alternatif}{31}{subsubsection.3.3.2.5}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsubsection}{\numberline {III.3.2.5}Perhitungan Skor Akhir}{33}{subsubsection.3.3.2.5}%
-\contentsline {subsubsection}{\numberline {III.3.2.6}Hasil dan Keputusan}{33}{subsubsection.3.3.2.6}%
+\contentsline {subsubsection}{\numberline {III.3.2.6}Perhitungan Skor Akhir}{33}{subsubsection.3.3.2.6}%
+\contentsline {subsubsection}{\numberline {III.3.2.7}Hasil dan Keputusan}{33}{subsubsection.3.3.2.7}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \contentsline {chapter}{\numberline {IV}PERANCANGAN}{35}{chapter.4}%
 \contentsline {section}{\numberline {IV.1}Pemodelan Fungsional Sistem}{35}{section.4.1}%
-\contentsline {section}{\numberline {IV.2}Rancangan \textit {Behavioral}}{35}{section.4.2}%
-\contentsline {section}{\numberline {IV.3}Rancangan Antarmuka Pengguna}{35}{section.4.3}%
+\contentsline {section}{\numberline {IV.2}Rancangan \textit {Behavioral}}{36}{section.4.2}%
+\contentsline {section}{\numberline {IV.3}Rancangan Antarmuka Pengguna}{36}{section.4.3}%
 \contentsline {chapter}{\numberline {V}IMPLEMENTASI}{37}{chapter.5}%
 \contentsline {chapter}{\numberline {VI}EVALUASI}{39}{chapter.6}%
 \contentsline {section}{\numberline {VI.1}Metode Evaluasi}{39}{section.6.1}%

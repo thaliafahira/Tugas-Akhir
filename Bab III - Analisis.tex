@@ -223,10 +223,19 @@ Kriteria yang digunakan dalam analisis ini ditetapkan berdasarkan kebutuhan dan 
 
 Perbandingan berpasangan antar kriteria dilakukan menggunakan skala Saaty (1--9), dengan mempertimbangkan bahwa konteks perlombaan lapangan menjadikan performa perangkat keras dan kesesuaian fungsional sebagai prioritas utama. Matriks perbandingan berpasangan disajikan pada Tabel \ref{tab:ahp-kriteria}.
 \input{tables/ahp-kriteria.tex}
+
+\subsubsection{Normalisasi Matriks dan Perhitungan Bobot}
+Setelah matriks perbandingan terbentuk, setiap sel dinormalisasi dengan cara
+membaginya dengan jumlah kolom yang bersangkutan. Tujuan normalisasi ini adalah
+menyamakan skala seluruh nilai sehingga dapat dibandingkan secara proporsional.
+
+Setelah seluruh sel dinormalisasi, bobot prioritas setiap kriteria ($w_i$)
+dihitung sebagai rata-rata dari nilai-nilai ternormalisasi pada baris yang
+bersangkutan seperti yang dilakukan pada Tabel \ref{tab:ahp-bobot-kriteria}.
 \input{tables/ahp-bobot-kriteria.tex}
 
 \subsubsection{Uji Konsistensi Kriteria}
-
+Uji konsistensi dilakukan untuk memastikan bahwa penilaian berpasangan yang diberikan tidak saling bertentangan secara logis.
 $$\lambda_{\max} = \frac{1}{5}\left(\frac{2{,}134}{0{,}419} + \frac{1{,}344}{0{,}264} + \frac{0{,}757}{0{,}149} + \frac{0{,}504}{0{,}100} + \frac{0{,}343}{0{,}068}\right) = 5{,}070$$
 
 $$CI = \frac{\lambda_{\max} - n}{n - 1} = \frac{5{,}070 - 5}{4} = 0{,}018$$
