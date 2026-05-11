@@ -51,4 +51,90 @@ dijelaskan pada Tabel \ref{tab:usecase-deskripsi}.
 
 
 \section{Rancangan \textit{Behavioral}}
+Berdasarkan rancangan antarmuka pengguna dan pemodelan fungsional sistem, rancangan behavioral direpresentasikan menggunakan \textit{sequence diagram}. Diagram ini digunakan untuk menggambarkan urutan interaksi antara aktor dan sistem dalam menjalankan fungsi-fungsi utama aplikasi berdasarkan alur waktu eksekusi proses. Alur interaksi sistem dibagi ke dalam beberapa skenario sesuai dengan proses utama yang dilakukan oleh masing-masing aktor
+
 \section{Rancangan Antarmuka Pengguna}
+
+Rancangan antarmuka pengguna aplikasi \textit{tracker} ITB Ultra-Marathon
+disusun menjadi beberapa halaman utama yang fungsional, dengan struktur dan
+alur interaksi yang mengacu pada desain \textit{low fidelity} yang berfungsi
+sebagai cetak biru (\textit{blueprint}) untuk tahap implementasi. Rincian
+visual seluruh rancangan dapat dilihat pada Lampiran A. Setiap desain
+dirancang untuk memetakan seluruh kebutuhan fungsional menjadi komponen
+antarmuka dan mengimplementasikan alur interaksi yang telah dirincikan dalam
+\textit{use case diagram}. Rancangan antarmuka dibagi berdasarkan peran
+pengguna, yaitu Ketua Tim, Peserta, Panitia, Supporter, dan Spectator.
+Berikut merupakan halaman-halaman yang akan diimplementasikan dalam aplikasi.
+
+\begin{enumerate}
+
+  \item \textbf{Halaman \textit{Splash Screen}} \\
+  Halaman ini merupakan tampilan awal yang muncul saat aplikasi pertama kali
+  dibuka. Halaman ini menampilkan identitas aplikasi dan berfungsi sebagai
+  jeda singkat sebelum pengguna diarahkan ke halaman \textit{login} atau
+  halaman utama.
+
+  \item \textbf{Halaman \textit{Login}} \\
+  Halaman ini dirancang sebagai gerbang autentikasi yang membatasi akses ke
+  fitur-fitur yang membutuhkan otorisasi. Pengguna memasukkan kredensial
+  sesuai peran masing-masing, yaitu Ketua Tim, Peserta, Panitia, Supporter,
+  maupun Spectator, untuk selanjutnya diarahkan ke tampilan yang sesuai.
+
+  \item \textbf{Halaman \textit{Onboarding}} \\
+  Halaman ini ditampilkan setelah \textit{login} pertama kali dan berfungsi
+  memandu pengguna memahami fitur utama aplikasi sesuai peran yang dimiliki.
+
+  \item \textbf{Halaman Informasi \textit{Event}} \\
+  Halaman ini menyediakan informasi kontekstual mengenai ITB Ultra-Marathon,
+  mencakup jadwal perlombaan, kategori, rute, aturan, dan ketentuan yang
+  berlaku. Halaman ini dapat diakses oleh seluruh aktor yang telah
+  melakukan \textit{login}.
+
+  \item \textbf{Halaman Manajemen Tim} \\
+  Halaman ini diperuntukkan bagi Ketua Tim untuk membuat tim, mengundang
+  anggota pelari, mengundang \textit{supporter}, serta memantau struktur dan
+  komposisi tim relay secara keseluruhan.
+
+  \item \textbf{Halaman \textit{Tracking Map}} \\
+  Halaman ini menampilkan peta interaktif yang memvisualisasikan posisi
+  pelari secara \textit{real-time} beserta rute perlombaan, titik
+  \textit{checkpoint}, dan \textit{water station}. Tampilan dan cakupan
+  data yang ditampilkan disesuaikan dengan peran pengguna: Panitia dapat
+  memantau seluruh peserta, Ketua Tim dan Supporter memantau anggota timnya,
+  sedangkan Peserta dan Spectator memantau pelari tertentu saja.
+
+  \item \textbf{Halaman ETA} \\
+  Halaman ini menampilkan estimasi waktu kedatangan (\textit{Estimated Time
+  of Arrival}) pelari pada \textit{checkpoint} berikutnya maupun garis
+  \textit{finish}, dihitung berdasarkan posisi dan kecepatan terkini. Dapat
+  diakses oleh Ketua Tim, Peserta, Supporter, dan Spectator.
+
+  \item \textbf{Halaman \textit{Activity Metrics}} \\
+  Halaman ini khusus untuk Peserta dan menampilkan data performa lari secara
+  \textit{real-time}, meliputi kecepatan, jarak tempuh, waktu berlari, dan
+  status \textit{checkpoint} yang telah dilewati.
+
+  \item \textbf{Halaman Pergantian \textit{Relay}} \\
+  Halaman ini menyediakan antarmuka bagi Peserta untuk melakukan konfirmasi
+  serah terima pelari pada titik pergantian relay yang telah ditentukan.
+
+  \item \textbf{Halaman Kelola Rute dan \textit{Checkpoint}} \\
+  Halaman ini diperuntukkan khusus bagi Panitia untuk mengunggah data rute
+  perlombaan dalam format GPX, menetapkan titik \textit{checkpoint}, mengatur
+  \textit{cutoff time}, dan mengelola titik pergantian relay
+  (\textit{switch point}).
+
+  \item \textbf{Halaman \textit{Alert} dan Notifikasi} \\
+  Halaman ini menampilkan notifikasi yang masuk kepada pengguna, seperti
+  konfirmasi \textit{check-in checkpoint}, pergantian relay, permintaan
+  bantuan darurat (SOS) dari peserta, dan informasi operasional penting
+  lainnya.
+
+\end{enumerate}
+
+Untuk memastikan bahwa seluruh kebutuhan fungsional yang telah dirancang dapat
+terpenuhi melalui interaksi pengguna dengan sistem, Tabel
+\ref{tab:pemetaan-halaman-fr} menyajikan pemetaan setiap halaman antarmuka
+pengguna dengan kebutuhan fungsional (FR) yang bersangkutan.
+
+\input{tables/pemetaan-halaman}
