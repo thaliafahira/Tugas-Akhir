@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  14 MAY 2026 13:15
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  18 MAY 2026 11:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1572,4 +1572,791 @@ Overfull \hbox (0.58832pt too wide) detected at line 60
 \tf@toc=\write5
 \openout5 = `TA.toc'.
 
-) (8 Daftar
+) (8 Daftar Gambar.tex
+
+[14] (TA.lof)
+\tf@lof=\write6
+\openout6 = `TA.lof'.
+
+) (9 Daftar Tabel.tex
+
+[15
+
+]
+
+[16
+
+] (TA.lot)
+\tf@lot=\write7
+\openout7 = `TA.lot'.
+
+) (10 Daftar Persamaan.tex
+
+[17]
+
+[18
+
+] (TA.equ)
+\tf@equ=\write8
+\openout8 = `TA.equ'.
+
+) (11 Daftar Algoritma.tex
+
+[19
+
+]
+
+[20
+
+] (TA.loa)
+\tf@loa=\write9
+\openout9 = `TA.loa'.
+
+) (12 Daftar Listing.tex
+
+[21
+
+]
+
+[22
+
+] (TA.lol)
+\tf@lol=\write10
+\openout10 = `TA.lol'.
+
+) (13 Daftar Simbol.tex
+
+[23
+
+]
+
+[24
+
+]
+Overfull \hbox (16.93071pt too wide) in alignment at lines 15--104
+ [] [] [] 
+ []
+
+[25] [26]) (14 Daftar Singkatan.tex
+
+[27]
+
+[28
+
+]
+Overfull \hbox (2.66713pt too wide) in alignment at lines 15--27
+ [] [] [] 
+ []
+
+)
+
+[29]
+
+[30
+
+] (Bab I - Pendahuluan.tex
+Bab I.
+
+LaTeX Warning: Citation 'Ronto2024' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'Hafizh2025' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'Hochreiter2024' on page 1 undefined on input line 6.
+
+
+
+[1
+
+
+]
+
+LaTeX Warning: Citation 'higgins2016smartphone' on page 2 undefined on input li
+ne 12.
+
+
+LaTeX Warning: Citation 'Caselli2018' on page 2 undefined on input line 14.
+
+
+
+[2]
+
+[3]
+
+LaTeX Warning: Citation 'pressman2014' on page 4 undefined on input line 54.
+
+
+
+[4]
+
+[5]) (Bab II - Studi.tex
+
+[6]
+Bab II.
+
+LaTeX Warning: Citation 'scheer2020defining' on page 7 undefined on input line 
+5.
+
+
+LaTeX Warning: Citation 'hoffman2011factors' on page 7 undefined on input line 
+7.
+
+
+LaTeX Warning: Citation 'Hafizh2025' on page 7 undefined on input line 11.
+
+
+
+[7
+
+
+]
+File: images/rute2025.png Graphic file (type bmp)
+<images/rute2025.png>
+
+
+[8] (tables/kategori.tex)
+
+LaTeX Warning: Citation 'baca2009ubiquitous' on page 9 undefined on input line 
+31.
+
+
+LaTeX Warning: Citation 'karahanouglu2021sports' on page 9 undefined on input l
+ine 33.
+
+
+
+[9]
+
+LaTeX Warning: Citation 'el2002introduction' on page 10 undefined on input line
+ 35.
+
+
+LaTeX Warning: Citation 'kaplan2017understanding' on page 10 undefined on input
+ line 35.
+
+
+Overfull \hbox (12.91296pt too wide) in paragraph at lines 35--36
+\TU/TimesNewRoman(0)/m/n/12 logi global yang dapat diakses secara bebas untuk k
+eperluan sipil ([]).
+ []
+
+
+LaTeX Warning: Citation 'gilgen2019rr' on page 10 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'bollini2017beautiful' on page 10 undefined on input li
+ne 40.
+
+
+LaTeX Warning: Citation 'osmani2023learning' on page 10 undefined on input line
+ 42.
+
+
+
+[10]
+
+LaTeX Warning: Citation 'marcotte2017responsive' on page 11 undefined on input 
+line 44.
+
+
+LaTeX Warning: Citation 'maguire2001methods' on page 11 undefined on input line
+ 44.
+
+
+LaTeX Warning: Citation 'nah2004study' on page 11 undefined on input line 44.
+
+
+Overfull \hbox (18.25867pt too wide) in paragraph at lines 44--45
+\TU/TimesNewRoman(0)/m/n/12 tingnya merancang sistem yang inklusif bagi seluruh
+ pengguna ([]).
+ []
+
+
+LaTeX Warning: Citation 'longley2015geographic' on page 11 undefined on input l
+ine 49.
+
+
+Underfull \vbox (badness 4779) has occurred while \output is active []
+
+
+
+[11]
+
+LaTeX Warning: Citation 'burrough2015principles' on page 12 undefined on input 
+line 51.
+
+
+LaTeX Warning: Citation 'fu2010web' on page 12 undefined on input line 53.
+
+
+LaTeX Warning: Citation 'maceachren2001research' on page 12 undefined on input 
+line 55.
+
+
+LaTeX Warning: Citation 'galitz2007essential' on page 12 undefined on input lin
+e 58.
+
+
+LaTeX Warning: Citation 'maguire2001methods' on page 12 undefined on input line
+ 58.
+
+
+
+[12]
+
+LaTeX Warning: Citation 'nielsen1994usability' on page 13 undefined on input li
+ne 60.
+
+
+LaTeX Warning: Citation 'maguire2001methods' on page 13 undefined on input line
+ 62.
+
+
+Overfull \hbox (4.04828pt too wide) in paragraph at lines 62--63
+\TU/TimesNewRoman(0)/m/n/12 ([]). Penerapan prinsip UCD memastikan bahwa fitur-
+fitur yang
+ []
+
+
+LaTeX Warning: Citation 'lazuardy2022modern' on page 13 undefined on input line
+ 66.
+
+
+Overfull \hbox (67.76062pt too wide) in paragraph at lines 66--67
+\TU/TimesNewRoman(0)/m/n/12 muka dapat merespons perubahan data secara konsiste
+n dan terkoordinasi ([]).
+ []
+
+
+LaTeX Warning: Citation 'lazuardy2022modern' on page 13 undefined on input line
+ 68.
+
+
+LaTeX Warning: Citation 'lazuardy2022modern' on page 13 undefined on input line
+ 70.
+
+
+
+[13]
+
+LaTeX Warning: Citation 'richardson2008restful' on page 14 undefined on input l
+ine 73.
+
+
+LaTeX Warning: Citation 'fielding2000architectural' on page 14 undefined on inp
+ut line 75.
+
+
+Overfull \hbox (2.81552pt too wide) in paragraph at lines 75--76
+\TU/TimesNewRoman(0)/m/n/12 TP yang paling banyak digunakan dalam pengembangan 
+aplikasi web modern. REST
+ []
+
+
+Overfull \hbox (10.8782pt too wide) in paragraph at lines 75--76
+\TU/TimesNewRoman(0)/m/n/12 menjadikannya pilihan utama untuk komunikasi data y
+ang bersifat permintaan-respons
+ []
+
+
+LaTeX Warning: Citation 'pimentel2012websocket' on page 14 undefined on input l
+ine 77.
+
+
+LaTeX Warning: Citation 'pimentel2012websocket' on page 14 undefined on input l
+ine 79.
+
+
+
+[14]) (Bab III - Analisis.tex
+
+[15]
+
+[16
+
+]
+Bab III.
+
+
+[17
+
+]
+File: images/RFID.png Graphic file (type bmp)
+<images/RFID.png>
+
+
+[18]
+
+[19]
+
+[20]
+Overfull \hbox (10.63307pt too wide) in paragraph at lines 110--113
+[]\TU/TimesNewRoman(0)/m/n/12 Tabel [][]III.1[][] merangkum kebutuhan utama dan
+ permasalahan yang dihadapi oleh masing-
+ []
+
+(tables/masalah-pengguna.tex
+Overfull \hbox (23.37357pt too wide) in alignment at lines 1--7
+ [] [] [] 
+ []
+
+
+Overfull \hbox (23.37357pt too wide) in alignment at lines 7--13
+ [] [] [] 
+ []
+
+
+Overfull \hbox (23.37357pt too wide) in alignment at lines 13--17
+ [] [] [] 
+ []
+
+
+Overfull \hbox (23.37357pt too wide) in alignment at lines 17--20
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+[]|\TU/TimesNewRoman(0)/m/n/12 Monitoring peserta,
+ []
+
+
+Underfull \hbox (badness 6412) in paragraph at lines 23--24
+\TU/TimesNewRoman(0)/m/n/12 operasional, dan rute
+ []
+
+
+Underfull \hbox (badness 5189) in paragraph at lines 32--33
+\TU/TimesNewRoman(0)/m/n/12 relay dan manajemen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+[]|\TU/TimesNewRoman(0)/m/n/12 Peserta (Pela-
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 50--51
+[]|\TU/TimesNewRoman(0)/m/n/12 Pemantauan lokasi pe-
+ []
+
+
+Overfull \hbox (23.37357pt too wide) in alignment at lines 20--65
+ [] [] [] 
+ []
+
+
+
+[21] [22]) (tables/fr.tex
+Overfull \hbox (3.45673pt too wide) in alignment at lines 1--5
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 5--10
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 10--14
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 14--17
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\TU/TimesNewRoman(0)/m/n/12 Status Operasional
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 37--37
+[]|\TU/TimesNewRoman(0)/m/n/12 Menyediakan tampilan untuk membuat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[]|\TU/TimesNewRoman(0)/m/n/12 Halaman Informasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+[]|\TU/TimesNewRoman(0)/m/n/12 Status Operasional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 61--61
+[]|\TU/TimesNewRoman(0)/m/n/12 Menampilkan posisi pelari secara \TU/TimesNewRom
+an(0)/m/it/12 real-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\TU/TimesNewRoman(0)/m/n/12 Halaman Informasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
+[]|\TU/TimesNewRoman(0)/m/n/12 Status Operasional
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 76--76
+[]|\TU/TimesNewRoman(0)/m/n/12 Menampilkan informasi kondisi lomba
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 81--81
+[]|\TU/TimesNewRoman(0)/m/n/12 Dashboard Penjemput-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 91--91
+[]|\TU/TimesNewRoman(0)/m/n/12 Menyediakan notifikasi apabila peserta
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 91--91
+\TU/TimesNewRoman(0)/m/n/12 membutuhkan bantuan atau mengalami
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 17--102
+ [] [] [] 
+ []
+
+[23] [24]) (tables/nfr.tex
+Overfull \hbox (3.45673pt too wide) in alignment at lines 1--5
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 5--10
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 10--14
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 14--17
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\TU/TimesNewRoman(0)/m/it/12 Front-end \TU/TimesNewRoman(0)/m/n/12 harus mem
+iliki antarmuka
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 21--21
+\TU/TimesNewRoman(0)/m/n/12 serta mendukung akses cepat terhadap
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 24--24
+[]|\TU/TimesNewRoman(0)/m/it/12 Front-end \TU/TimesNewRoman(0)/m/n/12 harus men
+erapkan autentika-
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 33--33
+[]|\TU/TimesNewRoman(0)/m/it/12 Front-end \TU/TimesNewRoman(0)/m/n/12 harus tet
+ap dapat digunakan
+ []
+
+
+Underfull \hbox (badness 2644) in paragraph at lines 36--36
+\TU/TimesNewRoman(0)/m/n/12 mentasi yang memudahkan proses pe-
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 45--45
+\TU/TimesNewRoman(0)/m/n/12 nakan kembali pada berbagai halaman
+ []
+
+
+Overfull \hbox (3.45673pt too wide) in alignment at lines 17--53
+ [] [] [] 
+ []
+
+[25] [26])
+Underfull \vbox (badness 1546) has occurred while \output is active []
+
+
+
+[27]
+Underfull \vbox (badness 1412) has occurred while \output is active []
+
+
+
+[28]
+
+LaTeX Warning: Citation 'Saaty1980' on page 29 undefined on input line 209.
+
+
+LaTeX Warning: Citation 'Saaty1980' on page 29 undefined on input line 209.
+
+
+LaTeX Warning: Citation 'Vaidya2006' on page 29 undefined on input line 209.
+
+
+Overfull \hbox (3.20702pt too wide) in paragraph at lines 209--210
+[]\TU/TimesNewRoman(0)/m/n/12 Penentuan solusi dilakukan menggunakan metode \TU
+/TimesNewRoman(0)/m/it/12 Analytic Hierarchy Process \TU/TimesNewRoman(0)/m/n/1
+2 (AHP)
+ []
+
+
+Underfull \vbox (badness 3058) has occurred while \output is active []
+
+
+
+[29] (tables/ahp-kriteria.tex) (tables/ahp-bobot-kriteria.tex)
+
+[30]
+
+LaTeX Warning: Citation 'Saaty1980' on page 31 undefined on input line 245.
+
+
+LaTeX Warning: Citation 'Nawrocki2021' on page 31 undefined on input line 252.
+
+(tables/ahp-alt-c1.tex) (tables/ahp-alt-c2.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+
+[31] (tables/ahp-alt-c3.tex)
+
+LaTeX Warning: Citation 'Nawrocki2021' on page 32 undefined on input line 267.
+
+(tables/ahp-alt-c4.tex) (tables/ahp-alt-c5.tex
+
+[32]) (tables/ahp-skor-akhir.tex)
+
+LaTeX Warning: Citation 'Nawrocki2021' on page 33 undefined on input line 286.
+
+
+
+[33]) (Bab IV - Perancangan.tex
+
+[34]
+Bab IV.
+File: images/usecase.png Graphic file (type bmp)
+<images/usecase.png>
+
+
+[35
+
+
+] (tables/legenda-usecase.tex
+Overfull \hbox (23.37357pt too wide) in alignment at lines 1--7
+ [] [] [] 
+ []
+
+
+Overfull \hbox (23.37357pt too wide) in alignment at lines 7--11
+ [] [] [] 
+ []
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 20.
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 21.
+
+
+Overfull \hbox (23.37357pt too wide) in alignment at lines 11--99
+ [] [] [] 
+ []
+
+
+
+[36]) (tables/usecase-deskripsi.tex
+Overfull \hbox (23.37357pt too wide) in alignment at lines 1--6
+ [] [] [] 
+ []
+
+
+Overfull \hbox (23.37357pt too wide) in alignment at lines 6--11
+ [] [] [] 
+ []
+
+
+Overfull \hbox (23.37357pt too wide) in alignment at lines 11--15
+ [] [] [] 
+ []
+
+
+Overfull \hbox (23.37357pt too wide) in alignment at lines 15--18
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 6910) in paragraph at lines 43--43
+[]|\TU/TimesNewRoman(0)/m/n/12 Melakukan \TU/TimesNewRoman(0)/m/it/12 Check-in 
+Chec-
+ []
+
+
+Overfull \hbox (23.37357pt too wide) in alignment at lines 18--88
+ [] [] [] 
+ []
+
+[37] [38])
+
+[39]
+Overfull \hbox (9.70924pt too wide) in paragraph at lines 87--92
+\TU/TimesNewRoman(0)/m/n/12 Halaman ini menyediakan informasi kontekstual menge
+nai ITB Ultra-Marathon,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[40]
+
+LaTeX Warning: Reference `tab:pemetaan-halaman-fr' on page 41 undefined on inpu
+t line 137.
+
+(tables/pemetaan-halaman.tex)) (Bab V - Implementasi.tex
+
+[41]
+
+[42
+
+]
+Bab V.
+(tables/hw.tex)
+Overfull \hbox (2.2121pt too wide) in paragraph at lines 10--14
+[]\TU/TimesNewRoman(0)/m/n/12 Lingkungan implementasi yang digunakan dalam peng
+embangan sistem terbagi men-
+ []
+
+(tables/sw.tex)) (Bab VI - Evaluasi.tex
+
+[43
+
+]
+
+[44]
+Bab VI.
+) (Bab VII - Penutup.tex
+
+[45
+
+
+]
+
+[46
+
+]
+Bab VII.
+)
+
+[47
+
+]
+
+[48
+
+]
+
+LaTeX Warning: Empty bibliography on input line 410.
+
+(Lampiran-A.tex
+Lampiran A.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 8.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+(listings/binary-search-python.tex
+
+[49
+
+
+])) (Lampiran-B.tex
+
+[50]
+Lampiran B.
+)
+
+[51
+
+
+]
+
+[52
+
+]
+
+Package caption Warning: Unused \captionsetup[algorithm] on input line 316.
+See the caption package documentation for explanation.
+
+(TA.aux)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-09-02>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `TA.out' has not changed.
+(rerunfilecheck)             Checksum: 7010C0BFDC15AB51E55936D5B3AAC527;14210.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                TA
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'TA.run.xml'.
+\openout1 = `TA.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 33245 strings out of 403197
+ 642916 string characters out of 5453038
+ 2160255 words of memory out of 5000000
+ 61266 multiletter control sequences out of 15000+600000
+ 633603 words of font info for 91 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 73i,14n,95p,1402b,2220s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on TA.pdf (82 pages).
