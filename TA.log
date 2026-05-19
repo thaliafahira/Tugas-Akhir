@@ -1,9 +1,13 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  18 MAY 2026 21:30
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  19 MAY 2026 08:59
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**./TA.tex
-(TA.tex
+**"c:/Users/Dinda Thalia Fahira/Downloads/TA-STI-template-1.0/TA-STI-template-1
+.0/TA.tex"
+
+(c:/Users/Dinda Thalia Fahira/Downloads/TA-STI-template-1.0/TA-STI-template-1.0
+/TA.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
 
@@ -1665,6 +1669,12 @@ Overfull \hbox (2.66713pt too wide) in alignment at lines 15--27
 ] (Bab I - Pendahuluan.tex
 Bab I.
 
+Overfull \hbox (0.8322pt too wide) in paragraph at lines 5--7
+\TU/TimesNewRoman(0)/m/n/12 Bab ini membahas latar belakang pengembangan sistem
+ pelacakan peserta ITB Ultra-
+ []
+
+
 
 [1
 
@@ -2203,21 +2213,17 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `TA.out' has not changed.
 (rerunfilecheck)             Checksum: 7010C0BFDC15AB51E55936D5B3AAC527;14210.
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'TA.run.xml'.
 \openout1 = `TA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34913 strings out of 403197
- 678441 string characters out of 5453038
- 2187353 words of memory out of 5000000
+ 34914 strings out of 403197
+ 678676 string characters out of 5453038
+ 2187360 words of memory out of 5000000
  62925 multiletter control sequences out of 15000+600000
  633603 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,14n,95p,1323b,6331s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,14n,95p,1402b,6331s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on TA.pdf (86 pages).

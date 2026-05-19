@@ -1,6 +1,8 @@
 \cleardoublepage % memastikan bab baru dimulai di halaman ganjil (kanan)
 \chapter{PENDAHULUAN}
 \label{chap:pendahuluan}
+
+Bab ini membahas latar belakang pengembangan sistem pelacakan peserta ITB Ultra-Marathon beserta permasalahan yang melatarbelakanginya. Selain itu, bab ini juga memaparkan rumusan masalah, tujuan, batasan masalah, metodologi yang digunakan dalam proses pengembangan sistem, serta sistematika penulisan laporan tugas akhir secara keseluruhan.
 % --- Latar Belakang ---
 \section{Latar Belakang}
 Dalam beberapa tahun terakhir, perkembangan \textit{ultra-marathon} menunjukkan pergeseran dari aktivitas olahraga ekstrem menjadi fenomena gaya hidup global yang semakin populer. Sebagai cabang olahraga lari yang menempuh jarak lebih dari 42,195 kilometer, \textit{ultra-marathon} memerlukan ketahanan fisik dan mental yang luar biasa dari para pesertanya \cite{Ronto2024}. Di Indonesia, salah satu bukti meningkatnya tren ini adalah diselenggarakannya kegiatan tahunan ITB Ultra-Marathon. Sejak pertama kali diselenggarakan pada tahun 2017, ITB Ultra-Marathon terus mengalami peningkatan jumlah peserta dari tahun ke tahun \cite{Hafizh2025}. Hal ini menunjukkan tingginya minat masyarakat terhadap olahraga \textit{ultra-marathon}. Seiring dengan meningkatnya partisipasi pada cabang olahraga ini, kebutuhan akan sistem pelacakan pelari menjadi semakin krusial dalam penyelenggaraan \textit{ultra-marathon}. Sistem pelacakan tidak hanya berperan dalam menjaga keselamatan peserta, tetapi juga dalam memantau performa serta meningkatkan pengalaman pengguna melalui penyajian informasi yang interaktif \cite{Hochreiter2024}.
@@ -15,27 +17,21 @@ Sebagai solusi atas permasalahan tersebut, diusulkan pengembangan sistem pelacak
 
 % --- Rumusan Masalah ---
 \section{Rumusan Masalah}
-Saat ini belum tersedia sistem yang secara khusus digunakan untuk melakukan pelacakan peserta pada kegiatan ITB Ultra-Marathon. Berdasarkan latar belakang yang telah diuraikan sebelumnya, maka rumusan masalah dalam tugas akhir ini adalah sebagai berikut:
+Saat ini belum tersedia sistem yang secara khusus digunakan untuk melakukan pelacakan peserta pada kegiatan ITB Ultra-Marathon. Berdasarkan latar belakang yang telah diuraikan sebelumnya, maka rumusan masalah dalam tugas akhir ini adalah: “Bagaimana mengembangkan sistem \textit{front-end} aplikasi ITB Ultra-Marathon yang mampu menyajikan visualisasi data pelacakan peserta secara \textit{real-time}, responsif, dan mudah digunakan?”
 
-\begin{enumerate}
-    \item Bagaimana mengembangkan sistem pelacakan dari teknologi \textit{existing} agar mampu menyediakan pemantauan posisi pelari secara akurat, terpusat, dan \textit{real-time} di sepanjang rute ITB Ultra-Marathon?
-    \item Bagaimana merancang sistem \textit{front-end} yang dapat diintegrasikan secara efektif dengan sistem \textit{back-end} untuk menyajikan visualisasi data posisi ribuan pelari secara informatif dan responsif?
-    \item Bagaimana membangun sistem \textit{front-end} yang mampu memfasilitasi koordinasi manajemen maraton, termasuk pemantauan dan penanganan situasi darurat di sepanjang rute perlombaan?
-\end{enumerate}
-Aplikasi yang dirancang diharapkan mampu menjadi solusi yang memfasilitasi proses pelacakan peserta secara efisien dan real-time, sehingga dapat membantu berlansungnya kegiatan ITB Ultra-Marathon.
-
+Aplikasi yang dirancang diharapkan mampu menjadi solusi yang memfasilitasi proses pelacakan peserta secara efisien dan \textit{real-time}, sehingga dapat membantu berlangsungnya kegiatan ITB Ultra-Marathon.
 % --- Tujuan ---
 \section{Tujuan}
 
-Tujuan utama dari tugas akhir ini adalah menghasilkan sistem \textit{front-end} pelacakan peserta ITB Ultra-Marathon yang komprehensif untuk mendukung efisiensi manajemen perlombaan. Hal ini dicapai dengan mengembangkan sistem yang mampu mentransformasikan data dari teknologi \textit{existing} menjadi informasi posisi yang terpantau secara \textit{real-time} dan akurat. Selain itu, tugas akhir ini bertujuan untuk membangun arsitektur antarmuka yang terintegrasi secara dinamis dengan sistem \textit{backend} guna memvisualisasikan data ribuan peserta secara responsif. Hasil akhir yang diharapkan adalah tersedianya platform terpadu yang memfasilitasi keberlangsungan ITB Ultra-Marathon.
+Tujuan dari tugas akhir ini adalah mengembangkan dan mengimplementasikansistem \textit{front-end} aplikasi ITB Ultra-Marathon yang mampu menyajikan visualisasi data pelacakan peserta secara \textit{real-time} serta mengintegrasikan sistem \textit{front-end} dengan sistem \textit{back-end} agar data pelacakan dapat ditampilkan secara optimal.
 Keberhasilan dari pelaksanaan tugas akhir ini diukur berdasarkan kriteria-kriteria berikut:
 
 \begin{enumerate}
     \item Antarmuka yang dikembangkan mampu memenuhi kebutuhan informasi dan alur penggunaan bagi panitia, tim support, penonton, dan peserta sesuai dengan hasil analisis kebutuhan sistem.
-    \item Pengguna dapat memahami alur navigasi serta membaca informasi pelacakan dengan mudah berdasarkan hasil pengujian yang dilakukan.
-    \item Informasi pelacakan seperti posisi peserta, jarak tempuh, dan waktu dapat visualisasikan secara jelas, akurat, mudah dipahami, serta bersifat responsif terhadap pembaruan data.
-    \item Tampilan antarmuka berfungsi dengan baik pada perangkat, serta menjaga konsistensi desain.
-    \item Terjalinnya integrasi antara \textit{front-end} dan \textit{back-end} yang efektif, di mana data dari API dapat ditampilkan tanpa gangguan signifikan sehingga proses pelacakan dapat dilakukan secara lancar.
+    \item Pengguna dapat memahami alur navigasi serta membaca informasi pelacakan peserta maraton dengan mudah.
+    \item Informasi pelacakan peserta maraton dapat visualisasikan secara jelas, akurat, mudah dipahami, serta bersifat responsif terhadap pembaruan data.
+    \item Tampilan antarmuka berfungsi dengan baik pada perangkat serta menjaga konsistensi desain.
+    \item Terjalinnya integrasi antara \textit{front-end} dan \textit{back-end} yang efektif, di mana data dapat ditampilkan tanpa gangguan signifikan sehingga proses pelacakan dapat dilakukan secara lancar.
 \end{enumerate}
 % --- Batasan Masalah ---
 \section{Batasan Masalah}
@@ -57,16 +53,15 @@ Model SDLC yang digunakan dalam penyelesaian tugas akhir ini adalah model \texti
 
 \begin{enumerate}
     \item {Analisis Kebutuhan}
-
-    Tahap awal ini dilakukan untuk mengidentifikasi seluruh kebutuhan sistem, baik fungsional maupun non-fungsional, melalui proses pengumpulan data dari berbagai tipe pengguna. Hal ini mencakup identifikasi kebutuhan pelacakan bagi peserta, fitur pemantauan operasional bagi panitia, kebutuhan logistik bagi tim support, serta akses informasi perkembangan perlombaan bagi penonton.
+    Tahap awal ini dilakukan untuk mengidentifikasi seluruh kebutuhan sistem, baik fungsional maupun non-fungsional, melalui proses pengumpulan data dan analisis terhadap penyelenggaraan ITB Ultra-Marathon pada tahun-tahun sebelumnya. Selain itu, dilakukan juga wawancara dengan pihak panitia penyelenggara tahun sebelumnya untuk memahami kebutuhan pengguna serta kendala yang terjadi pada sistem pelacakan yang telah digunakan.
 
     \item {Perancangan Sistem}
 
-    Berdasarkan hasil analisis, dilakukan perancangan arsitektur sistem dan \textit{user interface}. Fokus pada tahap ini adalah merancang \textit{wireframe} dan \textit{high-fidelity design} yang intuitif, serta merancang skema komunikasi antara \textit{front-end} dan \textit{backend}.
+    Berdasarkan hasil analisis kebutuhan, dilakukan perancangan arsitektur sistem dan \textit{user interface}. Fokus pada tahap ini adalah merancang \textit{wireframe} dan \textit{high-fidelity design} yang intuitif, serta merancang skema komunikasi antara \textit{front-end} dan \textit{back-end}.
 
     \item {Implementasi}
 
-    Tahap ini merupakan proses penerjemahan rancangan ke dalam baris kode program. Pengembangan difokuskan pada pembangunan sisi \textit{front-end} menggunakan kerangka kerja yang mendukung perangkat Android, memastikan setiap elemen visual dan fitur pelacakan dapat beroperasi sesuai dengan spesifikasi yang telah ditetapkan.
+    Tahap ini merupakan proses penerjemahan rancangan ke dalam baris kode program. Pengembangan difokuskan pada pembangunan sisi \textit{front-end} menggunakan kerangka kerja yang mendukung perangkat Android. Tahapan ini memastikan setiap elemen visual dan fitur pelacakan dapat beroperasi sesuai dengan spesifikasi yang telah ditetapkan.
 
     \item {\textit{Deployment}}
 
@@ -74,7 +69,7 @@ Model SDLC yang digunakan dalam penyelesaian tugas akhir ini adalah model \texti
 
     \item {Pengujian}
 
-    Setelah sistem ter-deploy, dilakukan pengujian secara komprehensif untuk mendeteksi adanya kesalahan (\textit{bugs}) atau ketidaksesuaian fungsional. Pengujian dilakukan untuk memastikan bahwa seluruh fitur berjalan sesuai dengan kebutuhan yang telah didefinisikan sebelumnya.
+    Tahap pengujian dilakukan untuk mengevaluasi fungsionalitas sistem yang telah dikembangkan serta memastikan bahwa seluruh fitur dapat berjalan sesuai dengan kebutuhan yang telah ditentukan. Pengujian juga dilakukan untuk mengidentifikasi kesalahan pada sistem dan menilai kesesuaian antarmuka terhadap penggunaan aplikasi.
 
     \item {Evaluasi}
 
@@ -86,12 +81,12 @@ Model SDLC yang digunakan dalam penyelesaian tugas akhir ini adalah model \texti
 Sistematika penulisan laporan tugas akhir ini disusun secara sistematis untuk memberikan gambaran menyeluruh mengenai alur penelitian dan pengembangan aplikasi. Adapun struktur penulisan laporan adalah sebagai berikut:
 
 \begin{enumerate}
-    \item Bab I Pendahuluan: Menguraikan latar belakang permasalahan, rumusan masalah, tujuan penelitian, batasan masalah , metodologi pengembangan, serta sistematika penulisan laporan.
+    \item Bab I Pendahuluan: Menguraikan latar belakang permasalahan, rumusan masalah, tujuan penelitian, batasan masalah, metodologi pengembangan, serta sistematika penulisan laporan.
     \item Bab II Studi Literatur: Memaparkan landasan teori dan kajian pustaka yang relevan, mencakup konsep \textit{ultra-marathon}, pengembangan \textit{front-end}, teknologi pelacakan, serta literatur mengenai sistem pendukung perlombaan lari jarak jauh.
     \item Bab III Analisis: Menjelaskan proses analisis masalah yang terjadi pada sistem pelacakan ITB Ultra-Marathon serta identifikasi kebutuhan fungsional dan non fungsional dari berbagai perspektif pengguna, yaitu peserta, panitia, tim support, dan penonton.
     \item Bab IV Perancangan: Menguraikan perancangan solusi yang diusulkan, meliputi arsitektur sistem secara menyeluruh, desain antarmuka pengguna, serta perancangan integrasi antara sisi \textit{front-end} dengan \textit{back-end}.
     \item Bab V Implementasi: Menjelaskan proses realisasi atau pengkodean antarmuka aplikasi berdasarkan rancangan yang telah dibuat, termasuk penggunaan teknologi, kerangka kerja (\textit{framework}), serta pustaka (\textit{library}) yang digunakan untuk memvisualisasikan data pelacakan.
-    \item Bab VI Evaluasi: Berisi laporan mengenai metode pengujian sistem, persiapan skenario pengujian, hasil pengujian fungsionalitas dan \textit{usability}, serta evaluasi kinerja antarmuka dalam menyajikan data secara \textit{real-time}.
+    \item Bab VI Evaluasi: Berisi laporan mengenai metode pengujian sistem, persiapan skenario pengujian, hasil pengujian, serta evaluasi kinerja antarmuka dalam menyajikan data secara \textit{real-time}.
     \item Bab VII Kesimpulan dan Saran: Menyampaikan kesimpulan akhir dari seluruh proses pengembangan berdasarkan tujuan yang telah ditetapkan serta saran bagi pengembangan aplikasi di masa mendatang.
     \item Daftar Pustaka: Mencantumkan daftar referensi, buku, jurnal, dan sumber data lainnya yang digunakan sebagai acuan dalam penyusunan laporan ini.
     \item Lampiran: Menyertakan dokumen pendukung tambahan seperti kode program utama, dokumentasi pengujian, serta data pelengkap lainnya.
