@@ -12,7 +12,22 @@ Bab ini membahas analisis masalah yang ada pada sistem saat ini, analisis kebutu
 \section{Analisis Kondisi Saat Ini}
 Untuk memahami akar permasalahan yang telah diuraikan pada bab sebelumnya, dilakukan analisis terhadap kondisi spesifik sistem penyelenggaraan ITB Ultra Marathon yang telah dilaksanakan pada tahun-tahun sebelumnya.
 
-Analisis ini menunjukkan adanya kesenjangan antara kondisi sistem saat ini dengan kondisi ideal yang diharapkan, khususnya dalam aspek penggunaan perangkat, alur pendaftaran peserta dan pelacakan peserta, serta aplikasi yang mendukung mekanisme pengelolaan selama marathon yang mencakup proses monitoring, pencatatan data, serta koordinasi antar pihak yang terlibat selama kegiatan maraton berlangsung.
+Gambar \ref{fig:as-is-diagram} merupakan \textit{Activity diagram} yang menggambarkan kondisi sistem penyelenggaraan \textit{As-Is} ITB Ultra-Marathon, yaitu di tahun 2025. Diagram ini menunjukkan berbagai komponen, proses, serta interaksi yang terjadi dalam penyelenggaraan maraton, mulai dari pendaftaran peserta, pelacakan selama perlombaan, hingga penyajian informasi kepada berbagai pihak yang terlibat.
+
+Proses dimulai ketika peserta melakukan registrasi marathon melalui website yang telah disediakan oleh panitia. Setelah proses pendaftaran selesai, panitia melakukan verifikasi data peserta untuk memastikan kelengkapan dan validitas informasi yang telah diinputkan. Peserta yang telah terverifikasi kemudian datang ke lokasi acara dan melakukan proses check-in sebelum perlombaan dimulai. Pada saat perlombaan berlangsung, panitia memulai kegiatan marathon dan bertanggung jawab untuk memantau posisi peserta selama berlari. Namun, proses pelacakan lokasi peserta masih dilakukan secara manual dengan memanfaatkan data GPS dari aplikasi seperti Strava atau metode tracking lainnya. Informasi lokasi peserta kemudian dicatat oleh panitia secara berkala dan disimpan menggunakan media sederhana seperti Google Sheets serta dibagikan melalui WhatsApp sebagai sarana komunikasi antar panitia. Di sisi lain, penonton yang ingin mengetahui posisi peserta tidak memiliki akses terhadap sistem pemantauan yang terintegrasi. Untuk mengetahui lokasi pelari, penonton harus mencari informasi secara manual melalui fitur share location Google Maps yang dibagikan oleh peserta atau melalui informasi yang diperoleh dari panitia. Proses ini menyebabkan informasi posisi peserta tidak dapat diperoleh secara real-time dan sering kali bergantung pada komunikasi manual. Setelah perlombaan selesai, panitia melakukan transfer data hasil pencatatan peserta yang telah dikumpulkan selama acara berlangsung. Data tersebut kemudian direkap secara manual untuk menentukan hasil akhir perlombaan. Tahap terakhir adalah pengumuman hasil marathon kepada seluruh peserta dan penonton.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=0.85\textwidth]{images/AsIsMarathon.png}
+    \caption{\textit{As-Is Diagram} ITB Ultra-Marathon}
+    \label{fig:as-is-diagram}
+\end{figure}
+
+Legenda simbol yang digunakan dalam \textit{Activity diagram} dijelaskan pada Gambar \ref{tab:legenda-activity}.
+\input{tables/legenda-swimlane.tex}
+
+Berdasarkan analisis kondisi As-Is tersebut, terdapat beberapa permasalahan utama yang ditemukan. Pertama, proses pelacakan lokasi peserta masih bergantung pada aplikasi pihak ketiga dan pencatatan manual sehingga berpotensi menimbulkan keterlambatan informasi serta kesalahan pencatatan. Kedua, penyebaran informasi lokasi peserta kepada penonton belum terintegrasi dalam satu platform sehingga penonton kesulitan memantau perkembangan peserta secara langsung. Ketiga, proses rekapitulasi hasil marathon masih dilakukan secara manual yang menyebabkan proses pengolahan data menjadi kurang efisien dan rentan terhadap human error.
+
 \subsection{Pendaftaran dan Pengelolaan Data Peserta}
 Pada penyelenggaraan ITB Ultra-Marathon tahun 2025, proses pendaftaran peserta dilakukan secara daring (dalam jaringan) melalui platform yang disediakan oleh rekan ITB Ultra-Marathon di tahun tersebut. Platform ini digunakan untuk menerima dan menyimpan data pendaftaran, serta menampilkan informasi peserta dan hasil lomba kepada publik.
 

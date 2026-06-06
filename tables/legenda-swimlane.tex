@@ -1,0 +1,98 @@
+\begin{longtable}{|>{\centering\arraybackslash}m{3.5cm}|>{\centering\arraybackslash}m{3cm}|m{7cm}|}
+\caption{Legenda \textit{Activity Diagram}}
+\label{tab:legenda-activity} \\
+\hline
+\textbf{Simbol} & \textbf{Nama} & \multicolumn{1}{c|}{\textbf{Keterangan}} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Simbol} & \textbf{Nama} & \multicolumn{1}{c|}{\textbf{Keterangan}} \\
+\hline
+\endhead
+ 
+% 1. Initial Node
+\begin{minipage}[c][1.5cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(20,14)
+    \put(10,7){\circle*{8}}
+  \end{picture}
+\end{minipage} &
+\textit{Initial Node} &
+Titik awal dari suatu alur aktivitas \\
+\hline
+ 
+% 2. Action / Activity
+\begin{minipage}[c][1.5cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(40,14)
+    \put(20,7){\oval(34,10)}
+    \put(3,4){\makebox(34,6){\tiny Aktivitas}}
+  \end{picture}
+\end{minipage} &
+\textit{Action / Activity} &
+Aktivitas atau tindakan yang dilakukan oleh aktor dalam sistem \\
+\hline
+ 
+% 3. Control Flow
+\begin{minipage}[c][1cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(30,6)
+    \put(2,3){\vector(1,0){26}}
+  \end{picture}
+\end{minipage} &
+\textit{Control Flow} &
+Alur perpindahan kendali dari satu aktivitas ke aktivitas berikutnya \\
+\hline
+ 
+% 5. Swimlane
+\begin{minipage}[c][2cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(38,18)
+    \put(2,2){\framebox(16,14){}}
+    \put(20,2){\framebox(16,14){}}
+    \put(2,12){\line(1,0){16}}
+    \put(20,12){\line(1,0){16}}
+    \put(4,13){\makebox(12,2){\tiny A}}
+    \put(22,13){\makebox(12,2){\tiny B}}
+  \end{picture}
+\end{minipage} &
+\textit{Swimlane} &
+Kolom pembatas yang menunjukkan peran atau aktor yang bertanggung jawab atas suatu aktivitas \\
+\hline
+ 
+% 6. Artifact / Note
+\begin{minipage}[c][1.8cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(30,16)
+    \put(5,2){\line(0,1){10}}
+    \put(5,12){\line(1,0){14}}
+    \put(19,12){\line(1,-1){4}}
+    \put(23,8){\line(0,-1){6}}
+    \put(23,2){\line(-1,0){18}}
+    \put(19,12){\line(0,-1){4}}
+    \put(19,8){\line(1,0){4}}
+  \end{picture}
+\end{minipage} &
+\textit{Artifact} &
+Dokumen atau alat pendukung yang digunakan dalam aktivitas (contoh: \textit{Google Sheet}, \textit{Strava/GPS}) \\
+\hline
+ 
+% 7. Final Node
+\begin{minipage}[c][1.5cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(20,14)
+    \put(10,7){\circle{12}}
+    \put(10,7){\circle*{6}}
+  \end{picture}
+\end{minipage} &
+\textit{Final Node} &
+Titik akhir dari seluruh alur aktivitas dalam diagram \\
+\hline
+ 
+\end{longtable}
