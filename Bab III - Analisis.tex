@@ -44,18 +44,71 @@ Legenda simbol yang digunakan dalam \textit{Activity diagram} dijelaskan pada Ga
 \input{tables/legenda-swimlane.tex}
 
 \section{Analisis Kondisi Ideal}
+Untuk memperoleh gambaran mengenai kebutuhan sistem yang akan dikembangkan, dilakukan wawancara dengan panitia penyelenggara ITB Ultra Marathon tahun 2025. Wawancara dilakukan untuk mengidentifikasi berbagai kendala yang terjadi pada proses penyelenggaraan sebelumnya serta memperoleh gambaran mengenai proses bisnis yang diharapkan pada penyelenggaraan berikutnya. Berdasarkan hasil wawancara tersebut, diperoleh kondisi ideal (\textit{To-Be}) yang menggambarkan bagaimana sistem seharusnya berjalan apabila didukung oleh aplikasi yang terintegrasi.
+
+Kondisi ideal dibagi menjadi dua bagian utama, yaitu proses inti penyelenggaraan maraton yang melibatkan panitia, sistem, dan peserta, serta proses pendukung yang melibatkan pihak eksternal seperti keluarga peserta, \textit{supporter}, dan masyarakat umum (\textit{public}).
+
+\subsection{Proses Utama Penyelenggaraan Marathon}
+
+Gambar \ref{fig:tobe-utama} menunjukkan proses bisnis utama yang diharapkan pada penyelenggaraan ITB Ultra Marathon. Proses dimulai ketika peserta melakukan pendaftaran kepada panitia. Data peserta yang telah diterima kemudian dimasukkan ke dalam sistem oleh panitia. Setelah data tersimpan, sistem melakukan proses verifikasi data peserta secara otomatis untuk memastikan bahwa seluruh informasi yang dibutuhkan telah lengkap dan valid.
+
+Peserta yang telah terverifikasi selanjutnya dapat melakukan proses \textit{check-in} melalui aplikasi. Berbeda dengan kondisi sebelumnya yang masih bergantung pada proses manual dan pencatatan terpisah, pada kondisi ideal seluruh data peserta telah tersimpan pada satu sistem terintegrasi sehingga proses \textit{check-in} dapat dilakukan secara digital. Ketika perlombaan dimulai, peserta menjalankan rute yang telah ditentukan dan melakukan pencatatan \textit{checkpoint} melalui aplikasi. Pada saat yang bersamaan, sistem mulai melakukan proses kalkulasi data perlombaan secara otomatis, sedangkan panitia dapat memantau seluruh peserta melalui dashboard pemantauan tanpa perlu melakukan pencatatan lokasi secara manual.
+
+Salah satu kebutuhan yang diperoleh dari hasil wawancara adalah dukungan terhadap kategori perlombaan \textit{relay}. Oleh karena itu, setelah peserta mencapai suatu \textit{checkpoint}, sistem akan melakukan pemeriksaan apakah peserta berada pada kategori \textit{relay} atau tidak. Jika peserta merupakan bagian dari tim \textit{relay}, sistem akan menjalankan proses \textit{switch} untuk mencatat pergantian pelari secara otomatis. Setelah proses pergantian selesai, peserta berikutnya dapat melanjutkan perlombaan. Apabila peserta tidak mengikuti kategori \textit{relay}, maka peserta dapat langsung melanjutkan lari menuju \textit{checkpoint} berikutnya atau garis akhir.
+
+Selain pemantauan posisi peserta, sistem juga menyediakan fitur penanganan kondisi darurat (\textit{emergency}). Apabila peserta mengalami keadaan darurat selama perlombaan, sistem akan mengirimkan notifikasi secara otomatis kepada panitia. Panitia kemudian menerima notifikasi tersebut dan dapat segera melakukan tindakan yang diperlukan berdasarkan lokasi peserta yang terdeteksi oleh sistem. Fitur ini diharapkan dapat meningkatkan keselamatan peserta selama perlombaan berlangsung.
+
+Ketika peserta berhasil mencapai garis akhir, sistem secara otomatis melakukan proses rekapitulasi dan kalkulasi hasil perlombaan berdasarkan data yang telah dikumpulkan selama kegiatan berlangsung. Proses ini mencakup perhitungan waktu tempuh, validasi \textit{checkpoint}, serta penentuan hasil akhir perlombaan. Setelah proses kalkulasi selesai, panitia dapat langsung mengumumkan hasil perlombaan tanpa perlu melakukan rekapitulasi manual seperti pada kondisi sebelumnya.
+
+Dengan adanya sistem terintegrasi, proses pemantauan peserta, pencatatan hasil, dan pengolahan data perlombaan dapat dilakukan secara otomatis dan \textit{real-time}, sehingga mengurangi potensi kesalahan pencatatan serta meningkatkan efisiensi operasional panitia.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{images/ToBeUtama.png}
+\caption{\textit{To-Be Diagram} Proses Utama}
+\label{fig:tobe-utama}
+\end{figure}
+
+\subsection{Proses Pendukung dan Akses Informasi Publik}
+
+Selain proses utama penyelenggaraan maraton, hasil wawancara juga menunjukkan kebutuhan untuk memberikan akses informasi kepada pihak lain yang berkepentingan terhadap perkembangan peserta selama perlombaan berlangsung. Kebutuhan tersebut digambarkan pada Gambar \ref{fig:tobe-pendukung}.
+
+Pada kondisi ideal, peserta maupun ketua tim dapat menghasilkan kode akses (\textit{tracking code}) melalui aplikasi. Kode tersebut kemudian dapat dibagikan kepada keluarga maupun \textit{supporter} yang ingin memantau perkembangan peserta selama perlombaan. Keluarga peserta dapat memasukkan kode yang diterima ke dalam aplikasi untuk melihat informasi pelacakan peserta secara individu. Dengan mekanisme ini, keluarga dapat mengetahui posisi dan perkembangan peserta secara langsung tanpa perlu menghubungi panitia ataupun meminta lokasi melalui aplikasi lain.
+
+Selain keluarga, \textit{supporter} juga dapat menggunakan kode akses untuk melihat seluruh anggota tim yang didukungnya. Fitur ini dirancang untuk mendukung kategori \textit{relay} maupun peserta yang mengikuti perlombaan secara berkelompok.
+
+Berdasarkan hasil wawancara, aspek keselamatan peserta menjadi salah satu kebutuhan penting dalam sistem yang akan dikembangkan. Oleh karena itu, ketika peserta mengaktifkan status darurat (\textit{emergency}), sistem akan secara otomatis mengirimkan notifikasi kepada \textit{supporter}. Setelah menerima notifikasi tersebut, \textit{supporter} dapat menentukan apakah akan melakukan proses penjemputan terhadap peserta atau tidak. Apabila diperlukan, \textit{supporter} dapat langsung menuju lokasi peserta berdasarkan informasi yang tersedia pada aplikasi.
+
+Selain akses khusus bagi keluarga dan \textit{supporter}, sistem juga menyediakan akses publik. Masyarakat umum dapat melihat informasi peserta yang bersifat publik melalui aplikasi tanpa memerlukan kode akses khusus. Namun, informasi yang ditampilkan disesuaikan dengan pengaturan privasi yang ditentukan oleh peserta untuk menjaga keamanan dan kerahasiaan data lokasi.
+
+Melalui mekanisme tersebut, seluruh pihak yang berkepentingan terhadap perlombaan dapat memperoleh informasi yang dibutuhkan melalui satu platform terintegrasi. Hal ini menghilangkan kebutuhan penggunaan berbagai aplikasi terpisah seperti Google Maps, WhatsApp, maupun pencarian lokasi secara manual sebagaimana terjadi pada kondisi sebelumnya.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{images/ToBePendukung.png}
+\caption{\textit{To-Be Diagram} Proses Pendukung}
+\label{fig:tobe-pendukung}
+\end{figure}
 
 \section{Identifikasi Kesenjangan dan Implikasi terhadap Fokus Penelitian}
 
-Berdasarkan analisis pada ketiga subbab sebelumnya, dapat diidentifikasi dua kesenjangan utama dalam sistem penyelenggaraan ITB Ultra Marathon saat ini.
+Berdasarkan analisis kondisi saat ini (\textit{As-Is}) dan kondisi ideal (\textit{To-Be}) yang diperoleh melalui wawancara dengan panitia ITB Ultra Marathon tahun 2025, terdapat beberapa kesenjangan antara proses penyelenggaraan yang berjalan saat ini dengan proses yang diharapkan pada masa mendatang.
+
 \begin{enumerate}
-  \item Pertama, kesenjangan dalam integrasi data. Data peserta yang berasal dari sistem pendaftaran, data pelacakan dari perangkat \textit{timing chip}, serta data aktivitas yang direkam selama perlombaan tersimpan pada platform-platform yang berbeda dan tidak saling terhubung. Tidak ada mekanisme yang mengintegrasikan sumber-sumber data ini ke dalam satu sistem yang kohesif, sehingga informasi yang dibutuhkan untuk \textit{monitoring} dan pengambilan keputusan selama lomba tidak tersedia secara terpadu.
-  \item Kedua, kesenjangan dalam penyajian informasi. Meskipun sebagian data telah berhasil dikumpulkan melalui perangkat dan platform yang ada, belum terdapat antarmuka yang mampu menampilkan informasi tersebut secara \textit{real-time}, interaktif, dan mudah dipahami oleh berbagai pihak yang terlibat, baik panitia yang membutuhkan gambaran menyeluruh kondisi lomba, peserta yang ingin memantau progres mereka sendiri, maupun pihak pendukung yang ingin mengetahui posisi dan kondisi pelari yang mereka ikuti.
+    \item kesenjangan pada integrasi sistem dan data. 
+    Pada kondisi saat ini, proses pendaftaran peserta, pencatatan waktu menggunakan \textit{timing chip}, pelacakan lokasi peserta, serta pengelolaan hasil perlombaan dilakukan menggunakan berbagai aplikasi dan platform yang terpisah. Data yang dihasilkan tidak terhubung secara langsung sehingga panitia harus melakukan pengumpulan dan pengolahan data secara manual. Sementara itu, kondisi ideal yang diharapkan adalah tersedianya satu platform terintegrasi yang mampu mengelola seluruh data perlombaan secara terpusat.
+
+    \item kesenjangan pada proses pemantauan peserta selama perlombaan. 
+    Pada sistem yang berjalan saat ini, pemantauan peserta masih bergantung pada aplikasi pihak ketiga dan pencatatan manual oleh panitia. Akibatnya, informasi mengenai posisi dan perkembangan peserta tidak selalu tersedia secara cepat dan akurat. Berdasarkan kebutuhan yang diperoleh dari hasil wawancara, sistem yang diharapkan mampu menyediakan pemantauan peserta secara \textit{real-time} sehingga panitia dapat mengetahui kondisi dan lokasi peserta secara langsung selama perlombaan berlangsung.
+
+    \item kesenjangan pada penyajian informasi kepada pemangku kepentingan (\textit{stakeholders}). 
+    Saat ini, peserta, keluarga, \textit{supporter}, maupun masyarakat umum belum memiliki akses terhadap informasi perlombaan melalui platform yang terintegrasi. Informasi posisi peserta umumnya diperoleh melalui komunikasi manual atau fitur \textit{location sharing} pada aplikasi lain. Pada kondisi ideal, seluruh pihak yang berkepentingan diharapkan dapat mengakses informasi yang sesuai dengan kebutuhan mereka melalui satu aplikasi yang sama.
+
+    \item kesenjangan pada penanganan kondisi darurat. 
+    Pada penyelenggaraan sebelumnya belum tersedia mekanisme khusus yang memungkinkan peserta mengirimkan sinyal darurat secara langsung kepada panitia maupun pihak pendukung. Padahal, mengingat karakteristik perlombaan ultra marathon yang memiliki jarak tempuh panjang dan medan yang menantang, fitur penanganan darurat menjadi kebutuhan penting untuk meningkatkan keselamatan peserta selama perlombaan berlangsung.
 \end{enumerate}
 
-Dari dua kesenjangan tersebut, penelitian ini menetapkan pembagian tanggung jawab yang jelas. Permasalahan integrasi dan pengolahan data diasumsikan ditangani oleh sistem \textit{back-end} yang menyediakan data melalui mekanisme \textit{Application Programming Interface} (API). Dengan asumsi ini, fokus penelitian diarahkan sepenuhnya pada perancangan dan pengembangan komponen \textit{front-end} yang mampu mengonsumsi data dari API tersebut dan menyajikannya secara efektif kepada pengguna.
-
-Komponen \textit{front-end} yang dikembangkan diharapkan mampu memenuhi kebutuhan informasi berbagai jenis pengguna secara \textit{real-time} dalam satu platform yang terintegrasi, sehingga menutup kesenjangan penyajian informasi yang selama ini menjadi hambatan dalam penyelenggaraan ITB Ultra Marathon.
+Berdasarkan kesenjangan yang telah diidentifikasi, penelitian ini berfokus pada pengembangan komponen \textit{front-end} sebagai media interaksi utama antara pengguna dengan sistem. Dengan asumsi tersebut, fokus penelitian diarahkan pada perancangan dan implementasi antarmuka pengguna (\textit{user interface}) serta pengalaman pengguna (\textit{user experience}) yang mampu menyajikan informasi perlombaan secara efektif, interaktif, dan \textit{real-time}. Antarmuka yang dikembangkan ditujukan untuk mendukung kebutuhan berbagai jenis pengguna, yaitu panitia, peserta, keluarga peserta, \textit{supporter}, dan masyarakat umum, sehingga informasi yang sebelumnya tersebar pada berbagai platform dapat diakses melalui satu aplikasi yang terintegrasi.
 
 \section{Analisis Kebutuhan}
 Setelah dilakukan analisis terhadap kondisi sistem saat ini, tahap selanjutnya adalah melakukan analisis kebutuhan untuk mengidentifikasi fitur dan karakteristik sistem yang diperlukan dalam mendukung penyelenggaraan ITB Ultra Marathon. Analisis kebutuhan ini bertujuan untuk menerjemahkan permasalahan yang telah diidentifikasi pada subbab sebelumnya menjadi serangkaian kebutuhan yang lebih spesifik dan terstruktur.
