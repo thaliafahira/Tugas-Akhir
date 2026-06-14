@@ -9,7 +9,7 @@
 \label{chap:analisis-masalah}
 Bab ini membahas analisis masalah yang ada pada sistem saat ini, analisis kebutuhan yang diperlukan untuk menyelesaikan masalah tersebut, serta analisis pemilihan solusi yang diusulkan.
 
-\section{Analisis Kondisi Saat Ini}
+\section{Analisis Kondisi Saat Ini (\textit{As-Is})}
 Untuk memahami akar permasalahan yang telah diuraikan pada bab sebelumnya, dilakukan analisis terhadap kondisi spesifik sistem penyelenggaraan ITB Ultra Marathon yang telah dilaksanakan pada tahun-tahun sebelumnya.
 
 Gambar \ref{fig:as-is-diagram} merupakan \textit{Activity diagram} yang menggambarkan kondisi sistem penyelenggaraan \textit{As-Is} ITB Ultra-Marathon, yaitu di tahun 2025. Diagram ini menunjukkan berbagai komponen, proses, serta interaksi yang terjadi dalam penyelenggaraan maraton, mulai dari pendaftaran peserta, pelacakan selama perlombaan, hingga penyajian informasi kepada berbagai pihak yang terlibat.
@@ -43,7 +43,7 @@ Berdasarkan analisis kondisi eksisting tersebut, dapat diketahui bahwa penyeleng
 Legenda simbol yang digunakan dalam \textit{Activity diagram} dijelaskan pada Gambar \ref{tab:legenda-activity}.
 \input{tables/legenda-swimlane.tex}
 
-\section{Analisis Kondisi Ideal}
+\section{Analisis Kondisi Ideal (\textit{To-Be})}
 Untuk memperoleh gambaran kebutuhan sistem yang akan dikembangkan, dilakukan wawancara dengan panitia penyelenggara ITB Ultra Marathon tahun 2025. Wawancara tersebut bertujuan untuk mengidentifikasi berbagai kendala yang terjadi pada penyelenggaraan sebelumnya serta memperoleh gambaran mengenai proses bisnis yang diharapkan pada penyelenggaraan berikutnya. Berdasarkan hasil wawancara, diperoleh kondisi ideal (To-Be) yang menggambarkan proses penyelenggaraan apabila didukung oleh sistem pelacakan yang terintegrasi.
 
 Dalam proses penyelenggaraan ITB Ultra Marathon, terdapat beberapa kelompok pengguna yang terlibat dan berinteraksi dengan sistem. Kelompok pengguna tersebut dijelaskan sebagai berikut:
@@ -61,7 +61,7 @@ Dalam proses penyelenggaraan ITB Ultra Marathon, terdapat beberapa kelompok peng
     berperan dalam memastikan pergantian pelari berjalan dengan baik serta
     menjaga komunikasi antaranggota selama perlombaan berlangsung.
 
-    \item \textbf{Peserta (Pelari)} \\
+    \item \textbf{Peserta lar)} \\
     Peserta merupakan pelari yang mengikuti perlombaan secara langsung, baik
     dalam kategori individu maupun relay. Peserta berinteraksi dengan rute
     perlombaan, checkpoint, serta berbagai informasi lomba yang mendukung
@@ -84,7 +84,7 @@ Dalam proses penyelenggaraan ITB Ultra Marathon, terdapat beberapa kelompok peng
     mengakses informasi yang bersifat publik terkait perlombaan.
 \end{enumerate}
 
-Berdasarkan hasil analisis kebutuhan, kondisi ideal (To-Be) dibagi menjadi dua kelompok proses utama, yaitu proses inti penyelenggaraan maraton yang melibatkan panitia, sistem, dan peserta, serta proses pendukung yang melibatkan pihak eksternal seperti keluarga peserta, \textit{supporter}, dan masyarakat umum (\textit{public}).
+Berdasarkan hasil analisis kondisi ideal (To-Be) dibagi menjadi dua kelompok, yaitu proses utama dan proses pendukung. Proses utama merupakan proses inti penyelenggaraan maraton yang melibatkan panitia, sistem, dan peserta. Sedangkan, proses pendukung adalah proses yang melibatkan pihak eksternal seperti keluarga peserta, \textit{supporter}, dan masyarakat umum.
 
 \subsection{Proses Utama Penyelenggaraan Marathon}
 
@@ -113,6 +113,13 @@ Selain proses utama penyelenggaraan maraton, hasil wawancara juga menunjukkan ke
 
 Pada kondisi ideal, peserta maupun ketua tim dapat menghasilkan kode akses (\textit{tracking code}) melalui aplikasi. Kode tersebut kemudian dapat dibagikan kepada keluarga maupun \textit{supporter} yang ingin memantau perkembangan peserta selama perlombaan. Keluarga peserta dapat memasukkan kode yang diterima ke dalam aplikasi untuk melihat informasi pelacakan peserta secara individu. Dengan mekanisme ini, keluarga dapat mengetahui posisi dan perkembangan peserta secara langsung tanpa perlu menghubungi panitia ataupun meminta lokasi melalui aplikasi lain.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{images/ToBePendukung.png}
+\caption{\textit{To-Be Diagram} Proses Pendukung}
+\label{fig:tobe-pendukung}
+\end{figure}
+
 Selain keluarga, \textit{supporter} juga dapat menggunakan kode akses untuk melihat seluruh anggota tim yang didukungnya. Fitur ini dirancang untuk mendukung kategori \textit{relay} maupun peserta yang mengikuti perlombaan secara berkelompok.
 
 Berdasarkan hasil wawancara, aspek keselamatan peserta menjadi salah satu kebutuhan penting dalam sistem yang akan dikembangkan. Oleh karena itu, ketika peserta mengaktifkan status darurat (\textit{emergency}), sistem akan secara otomatis mengirimkan notifikasi kepada \textit{supporter}. Setelah menerima notifikasi tersebut, \textit{supporter} dapat menentukan apakah akan melakukan proses penjemputan terhadap peserta atau tidak. Apabila diperlukan, \textit{supporter} dapat langsung menuju lokasi peserta berdasarkan informasi yang tersedia pada aplikasi.
@@ -121,12 +128,6 @@ Selain akses khusus bagi keluarga dan \textit{supporter}, sistem juga menyediaka
 
 Melalui mekanisme tersebut, seluruh pihak yang berkepentingan terhadap perlombaan dapat memperoleh informasi yang dibutuhkan melalui satu platform terintegrasi. Hal ini menghilangkan kebutuhan penggunaan berbagai aplikasi terpisah seperti Google Maps, WhatsApp, maupun pencarian lokasi secara manual sebagaimana terjadi pada kondisi sebelumnya.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{images/ToBePendukung.png}
-\caption{\textit{To-Be Diagram} Proses Pendukung}
-\label{fig:tobe-pendukung}
-\end{figure}
 
 \section{Identifikasi Kesenjangan dan Implikasi terhadap Fokus Penelitian}
 
@@ -151,14 +152,12 @@ Berdasarkan kesenjangan yang telah diidentifikasi, penelitian ini berfokus pada 
 \section{Analisis Kebutuhan}
 Setelah dilakukan analisis terhadap kondisi sistem saat ini, tahap selanjutnya adalah melakukan analisis kebutuhan untuk mengidentifikasi fitur dan karakteristik sistem yang diperlukan dalam mendukung penyelenggaraan ITB Ultra Marathon. Analisis kebutuhan ini bertujuan untuk menerjemahkan permasalahan yang telah diidentifikasi pada subbab sebelumnya menjadi serangkaian kebutuhan yang lebih spesifik dan terstruktur.
 
-Identifikasi kebutuhan dilakukan berdasarkan hasil wawancara dan observasi terhadap proses penyelenggaraan lomba, serta mengacu pada kendala yang dihadapi dalam penggunaan sistem yang ada saat ini. Selanjutnya, kebutuhan sistem akan diklasifikasikan menjadi kebutuhan fungsional dan kebutuhan nonfungsional, yang akan menjadi dasar dalam perancangan dan pengembangan antarmuka aplikasi yang diusulkan.
+Sama halnya dengan analisis kondisi, identifikasi kebutuhan juga dilakukan berdasarkan hasil wawancara dan observasi terhadap proses penyelenggaraan lomba, serta mengacu pada kendala yang dihadapi dalam penggunaan sistem yang ada saat ini. Selanjutnya, kebutuhan sistem akan diklasifikasikan menjadi kebutuhan fungsional dan kebutuhan nonfungsional, yang akan menjadi dasar dalam perancangan dan pengembangan antarmuka aplikasi yang diusulkan.
 
 \subsection{Identifikasi Masalah Pengguna} 
 Pada tahap ini dilakukan proses identifikasi masalah yang dialami oleh
 pengguna sebagai dasar dalam menentukan solusi yang tepat dalam perancangan
-aplikasi. Identifikasi dilakukan dengan mengacu pada hasil observasi dan
-wawancara, sehingga kebutuhan serta kendala yang dihadapi pengguna dapat
-dipetakan secara lebih akurat.
+aplikasi.
 
 Berdasarkan kesenjangan yang telah diidentifikasi pada subbab sebelumnya,
 permasalahan kemudian dibagi berdasarkan masing-masing kelompok pengguna agar
