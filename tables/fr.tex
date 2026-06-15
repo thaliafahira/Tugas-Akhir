@@ -18,85 +18,88 @@
 
 \multicolumn{3}{|c|}{\textbf{Panitia}} \\ \hline
 
-FR-01 & Tampilan Dashboard Pelacakan &
-Menampilkan posisi seluruh pelari secara \textit{real-time} dalam bentuk peta interaktif yang terhubung dengan API \textit{tracking}. \\ \hline
+FR-01 & Dashboard Pemantauan Lomba &
+Menampilkan peta interaktif yang berisi posisi seluruh pelari secara \textit{real-time}, lokasi \textit{checkpoint}, \textit{water station}, titik \textit{start}, dan \textit{finish}. \\ \hline
 
-FR-02 & Kelola Track &
-Menyediakan tampilan untuk mengunggah rute lomba (\textit{GPX/TCX}) serta mengatur \textit{checkpoint} dan \textit{water station}. \\ \hline
+FR-02 & Daftar dan Notifikasi Darurat &
+Menyediakan daftar peserta yang mengirimkan permintaan bantuan (SOS) serta notifikasi secara \textit{real-time}. \\ \hline
 
-FR-03 & Status Operasional Lomba &
-Menampilkan status event seperti jam buka/tutup \textit{checkpoint}, \textit{cutoff time}, pergantian pelari, dan informasi penting lainnya. \\ \hline
-
-FR-04 & Notifikasi Bantuan &
-Menyediakan tampilan untuk menerima notifikasi darurat atau laporan bantuan dari peserta. \\ \hline
+FR-03 & Daftar dan Notifikasi Peserta Keluar Jalur &
+Menyediakan daftar peserta yang terdeteksi keluar dari rute perlombaan (\textit{lost track}) beserta notifikasi secara \textit{real-time}. \\ \hline
 
 
 \multicolumn{3}{|c|}{\textbf{Ketua Tim}} \\ \hline
 
-FR-05 & Manajemen Tim &
-Menyediakan tampilan untuk membuat tim, mengundang anggota, menerima undangan, dan melihat struktur tim. \\ \hline
+FR-04 & Manajemen Tim &
+Menyediakan tampilan untuk membuat tim, mengundang anggota, menerima undangan, serta melihat struktur tim relay. \\ \hline
 
-FR-06 & Visualisasi ETA &
-Menampilkan estimasi waktu kedatangan (ETA) anggota tim pada \textit{checkpoint} atau titik tertentu. \\ \hline
-
-FR-07 & Tampilan Dashboard Pelacakan Tim &
+FR-05 & Dashboard Pelacakan Tim &
 Menampilkan posisi anggota tim secara \textit{real-time} dalam bentuk peta interaktif. \\ \hline
 
-FR-08 & Notifikasi Bantuan &
-Menyediakan tampilan notifikasi apabila anggota tim mengirim permintaan bantuan atau mendekati \textit{cutoff}. \\ \hline
+FR-06 & Visualisasi ETA dan ETD &
+Menampilkan estimasi waktu kedatangan (\textit{Estimated Time of Arrival}) dan estimasi waktu keberangkatan (\textit{Estimated Time of Departure}) anggota tim pada titik tertentu. \\ \hline
 
-FR-09 & Halaman Informasi Lomba &
-Menyediakan halaman berisi jadwal lomba, kategori, aturan, dan ketentuan perlombaan. \\ \hline
+FR-07 & Notifikasi Darurat &
+Menyediakan notifikasi apabila anggota tim mengirim permintaan bantuan darurat (SOS). \\ \hline
 
-FR-10 & Status Operasional Lomba &
-Menampilkan informasi status \textit{checkpoint}, pergantian relay, dan kondisi operasional lomba. \\ \hline
+FR-08 & Notifikasi Keluar Jalur &
+Menyediakan notifikasi apabila anggota tim keluar dari rute perlombaan (\textit{lost track}). \\ \hline
+
+FR-09 & Generate Kode Tim Support &
+Menyediakan fitur untuk menghasilkan kode atau tautan yang dapat digunakan oleh tim support untuk mengakses data tim. \\ \hline
 
 
 \multicolumn{3}{|c|}{\textbf{Peserta (Pelari)}} \\ \hline
 
-FR-11 & Visualisasi ETA &
-Menampilkan estimasi waktu kedatangan (ETA) pelari pada \textit{checkpoint} berikutnya. \\ \hline
+FR-10 & Dashboard Pelacakan &
+Menampilkan posisi pelari secara \textit{real-time} pada peta interaktif beserta informasi rute perlombaan. \\ \hline
 
-FR-12 & Tampilan Dashboard Pelacakan &
-Menampilkan posisi pelari secara \textit{real-time} pada peta interaktif. \\ \hline
+FR-11 & Visualisasi ETA dan ETD &
+Menampilkan estimasi waktu kedatangan dan keberangkatan pada \textit{checkpoint} atau titik tertentu. \\ \hline
 
-FR-13 & Pergantian Relay &
-Menyediakan fitur untuk melakukan \textit{switch relay} dan konfirmasi pergantian pelari. \\ \hline
+FR-12 & Permintaan Bantuan Darurat &
+Menyediakan fitur SOS untuk mengirim permintaan bantuan beserta lokasi pelari secara \textit{real-time}. \\ \hline
 
-FR-14 & Permintaan Bantuan &
-Menyediakan fitur SOS atau permintaan bantuan darurat beserta lokasi pelari. \\ \hline
+FR-13 & Deteksi Keluar Jalur &
+Menyediakan fitur untuk mendeteksi ketika pelari keluar dari rute perlombaan dan memberikan peringatan kepada pelari. \\ \hline
 
-FR-15 & Status Checkpoint &
-Menampilkan status \textit{checkpoint} yang telah dilewati maupun yang akan dituju. \\ \hline
+FR-14 & Status Checkpoint &
+Menampilkan informasi ketika pelari memasuki area \textit{checkpoint} dan status \textit{checkpoint} yang telah dilalui. \\ \hline
 
-FR-16 & Halaman Informasi Lomba &
-Menyediakan informasi mengenai jadwal, kategori, aturan, dan ketentuan lomba. \\ \hline
+FR-15 & Pergantian Relay &
+Menyediakan fitur untuk melakukan pergantian pelari ketika memasuki area pergantian relay. \\ \hline
 
-FR-17 & Status Operasional Lomba &
-Menampilkan informasi kondisi lomba dan status operasional secara \textit{real-time}. \\ \hline
+FR-16 & Pemantauan Anggota Tim &
+Menampilkan posisi anggota lain yang berada dalam grup relay yang sama secara \textit{real-time}. \\ \hline
+
+FR-17 & Generate Kode Penonton &
+Menyediakan fitur untuk menghasilkan kode atau tautan yang dapat digunakan oleh keluarga atau penonton untuk memantau pelari. \\ \hline
+
+FR-18 & Pengaturan Visibilitas &
+Menyediakan fitur untuk mengatur status pelacakan menjadi publik atau privat. \\ \hline
 
 
 \multicolumn{3}{|c|}{\textbf{Tim Support}} \\ \hline
 
-FR-18 & Dashboard Penjemputan Peserta &
-Menampilkan lokasi peserta yang perlu dijemput atau dibantu selama perlombaan. \\ \hline
+FR-19 & Dashboard Pelacakan &
+Menampilkan posisi peserta secara \textit{real-time} untuk mendukung kebutuhan logistik dan bantuan selama perlombaan. \\ \hline
 
-FR-19 & Visualisasi ETA &
-Menampilkan estimasi waktu kedatangan peserta pada titik tertentu. \\ \hline
+FR-20 & Visualisasi ETA dan ETD &
+Menampilkan estimasi waktu kedatangan dan keberangkatan peserta pada titik tertentu. \\ \hline
 
-FR-20 & Tampilan Dashboard Pelacakan &
-Menampilkan posisi peserta secara \textit{real-time} untuk kebutuhan logistik dan bantuan. \\ \hline
+FR-21 & Notifikasi Darurat &
+Menyediakan notifikasi apabila peserta mengirim permintaan bantuan darurat (SOS). \\ \hline
 
-FR-21 & Notifikasi Bantuan &
-Menyediakan notifikasi apabila peserta membutuhkan bantuan atau mengalami kondisi darurat. \\ \hline
+FR-22 & Notifikasi Keluar Jalur &
+Menyediakan notifikasi apabila peserta keluar dari rute perlombaan (\textit{lost track}). \\ \hline
 
 
-\multicolumn{3}{|c|}{\textbf{Penonton}} \\ \hline
+\multicolumn{3}{|c|}{\textbf{Publik/Penonton}} \\ \hline
 
-FR-22 & Tampilan Dashboard Pelacakan &
-Menampilkan posisi pelari tertentu secara \textit{real-time} pada peta interaktif. \\ \hline
+FR-23 & Dashboard Pelacakan Publik &
+Menampilkan posisi pelari yang mengaktifkan visibilitas publik secara \textit{real-time}. \\ \hline
 
-FR-23 & Visualisasi ETA &
-Menampilkan estimasi waktu kedatangan pelari pada \textit{checkpoint} tertentu. \\ \hline
+FR-24 & Informasi Sponsor &
+Menampilkan informasi dan logo sponsor yang mendukung penyelenggaraan perlombaan. \\ \hline
 
 \end{longtable}

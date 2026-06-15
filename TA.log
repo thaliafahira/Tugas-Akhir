@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  14 JUN 2026 22:19
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  15 JUN 2026 23:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1581,7 +1581,7 @@ Overfull \hbox (0.58832pt too wide) detected at line 60
  []
 
 
-Overfull \hbox (7.81728pt too wide) in paragraph at lines 61--61
+Overfull \hbox (8.11728pt too wide) in paragraph at lines 61--61
  [][] [][][]\TU/TimesNewRoman(0)/b/n/12 PERANCANGAN \TU/TimesNewRoman(0)/b/it/1
 2 FRONT-END \TU/TimesNewRoman(0)/b/n/12 APLIKASI ITB ULTRA-MARATHON[][] []  
  []
@@ -2038,97 +2038,118 @@ Overfull \hbox (3.45673pt too wide) in alignment at lines 14--17
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--21
-[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+Underfull \hbox (badness 6141) in paragraph at lines 24--24
+[]|\TU/TimesNewRoman(0)/m/n/12 Daftar dan Notifikasi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
-[]|\TU/TimesNewRoman(0)/m/n/12 Status Operasional
+Underfull \hbox (badness 6141) in paragraph at lines 27--27
+[]|\TU/TimesNewRoman(0)/m/n/12 Daftar dan Notifikasi
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 37--37
+Underfull \hbox (badness 1009) in paragraph at lines 28--28
+\TU/TimesNewRoman(0)/m/n/12 teksi keluar dari rute perlombaan (\TU/TimesNewRoma
+n(0)/m/it/12 lost
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 34--34
 []|\TU/TimesNewRoman(0)/m/n/12 Menyediakan tampilan untuk membuat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
-[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]|\TU/TimesNewRoman(0)/m/n/12 Dashboard Pelacakan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\TU/TimesNewRoman(0)/m/n/12 Visualisasi ETA dan
+ []
+
+
+Underfull \hbox (badness 2735) in paragraph at lines 46--46
+[]|\TU/TimesNewRoman(0)/m/n/12 Menyediakan notifikasi apabila anggo-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 48--48
-[]|\TU/TimesNewRoman(0)/m/n/12 Halaman Informasi
+[]|\TU/TimesNewRoman(0)/m/n/12 Generate Kode Tim
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--51
-[]|\TU/TimesNewRoman(0)/m/n/12 Status Operasional
+Underfull \hbox (badness 1168) in paragraph at lines 49--49
+[]|\TU/TimesNewRoman(0)/m/n/12 Menyediakan fitur untuk menghasilkan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
-[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
- []
-
-
-Underfull \hbox (badness 1365) in paragraph at lines 61--61
+Underfull \hbox (badness 1365) in paragraph at lines 55--55
 []|\TU/TimesNewRoman(0)/m/n/12 Menampilkan posisi pelari secara \TU/TimesNewRom
 an(0)/m/it/12 real-
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]|\TU/TimesNewRoman(0)/m/n/12 Visualisasi ETA dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]|\TU/TimesNewRoman(0)/m/n/12 Permintaan Bantuan
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 72--72
-[]|\TU/TimesNewRoman(0)/m/n/12 Halaman Informasi
+[]|\TU/TimesNewRoman(0)/m/n/12 Pemantauan Anggota
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
-[]|\TU/TimesNewRoman(0)/m/n/12 Status Operasional
+Underfull \hbox (badness 1062) in paragraph at lines 73--73
+[]|\TU/TimesNewRoman(0)/m/n/12 Menampilkan posisi anggota lain yang
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 76--76
-[]|\TU/TimesNewRoman(0)/m/n/12 Menampilkan informasi kondisi lomba
+Underfull \hbox (badness 1028) in paragraph at lines 75--75
+[]|\TU/TimesNewRoman(0)/m/n/12 Generate Kode Penon-
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 81--81
-[]|\TU/TimesNewRoman(0)/m/n/12 Dashboard Penjemput-
+Underfull \hbox (badness 1168) in paragraph at lines 76--76
+[]|\TU/TimesNewRoman(0)/m/n/12 Menyediakan fitur untuk menghasilkan
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 87--87
-[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+[]|\TU/TimesNewRoman(0)/m/n/12 Visualisasi ETA dan
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 91--91
+Underfull \hbox (badness 6188) in paragraph at lines 91--91
+[]|\TU/TimesNewRoman(0)/m/n/12 Menyediakan notifikasi apabila peser-
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 94--94
 []|\TU/TimesNewRoman(0)/m/n/12 Menyediakan notifikasi apabila peserta
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 91--91
-\TU/TimesNewRoman(0)/m/n/12 membutuhkan bantuan atau mengalami
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]|\TU/TimesNewRoman(0)/m/n/12 Dashboard Pelacakan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-[]|\TU/TimesNewRoman(0)/m/n/12 Tampilan Dashboard
+Underfull \hbox (badness 1810) in paragraph at lines 103--103
+\TU/TimesNewRoman(0)/m/n/12 yang mendukung penyelenggaraan per-
  []
 
 
-Overfull \hbox (3.45673pt too wide) in alignment at lines 17--102
+Overfull \hbox (3.45673pt too wide) in alignment at lines 17--105
  [] [] [] 
  []
 
-[29] [30]) (tables/nfr.tex
-Underfull \vbox (badness 1052) has occurred while \output is active []
-
-
-
-[31]
+[29] [30] [31]) (tables/nfr.tex
 Overfull \hbox (3.45673pt too wide) in alignment at lines 1--5
  [] [] [] 
  []
@@ -2187,21 +2208,26 @@ Overfull \hbox (3.45673pt too wide) in alignment at lines 17--53
  []
 
 [32])
-Underfull \vbox (badness 1052) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [34]
 
-LaTeX Warning: Citation 'Saaty1980' on page 35 undefined on input line 266.
+[35]
+
+LaTeX Warning: Citation 'Saaty1980' on page 36 undefined on input line 266.
 
 
-LaTeX Warning: Citation 'Saaty1980' on page 35 undefined on input line 266.
+LaTeX Warning: Citation 'Saaty1980' on page 36 undefined on input line 266.
 
 
-LaTeX Warning: Citation 'Vaidya2006' on page 35 undefined on input line 266.
+LaTeX Warning: Citation 'Vaidya2006' on page 36 undefined on input line 266.
 
 
 Overfull \hbox (3.20702pt too wide) in paragraph at lines 266--267
@@ -2210,41 +2236,55 @@ Overfull \hbox (3.20702pt too wide) in paragraph at lines 266--267
 2 (AHP)
  []
 
-
-
-[35] (tables/ahp-kriteria.tex) (tables/ahp-bobot-kriteria.tex)
-
-[36]
-
-LaTeX Warning: Citation 'Saaty1980' on page 37 undefined on input line 302.
-
-
-LaTeX Warning: Citation 'Nawrocki2021' on page 37 undefined on input line 309.
-
-(tables/ahp-alt-c1.tex)
-
-[37] (tables/ahp-alt-c2.tex) (tables/ahp-alt-c3.tex)
-
-LaTeX Warning: Citation 'Nawrocki2021' on page 38 undefined on input line 324.
-
-(tables/ahp-alt-c4.tex)
-
-[38] (tables/ahp-alt-c5.tex) (tables/ahp-skor-akhir.tex)
-
-LaTeX Warning: Citation 'Nawrocki2021' on page 39 undefined on input line 343.
+(tables/ahp-kriteria.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[39]) (Bab IV - Perancangan.tex
+[36] (tables/ahp-bobot-kriteria.tex)
 
-[40]
+[37]
+
+LaTeX Warning: Citation 'Saaty1980' on page 38 undefined on input line 302.
+
+
+LaTeX Warning: Citation 'Nawrocki2021' on page 38 undefined on input line 309.
+
+(tables/ahp-alt-c1.tex) (tables/ahp-alt-c2.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+
+[38] (tables/ahp-alt-c3.tex)
+
+LaTeX Warning: Citation 'Nawrocki2021' on page 39 undefined on input line 324.
+
+(tables/ahp-alt-c4.tex) (tables/ahp-alt-c5.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (tables/ahp-skor-akhir.tex
+
+[39])
+
+LaTeX Warning: Citation 'Nawrocki2021' on page 40 undefined on input line 343.
+
+
+
+[40]) (Bab IV - Perancangan.tex
+
+[41]
+
+[42
+
+]
 Bab IV.
 File: images/usecase.png Graphic file (type bmp)
 <images/usecase.png>
 
 
-[41
-
+[43
 
 ] (tables/legenda-usecase.tex
 Overfull \hbox (23.37357pt too wide) in alignment at lines 1--7
@@ -2272,7 +2312,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[42]) (tables/usecase-deskripsi.tex
+[44]) (tables/usecase-deskripsi.tex
 Overfull \hbox (23.37357pt too wide) in alignment at lines 1--6
  [] [] [] 
  []
@@ -2303,12 +2343,12 @@ Overfull \hbox (23.37357pt too wide) in alignment at lines 18--88
  [] [] [] 
  []
 
-[43] [44])
+[45] [46])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[45]
+[47]
 Overfull \hbox (9.70924pt too wide) in paragraph at lines 86--91
 \TU/TimesNewRoman(0)/m/n/12 Halaman ini menyediakan informasi kontekstual menge
 nai ITB Ultra-Marathon,
@@ -2319,14 +2359,14 @@ Underfull \vbox (badness 2608) has occurred while \output is active []
 
 
 
-[46]
+[48]
 
-LaTeX Warning: Reference `tab:pemetaan-halaman-fr' on page 47 undefined on inpu
+LaTeX Warning: Reference `tab:pemetaan-halaman-fr' on page 49 undefined on inpu
 t line 136.
 
-(tables/pemetaan-halaman.tex [47])) (Bab V - Implementasi.tex
+(tables/pemetaan-halaman.tex [49])) (Bab V - Implementasi.tex
 
-[48]
+[50]
 Bab V.
 (tables/hw.tex)
 Overfull \hbox (2.2121pt too wide) in paragraph at lines 10--14
@@ -2336,31 +2376,31 @@ embangan sistem terbagi men-
 
 (tables/sw.tex)) (Bab VI - Evaluasi.tex
 
-[49
-
-
-]
-
-[50]
-Bab VI.
-) (Bab VII - Penutup.tex
-
 [51
 
 
 ]
 
-[52
+[52]
+Bab VI.
+) (Bab VII - Penutup.tex
+
+[53
+
+
+]
+
+[54
 
 ]
 Bab VII.
 )
 
-[53
+[55
 
 ]
 
-[54
+[56
 
 ]
 
@@ -2376,21 +2416,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 (listings/binary-search-python.tex
 
-[55
+[57
 
 
 ])) (Lampiran-B.tex
 
-[56]
+[58]
 Lampiran B.
 )
 
-[57
+[59
 
 
 ]
 
-[58
+[60
 
 ]
 
@@ -2426,4 +2466,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  73i,14n,95p,2144b,2220s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on TA.pdf (88 pages).
+Output written on TA.pdf (90 pages).
