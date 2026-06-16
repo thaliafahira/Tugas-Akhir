@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  15 JUN 2026 23:55
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  16 JUN 2026 10:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2218,59 +2218,70 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [34]
+Underfull \vbox (badness 3646) has occurred while \output is active []
+
+
 
 [35]
 
-LaTeX Warning: Citation 'Saaty1980' on page 36 undefined on input line 266.
+LaTeX Warning: Citation 'Saaty1980' on page 36 undefined on input line 277.
 
 
-LaTeX Warning: Citation 'Saaty1980' on page 36 undefined on input line 266.
+LaTeX Warning: Citation 'Saaty1980' on page 36 undefined on input line 277.
 
 
-LaTeX Warning: Citation 'Vaidya2006' on page 36 undefined on input line 266.
+LaTeX Warning: Citation 'Vaidya2006' on page 36 undefined on input line 277.
 
 
-Overfull \hbox (3.20702pt too wide) in paragraph at lines 266--267
+Overfull \hbox (3.20702pt too wide) in paragraph at lines 277--278
 []\TU/TimesNewRoman(0)/m/n/12 Penentuan solusi dilakukan menggunakan metode \TU
 /TimesNewRoman(0)/m/it/12 Analytic Hierarchy Process \TU/TimesNewRoman(0)/m/n/1
 2 (AHP)
  []
 
-(tables/ahp-kriteria.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Underfull \vbox (badness 3058) has occurred while \output is active []
 
 
 
-[36] (tables/ahp-bobot-kriteria.tex)
+[36] (tables/ahp-kriteria.tex) (tables/ahp-bobot-kriteria.tex)
+Underfull \vbox (badness 1838) has occurred while \output is active []
+
+
 
 [37]
 
-LaTeX Warning: Citation 'Saaty1980' on page 38 undefined on input line 302.
+LaTeX Warning: Citation 'Saaty1980' on page 38 undefined on input line 313.
 
 
-LaTeX Warning: Citation 'Nawrocki2021' on page 38 undefined on input line 309.
+LaTeX Warning: Citation 'Nawrocki2021' on page 38 undefined on input line 320.
 
-(tables/ahp-alt-c1.tex) (tables/ahp-alt-c2.tex
+(tables/ahp-alt-c1.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
 
-[38] (tables/ahp-alt-c3.tex)
+[38] (tables/ahp-alt-c2.tex) (tables/ahp-alt-c3.tex)
 
-LaTeX Warning: Citation 'Nawrocki2021' on page 39 undefined on input line 324.
-
-(tables/ahp-alt-c4.tex) (tables/ahp-alt-c5.tex
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (tables/ahp-skor-akhir.tex
-
-[39])
-
-LaTeX Warning: Citation 'Nawrocki2021' on page 40 undefined on input line 343.
+LaTeX Warning: Citation 'Nawrocki2021' on page 39 undefined on input line 335.
 
 
+Overfull \hbox (2.30351pt too wide) in paragraph at lines 334--336
+[]\TU/TimesNewRoman(0)/b/n/12 Kriteria C4 (Efisiensi Pengembangan) \TU/TimesNew
+Roman(0)/m/n/12 Pada kriteria ini, pendekatan hibrida (Alt. 4)
+ []
+
+
+Overfull \hbox (36.21765pt too wide) in paragraph at lines 334--336
+\TU/TimesNewRoman(0)/m/n/12 native untuk fitur tertentu dapat meningkatkan komp
+leksitas pemeliharaan ([]).
+ []
+
+
+
+[39] (tables/ahp-alt-c4.tex) (tables/ahp-alt-c5.tex) (tables/ahp-skor-akhir.tex
+)
 
 [40]) (Bab IV - Perancangan.tex
 
@@ -2460,7 +2471,7 @@ Package logreq Info: Writing requests to 'TA.run.xml'.
 Here is how much of TeX's memory you used:
  33311 strings out of 403197
  644595 string characters out of 5453038
- 2161322 words of memory out of 5000000
+ 2161321 words of memory out of 5000000
  61324 multiletter control sequences out of 15000+600000
  633603 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

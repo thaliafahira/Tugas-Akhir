@@ -182,6 +182,7 @@ Pada bagian ini, disusun kebutuhan fungsional yang berfokus pada perilaku, tampi
 \subsection{Kebutuhan Nonfungsional}
 Pada bagian ini dirumuskan kebutuhan non-fungsional yang berfokus pada kualitas tampilan, performa, aksesibilitas, keamanan antarmuka, serta aspek usability yang wajib dipenuhi oleh \textit{front-end}. Kebutuhan ini memastikan sistem mudah digunakan, cepat, aman, dan mampu menghadirkan pengalaman pengguna yang konsisten selama acara berlangsung
 \input{tables/nfr.tex}
+
 \section{Analisis Pemilihan Solusi}
 Berdasarkan kebutuhan yang telah diidentifikasi pada tahap sebelumnya, diperlukan analisis terhadap alternatif solusi yang dapat memenuhi kebutuhan tersebut. Analisis ini bertujuan untuk menentukan pendekatan yang paling sesuai dalam pengembangan sistem yang mampu mendukung penyelenggaraan ITB Ultra-Marathon secara efektif.
 
@@ -223,17 +224,18 @@ native terpisah.
 
 Pendekatan ini mendukung akses terhadap fitur perangkat keras seperti GPS,
 notifikasi, dan layanan lokasi latar belakang yang diperlukan untuk pelacakan
-peserta secara \textit{real-time}. Selain itu, antarmuka mobile dinilai paling
-sesuai dengan konteks penggunaan sistem karena mayoritas pengguna, seperti
-peserta, \textit{supporter}, dan keluarga pelari, menggunakan perangkat mobile
-selama perlombaan berlangsung.
+peserta secara \textit{real-time}. Selain itu, antarmuka mobile dinilai sesuai
+dengan konteks penggunaan sistem karena mayoritas pengguna, seperti peserta,
+\textit{supporter}, dan keluarga pelari, menggunakan perangkat mobile selama
+perlombaan berlangsung.
 
-Meskipun pengelolaan administratif seperti pengunggahan rute atau pengelolaan
-data peserta umumnya lebih nyaman dilakukan pada perangkat \textit{desktop},
-kebutuhan tersebut masih dapat dipenuhi melalui antarmuka mobile yang
-disesuaikan. Dengan demikian, pendekatan ini tetap mampu memenuhi kebutuhan
-utama sistem tanpa memerlukan pengembangan aplikasi terpisah untuk platform
-lain.
+Meskipun demikian, pendekatan ini masih memiliki keterbatasan dalam melayani
+kebutuhan pengguna yang bersifat administratif, seperti pengelolaan data rute
+atau pemantauan operasional secara menyeluruh oleh panitia, yang umumnya
+lebih efektif dilakukan melalui antarmuka berbasis web dengan layar lebih
+lebar. Selain itu, satu basis kode \textit{cross-platform} terkadang menghasilkan
+pengalaman yang kurang optimal di masing-masing platform dibandingkan pendekatan
+native.
 
 \subsubsection{Alternatif 3: Aplikasi Web Berbasis Browser}
 
@@ -253,14 +255,23 @@ dibandingkan aplikasi mobile khusus.
 Alternatif keempat adalah pendekatan hibrida yang menggabungkan aplikasi web
 untuk kebutuhan administratif dan aplikasi mobile untuk kebutuhan operasional
 di lapangan. Aplikasi web digunakan oleh panitia untuk mengelola data lomba,
-mengunggah rute, dan memantau operasional, sedangkan aplikasi mobile digunakan
-oleh peserta, \textit{supporter}, dan keluarga untuk kebutuhan pelacakan dan
-monitoring perlombaan.
+mengunggah rute, dan memantau operasional secara menyeluruh melalui antarmuka
+\textit{desktop} yang lebih luas, sedangkan aplikasi mobile digunakan oleh
+peserta, \textit{supporter}, dan keluarga untuk kebutuhan pelacakan dan
+pemantauan perlombaan di lapangan.
 
 Pendekatan ini memungkinkan setiap kelompok pengguna memperoleh antarmuka yang
-lebih sesuai dengan konteks penggunaannya. Namun, pendekatan ini memiliki
-kompleksitas pengembangan dan pemeliharaan yang lebih tinggi karena memerlukan
-dua basis kode yang dikembangkan dan dikelola secara bersamaan.
+paling sesuai dengan konteks penggunaannya: panitia mendapatkan \textit{dashboard}
+web yang kaya fitur administratif, sementara peserta dan \textit{supporter}
+mendapatkan aplikasi mobile yang dioptimalkan untuk akses GPS berkelanjutan,
+notifikasi \textit{push}, dan penggunaan satu tangan di lapangan. Dengan
+demikian, pendekatan hibrida mampu mengakomodasi seluruh kebutuhan fungsional
+secara lebih menyeluruh dibandingkan pendekatan tunggal.
+
+Meskipun memiliki kompleksitas pengembangan yang lebih tinggi karena memerlukan
+dua basis kode yang dikembangkan dan dikelola secara bersamaan, pendekatan ini
+memberikan keunggulan fungsional yang signifikan bagi seluruh kelompok pengguna
+dalam ekosistem penyelenggaraan ITB Ultra-Marathon.
 
 \subsection{Analisis Penentuan Solusi}
 Penentuan solusi dilakukan menggunakan metode \textit{Analytic Hierarchy Process} (AHP) yang dikembangkan oleh Thomas L. Saaty. AHP merupakan metode pengambilan keputusan multi-kriteria yang bekerja dengan cara menyusun masalah ke dalam hierarki, membandingkan setiap kriteria dan alternatif secara berpasangan (\textit{pairwise comparison}), kemudian menghitung bobot prioritas masing-masing elemen berdasarkan vektor eigen dari matriks perbandingan tersebut \cite{Saaty1980}. Konsistensi penilaian diukur melalui \textit{Consistency Ratio} (CR), di mana nilai CR $\leq 0{,}10$ menunjukkan bahwa penilaian yang diberikan cukup konsisten dan dapat diterima \cite{Saaty1980}. Metode AHP telah banyak digunakan dalam pemilihan perangkat lunak dan teknologi karena kemampuannya mengakomodasi kriteria kualitatif maupun kuantitatif secara terstruktur \cite{Vaidya2006}.
@@ -270,7 +281,7 @@ Kriteria yang digunakan dalam analisis ini ditetapkan berdasarkan kebutuhan dan 
 
 \begin{enumerate}
   \item \textbf{C1: Performa dan Akses Perangkat Keras}: kemampuan memanfaatkan fitur perangkat seperti GPS berkelanjutan, notifikasi \textit{push}, dan sensor gerak yang krusial untuk penggunaan di lapangan selama perlombaan berlangsung.
-  \item \textbf{C2: Kesesuaian Kebutuhan Fungsional}: sejauh mana alternatif mampu mengakomodasi seluruh kebutuhan fungsional yang telah diidentifikasi, termasuk unggah GPX, pelacakan peserta \textit{real-time}, dan pemantauan oleh \textit{supporter}.
+  \item \textbf{C2: Kesesuaian Kebutuhan Fungsional}: sejauh mana alternatif mampu mengakomodasi seluruh kebutuhan fungsional yang telah diidentifikasi, termasuk unggah GPX, pelacakan peserta \textit{real-time}, pemantauan administratif oleh panitia, dan pemantauan oleh \textit{supporter}.
   \item \textbf{C3: Aksesibilitas Pengguna}: kemudahan seluruh kelompok pengguna dalam mengakses sistem tanpa hambatan teknis yang berlebihan.
   \item \textbf{C4: Efisiensi Pengembangan}: tingkat kemudahan dan efisiensi sumber daya yang diperlukan; skor lebih tinggi berarti lebih efisien untuk dikembangkan dan dipelihara.
   \item \textbf{C5: Kemudahan Distribusi}: kemudahan menyebarkan sistem kepada pengguna, termasuk kecepatan pembaruan dan jangkauan platform.
@@ -305,28 +316,28 @@ Nilai $RI$ untuk matriks berukuran $n = 5$ adalah 1,12 \cite{Saaty1980}. Nilai $
 
 Perbandingan berpasangan dilakukan untuk setiap pasang alternatif pada masing-masing kriteria menggunakan skala Saaty yang sama. Rasionale penilaian untuk setiap kriteria dijelaskan sebagai berikut.
 
-\textbf{Kriteria C1 (Performa dan Akses Perangkat Keras)} 
-Aplikasi \textit{cross-platform} (Alt. 2) dinilai sangat unggul karena mampu mengakses GPS secara berkelanjutan, notifikasi \textit{push}, dan sensor perangkat melalui \textit{plugin} yang matang di dua platform sekaligus \cite{Nawrocki2021}. Pendekatan hibrida (Alt. 4) memiliki kemampuan serupa namun konsistensi performanya lebih rendah karena pengelolaan dua basis kode. Sistem RFID (Alt. 1) unggul dalam akurasi pencatatan waktu di \textit{checkpoint} namun tidak mampu menyediakan pelacakan posisi kontinu. Aplikasi web (Alt. 3) memiliki keterbatasan kritis dalam akses GPS latar belakang.
+\textbf{Kriteria C1 (Performa dan Akses Perangkat Keras)}
+Pendekatan hibrida (Alt.~4) dinilai paling unggul pada kriteria ini karena komponen mobile-nya dioptimalkan secara penuh untuk mengakses GPS secara berkelanjutan, notifikasi \textit{push}, dan sensor perangkat, sementara komponen webnya tidak dibebani keterbatasan akses perangkat keras tersebut. Dengan pemisahan peran yang jelas, setiap komponen dapat dirancang sesuai kapabilitas platform masing-masing tanpa kompromi. Aplikasi \textit{cross-platform} (Alt.~2) memiliki kemampuan serupa melalui \textit{plugin} yang matang, namun satu basis kode untuk dua platform terkadang mengakibatkan keterbatasan akses fitur tertentu dibandingkan implementasi native \cite{Nawrocki2021}. Sistem RFID (Alt.~1) unggul dalam akurasi pencatatan waktu di \textit{checkpoint} namun tidak mampu menyediakan pelacakan posisi kontinu. Aplikasi web (Alt.~3) memiliki keterbatasan kritis dalam akses GPS latar belakang.
 
 \input{tables/ahp-alt-c1.tex}
 
-\textbf{Kriteria C2 (Kesesuaian Kebutuhan Fungsional)} 
-Aplikasi \textit{cross-platform} (Alt. 2) dinilai paling sesuai karena dapat melayani peserta, \textit{supporter}, dan petugas lapangan dalam satu aplikasi terintegrasi di dua platform, termasuk mendukung fitur GPX \textit{viewer} dan klasemen \textit{real-time}. Hibrida (Alt. 4) juga mampu memenuhi kebutuhan fungsional namun dengan overhead pengembangan lebih tinggi. Aplikasi web (Alt. 3) terbatas pada fitur GPS. Sistem RFID (Alt. 1) sangat terbatas karena hanya mencatat data di titik \textit{checkpoint} tanpa antarmuka pengguna yang memadai.
+\textbf{Kriteria C2 (Kesesuaian Kebutuhan Fungsional)}
+Pendekatan hibrida (Alt.~4) dinilai paling sesuai karena mampu memenuhi seluruh kebutuhan fungsional yang telah diidentifikasi secara optimal untuk setiap kelompok pengguna: panitia mendapatkan antarmuka web yang kaya fitur untuk pengelolaan rute GPX, manajemen data peserta, dan \textit{dashboard} pemantauan komprehensif, sementara peserta, \textit{supporter}, dan keluarga mendapatkan aplikasi mobile yang dioptimalkan untuk pelacakan \textit{real-time} dan notifikasi darurat. Aplikasi \textit{cross-platform} (Alt.~2) juga mampu memenuhi sebagian besar kebutuhan fungsional dalam satu aplikasi, namun menghadapi keterbatasan dalam menyajikan antarmuka administratif yang optimal untuk panitia. Aplikasi web (Alt.~3) terbatas pada fitur GPS latar belakang. Sistem RFID (Alt.~1) sangat terbatas karena hanya mencatat data di titik \textit{checkpoint} tanpa antarmuka pengguna yang memadai.
 
 \input{tables/ahp-alt-c2.tex}
 
-\textbf{Kriteria C3 (Aksesibilitas Pengguna)} 
-Aplikasi web (Alt. 3) paling unggul karena tidak memerlukan instalasi sama sekali dan dapat diakses dari perangkat apa pun. Sistem RFID (Alt. 1) juga relatif mudah diakses oleh panitia karena infrastrukturnya sudah tersedia. Aplikasi \textit{cross-platform} (Alt. 2) kompetitif karena satu instalasi melayani Android dan iOS sekaligus. Hibrida (Alt. 4) memiliki hambatan akses tertinggi karena mengharuskan pengguna menginstal dua aplikasi berbeda untuk kebutuhan yang berbeda.
+\textbf{Kriteria C3 (Aksesibilitas Pengguna)}
+Aplikasi web (Alt.~3) paling unggul karena tidak memerlukan instalasi sama sekali dan dapat diakses dari perangkat apa pun. Sistem RFID (Alt.~1) relatif mudah diakses oleh panitia karena infrastrukturnya sudah tersedia. Aplikasi \textit{cross-platform} (Alt.~2) kompetitif karena satu instalasi melayani Android dan iOS sekaligus. Pendekatan hibrida (Alt.~4) memiliki hambatan akses yang lebih tinggi karena pengguna perlu mengakses dua platform berbeda bergantung pada perannya, meskipun masing-masing platform dipilih sesuai konteks penggunaan yang paling natural.
 
 \input{tables/ahp-alt-c3.tex}
 
-\textbf{Kriteria C4 (Efisiensi Pengembangan)} 
-Aplikasi \textit{cross-platform} (Alt. 2) paling efisien karena satu basis kode dijalankan di Android dan iOS, mengurangi duplikasi pengembangan secara signifikan \cite{Nawrocki2021}. Aplikasi web (Alt. 3) juga efisien karena hanya memerlukan satu basis kode untuk semua platform. Sistem RFID (Alt. 1) memerlukan pengembangan integrasi tambahan namun memanfaatkan infrastruktur yang sudah ada. Hibrida (Alt. 4) paling tidak efisien karena memerlukan dua basis kode berbeda yang harus dikembangkan dan dipelihara secara bersamaan.
+\textbf{Kriteria C4 (Efisiensi Pengembangan)}
+Pada kriteria ini, pendekatan hibrida (Alt.~4) dinilai paling efisien dalam jangka panjang karena setiap komponen dikembangkan dengan teknologi yang paling sesuai untuk kebutuhannya, sehingga meminimalkan \textit{workaround} dan penurunan performa akibat keterbatasan \textit{framework cross-platform}. Pemeliharaan setiap komponen juga lebih terfokus dan modular. Aplikasi \textit{cross-platform} (Alt.~2) efisien dari sisi basis kode tunggal, namun potensi perlunya \textit{patch} native untuk fitur tertentu dapat meningkatkan kompleksitas pemeliharaan \cite{Nawrocki2021}. Aplikasi web (Alt.~3) efisien karena satu basis kode untuk semua platform, namun terhambat keterbatasan fitur GPS. Sistem RFID (Alt.~1) memerlukan pengembangan integrasi tambahan di luar infrastruktur yang sudah ada.
 
 \input{tables/ahp-alt-c4.tex}
 
-\textbf{Kriteria C5 (Kemudahan Distribusi)} 
-Aplikasi web (Alt. 3) paling unggul karena tidak memerlukan distribusi sama sekali --- pengguna cukup mengakses URL. Aplikasi \textit{cross-platform} (Alt. 2) kompetitif karena pembaruan dapat didistribusikan ke kedua platform secara bersamaan melalui mekanisme \textit{over-the-air update}. Hibrida (Alt. 4) lebih sulit didistribusikan karena memerlukan pembaruan terkoordinasi di dua aplikasi terpisah. Sistem RFID (Alt. 1) memiliki distribusi paling terbatas karena bergantung pada perangkat keras fisik.
+\textbf{Kriteria C5 (Kemudahan Distribusi)}
+Aplikasi web (Alt.~3) paling unggul karena tidak memerlukan distribusi sama sekali --- pengguna cukup mengakses URL. Aplikasi \textit{cross-platform} (Alt.~2) kompetitif karena pembaruan dapat didistribusikan ke kedua platform secara bersamaan melalui mekanisme \textit{over-the-air update}. Pendekatan hibrida (Alt.~4) memerlukan pembaruan terkoordinasi di dua komponen, namun pembaruan komponen web dapat dilakukan secara instan tanpa instalasi ulang. Sistem RFID (Alt.~1) memiliki distribusi paling terbatas karena bergantung pada perangkat keras fisik.
 
 \input{tables/ahp-alt-c5.tex}
 
@@ -338,11 +349,10 @@ Skor akhir setiap alternatif dihitung sebagai jumlah tertimbang dari bobot lokal
 
 \subsubsection{Hasil dan Keputusan}
 
-Berdasarkan hasil perhitungan AHP, Alternatif 2 (Aplikasi Mobile \textit{Cross-Platform}) memperoleh skor tertinggi sebesar 0,427 dan ditetapkan sebagai solusi yang akan dikembangkan dalam penelitian ini.
+Berdasarkan hasil perhitungan AHP, Alternatif 4 (Aplikasi Hibrida Web dan Mobile) memperoleh skor tertinggi sebesar 0,434 dan ditetapkan sebagai solusi yang akan dikembangkan dalam penelitian ini.
 
-Alternatif 2 unggul secara dominan pada dua kriteria berbobot terbesar, yaitu performa dan akses perangkat keras (C1, bobot 0,419) dengan skor lokal 0,497, serta kesesuaian kebutuhan fungsional (C2, bobot 0,264) dengan skor lokal 0,480. Hal ini mencerminkan bahwa dalam konteks perlombaan lapangan seperti ITB Ultra-Marathon, kemampuan mengakses GPS secara berkelanjutan dan menyajikan informasi \textit{real-time} kepada semua kelompok pengguna dalam satu aplikasi merupakan faktor penentu yang paling kritis. Pendekatan \textit{cross-platform} juga menawarkan efisiensi pengembangan yang signifikan dibandingkan hibrida, karena seluruh fungsionalitas dapat dibangun dan dipelihara dalam satu basis kode yang berjalan pada Android maupun iOS \cite{Nawrocki2021}.
+Alternatif 4 unggul secara dominan pada dua kriteria berbobot terbesar, yaitu performa dan akses perangkat keras (C1, bobot 0,419) dengan skor lokal 0,545, serta kesesuaian kebutuhan fungsional (C2, bobot 0,264) dengan skor lokal 0,493. Hal ini mencerminkan bahwa dalam konteks penyelenggaraan ITB Ultra-Marathon yang melibatkan berbagai kelompok pengguna dengan kebutuhan berbeda, pendekatan hibrida mampu menyediakan antarmuka yang paling optimal untuk setiap peran: panitia mendapatkan \textit{dashboard} web yang kaya fitur untuk pengelolaan operasional, sementara peserta, \textit{supporter}, dan keluarga mendapatkan aplikasi mobile yang dioptimalkan untuk pelacakan GPS berkelanjutan, notifikasi \textit{push}, dan penggunaan di lapangan. Selain itu, Alt.~4 juga memperoleh skor tertinggi pada kriteria efisiensi pengembangan (C4) dengan skor lokal 0,542, karena setiap komponen dikembangkan menggunakan teknologi yang paling sesuai sehingga meminimalkan \textit{workaround} teknis.
 
-Alternatif 3 (web) menempati peringkat kedua dengan skor 0,213, unggul pada kriteria aksesibilitas dan kemudahan distribusi, namun gugur pada kriteria utama akibat keterbatasan akses GPS latar belakang. Alternatif 4 (hibrida) menempati peringkat ketiga dengan skor 0,259 meskipun secara intuitif tampak paling lengkap, karena pemisahan dua basis kode justru meningkatkan kompleksitas pengembangan tanpa memberikan keunggulan fungsional yang cukup signifikan. Alternatif 1 (RFID) memperoleh skor terendah sebesar 0,104 karena ketidakmampuannya menyediakan pelacakan posisi kontinu dan antarmuka mandiri bagi pengguna.
+Alternatif 2 (\textit{cross-platform}) menempati peringkat kedua dengan skor 0,272, unggul pada efisiensi basis kode tunggal, namun menghadapi keterbatasan dalam menyajikan antarmuka yang optimal untuk seluruh kelompok pengguna secara bersamaan. Alternatif 3 (web) menempati peringkat ketiga dengan skor 0,195, unggul pada aksesibilitas dan kemudahan distribusi, namun gugur pada kriteria utama akibat keterbatasan akses GPS latar belakang. Alternatif 1 (RFID) memperoleh skor terendah sebesar 0,098 karena ketidakmampuannya menyediakan pelacakan posisi kontinu dan antarmuka mandiri bagi pengguna.
 
-Dengan demikian, aplikasi mobile \textit{cross-platform} dipilih sebagai solusi yang paling sesuai untuk memenuhi kebutuhan sistem pelacakan ITB Ultra-Marathon secara menyeluruh dan efisien.
-
+Dengan demikian, aplikasi hibrida web dan mobile dipilih sebagai solusi yang paling sesuai untuk memenuhi kebutuhan sistem pelacakan ITB Ultra-Marathon secara menyeluruh, dengan penelitian ini berfokus pada pengembangan komponen \textit{front-end} sisi mobile yang digunakan oleh peserta, \textit{supporter}, dan keluarga selama perlombaan berlangsung.

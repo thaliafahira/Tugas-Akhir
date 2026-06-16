@@ -52,12 +52,12 @@
 \contentsline {subsubsection}{\numberline {III.5.1.4}Alternatif 4: Aplikasi Hibrida Web dan Mobile}{35}{subsubsection.3.5.1.4}%
 \contentsline {subsection}{\numberline {III.5.2}Analisis Penentuan Solusi}{36}{subsection.3.5.2}%
 \contentsline {subsubsection}{\numberline {III.5.2.1}Penetapan Kriteria}{36}{subsubsection.3.5.2.1}%
-\contentsline {subsubsection}{\numberline {III.5.2.2}Perbandingan Berpasangan Antar Kriteria}{36}{subsubsection.3.5.2.2}%
+\contentsline {subsubsection}{\numberline {III.5.2.2}Perbandingan Berpasangan Antar Kriteria}{37}{subsubsection.3.5.2.2}%
 \contentsline {subsubsection}{\numberline {III.5.2.3}Normalisasi Matriks dan Perhitungan Bobot}{37}{subsubsection.3.5.2.3}%
-\contentsline {subsubsection}{\numberline {III.5.2.4}Uji Konsistensi Kriteria}{37}{subsubsection.3.5.2.4}%
+\contentsline {subsubsection}{\numberline {III.5.2.4}Uji Konsistensi Kriteria}{38}{subsubsection.3.5.2.4}%
 \contentsline {subsubsection}{\numberline {III.5.2.5}Perbandingan Berpasangan Antar Alternatif}{38}{subsubsection.3.5.2.5}%
 \contentsline {subsubsection}{\numberline {III.5.2.6}Perhitungan Skor Akhir}{40}{subsubsection.3.5.2.6}%
-\contentsline {subsubsection}{\numberline {III.5.2.7}Hasil dan Keputusan}{40}{subsubsection.3.5.2.7}%
+\contentsline {subsubsection}{\numberline {III.5.2.7}Hasil dan Keputusan}{41}{subsubsection.3.5.2.7}%
 \contentsline {chapter}{\numberline {IV}PERANCANGAN \textit {FRONT-END} APLIKASI ITB ULTRA-MARATHON}{43}{chapter.4}%
 \contentsline {section}{\numberline {IV.1}Pemodelan Fungsional Sistem}{43}{section.4.1}%
 \contentsline {section}{\numberline {IV.2}Rancangan \textit {Behavioral}}{47}{section.4.2}%
