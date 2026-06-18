@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  16 JUN 2026 10:02
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  17 JUN 2026 03:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2291,13 +2291,14 @@ leksitas pemeliharaan ([]).
 
 ]
 Bab IV.
-File: images/usecase.png Graphic file (type bmp)
-<images/usecase.png>
 
 
 [43
 
-] (tables/legenda-usecase.tex
+]
+File: images/usecase.png Graphic file (type bmp)
+<images/usecase.png>
+ (tables/legenda-usecase.tex
 Overfull \hbox (23.37357pt too wide) in alignment at lines 1--7
  [] [] [] 
  []
@@ -2319,7 +2320,7 @@ Overfull \hbox (23.37357pt too wide) in alignment at lines 11--99
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6927) has occurred while \output is active []
 
 
 
@@ -2360,7 +2361,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [47]
-Overfull \hbox (9.70924pt too wide) in paragraph at lines 86--91
+Overfull \hbox (9.70924pt too wide) in paragraph at lines 87--92
 \TU/TimesNewRoman(0)/m/n/12 Halaman ini menyediakan informasi kontekstual menge
 nai ITB Ultra-Marathon,
  []
@@ -2373,7 +2374,7 @@ Underfull \vbox (badness 2608) has occurred while \output is active []
 [48]
 
 LaTeX Warning: Reference `tab:pemetaan-halaman-fr' on page 49 undefined on inpu
-t line 136.
+t line 137.
 
 (tables/pemetaan-halaman.tex [49])) (Bab V - Implementasi.tex
 
@@ -2458,7 +2459,7 @@ L3 programming layer <2025-09-02>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `TA.out' has not changed.
-(rerunfilecheck)             Checksum: 8138763689CC41D5D3E9549D6CBECDCC;14435.
+(rerunfilecheck)             Checksum: 684AD6915D8912495C9D724CC3E8CC9F;14578.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                TA
@@ -2471,7 +2472,7 @@ Package logreq Info: Writing requests to 'TA.run.xml'.
 Here is how much of TeX's memory you used:
  33311 strings out of 403197
  644595 string characters out of 5453038
- 2161321 words of memory out of 5000000
+ 2161475 words of memory out of 5000000
  61324 multiletter control sequences out of 15000+600000
  633603 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
