@@ -1,0 +1,36 @@
+% ==========================================
+% TABEL VI.2 HASIL SYSTEM INTEGRATION TESTING
+% ==========================================
+\begin{longtable}{p{1.3cm} p{1.6cm} p{3cm} p{4.3cm} p{3cm} p{1.5cm}}
+\caption{Hasil \textit{System Integration Testing}} \label{tab:integration-testing} \\
+
+\hline
+\textbf{ID} & \textbf{Skenario} & \textbf{Endpoint} & \textbf{Skenario Pengujian} & \textbf{Hasil yang Diharapkan} & \textbf{Status} \\ \hline
+\endfirsthead
+
+\multicolumn{6}{c}{\tablename\ \thetable{} -- lanjutan dari halaman sebelumnya} \\ \hline
+\textbf{ID} & \textbf{Skenario} & \textbf{Endpoint} & \textbf{Skenario Pengujian} & \textbf{Hasil yang Diharapkan} & \textbf{Status} \\ \hline
+\endhead
+
+\hline \multicolumn{6}{r}{Bersambung ke halaman berikutnya} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+IT-01 & SK-01 & \texttt{POST /location} & Front-end mobile mengirimkan koordinat, \textit{timestamp}, dan ID peserta secara berkala ke backend & Backend menyimpan data lokasi dan mengembalikan respons \texttt{200 OK} & Berhasil \\
+IT-02 & SK-01 & \texttt{POST /location} & Koneksi jaringan diputus secara sengaja saat pengiriman lokasi berlangsung & Data lokasi disimpan sementara pada \textit{cache} lokal dan dikirim ulang pada interval berikutnya & Berhasil \\
+IT-03 & SK-02 & \texttt{GET /eta-metrics} & Front-end meminta data ETA, ETD, dan metrik aktivitas menggunakan lokasi terkini & Backend mengembalikan nilai ETA, ETD, dan metrik aktivitas yang sesuai dengan data rute & Berhasil \\
+IT-04 & SK-02 & \texttt{GET /eta-metrics} & Sinyal GPS perangkat peserta diputus sementara & Backend mengembalikan respons \texttt{204 No Content} dan antarmuka menampilkan status menunggu sinyal GPS & Berhasil \\
+IT-05 & SK-03 & \texttt{POST /emergency} & Peserta menyelesaikan \textit{countdown} SOS tanpa pembatalan & Backend menyimpan status darurat peserta dan meneruskannya ke aktor terkait & Berhasil \\
+IT-06 & SK-04 & \texttt{PATCH /visibility} & Peserta mengubah status visibilitas lokasi & Backend memperbarui status visibilitas dan mengembalikan respons \texttt{200 OK} beserta status terbaru & Berhasil \\
+IT-07 & SK-05 & \texttt{GET /tracking} & Aktor dengan akses publik atau kode tim yang valid membuka peta pelacakan & Backend mengembalikan posisi pelari dan memperbarui data secara berkala & Berhasil \\
+IT-08 & SK-05 & \texttt{GET /tracking} & Aktor mencoba mengakses data peserta dengan visibilitas privat tanpa kode tim & Backend mengembalikan respons \texttt{403 Forbidden} & Berhasil \\
+IT-09 & SK-06 & \texttt{POST /invite-link} & Panitia atau Ketua Tim membuat tautan undangan & Backend mengembalikan respons \texttt{201 Created} beserta tautan undangan yang valid & Berhasil \\
+IT-10 & SK-07 & \texttt{GET /emergency/\{id\}} & Panitia/Supporter menerima notifikasi darurat dan meminta detail peserta & Backend mengembalikan detail lokasi dan status peserta yang bersangkutan & Berhasil \\
+IT-11 & SK-08 & \texttt{GET /runner/\{id\}/location} & Supporter menekan tombol navigasi menuju lokasi pelari & Backend mengembalikan koordinat terkini dan aplikasi membentuk URL Google Maps yang valid & Berhasil \\
+IT-12 & SK-08 & \texttt{GET /runner/\{id\}/location} & Sinyal GPS pelari yang dituju terputus & Backend mengembalikan respons \texttt{204 No Content} dan aplikasi menampilkan pesan lokasi tidak tersedia & Berhasil \\
+IT-13 & -- & Front-end Mobile $\leftrightarrow$ \textit{API Gateway} & Pengujian autentikasi berbasis \textit{invite link} dari aplikasi mobile menuju backend & Token akses dan \textit{refresh token} diterbitkan dan diterima dengan benar oleh aplikasi mobile & Berhasil \\
+IT-14 & -- & Front-end Website $\leftrightarrow$ \textit{API Gateway} & Panitia mengelola data rute dan checkpoint melalui antarmuka web & Perubahan data tersimpan pada PostgreSQL dan tersinkronisasi pada dashboard pemantauan & Berhasil \\
+
+\end{longtable}

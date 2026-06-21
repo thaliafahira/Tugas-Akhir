@@ -8,13 +8,13 @@
 \contentsline {chapter}{ABSTRAK}{ix}{chapter*.6}%
 \contentsline {chapter}{KATA PENGANTAR}{xi}{chapter*.7}%
 \contentsline {chapter}{DAFTAR ISI}{xiii}{section*.8}%
-\contentsline {chapter}{DAFTAR GAMBAR}{xv}{section*.9}%
-\contentsline {chapter}{DAFTAR TABEL}{xvii}{section*.10}%
-\contentsline {chapter}{DAFTAR PERSAMAAN}{xix}{chapter*.11}%
-\contentsline {chapter}{DAFTAR ALGORITMA}{xxi}{chapter*.12}%
-\contentsline {chapter}{DAFTAR \textit {LISTING}}{xxiii}{chapter*.13}%
-\contentsline {chapter}{DAFTAR SIMBOL}{xxv}{chapter*.13}%
-\contentsline {chapter}{DAFTAR SINGKATAN}{xxix}{table.0.1}%
+\contentsline {chapter}{DAFTAR GAMBAR}{xvii}{section*.9}%
+\contentsline {chapter}{DAFTAR TABEL}{xix}{section*.10}%
+\contentsline {chapter}{DAFTAR PERSAMAAN}{xxi}{chapter*.11}%
+\contentsline {chapter}{DAFTAR ALGORITMA}{xxiii}{chapter*.12}%
+\contentsline {chapter}{DAFTAR \textit {LISTING}}{xxv}{chapter*.13}%
+\contentsline {chapter}{DAFTAR SIMBOL}{xxvii}{chapter*.13}%
+\contentsline {chapter}{DAFTAR SINGKATAN}{xxxi}{table.0.1}%
 \setlength {\cftbeforechapskip }{10pt}
 \renewcommand {\cftchapfont }{\bfseries }
 \renewcommand {\cftchappagefont }{\bfseries }
@@ -60,24 +60,46 @@
 \contentsline {subsubsection}{\numberline {III.5.2.7}Hasil dan Keputusan}{41}{subsubsection.3.5.2.7}%
 \contentsline {chapter}{\numberline {IV}PERANCANGAN \textit {FRONT-END} APLIKASI ITB ULTRA-MARATHON}{43}{chapter.4}%
 \contentsline {section}{\numberline {IV.1}Arsitektur Sistem}{43}{section.4.1}%
-\contentsline {section}{\numberline {IV.2}Pemodelan Fungsional Sistem}{43}{section.4.2}%
-\contentsline {section}{\numberline {IV.3}Rancangan \textit {Behavioral}}{47}{section.4.3}%
-\contentsline {section}{\numberline {IV.4}Rancangan Antarmuka Pengguna}{48}{section.4.4}%
-\contentsline {chapter}{\numberline {V}IMPLEMENTASI}{51}{chapter.5}%
-\contentsline {section}{\numberline {V.1}Lingkungan Implementasi}{51}{section.5.1}%
-\contentsline {section}{\numberline {V.2}Implementasi \textit {Front-End}}{52}{section.5.2}%
-\contentsline {section}{\numberline {V.3}Implementasi \textit {Front-End}}{52}{section.5.3}%
-\contentsline {chapter}{\numberline {VI}EVALUASI}{53}{chapter.6}%
-\contentsline {section}{\numberline {VI.1}\textit {Functionality Testing}}{53}{section.6.1}%
-\contentsline {section}{\numberline {VI.2}\textit {System Integration Testing}}{53}{section.6.2}%
-\contentsline {section}{\numberline {VI.3}\textit {User Acceptance Testing}}{53}{section.6.3}%
-\contentsline {chapter}{\numberline {VII}PENUTUP}{55}{chapter.7}%
-\contentsline {section}{\numberline {VII.1}Kesimpulan}{55}{section.7.1}%
-\contentsline {section}{\numberline {VII.2}Saran}{55}{section.7.2}%
-\contentsline {chapter}{Lampiran \numberline {A}KODE PROGRAM}{57}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Perangkat Lunak untuk Akuisisi Data dari Sensor Ultrasonik}{57}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Perangkat Lunak untuk Pengolahan Data Akuisisi dan Visualisasi Hasil Pengukuran Jarak}{58}{section.1.A.2}%
-\contentsline {chapter}{Lampiran \numberline {B}HASIL SURVEI LAPANGAN}{59}{appendix.1.B}%
-\contentsline {section}{\numberline {B.1}Foto Survei Lokasi 1}{59}{section.1.B.1}%
-\contentsline {section}{\numberline {B.2}Foto Survei Lokasi 2}{59}{section.1.B.2}%
-\contentsline {section}{\numberline {B.3}Transkrip Wawancara dengan Narasumber}{59}{section.1.B.3}%
+\contentsline {section}{\numberline {IV.2}Pemodelan Fungsional Sistem}{44}{section.4.2}%
+\contentsline {section}{\numberline {IV.3}Rancangan \textit {Behavioral}}{48}{section.4.3}%
+\contentsline {subsection}{\numberline {IV.3.1}SK-01 Mengirim Lokasi}{50}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {IV.3.2}SK-02 Melihat ETD, ETA, dan \textit {Activity Metrics}}{51}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {IV.3.3}SK-03 Mengirim Notifikasi Darurat}{52}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {IV.3.4}SK-04 Mengubah Visibilitas}{53}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {IV.3.5}SK-05 Melihat \textit {Live Tracking}}{54}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {IV.3.6}SK-06 Membuat Tautan Undangan}{55}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {IV.3.7}SK-07 Menerima Notifikasi Darurat}{56}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {IV.3.8}SK-08 Navigasi ke Lokasi Pelari}{57}{subsection.4.3.8}%
+\contentsline {section}{\numberline {IV.4}Rancangan Antarmuka Pengguna}{58}{section.4.4}%
+\contentsline {subsection}{\numberline {IV.4.1}Halaman Peserta}{58}{subsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {IV.4.1.1}Halaman Utama Peserta}{58}{subsubsection.4.4.1.1}%
+\contentsline {subsubsection}{\numberline {IV.4.1.2}Halaman Menu Peserta}{60}{subsubsection.4.4.1.2}%
+\contentsline {subsubsection}{\numberline {IV.4.1.3}Halaman Manajemen Peserta}{60}{subsubsection.4.4.1.3}%
+\contentsline {subsection}{\numberline {IV.4.2}Halaman Ketua Tim}{61}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {IV.4.2.1}Halaman Utama Ketua Tim}{61}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {IV.4.2.2}Halaman Manajemen Ketua Tim}{62}{subsubsection.4.4.2.2}%
+\contentsline {subsection}{\numberline {IV.4.3}Halaman Supporter}{63}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {IV.4.3.1}Halaman Utama Supporter}{63}{subsubsection.4.4.3.1}%
+\contentsline {subsubsection}{\numberline {IV.4.3.2}Halaman Manajemen Supporter}{64}{subsubsection.4.4.3.2}%
+\contentsline {subsection}{\numberline {IV.4.4}Halaman Panitia}{65}{subsection.4.4.4}%
+\contentsline {subsubsection}{\numberline {IV.4.4.1}Halaman Utama Panitia}{65}{subsubsection.4.4.4.1}%
+\contentsline {subsubsection}{\numberline {IV.4.4.2}Halaman Manajemen Panitia}{66}{subsubsection.4.4.4.2}%
+\contentsline {subsection}{\numberline {IV.4.5}Halaman Spectator}{67}{subsection.4.4.5}%
+\contentsline {chapter}{\numberline {V}IMPLEMENTASI}{71}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Lingkungan Implementasi}{71}{section.5.1}%
+\contentsline {section}{\numberline {V.2}Implementasi \textit {Front-End Mobile Application} }{72}{section.5.2}%
+\contentsline {section}{\numberline {V.3}Implementasi \textit {Front-End Website}}{72}{section.5.3}%
+\contentsline {chapter}{\numberline {VI}EVALUASI}{73}{chapter.6}%
+\contentsline {section}{\numberline {VI.1}\textit {Functionality Testing}}{73}{section.6.1}%
+\contentsline {section}{\numberline {VI.2}\textit {System Integration Testing}}{76}{section.6.2}%
+\contentsline {section}{\numberline {VI.3}\textit {User Acceptance Testing}}{79}{section.6.3}%
+\contentsline {chapter}{\numberline {VII}PENUTUP}{83}{chapter.7}%
+\contentsline {section}{\numberline {VII.1}Kesimpulan}{83}{section.7.1}%
+\contentsline {section}{\numberline {VII.2}Saran}{84}{section.7.2}%
+\contentsline {chapter}{Lampiran \numberline {A}KODE PROGRAM}{87}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Perangkat Lunak untuk Akuisisi Data dari Sensor Ultrasonik}{87}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Perangkat Lunak untuk Pengolahan Data Akuisisi dan Visualisasi Hasil Pengukuran Jarak}{88}{section.1.A.2}%
+\contentsline {chapter}{Lampiran \numberline {B}HASIL SURVEI LAPANGAN}{89}{appendix.1.B}%
+\contentsline {section}{\numberline {B.1}Foto Survei Lokasi 1}{89}{section.1.B.1}%
+\contentsline {section}{\numberline {B.2}Foto Survei Lokasi 2}{89}{section.1.B.2}%
+\contentsline {section}{\numberline {B.3}Transkrip Wawancara dengan Narasumber}{89}{section.1.B.3}%

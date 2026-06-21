@@ -16,13 +16,21 @@
 \contentsline {table}{\numberline {III.11}{\ignorespaces Matriks Perbandingan Berpasangan Alternatif pada C5}}{40}{table.caption.26}%
 \contentsline {table}{\numberline {III.12}{\ignorespaces Skor Akhir AHP dan Peringkat Alternatif}}{40}{table.caption.27}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {IV.1}{\ignorespaces Legenda \textit {Use Case Diagram}}}{45}{table.4.1}%
-\contentsline {table}{\numberline {IV.2}{\ignorespaces Deskripsi \textit {Use Case} Aplikasi \textit {Tracker} ITB Ultra-Marathon}}{45}{table.4.2}%
-\contentsline {table}{\numberline {IV.3}{\ignorespaces Pemetaan Halaman dengan Kebutuhan Fungsional}}{49}{table.4.3}%
+\contentsline {table}{\numberline {IV.1}{\ignorespaces Legenda \textit {Use Case Diagram}}}{46}{table.4.1}%
+\contentsline {table}{\numberline {IV.2}{\ignorespaces Deskripsi \textit {Use Case} Aplikasi \textit {Tracker} ITB Ultra-Marathon}}{46}{table.4.2}%
+\contentsline {table}{\numberline {IV.3}{\ignorespaces Ketelurusan \textit {Sequence Diagram} terhadap \textit {Use Case}}}{49}{table.caption.30}%
+\contentsline {table}{\numberline {IV.4}{\ignorespaces Legenda \textit {Sequence Diagram}}}{49}{table.4.4}%
+\contentsline {table}{\numberline {IV.5}{\ignorespaces Pemetaan Halaman Antarmuka dengan Kebutuhan Fungsional}}{69}{table.4.5}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {V.1}{\ignorespaces Lingkungan Implementasi Perangkat Keras}}{51}{table.caption.29}%
-\contentsline {table}{\numberline {V.2}{\ignorespaces Lingkungan Implementasi Perangkat Lunak}}{51}{table.caption.30}%
+\contentsline {table}{\numberline {V.1}{\ignorespaces Lingkungan Implementasi Perangkat Keras}}{71}{table.caption.51}%
+\contentsline {table}{\numberline {V.2}{\ignorespaces Perangkat Keras Pengujian Aplikasi Mobile}}{71}{table.caption.52}%
+\contentsline {table}{\numberline {V.3}{\ignorespaces Lingkungan Implementasi Perangkat Lunak}}{72}{table.caption.53}%
+\contentsline {table}{\numberline {V.4}{\ignorespaces Perangkat Lunak Pengembangan Website}}{72}{table.caption.54}%
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {VI.1}{\ignorespaces Hasil \textit {Functionality Testing}}}{74}{table.6.1}%
+\contentsline {table}{\numberline {VI.2}{\ignorespaces Hasil \textit {System Integration Testing}}}{77}{table.6.2}%
+\contentsline {table}{\numberline {VI.3}{\ignorespaces Demografi Responden \textit {User Acceptance Testing}}}{80}{table.caption.55}%
+\contentsline {table}{\numberline {VI.4}{\ignorespaces Hasil Kuesioner \textit {User Acceptance Testing}}}{80}{table.6.4}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

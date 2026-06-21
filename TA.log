@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  17 JUN 2026 03:47
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  21 JUN 2026 23:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1586,23 +1586,30 @@ Overfull \hbox (8.11728pt too wide) in paragraph at lines 61--61
 2 FRONT-END \TU/TimesNewRoman(0)/b/n/12 APLIKASI ITB ULTRA-MARATHON[][] []  
  []
 
-)
+
+Underfull \vbox (badness 1303) has occurred while \output is active []
+
+
+
+[14])
 \tf@toc=\write5
 \openout5 = `TA.toc'.
 
 ) (8 Daftar Gambar.tex
 
-[14] (TA.lof)
+[15]
+
+[16
+
+] (TA.lof)
 \tf@lof=\write6
 \openout6 = `TA.lof'.
 
 ) (9 Daftar Tabel.tex
 
-[15
+[17]
 
-]
-
-[16
+[18
 
 ] (TA.lot)
 \tf@lot=\write7
@@ -1610,9 +1617,9 @@ Overfull \hbox (8.11728pt too wide) in paragraph at lines 61--61
 
 ) (10 Daftar Persamaan.tex
 
-[17]
+[19]
 
-[18
+[20
 
 ] (TA.equ)
 \tf@equ=\write8
@@ -1620,11 +1627,11 @@ Overfull \hbox (8.11728pt too wide) in paragraph at lines 61--61
 
 ) (11 Daftar Algoritma.tex
 
-[19
+[21
 
 ]
 
-[20
+[22
 
 ] (TA.loa)
 \tf@loa=\write9
@@ -1632,11 +1639,11 @@ Overfull \hbox (8.11728pt too wide) in paragraph at lines 61--61
 
 ) (12 Daftar Listing.tex
 
-[21
+[23
 
 ]
 
-[22
+[24
 
 ] (TA.lol)
 \tf@lol=\write10
@@ -1644,22 +1651,22 @@ Overfull \hbox (8.11728pt too wide) in paragraph at lines 61--61
 
 ) (13 Daftar Simbol.tex
 
-[23
+[25
 
 ]
 
-[24
+[26
 
 ]
 Overfull \hbox (16.93071pt too wide) in alignment at lines 15--104
  [] [] [] 
  []
 
-[25] [26]) (14 Daftar Singkatan.tex
+[27] [28]) (14 Daftar Singkatan.tex
 
-[27]
+[29]
 
-[28
+[30
 
 ]
 Overfull \hbox (2.66713pt too wide) in alignment at lines 15--27
@@ -1668,9 +1675,9 @@ Overfull \hbox (2.66713pt too wide) in alignment at lines 15--27
 
 )
 
-[29]
+[31]
 
-[30
+[32
 
 ] (Bab I - Pendahuluan.tex
 Bab I.
@@ -2291,11 +2298,18 @@ leksitas pemeliharaan ([]).
 
 ]
 Bab IV.
+File: images/architecture.png Graphic file (type bmp)
+<images/architecture.png>
 
 
 [43
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[44]
 File: images/usecase.png Graphic file (type bmp)
 <images/usecase.png>
  (tables/legenda-usecase.tex
@@ -2320,11 +2334,8 @@ Overfull \hbox (23.37357pt too wide) in alignment at lines 11--99
  []
 
 
-Underfull \vbox (badness 6927) has occurred while \output is active []
 
-
-
-[44]) (tables/usecase-deskripsi.tex
+[45]) (tables/usecase-deskripsi.tex
 Overfull \hbox (23.37357pt too wide) in alignment at lines 1--6
  [] [] [] 
  []
@@ -2345,74 +2356,1045 @@ Overfull \hbox (23.37357pt too wide) in alignment at lines 15--18
  []
 
 
-Underfull \hbox (badness 6910) in paragraph at lines 43--43
-[]|\TU/TimesNewRoman(0)/m/n/12 Melakukan \TU/TimesNewRoman(0)/m/it/12 Check-in 
-Chec-
- []
-
-
-Overfull \hbox (23.37357pt too wide) in alignment at lines 18--88
+Overfull \hbox (23.37357pt too wide) in alignment at lines 18--72
  [] [] [] 
  []
 
-[45] [46])
+[46] [47]) (tables/ketelurusan-sequence.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[47]
-Overfull \hbox (9.70924pt too wide) in paragraph at lines 87--92
-\TU/TimesNewRoman(0)/m/n/12 Halaman ini menyediakan informasi kontekstual menge
-nai ITB Ultra-Marathon,
+[48] (tables/legenda-sequence.tex
+Overfull \hbox (23.37357pt too wide) in alignment at lines 1--7
+ [] [] [] 
  []
 
 
-Underfull \vbox (badness 2608) has occurred while \output is active []
+Overfull \hbox (23.37357pt too wide) in alignment at lines 7--11
+ [] [] [] 
+ []
 
 
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 43.
 
-[48]
 
-LaTeX Warning: Reference `tab:pemetaan-halaman-fr' on page 49 undefined on inpu
-t line 137.
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 44.
 
-(tables/pemetaan-halaman.tex [49])) (Bab V - Implementasi.tex
+
+Underfull \hbox (badness 2088) in paragraph at lines 49--50
+[]|\TU/TimesNewRoman(0)/m/n/12 Garis vertikal putus-putus yang meng-
+ []
+
+
+Overfull \hbox (23.37357pt too wide) in alignment at lines 11--112
+ [] [] [] 
+ []
+
+[49])
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (2.53233pt too wide) in paragraph at lines 100--101
+\TU/TimesNewRoman(0)/m/n/12 mengembalikan respons \TU/lmtt/m/n/12 200 OK\TU/Tim
+esNewRoman(0)/m/n/12 . Apabila pengiriman gagal akibat \TU/TimesNewRoman(0)/m/i
+t/12 timeout \TU/TimesNewRoman(0)/m/n/12 atau gang-
+ []
+
+File: images/sequence/seq1.png Graphic file (type bmp)
+<images/sequence/seq1.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [50]
+File: images/sequence/seq2.png Graphic file (type bmp)
+<images/sequence/seq2.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[51]
+File: images/sequence/seq3.png Graphic file (type bmp)
+<images/sequence/seq3.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[52]
+File: images/sequence/seq4.png Graphic file (type bmp)
+<images/sequence/seq4.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[53]
+File: images/sequence/seq5.png Graphic file (type bmp)
+<images/sequence/seq5.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[54]
+Overfull \hbox (16.8438pt too wide) in paragraph at lines 160--161
+\TU/TimesNewRoman(0)/m/n/12 nu ”undang” pada aplikasi, lalu aplikasi mengirimka
+n permintaan \TU/lmtt/m/n/12 POST /invite-link
+ []
+
+File: images/sequence/seq6.png Graphic file (type bmp)
+<images/sequence/seq6.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[55]
+File: images/sequence/seq7.png Graphic file (type bmp)
+<images/sequence/seq7.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[56]
+File: images/sequence/seq8.png Graphic file (type bmp)
+<images/sequence/seq8.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[57]
+
+[58]
+File: images/interface/HomePeserta.png Graphic file (type bmp)
+<images/interface/HomePeserta.png>
+File: images/interface/emergency.png Graphic file (type bmp)
+<images/interface/emergency.png>
+
+
+[59]
+File: images/interface/menupelari.png Graphic file (type bmp)
+<images/interface/menupelari.png>
+
+
+[60]
+File: images/interface/ManagePeserta.png Graphic file (type bmp)
+<images/interface/ManagePeserta.png>
+File: images/interface/HomeKetua.png Graphic file (type bmp)
+<images/interface/HomeKetua.png>
+
+
+[61]
+File: images/interface/Manageketua.png Graphic file (type bmp)
+<images/interface/Manageketua.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[62]
+File: images/interface/HomeSupporter.png Graphic file (type bmp)
+<images/interface/HomeSupporter.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[63]
+File: images/interface/Managesupporter.png Graphic file (type bmp)
+<images/interface/Managesupporter.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[64]
+File: images/interface/HomePanitia.png Graphic file (type bmp)
+<images/interface/HomePanitia.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[65]
+File: images/interface/notification.png Graphic file (type bmp)
+<images/interface/notification.png>
+File: images/interface/ListPanitia.png Graphic file (type bmp)
+<images/interface/ListPanitia.png>
+
+
+[66]
+File: images/interface/HomeSpectator.png Graphic file (type bmp)
+<images/interface/HomeSpectator.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[67]
+
+LaTeX Warning: Reference `tab:pemetaan-halaman' on page 68 undefined on input l
+ine 343.
+
+(tables/pemetaan-halaman.tex
+Underfull \hbox (badness 1953) in paragraph at lines 26--27
+[]|\TU/TimesNewRoman(0)/m/n/12 Halaman Manajemen Pe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+[]|\TU/TimesNewRoman(0)/m/n/12 Halaman Utama Ketua
+ []
+
+
+
+[68])) (Bab V - Implementasi.tex
+
+[69]
+
+[70
+
+]
 Bab V.
 (tables/hw.tex)
-Overfull \hbox (2.2121pt too wide) in paragraph at lines 10--14
+Overfull \hbox (2.2121pt too wide) in paragraph at lines 10--16
 []\TU/TimesNewRoman(0)/m/n/12 Lingkungan implementasi yang digunakan dalam peng
 embangan sistem terbagi men-
  []
 
-(tables/sw.tex)) (Bab VI - Evaluasi.tex
+(tables/hw-test.tex)
 
-[51
+LaTeX Warning: Reference `tab:sw-mobile' on page 71 undefined on input line 23.
 
+
+(tables/sw.tex) (tables/sw-web.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (Bab VI - Evaluasi.tex
+
+[71
 
 ]
 
-[52]
+[72]
 Bab VI.
-) (Bab VII - Penutup.tex
+(tables/tabel_VI1_functionality.tex
+Overfull \hbox (48.619pt too wide) in alignment at lines 4--9
+ [] [] [] [] [] 
+ []
 
-[53
+
+Overfull \hbox (48.619pt too wide) in alignment at lines 9--13
+ [] [] [] [] [] 
+ []
 
 
-]
+Overfull \hbox (48.619pt too wide) in alignment at lines 13--16
+ [] [] [] [] [] 
+ []
 
-[54
 
-]
+Overfull \hbox (48.619pt too wide) in alignment at lines 16--19
+ [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 21--21
+[]|\TU/TimesNewRoman(0)/m/n/12 Peta menampilkan posi-
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 21--21
+\TU/TimesNewRoman(0)/m/n/12 si seluruh pelari, chec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\TU/TimesNewRoman(0)/m/n/12 Posisi seluruh anggota
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\TU/TimesNewRoman(0)/m/n/12 tim tampil pada peta
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 26--26
+[]|\TU/TimesNewRoman(0)/m/n/12 ETA dan ETD anggota
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 27--27
+[]|\TU/TimesNewRoman(0)/m/n/12 Salah satu anggota tim
+ []
+
+
+Underfull \hbox (badness 5105) in paragraph at lines 29--29
+\TU/TimesNewRoman(0)/m/n/12 bol \TU/TimesNewRoman(0)/m/it/12 generate \TU/Times
+NewRoman(0)/m/n/12 kode tim
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 29--29
+[]|\TU/TimesNewRoman(0)/m/n/12 Kode/tautan unik untuk
+ []
+
+
+Underfull \hbox (badness 3482) in paragraph at lines 30--30
+[]|\TU/TimesNewRoman(0)/m/n/12 Posisi peserta dan rute
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 31--31
+[]|\TU/TimesNewRoman(0)/m/n/12 Peserta mendekati chec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\TU/TimesNewRoman(0)/m/n/12 kpoint tersebut tampil
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 32--32
+\TU/TimesNewRoman(0)/m/n/12 SOS dan menunggu co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+[]|\TU/TimesNewRoman(0)/m/n/12 Peringatan keluar jalur
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 33--33
+\TU/TimesNewRoman(0)/m/n/12 muncul pada antarmuka
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 34--34
+[]|\TU/TimesNewRoman(0)/m/n/12 Peserta memasuki area
+ []
+
+
+Underfull \hbox (badness 4981) in paragraph at lines 34--34
+[]|\TU/TimesNewRoman(0)/m/n/12 Status checkpoint beru-
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 35--35
+\TU/TimesNewRoman(0)/m/n/12 masuki area pergantian
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\TU/TimesNewRoman(0)/m/n/12 Fitur pergantian relay
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 35--35
+\TU/TimesNewRoman(0)/m/n/12 muncul dan pelari beri-
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 35--35
+\TU/TimesNewRoman(0)/m/n/12 kutnya tercatat sebagai
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 36--36
+\TU/TimesNewRoman(0)/m/n/12 lain tampil secara real-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\TU/TimesNewRoman(0)/m/n/12 Supporter memasukkan
+ []
+
+
+Underfull \hbox (badness 4792) in paragraph at lines 40--40
+[]|\TU/TimesNewRoman(0)/m/n/12 ETA dan ETD peserta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\TU/TimesNewRoman(0)/m/n/12 Peserta yang dipantau
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\TU/TimesNewRoman(0)/m/n/12 Supporter mengirim
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+[]|\TU/TimesNewRoman(0)/m/n/12 Peserta yang dipantau
+ []
+
+
+Overfull \hbox (48.619pt too wide) in alignment at lines 19--46
+ [] [] [] [] [] 
+ []
+
+
+
+[73
+
+
+] [74] [75]) (tables/tabel_VI2_integration.tex
+Overfull \hbox (91.91722pt too wide) in alignment at lines 4--9
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (91.91722pt too wide) in alignment at lines 9--13
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (91.91722pt too wide) in alignment at lines 13--16
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (91.91722pt too wide) in alignment at lines 16--19
+ [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\TU/lmtt/m/n/12 POST
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\TU/TimesNewRoman(0)/m/n/12 Backend me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+\TU/TimesNewRoman(0)/m/n/12 nyimpan data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+\TU/TimesNewRoman(0)/m/n/12 lokasi dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+\TU/TimesNewRoman(0)/m/n/12 mengembalikan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\TU/lmtt/m/n/12 POST
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\TU/TimesNewRoman(0)/m/n/12 Data lokasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+\TU/TimesNewRoman(0)/m/n/12 disimpan se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+\TU/TimesNewRoman(0)/m/n/12 mentara pada
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 22--22
+\TU/TimesNewRoman(0)/m/it/12 cache \TU/TimesNewRoman(0)/m/n/12 lokal dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+\TU/TimesNewRoman(0)/m/n/12 dikirim ulang
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+\TU/TimesNewRoman(0)/m/n/12 pada interval
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]|\TU/lmtt/m/n/12 GET
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 23--23
+[]|\TU/TimesNewRoman(0)/m/n/12 Front-end meminta data
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 23--23
+\TU/TimesNewRoman(0)/m/n/12 tivitas menggunakan lo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]|\TU/TimesNewRoman(0)/m/n/12 Backend meng-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\TU/TimesNewRoman(0)/m/n/12 embalikan nilai
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 23--23
+\TU/TimesNewRoman(0)/m/n/12 ETA, ETD, dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\TU/TimesNewRoman(0)/m/n/12 metrik aktivi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\TU/TimesNewRoman(0)/m/n/12 tas yang sesuai
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\TU/lmtt/m/n/12 GET
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\TU/TimesNewRoman(0)/m/n/12 Backend meng-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\TU/TimesNewRoman(0)/m/n/12 embalikan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\TU/TimesNewRoman(0)/m/n/12 respons \TU/lmtt/m/n/12 204 No
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\TU/lmtt/m/n/12 Content \TU/TimesNewRoman(0)/m/n/12 dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\TU/TimesNewRoman(0)/m/n/12 antarmuka me-
+ []
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 24--24
+\TU/TimesNewRoman(0)/m/n/12 nampilkan status
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\TU/lmtt/m/n/12 POST
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\TU/TimesNewRoman(0)/m/n/12 Peserta menyelesaikan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\TU/TimesNewRoman(0)/m/it/12 countdown \TU/TimesNewRoman(0)/m/n/12 SOS tanpa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\TU/TimesNewRoman(0)/m/n/12 Backend me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\TU/TimesNewRoman(0)/m/n/12 nyimpan status
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\TU/TimesNewRoman(0)/m/n/12 darurat peserta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\TU/TimesNewRoman(0)/m/n/12 dan menerus-
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 25--25
+\TU/TimesNewRoman(0)/m/n/12 kannya ke aktor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+[]|\TU/lmtt/m/n/12 PATCH
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+[]|\TU/TimesNewRoman(0)/m/n/12 Backend mem-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+\TU/TimesNewRoman(0)/m/n/12 perbarui status
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+\TU/TimesNewRoman(0)/m/n/12 visibilitas dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+\TU/TimesNewRoman(0)/m/n/12 mengembalikan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+\TU/TimesNewRoman(0)/m/n/12 respons \TU/lmtt/m/n/12 200 OK
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+\TU/TimesNewRoman(0)/m/n/12 beserta status
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 27--27
+[]|\TU/TimesNewRoman(0)/m/n/12 Aktor dengan akses pu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\TU/TimesNewRoman(0)/m/n/12 Backend meng-
+ []
+
+
+Underfull \hbox (badness 2469) in paragraph at lines 27--27
+\TU/TimesNewRoman(0)/m/n/12 embalikan posisi
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 27--27
+\TU/TimesNewRoman(0)/m/n/12 pelari dan mem-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+\TU/TimesNewRoman(0)/m/n/12 perbarui data
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 28--28
+\TU/TimesNewRoman(0)/m/n/12 ses data peserta dengan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]|\TU/TimesNewRoman(0)/m/n/12 Backend meng-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\TU/TimesNewRoman(0)/m/n/12 embalikan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\TU/TimesNewRoman(0)/m/n/12 respons \TU/lmtt/m/n/12 403
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\TU/lmtt/m/n/12 POST
+ []
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 29--29
+[]|\TU/TimesNewRoman(0)/m/n/12 Panitia atau Ketua Tim
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\TU/TimesNewRoman(0)/m/n/12 Backend meng-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+\TU/TimesNewRoman(0)/m/n/12 embalikan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+\TU/TimesNewRoman(0)/m/n/12 respons \TU/lmtt/m/n/12 201
+ []
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 29--29
+\TU/lmtt/m/n/12 Created \TU/TimesNewRoman(0)/m/n/12 beserta
+ []
+
+
+Underfull \hbox (badness 7704) in paragraph at lines 29--29
+\TU/TimesNewRoman(0)/m/n/12 tautan undangan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[]|\TU/lmtt/m/n/12 GET
+ []
+
+
+Overfull \hbox (6.72974pt too wide) in paragraph at lines 30--30
+\TU/lmtt/m/n/12 /emergency/{id}| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[]|\TU/TimesNewRoman(0)/m/n/12 Backend meng-
+ []
+
+
+Underfull \hbox (badness 5548) in paragraph at lines 30--30
+\TU/TimesNewRoman(0)/m/n/12 embalikan detail
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+\TU/TimesNewRoman(0)/m/n/12 peserta yang
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/lmtt/m/n/12 GET
+ []
+
+
+Overfull \hbox (43.80974pt too wide) in paragraph at lines 31--31
+\TU/lmtt/m/n/12 /runner/{id}/location| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/TimesNewRoman(0)/m/n/12 Backend meng-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\TU/TimesNewRoman(0)/m/n/12 embalikan
+ []
+
+
+Underfull \hbox (badness 3792) in paragraph at lines 31--31
+\TU/TimesNewRoman(0)/m/n/12 koordinat terkini
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\TU/TimesNewRoman(0)/m/n/12 dan aplikasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\TU/TimesNewRoman(0)/m/n/12 Google Maps
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\TU/lmtt/m/n/12 GET
+ []
+
+
+Overfull \hbox (43.80974pt too wide) in paragraph at lines 32--32
+\TU/lmtt/m/n/12 /runner/{id}/location| 
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 32--32
+[]|\TU/TimesNewRoman(0)/m/n/12 Sinyal GPS pelari yang
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\TU/TimesNewRoman(0)/m/n/12 Backend meng-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\TU/TimesNewRoman(0)/m/n/12 embalikan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\TU/TimesNewRoman(0)/m/n/12 respons \TU/lmtt/m/n/12 204
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\TU/lmtt/m/n/12 No Content
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\TU/TimesNewRoman(0)/m/n/12 dan aplikasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\TU/TimesNewRoman(0)/m/n/12 menampilkan
+ []
+
+
+Underfull \hbox (badness 2644) in paragraph at lines 33--33
+\TU/TimesNewRoman(0)/m/it/12 refresh token \TU/TimesNewRoman(0)/m/n/12 di-
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 33--33
+\TU/TimesNewRoman(0)/m/n/12 terbitkan dan di-
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 34--34
+[]|\TU/TimesNewRoman(0)/m/n/12 Front-end Websi-
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 34--34
+\TU/TimesNewRoman(0)/m/n/12 te $\OMS/cmsy/m/n/12 $$ \TU/TimesNewRoman(0)/m/it/1
+2 API Gate-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\TU/TimesNewRoman(0)/m/n/12 Perubahan data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\TU/TimesNewRoman(0)/m/n/12 tersimpan pada
+ []
+
+
+Underfull \hbox (badness 7631) in paragraph at lines 34--34
+\TU/TimesNewRoman(0)/m/n/12 PostgreSQL dan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\TU/TimesNewRoman(0)/m/n/12 tersinkronisasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+\TU/TimesNewRoman(0)/m/n/12 pada dashboard
+ []
+
+
+Overfull \hbox (91.91722pt too wide) in alignment at lines 19--36
+ [] [] [] [] [] [] 
+ []
+
+
+
+[76] [77] [78])
+Overfull \hbox (2.02556pt too wide) in paragraph at lines 28--29
+[]\TU/TimesNewRoman(0)/m/it/12 User Acceptance Testing \TU/TimesNewRoman(0)/m/n
+/12 (UAT) dilakukan untuk mengukur tingkat penerimaan peng-
+ []
+
+
+
+[79] (tables/tabel_VI3_uat_demografi.tex
+Overfull \hbox (48.26888pt too wide) in paragraph at lines 8--20
+ [][] 
+ []
+
+) (tables/tabel_VI4_uat_hasil.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+[]|\TU/TimesNewRoman(0)/b/n/12 Rata-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+\TU/TimesNewRoman(0)/b/n/12 rata
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--8
+\TU/TimesNewRoman(0)/b/n/12 (Skala
+ []
+
+
+Overfull \hbox (11.01173pt too wide) in alignment at lines 4--9
+ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\TU/TimesNewRoman(0)/b/n/12 Rata-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+\TU/TimesNewRoman(0)/b/n/12 rata
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+\TU/TimesNewRoman(0)/b/n/12 (Skala
+ []
+
+
+Overfull \hbox (11.01173pt too wide) in alignment at lines 9--13
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (11.01173pt too wide) in alignment at lines 13--16
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (11.01173pt too wide) in alignment at lines 16--19
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.76347pt too wide) in paragraph at lines 21--21
+[]|\TU/TimesNewRoman(0)/m/n/12 Kemudahan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+\TU/TimesNewRoman(0)/m/n/12 Pengguna-
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 21--21
+[]|\TU/TimesNewRoman(0)/m/n/12 Saya dapat dengan mudah memahami cara
+ []
+
+
+Overfull \hbox (6.76347pt too wide) in paragraph at lines 22--22
+[]|\TU/TimesNewRoman(0)/m/n/12 Kemudahan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+\TU/TimesNewRoman(0)/m/n/12 Pengguna-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]|\TU/TimesNewRoman(0)/m/n/12 Kejelasan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\TU/TimesNewRoman(0)/m/n/12 Antarmu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\TU/TimesNewRoman(0)/m/n/12 Kejelasan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\TU/TimesNewRoman(0)/m/n/12 Antarmu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\TU/TimesNewRoman(0)/m/n/12 Persepsi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+[]|\TU/TimesNewRoman(0)/m/n/12 Persepsi
+ []
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 26--26
+[]|\TU/TimesNewRoman(0)/m/n/12 Aplikasi tetap dapat digunakan dengan baik
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\TU/TimesNewRoman(0)/m/n/12 Fitur
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 28--28
+[]|\TU/TimesNewRoman(0)/m/n/12 Fitur Pen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\TU/TimesNewRoman(0)/m/n/12 Kepuasan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+\TU/TimesNewRoman(0)/m/n/12 Keselu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[]|\TU/TimesNewRoman(0)/m/n/12 Kepuasan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+\TU/TimesNewRoman(0)/m/n/12 Keselu-
+ []
+
+
+Overfull \hbox (11.01173pt too wide) in alignment at lines 19--33
+ [] [] [] [] 
+ []
+
+[80])
+
+[81]) (Bab VII - Penutup.tex
+
+[82]
 Bab VII.
-)
 
-[55
+
+[83
+
 
 ]
 
-[56
+[84])
+
+[85]
+
+[86
 
 ]
 
@@ -2422,27 +3404,23 @@ LaTeX Warning: Empty bibliography on input line 410.
 Lampiran A.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 8.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 (listings/binary-search-python.tex
 
-[57
+[87
 
 
 ])) (Lampiran-B.tex
 
-[58]
+[88]
 Lampiran B.
 )
 
-[59
+[89
 
 
 ]
 
-[60
+[90
 
 ]
 
@@ -2459,7 +3437,7 @@ L3 programming layer <2025-09-02>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `TA.out' has not changed.
-(rerunfilecheck)             Checksum: 684AD6915D8912495C9D724CC3E8CC9F;14578.
+(rerunfilecheck)             Checksum: 490E899C7E3FBD6E0C5437A41DFF741A;19025.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                TA
@@ -2470,12 +3448,12 @@ Package logreq Info: Writing requests to 'TA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33311 strings out of 403197
- 644595 string characters out of 5453038
- 2161475 words of memory out of 5000000
- 61324 multiletter control sequences out of 15000+600000
+ 33602 strings out of 403197
+ 653144 string characters out of 5453038
+ 2168513 words of memory out of 5000000
+ 61568 multiletter control sequences out of 15000+600000
  633603 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,14n,95p,2144b,2220s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,15n,95p,2144b,2221s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on TA.pdf (90 pages).
+Output written on TA.pdf (122 pages).

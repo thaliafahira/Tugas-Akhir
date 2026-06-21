@@ -5,7 +5,29 @@
 \chapter{PENUTUP}
 \label{chap:penutup}
 Bab ini berisi kesimpulan dari hasil perancangan, implementasi, dan pengujian yang telah dilakukan selama pengerjaan tugas akhir. Selain itu, bab ini juga memuat saran yang dapat menjadi bahan pertimbangan untuk pengembangan sistem pada penelitian selanjutnya.
+
 \section{Kesimpulan}
-Jelaskan secara detail langkah-langkah rencana selanjutnya, hal-hal yang diperlukan atau akan disiapkan, dan risiko dan mitigasinya, yang meliputi:
+Berdasarkan hasil perancangan, implementasi, dan evaluasi yang telah dilakukan terhadap front-end aplikasi tracker ITB Ultra-Marathon, dapat ditarik kesimpulan sebagai berikut, yang disusun berdasarkan kriteria keberhasilan yang telah ditetapkan pada Subbab I.3:
+
+\begin{enumerate}
+    \item Antarmuka yang dikembangkan, yang terdiri atas halaman Peserta, Ketua Tim, Supporter, Panitia, dan Spectator, telah mampu memenuhi kebutuhan informasi dan alur penggunaan masing-masing kelompok pengguna. Hal ini dibuktikan melalui hasil \textit{Functionality Testing} pada Subbab VI.1, di mana seluruh 24 kebutuhan fungsional (FR-01 hingga FR-24) berhasil dijalankan dengan tingkat keberhasilan 100\%.
+    \item Pengguna dapat memahami alur navigasi serta membaca informasi pelacakan peserta maraton dengan mudah. Hal ini didukung oleh hasil \textit{User Acceptance Testing} pada Subbab VI.3, dengan rata-rata skor sebesar 4,55/5,0 untuk aspek kemudahan penggunaan dan 4,40/5,0 untuk kemudahan navigasi antarhalaman.
+    \item Informasi pelacakan peserta maraton, seperti posisi pelari, ETA, ETD, dan status checkpoint, dapat divisualisasikan secara jelas, akurat, dan responsif terhadap pembaruan data. Hal ini tercermin dari skor kejelasan antarmuka sebesar 4,50/5,0 serta skor persepsi kinerja sebesar 4,30/5,0 pada hasil UAT, yang didukung pula oleh keberhasilan seluruh skenario \textit{System Integration Testing} pada Subbab VI.2.
+    \item Tampilan antarmuka berfungsi dengan baik pada perangkat pengujian yang digunakan, yaitu Samsung Galaxy Note10+ untuk aplikasi mobile dan peramban berbasis desktop untuk aplikasi web, serta tetap menjaga konsistensi desain pada setiap halaman peran pengguna.
+    \item Integrasi antara front-end dan back-end terjalin secara efektif, di mana seluruh titik komunikasi data (\textit{endpoint}) yang diuji pada Subbab VI.2, termasuk mekanisme penanganan kegagalan jaringan dan gangguan sinyal GPS, dapat berjalan tanpa gangguan signifikan sehingga proses pelacakan dapat dilakukan secara lancar.
+\end{enumerate}
+
+Secara keseluruhan, kelima kriteria keberhasilan yang ditetapkan pada awal penelitian telah berhasil dipenuhi. Dengan demikian, front-end aplikasi tracker ITB Ultra-Marathon yang dikembangkan pada tugas akhir ini terbukti mampu menyajikan visualisasi data pelacakan peserta secara real-time, responsif, dan mudah digunakan, sehingga menjawab rumusan masalah yang telah diuraikan pada Subbab I.2.
+
 \section{Saran}
-Berdasarkan hasil pengembangan dan evaluasi \textit{front-end}aplikasi ITB Ultra Marathon yang telah dilakukan, masih terdapat beberapa aspek yang dapat ditingkatkan untuk pengembangan selanjutnya. Oleh karena itu, beberapa saran berikut dapat dijadikan bahan pertimbangan guna mendukung penyempurnaan fitur dan peningkatan kualitas aplikasi di masa mendatang.
+Berdasarkan hasil pengembangan dan evaluasi front-end aplikasi ITB Ultra Marathon yang telah dilakukan, masih terdapat beberapa aspek yang dapat ditingkatkan untuk pengembangan selanjutnya. Oleh karena itu, beberapa saran berikut dapat dijadikan bahan pertimbangan guna mendukung penyempurnaan fitur dan peningkatan kualitas aplikasi di masa mendatang.
+
+\begin{enumerate}
+    \item Pengembangan selanjutnya disarankan untuk menambahkan dukungan terhadap sistem operasi iOS, mengingat penelitian ini masih dibatasi pada platform Android sesuai dengan batasan masalah yang telah ditetapkan pada Subbab I.4.
+    \item Diperlukan pengujian lapangan secara langsung pada penyelenggaraan ITB Ultra-Marathon dengan skala peserta yang lebih besar, untuk mengevaluasi kinerja antarmuka dalam menangani volume data lokasi dan jumlah pengguna aktif secara bersamaan.
+    \item Mekanisme pengiriman lokasi yang saat ini menggunakan \textit{HTTP polling} dapat dipertimbangkan untuk dikembangkan lebih lanjut menggunakan protokol komunikasi dua arah seperti WebSocket, guna mengurangi latensi pembaruan data serta beban jaringan, khususnya pada area dengan kualitas sinyal yang terbatas.
+    \item Penambahan mekanisme \textit{notifikasi push} yang sesungguhnya melalui Firebase Cloud Messaging, alih-alih hanya digunakan sebagai identifikasi perangkat, dapat dipertimbangkan agar notifikasi darurat dan notifikasi keluar jalur dapat diterima pengguna secara lebih cepat meskipun aplikasi tidak sedang dibuka.
+    \item Diperlukan evaluasi lebih lanjut terhadap konsumsi daya baterai akibat pengambilan data GPS secara berkelanjutan, mengingat durasi perlombaan ITB Ultra-Marathon yang dapat berlangsung selama berjam-jam.
+    \item Penelitian lanjutan dapat mempertimbangkan penambahan fitur analitik performa pelari yang lebih mendalam, seperti riwayat \textit{pace} per segmen rute, untuk meningkatkan nilai tambah aplikasi bagi peserta di luar konteks penyelenggaraan acara.
+    \item Pengujian penerimaan pengguna pada penelitian selanjutnya disarankan untuk melibatkan jumlah responden yang lebih besar dan representatif dari setiap kelompok pengguna, agar hasil evaluasi dapat menggambarkan penerimaan pengguna secara lebih menyeluruh.
+\end{enumerate}

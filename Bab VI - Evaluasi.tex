@@ -4,6 +4,35 @@
 \cleardoublepage
 \chapter{EVALUASI}
 \label{chap:evaluasi}
+Bab ini membahas hasil pengujian dan evaluasi terhadap antarmuka aplikasi tracker ITB Ultra-Marathon yang telah diimplementasikan pada Bab V. Pengujian dilakukan melalui tiga tahap, yaitu \textit{Functionality Testing} untuk memastikan setiap fitur berjalan sesuai kebutuhan fungsional, \textit{System Integration Testing} untuk memastikan komunikasi antara front-end dan back-end berjalan dengan baik, serta \textit{User Acceptance Testing} untuk mengukur penerimaan pengguna terhadap antarmuka yang telah dikembangkan.
+
 \section{\textit{Functionality Testing}}
+\textit{Functionality Testing} dilakukan menggunakan metode \textit{black-box testing} dengan teknik \textit{equivalence partitioning}, yaitu pengujian yang berfokus pada keluaran sistem terhadap suatu masukan tanpa memeriksa struktur kode program secara langsung. Pengujian ini bertujuan untuk memastikan bahwa setiap kebutuhan fungsional (FR) yang telah didefinisikan pada Tabel III.3 dapat dijalankan dengan benar oleh antarmuka yang telah diimplementasikan, baik pada aplikasi mobile maupun aplikasi web.
+
+Pengujian dilakukan pada perangkat Samsung Galaxy Note10+ untuk aplikasi mobile dan peramban Google Chrome untuk aplikasi web, dengan skenario yang disusun berdasarkan peran pengguna, yaitu Panitia, Ketua Tim, Peserta, Tim Support, serta Public/Penonton. Setiap skenario pengujian dirancang untuk memverifikasi satu kebutuhan fungsional secara spesifik, baik pada kondisi normal maupun kondisi tepi (\textit{edge case}) seperti gangguan sinyal GPS atau jaringan. Rincian skenario serta hasil pengujian disajikan pada Tabel \ref{tab:functionality-testing}.
+
+\input{tables/tabel_VI1_functionality}
+
+Berdasarkan hasil pengujian pada Tabel \ref{tab:functionality-testing}, seluruh 24 skenario pengujian yang mewakili kebutuhan fungsional FR-01 hingga FR-24 berhasil dijalankan sesuai dengan hasil yang diharapkan, sehingga diperoleh tingkat keberhasilan pengujian fungsionalitas sebesar 100\%. Hal ini menunjukkan bahwa antarmuka yang dikembangkan telah memenuhi seluruh kebutuhan fungsional yang dirancang pada Bab IV untuk masing-masing kelompok pengguna.
+
 \section{\textit{System Integration Testing}}
+\textit{System Integration Testing} dilakukan untuk memastikan bahwa komunikasi data antara front-end (aplikasi mobile berbasis React Native/Expo dan aplikasi web berbasis React) dengan back-end melalui \textit{API Gateway} dapat berjalan dengan baik. Pengujian ini berfokus pada validasi setiap titik integrasi (\textit{endpoint}) yang telah dirancang pada rancangan \textit{behavioral} (SK-01 hingga SK-08) pada Bab IV, termasuk pengujian terhadap skenario kegagalan seperti gangguan jaringan dan terputusnya sinyal GPS.
+
+Pengujian dilakukan menggunakan kombinasi \textit{end-to-end testing} secara manual pada aplikasi serta pengujian \textit{endpoint} API menggunakan Postman untuk memverifikasi format permintaan (\textit{request}) dan tanggapan (\textit{response}) yang dikembalikan oleh backend. Rincian skenario serta hasil pengujian integrasi disajikan pada Tabel \ref{tab:integration-testing}.
+
+\input{tables/tabel_VI2_integration}
+
+Berdasarkan hasil pengujian pada Tabel \ref{tab:integration-testing}, seluruh skenario integrasi antara front-end dan back-end berhasil dijalankan sesuai dengan hasil yang diharapkan. Mekanisme penanganan kegagalan, seperti penyimpanan data lokasi sementara pada \textit{cache} lokal saat jaringan terputus (IT-02) serta pembatasan akses data peserta dengan visibilitas privat (IT-08), juga terbukti berfungsi dengan baik. Dengan demikian, dapat disimpulkan bahwa integrasi antara front-end dan back-end pada aplikasi tracker ITB Ultra-Marathon telah berjalan secara efektif dan sesuai dengan rancangan komunikasi data yang telah ditetapkan.
+
 \section{\textit{User Acceptance Testing}}
+\textit{User Acceptance Testing} (UAT) dilakukan untuk mengukur tingkat penerimaan pengguna terhadap antarmuka aplikasi tracker ITB Ultra-Marathon yang telah dikembangkan. Pengujian ini dilakukan melalui simulasi penggunaan aplikasi pada skenario perlombaan dalam skala kecil, yang diikuti oleh responden yang berperan sebagai Peserta, Ketua Tim, Supporter, Panitia, dan Penonton. Rincian demografi responden yang terlibat dalam pengujian ini disajikan pada Tabel \ref{tab:uat-demografi}.
+
+\input{tables/tabel_VI3_uat_demografi}
+
+Setelah melakukan simulasi penggunaan aplikasi, responden diminta untuk mengisi kuesioner yang disusun menggunakan skala Likert 1 (sangat tidak setuju) hingga 5 (sangat setuju). Pernyataan pada kuesioner disusun untuk mengukur empat aspek utama, yaitu kemudahan penggunaan, kejelasan antarmuka, persepsi kinerja, serta kepuasan keseluruhan pengguna, yang merujuk pada kriteria keberhasilan yang telah ditetapkan pada Subbab I.3. Hasil rekapitulasi kuesioner UAT disajikan pada Tabel \ref{tab:uat-hasil}.
+
+\input{tables/tabel_VI4_uat_hasil}
+
+Berdasarkan hasil pada Tabel \ref{tab:uat-hasil}, diperoleh rata-rata skor keseluruhan sebesar 4,45 dari skala maksimum 5,0. Skor tertinggi diperoleh pada aspek kesediaan merekomendasikan aplikasi (P10) dengan nilai 4,65, serta aspek kemudahan penggunaan fitur darurat (P7) dengan nilai 4,60, yang menunjukkan bahwa fitur keselamatan peserta diterima dengan sangat baik oleh pengguna. Sementara itu, skor terendah berada pada aspek ketahanan aplikasi terhadap kondisi jaringan yang tidak stabil (P6) dengan nilai 4,15. Meskipun demikian, nilai tersebut masih berada pada kategori “setuju” dan menunjukkan bahwa aplikasi tetap dapat digunakan dengan baik pada kondisi lapangan yang dinamis.
+
+Secara keseluruhan, hasil UAT menunjukkan bahwa antarmuka aplikasi tracker ITB Ultra-Marathon yang dikembangkan telah memenuhi kriteria keberhasilan dari sisi kemudahan penggunaan, kejelasan penyajian informasi, persepsi kinerja, serta kepuasan pengguna secara umum, sebagaimana yang telah ditetapkan pada tujuan penelitian.

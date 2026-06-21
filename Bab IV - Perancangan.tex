@@ -6,6 +6,43 @@
 \label{chap:perancangan}
 Bab ini membahas proses perancangan sistem berdasarkan hasil analisis kebutuhan yang telah dilakukan sebelumnya, meliputi arsitektur sistem secara keseluruhan, pemodelan fungsional sistem, rancangan \textit{behavioral}, serta rancangan antarmuka pengguna pada aplikasi \textit{mobile} ITB Ultra-Marathon.
 \section{Arsitektur Sistem}
+Arsitektur sistem aplikasi \textit{tracker} ITB Ultra-Marathon dirancang
+menggunakan \textit{layered architecture} yang memisahkan
+tanggung jawab setiap komponen sistem secara terstruktur. Arsitektur ini terdiri
+dari lima lapisan utama, yaitu \textit{Presentation Layer}, \textit{Application
+Layer}, \textit{Business Layer}, \textit{External Services}, dan \textit{Data
+Layer}.
+
+Gambar \ref{fig:architecture} menyajikan representasi visual dari arsitektur sistem \textit{tracker} ITB Ultra-Marathon.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=0.95\textwidth]{images/architecture.png}
+    \caption{Arsitektur Sistem Aplikasi \textit{Tracker} ITB Ultra-Marathon}
+    \label{fig:architecture}
+\end{figure}
+
+\textit{Presentation Layer} terdiri dari dua antarmuka pengguna, yaitu aplikasi
+\textit{mobile} berbasis React Native/Expo untuk Peserta, Ketua Tim, Supporter,
+dan Penonton, serta aplikasi web berbasis React yang digunakan oleh Panitia untuk
+manajemen perlombaan. \textit{Application Layer} berfungsi sebagai pintu masuk seluruh permintaan dari
+klien. \textit{API Gateway} menangani \textit{routing}, autentikasi berbasis
+\textit{invite link}, dan pembatasan laju permintaan (\textit{rate limiting}).
+Di samping itu, PostgREST berperan sebagai lapisan REST API langsung di atas
+basis data PostgreSQL untuk operasi baca-tulis yang bersifat standar. \textit{Business Layer} mengandung lima layanan utama. \textit{Race state service}
+mengelola status perlombaan, validasi \textit{checkpoint}, dan pergantian \textit{relay}.
+\textit{Query service} menangani kebutuhan baca data seperti pemfilteran posisi
+pelari dan kalkulasi ETA. \textit{User service} mengelola autentikasi pengguna
+melalui mekanisme \textit{invite link} yang menghasilkan \textit{access token}
+dan \textit{refresh token}. \textit{Ingestion service} menerima data lokasi GPS
+dari perangkat \textit{mobile} melalui HTTP \textit{polling} serta menangani
+permintaan darurat (SOS). \textit{Event management service} mengelola konfigurasi
+rute, titik \textit{checkpoint}, dan data operasional perlombaan. \textit{External Services} mencakup dua layanan eksternal. Firebase Cloud
+Messaging (FCM) digunakan secara eksklusif untuk identifikasi perangkat melalui
+FCM token, bukan untuk pengiriman notifikasi \textit{push}. Tile peta
+disediakan oleh OpenStreetMap sebagai sumber data kartografi \textit{open-source}. \textit{Data Layer} terdiri dari PostgreSQL sebagai basis data relasional utama,
+Redis untuk \textit{caching} dan penyimpanan sesi sementara, serta \textit{object
+store} untuk berkas statis seperti data rute GPX.
 \section{Pemodelan Fungsional Sistem}
 Pemodelan fungsional dari aplikasi \textit{tracker} ITB Ultra-Marathon
 direpresentasikan menggunakan \textit{use case diagram} untuk menggambarkan
@@ -51,90 +88,258 @@ dijelaskan pada Tabel \ref{tab:usecase-deskripsi}.
 
 
 \section{Rancangan \textit{Behavioral}}
-Berdasarkan rancangan antarmuka pengguna dan pemodelan fungsional sistem, rancangan behavioral direpresentasikan menggunakan \textit{sequence diagram}. Diagram ini digunakan untuk menggambarkan urutan interaksi antara aktor dan sistem dalam menjalankan fungsi-fungsi utama aplikasi berdasarkan alur waktu eksekusi proses. Alur interaksi sistem dibagi ke dalam beberapa skenario sesuai dengan proses utama yang dilakukan oleh masing-masing aktor
+Berdasarkan rancangan antarmuka pengguna dan pemodelan fungsional sistem, rancangan \textit{behavioral} direpresentasikan menggunakan \textit{sequence diagram}. Diagram ini digunakan untuk menggambarkan urutan interaksi antara aktor dan sistem dalam menjalankan fungsi-fungsi utama aplikasi berdasarkan alur waktu eksekusi proses. Alur interaksi sistem dibagi ke dalam delapan skenario sesuai dengan proses utama yang dilakukan oleh masing-masing aktor. Ketelurusan setiap skenario terhadap \textit{use case} yang bersesuaian dirangkum pada Tabel \ref{tab:ketelurusan-sequence}.
+
+\input{tables/ketelurusan-sequence.tex}
+
+Legenda simbol yang digunakan dalam \textit{sequence diagram} dijelaskan pada Tabel \ref{tab:legenda-sequence}.
+\input{tables/legenda-sequence.tex}
+
+\subsection{SK-01 Mengirim Lokasi}
+
+Skenario ini menggambarkan proses pengiriman data lokasi GPS oleh Peserta kepada sistem secara berkala selama perlombaan berlangsung. Pada saat Peserta membuka halaman utama aplikasi, sistem secara otomatis memulai siklus pengiriman lokasi dengan interval waktu yang telah ditentukan. Setiap siklus, aplikasi mengirimkan data koordinat, \textit{timestamp}, dan ID peserta ke \textit{backend} melalui \texttt{POST /location}. Apabila pengiriman berhasil, \textit{backend} menyimpan data lokasi ke basis data dan mengembalikan respons \texttt{200 OK}. Apabila pengiriman gagal akibat \textit{timeout} atau gangguan jaringan, data disimpan sementara di \textit{cache} lokal untuk dikirim ulang pada interval berikutnya.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=0.85\textwidth]{images/sequence/seq1.png}
+    \caption{\textit{Sequence Diagram} Skenario Mengirim Lokasi Pelari}
+    \label{fig:seq1}
+\end{figure}
+
+\subsection{SK-02 Melihat ETD, ETA, dan \textit{Activity Metrics}}
+
+Skenario ini menggambarkan proses pengambilan dan penampilan data ETD (\textit{Estimated Time of Departure}), ETA (\textit{Estimated Time of Arrival}), dan metrik aktivitas lari kepada Peserta. Setiap interval \textit{polling}, aplikasi mengirimkan permintaan \texttt{GET /eta-metrics} beserta data lokasi terkini ke \textit{backend}. \textit{Backend} kemudian mengambil data rute dan \textit{checkpoint} dari basis data, menghitung nilai ETA, ETD, serta metrik aktivitas, lalu mengembalikan hasilnya ke aplikasi. Apabila data tersedia, informasi ditampilkan pada antarmuka Peserta. Apabila sinyal GPS terputus, \textit{backend} mengembalikan respons \texttt{204 No Content} dan aplikasi menampilkan status menunggu sinyal GPS.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=0.85\textwidth]{images/sequence/seq2.png}
+    \caption{\textit{Sequence Diagram} Skenario Melihat ETD, ETA, dan \textit{Activity Metrics}}
+    \label{fig:seq2}
+\end{figure}
+
+\subsection{SK-03 Mengirim Notifikasi Darurat}
+
+Skenario ini menggambarkan proses pengiriman sinyal darurat (SOS) oleh Peserta kepada sistem. Peserta membuka halaman utama dan menekan tombol darurat yang tersedia. Setelah tombol ditekan, aplikasi langsung memulai \textit{countdown} sepuluh detik sambil menampilkan opsi pembatalan melalui \textit{double tap}. Apabila Peserta melakukan \textit{double tap} sebelum \textit{countdown} selesai, pengiriman dibatalkan dan \textit{countdown} dihentikan. Apabila \textit{countdown} selesai tanpa pembatalan, aplikasi mengirimkan data lokasi dan ID peserta ke \textit{backend} melalui \texttt{POST /emergency}. \textit{Backend} kemudian menyimpan status darurat peserta ke basis data sebagai tanda bahwa peserta membutuhkan pertolongan.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=0.85\textwidth]{images/sequence/seq3.png}
+    \caption{\textit{Sequence Diagram} Skenario Mengirim Notifikasi Darurat}
+    \label{fig:seq3}
+\end{figure}
+
+\subsection{SK-04 Mengubah Visibilitas}
+
+Skenario ini menggambarkan proses pengubahan status visibilitas lokasi oleh Peserta. Peserta mengklik menu \textit{visibility} pada aplikasi, lalu aplikasi mengirimkan permintaan \texttt{PATCH /visibility} ke \textit{backend} untuk memperbarui status lokasi menjadi publik atau privat. \textit{Backend} memperbarui status visibilitas peserta pada basis data dan mengembalikan konfirmasi kepada aplikasi. Apabila pembaruan berhasil, aplikasi menerima respons \texttt{200 OK} beserta status visibilitas terbaru dan menampilkannya pada antarmuka Peserta. Apabila terjadi kesalahan, \textit{backend} mengembalikan kode kesalahan \texttt{400} atau \texttt{500} dan aplikasi menampilkan pesan kesalahan kepada pengguna.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=0.85\textwidth]{images/sequence/seq4.png}
+    \caption{\textit{Sequence Diagram} Skenario Mengubah Visibilitas}
+    \label{fig:seq4}
+\end{figure}
+
+\subsection{SK-05 Melihat \textit{Live Tracking}}
+
+Skenario ini menggambarkan proses pemantauan posisi pelari secara \textit{real-time} oleh aktor yang memiliki akses terhadap data lokasi. Saat aktor membuka halaman utama, aplikasi mengirimkan permintaan awal ke \textit{backend} melalui \texttt{GET /tracking} untuk mengambil posisi pelari terkini. \textit{Backend} mengambil data posisi dari basis data dan mengembalikannya ke aplikasi. Apabila aktor memiliki akses yang valid, baik sebagai pengguna publik maupun pengguna dengan kode tim yang sah, posisi pelari diperbarui secara berkala pada peta melalui mekanisme \textit{polling} atau \textit{WebSocket push}. Apabila akses ditolak karena visibilitas pelari bersifat privat atau kode tim tidak valid, \textit{backend} mengembalikan respons \texttt{403 Forbidden} dan aplikasi menampilkan pesan bahwa data tidak tersedia.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=0.85\textwidth]{images/sequence/seq5.png}
+    \caption{\textit{Sequence Diagram} Skenario Melihat \textit{Live Tracking}}
+    \label{fig:seq5}
+\end{figure}
+
+\subsection{SK-06 Membuat Tautan Undangan}
+
+Skenario ini menggambarkan proses pembuatan tautan undangan oleh Panitia atau Ketua Tim untuk mengundang pengguna baru ke dalam sistem. Aktor mengklik menu "undang" pada aplikasi, lalu aplikasi mengirimkan permintaan \texttt{POST /invite-link} ke \textit{backend}. \textit{Backend} membangkitkan kode dan tautan unik, menyimpan kode undangan ke basis data, lalu mengembalikan hasilnya ke aplikasi. Apabila proses berhasil, aplikasi menerima respons \texttt{201 Created} beserta tautan undangan dan secara otomatis menyalinnya ke \textit{clipboard} aktor. Apabila terjadi kesalahan, misalnya karena permintaan tidak valid atau terjadi konflik data, \textit{backend} mengembalikan kode kesalahan \texttt{400} atau \texttt{409} dan aplikasi menampilkan pesan kesalahan.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=0.85\textwidth]{images/sequence/seq6.png}
+    \caption{\textit{Sequence Diagram} Skenario Membuat Tautan Undangan}
+    \label{fig:seq6}
+\end{figure}
+
+\subsection{SK-07 Menerima Notifikasi Darurat}
+
+Skenario ini menggambarkan proses penerimaan notifikasi darurat oleh Panitia atau Supporter ketika seorang peserta mengaktifkan sinyal SOS. Saat aktor membuka halaman utama, \textit{backend} mengirimkan notifikasi darurat ke aplikasi melalui mekanisme \textit{polling}. Setelah notifikasi diterima, aplikasi mengirimkan permintaan \texttt{GET /emergency/\{id\}} ke \textit{backend} untuk mengambil detail lokasi dan status peserta yang bersangkutan. \textit{Backend} mengembalikan informasi tersebut dan aplikasi menampilkannya pada \textit{dashboard} atau peta sehingga Panitia maupun Supporter dapat segera mengambil tindakan penanganan.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=0.85\textwidth]{images/sequence/seq7.png}
+    \caption{\textit{Sequence Diagram} Skenario Menerima Notifikasi Darurat}
+    \label{fig:seq7}
+\end{figure}
+
+\subsection{SK-08 Navigasi ke Lokasi Pelari}
+
+Skenario ini menggambarkan proses navigasi Supporter menuju lokasi terkini pelari menggunakan aplikasi peta eksternal. Supporter mengklik tombol navigasi pada aplikasi, lalu aplikasi secara periodik mengambil koordinat terkini pelari dari \textit{backend} melalui \texttt{GET /runner/\{id\}/location}. \textit{Backend} mengambil data posisi dari basis data dan mengembalikannya ke aplikasi. Apabila data tersedia, aplikasi membentuk URL Google Maps menggunakan koordinat tujuan dan mengarahkan Supporter ke aplikasi peta eksternal melalui \textit{browser} atau aplikasi Google Maps. Apabila sinyal GPS pelari terputus, \textit{backend} mengembalikan respons \texttt{204 No Content} dan aplikasi menampilkan pesan bahwa lokasi pelari tidak tersedia.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=0.85\textwidth]{images/sequence/seq8.png}
+    \caption{\textit{Sequence Diagram} Skenario Navigasi ke Lokasi Pelari}
+    \label{fig:seq8}
+\end{figure}
+
 
 \section{Rancangan Antarmuka Pengguna}
 
-Rancangan antarmuka pengguna aplikasi \textit{tracker} ITB Ultra-Marathon
-disusun menjadi beberapa halaman utama yang fungsional, dengan struktur dan
-alur interaksi yang mengacu pada desain \textit{low fidelity} yang berfungsi
-sebagai cetak biru (\textit{blueprint}) untuk tahap implementasi. Rincian
-visual seluruh rancangan dapat dilihat pada Lampiran A. Setiap desain
-dirancang untuk memetakan seluruh kebutuhan fungsional menjadi komponen
-antarmuka dan mengimplementasikan alur interaksi yang telah dirincikan dalam
-\textit{use case diagram}. Rancangan antarmuka dibagi berdasarkan peran
-pengguna, yaitu Ketua Tim, Peserta, Panitia, Supporter, dan Spectator.
-Berikut merupakan halaman-halaman yang akan diimplementasikan dalam aplikasi.
+Rancangan antarmuka pengguna aplikasi \textit{tracker} ITB Ultra-Marathon disusun menjadi beberapa halaman utama yang fungsional, dengan struktur dan alur interaksi yang mengacu pada desain \textit{low fidelity} sebagai cetak biru (\textit{blueprint}) untuk tahap implementasi. Rancangan antarmuka dibagi berdasarkan peran pengguna, yaitu Peserta, Ketua Tim, Supporter, Panitia, dan Spectator. Setiap halaman dirancang untuk memetakan kebutuhan fungsional menjadi komponen antarmuka yang sesuai dengan hak akses dan kebutuhan masing-masing peran. Rincian visual seluruh rancangan dapat dilihat pada Lampiran A.
 
-\begin{enumerate}
+\subsection{Halaman Peserta}
 
-  \item \textbf{Halaman \textit{Splash Screen}} \\
-  Halaman ini merupakan tampilan awal yang muncul saat aplikasi pertama kali
-  dibuka. Halaman ini menampilkan identitas aplikasi dan berfungsi sebagai
-  jeda singkat sebelum pengguna diarahkan ke halaman \textit{login} atau
-  halaman utama.
+\subsubsection{Halaman Utama Peserta}
 
-  \item \textbf{Halaman \textit{Login}} \\
-  Halaman ini dirancang sebagai gerbang autentikasi yang membatasi akses ke
-  fitur-fitur yang membutuhkan otorisasi. Pengguna memasukkan kredensial
-  sesuai peran masing-masing, yaitu Ketua Tim, Peserta, Panitia, Supporter,
-  maupun Spectator, untuk selanjutnya diarahkan ke tampilan yang sesuai.
+Halaman utama Peserta merupakan halaman inti yang digunakan selama perlombaan berlangsung. Halaman ini menampilkan peta interaktif yang memperlihatkan posisi pelari secara \textit{real-time} beserta informasi rute perlombaan, sehingga Peserta dapat memantau posisinya terhadap jalur yang telah ditentukan. Selain itu, halaman ini menyajikan informasi ETA dan ETD pada \textit{checkpoint} berikutnya, status \textit{checkpoint} yang telah dilalui, serta peringatan apabila pelari terdeteksi keluar dari rute. Terdapat pula tombol darurat (SOS) yang dapat diaktifkan apabila Peserta membutuhkan pertolongan. Rancangan halaman utama Peserta dapat dilihat pada Gambar \ref{fig:home-peserta} dan tampilan \textit{pop-up} konfirmasi darurat pada Gambar \ref{fig:emergency}.
 
-  \item \textbf{Halaman \textit{Onboarding}} \\
-  Halaman ini ditampilkan setelah \textit{login} pertama kali dan berfungsi
-  memandu pengguna memahami fitur utama aplikasi sesuai peran yang dimiliki.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.5]{images/interface/HomePeserta.png}
+    \caption{Halaman Utama Peserta}
+    \label{fig:home-peserta}
+\end{figure}
 
-  \item \textbf{Halaman Informasi \textit{Event}} \\
-  Halaman ini menyediakan informasi kontekstual mengenai ITB Ultra-Marathon,
-  mencakup jadwal perlombaan, kategori, rute, aturan, dan ketentuan yang
-  berlaku. Halaman ini dapat diakses oleh seluruh aktor yang telah
-  melakukan \textit{login}.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.5]{images/interface/emergency.png}
+    \caption{\textit{Pop-up} Konfirmasi Darurat}
+    \label{fig:emergency}
+\end{figure}
 
-  \item \textbf{Halaman Manajemen Tim} \\
-  Halaman ini diperuntukkan bagi Ketua Tim untuk membuat tim, mengundang
-  anggota pelari, mengundang \textit{supporter}, serta memantau struktur dan
-  komposisi tim relay secara keseluruhan.
+\subsubsection{Halaman Menu Peserta}
 
-  \item \textbf{Halaman \textit{Tracking Map}} \\
-  Halaman ini menampilkan peta interaktif yang memvisualisasikan posisi
-  pelari secara \textit{real-time} beserta rute perlombaan, titik
-  \textit{checkpoint}, dan \textit{water station}. Tampilan dan cakupan
-  data yang ditampilkan disesuaikan dengan peran pengguna: Panitia dapat
-  memantau seluruh peserta, Ketua Tim dan Supporter memantau anggota timnya,
-  sedangkan Peserta dan Spectator memantau pelari tertentu saja.
+Halaman menu Peserta menyediakan akses ke berbagai fitur pendukung yang tidak berada langsung pada halaman utama. Melalui halaman ini, Peserta dapat mengatur status visibilitas lokasi menjadi publik atau privat, serta menghasilkan kode atau tautan yang dapat dibagikan kepada keluarga atau penonton untuk memantau posisi pelari. Rancangan halaman menu Peserta dapat dilihat pada Gambar \ref{fig:menu-peserta}.
 
-  \item \textbf{Halaman ETA} \\
-  Halaman ini menampilkan estimasi waktu kedatangan (\textit{Estimated Time
-  of Arrival}) pelari pada \textit{checkpoint} berikutnya maupun garis
-  \textit{finish}, dihitung berdasarkan posisi dan kecepatan terkini. Dapat
-  diakses oleh Ketua Tim, Peserta, Supporter, dan Spectator.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.5]{images/interface/menupelari.png}
+    \caption{Halaman Menu Peserta}
+    \label{fig:menu-peserta}
+\end{figure}
 
-  \item \textbf{Halaman \textit{Activity Metrics}} \\
-  Halaman ini khusus untuk Peserta dan menampilkan data performa lari secara
-  \textit{real-time}, meliputi kecepatan, jarak tempuh, waktu berlari, dan
-  status \textit{checkpoint} yang telah dilewati.
+\subsubsection{Halaman Manajemen Peserta}
 
-  \item \textbf{Halaman Pergantian \textit{Relay}} \\
-  Halaman ini menyediakan antarmuka bagi Peserta untuk melakukan konfirmasi
-  serah terima pelari pada titik pergantian relay yang telah ditentukan.
+Halaman manajemen Peserta menampilkan informasi struktural tim relay yang diikuti oleh Peserta, termasuk posisi anggota tim lain yang berada dalam grup relay yang sama secara \textit{real-time}. Halaman ini juga menyediakan fitur pergantian relay ketika Peserta memasuki area pergantian yang telah ditentukan. Rancangan halaman manajemen Peserta dapat dilihat pada Gambar \ref{fig:manage-peserta}.
 
-  \item \textbf{Halaman Kelola Rute dan \textit{Checkpoint}} \\
-  Halaman ini diperuntukkan khusus bagi Panitia untuk mengunggah data rute
-  perlombaan dalam format GPX, menetapkan titik \textit{checkpoint}, mengatur
-  \textit{cutoff time}, dan mengelola titik pergantian relay
-  (\textit{switch point}).
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.5]{images/interface/ManagePeserta.png}
+    \caption{Halaman Manajemen Peserta}
+    \label{fig:manage-peserta}
+\end{figure}
 
-  \item \textbf{Halaman \textit{Alert} dan Notifikasi} \\
-  Halaman ini menampilkan notifikasi yang masuk kepada pengguna, seperti
-  konfirmasi \textit{check-in checkpoint}, pergantian relay, permintaan
-  bantuan darurat (SOS) dari peserta, dan informasi operasional penting
-  lainnya.
+\subsection{Halaman Ketua Tim}
 
-\end{enumerate}
+\subsubsection{Halaman Utama Ketua Tim}
 
-Untuk memastikan bahwa seluruh kebutuhan fungsional yang telah dirancang dapat
-terpenuhi melalui interaksi pengguna dengan sistem, Tabel
-\ref{tab:pemetaan-halaman-fr} menyajikan pemetaan setiap halaman antarmuka
-pengguna dengan kebutuhan fungsional (FR) yang bersangkutan.
+Halaman utama Ketua Tim berfungsi sebagai \textit{dashboard} pemantauan seluruh anggota tim relay yang dipimpinnya. Halaman ini menampilkan peta interaktif yang memperlihatkan posisi seluruh anggota tim secara \textit{real-time}, dilengkapi dengan informasi ETA dan ETD masing-masing anggota pada titik tertentu. Halaman ini juga menampilkan notifikasi apabila terdapat anggota tim yang mengirimkan sinyal darurat atau terdeteksi keluar dari rute perlombaan. Rancangan halaman utama Ketua Tim dapat dilihat pada Gambar \ref{fig:home-ketua}.
 
-\input{tables/pemetaan-halaman}
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.5]{images/interface/HomeKetua.png}
+    \caption{Halaman Utama Ketua Tim}
+    \label{fig:home-ketua}
+\end{figure}
+
+\subsubsection{Halaman Manajemen Ketua Tim}
+
+Halaman manajemen Ketua Tim menyediakan fitur pengelolaan tim relay, meliputi pembuatan tim, pengundangan anggota, penerimaan undangan, serta visualisasi struktur tim relay secara keseluruhan. Selain itu, halaman ini menyediakan fitur untuk menghasilkan kode atau tautan yang dapat digunakan oleh tim support untuk mengakses data pemantauan tim. Rancangan halaman manajemen Ketua Tim dapat dilihat pada Gambar \ref{fig:manage-ketua}.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.5]{images/interface/Manageketua.png}
+    \caption{Halaman Manajemen Ketua Tim}
+    \label{fig:manage-ketua}
+\end{figure}
+
+\subsection{Halaman Supporter}
+
+\subsubsection{Halaman Utama Supporter}
+
+Halaman utama Supporter dirancang untuk mendukung kebutuhan logistik dan bantuan lapangan selama perlombaan. Halaman ini menampilkan posisi peserta yang dipantau secara \textit{real-time} pada peta interaktif, disertai informasi ETA dan ETD pada titik tertentu untuk membantu perencanaan posisi tim support. Notifikasi darurat dan notifikasi keluar jalur juga ditampilkan pada halaman ini agar Supporter dapat merespons situasi dengan cepat. Rancangan halaman utama Supporter dapat dilihat pada Gambar \ref{fig:home-supporter}.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.5]{images/interface/HomeSupporter.png}
+    \caption{Halaman Utama Supporter}
+    \label{fig:home-supporter}
+\end{figure}
+
+\subsubsection{Halaman Manajemen Supporter}
+
+Halaman manajemen Supporter menyediakan tampilan daftar peserta yang sedang dipantau beserta statusnya masing-masing. Melalui halaman ini, Supporter dapat memilih peserta tertentu untuk melihat detail posisi dan mengakses fitur navigasi menuju lokasi pelari menggunakan aplikasi peta eksternal. Rancangan halaman manajemen Supporter dapat dilihat pada Gambar \ref{fig:manage-supporter}.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.5]{images/interface/Managesupporter.png}
+    \caption{Halaman Manajemen Supporter}
+    \label{fig:manage-supporter}
+\end{figure}
+
+\subsection{Halaman Panitia}
+
+\subsubsection{Halaman Utama Panitia}
+
+Halaman utama Panitia berfungsi sebagai pusat pemantauan perlombaan secara menyeluruh. Halaman ini menampilkan peta interaktif yang memuat posisi seluruh pelari secara \textit{real-time} beserta lokasi \textit{checkpoint}, \textit{water station}, titik \textit{start}, dan \textit{finish}. Notifikasi darurat dan notifikasi peserta keluar jalur ditampilkan secara \textit{real-time} agar Panitia dapat segera mengambil tindakan penanganan. Rancangan halaman utama Panitia dan tampilan notifikasinya dapat dilihat pada Gambar \ref{fig:home-panitia} dan Gambar \ref{fig:notification}.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.5]{images/interface/HomePanitia.png}
+    \caption{Halaman Utama Panitia}
+    \label{fig:home-panitia}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.5]{images/interface/notification.png}
+    \caption{Notifikasi Panitia}
+    \label{fig:notification}
+\end{figure}
+
+\subsubsection{Halaman Manajemen Panitia}
+
+Halaman manajemen Panitia menyediakan tampilan daftar seluruh peserta yang terdaftar dalam perlombaan beserta statusnya masing-masing, termasuk daftar peserta yang mengirimkan sinyal darurat dan peserta yang terdeteksi keluar jalur. Melalui halaman ini, Panitia dapat mengelola data perlombaan dan memantau kondisi seluruh peserta secara terpusat. Rancangan halaman manajemen Panitia dapat dilihat pada Gambar \ref{fig:manage-panitia}.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.5]{images/interface/ListPanitia.png}
+    \caption{Halaman Manajemen Panitia}
+    \label{fig:manage-panitia}
+\end{figure}
+
+\subsection{Halaman Spectator}
+
+Halaman Spectator merupakan halaman yang dapat diakses oleh publik maupun penonton yang memiliki kode akses dari pelari. Halaman ini menampilkan posisi pelari yang mengaktifkan visibilitas publik secara \textit{real-time} pada peta interaktif. Selain informasi pelacakan, halaman ini juga menampilkan informasi dan logo sponsor yang mendukung penyelenggaraan perlombaan. Rancangan halaman Spectator dapat dilihat pada Gambar \ref{fig:home-spectator}.
+
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[scale=0.5]{images/interface/HomeSpectator.png}
+    \caption{Halaman Utama Spectator}
+    \label{fig:home-spectator}
+\end{figure}
+
+Untuk memastikan bahwa seluruh kebutuhan fungsional yang telah dirancang dapat terpenuhi melalui interaksi pengguna dengan sistem, Tabel \ref{tab:pemetaan-halaman} menyajikan pemetaan setiap halaman antarmuka pengguna dengan kebutuhan fungsional (FR) yang bersangkutan.
+
+\input{tables/pemetaan-halaman.tex}

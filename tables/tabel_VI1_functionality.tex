@@ -1,0 +1,46 @@
+% ==========================================
+% TABEL VI.1 HASIL FUNCTIONALITY TESTING
+% ==========================================
+\begin{longtable}{p{1.3cm} p{2.2cm} p{4.3cm} p{4.3cm} p{1.5cm}}
+\caption{Hasil \textit{Functionality Testing}} \label{tab:functionality-testing} \\
+
+\hline
+\textbf{ID} & \textbf{Kebutuhan} & \textbf{Skenario Pengujian} & \textbf{Hasil yang Diharapkan} & \textbf{Status} \\ \hline
+\endfirsthead
+
+\multicolumn{5}{c}{\tablename\ \thetable{} -- lanjutan dari halaman sebelumnya} \\ \hline
+\textbf{ID} & \textbf{Kebutuhan} & \textbf{Skenario Pengujian} & \textbf{Hasil yang Diharapkan} & \textbf{Status} \\ \hline
+\endhead
+
+\hline \multicolumn{5}{r}{Bersambung ke halaman berikutnya} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+TC-01 & FR-01 & Panitia membuka halaman utama dan memeriksa peta interaktif & Peta menampilkan posisi seluruh pelari, checkpoint, water station, titik start, dan finish secara real-time & Berhasil \\
+TC-02 & FR-02 & Peserta menekan tombol darurat (SOS) hingga countdown selesai & Notifikasi darurat beserta lokasi peserta muncul pada daftar Panitia & Berhasil \\
+TC-03 & FR-03 & Peserta berlari menjauhi jalur rute yang ditentukan lebih dari radius toleransi & Peserta masuk ke daftar \textit{lost track} pada antarmuka Panitia disertai notifikasi & Berhasil \\
+TC-04 & FR-04 & Ketua Tim membuat tim baru dan mengundang tiga anggota melalui tautan undangan & Tim baru tersimpan dan struktur anggota tim tampil sesuai jumlah yang diundang & Berhasil \\
+TC-05 & FR-05 & Ketua Tim membuka halaman utama saat seluruh anggota tim aktif mengirim lokasi & Posisi seluruh anggota tim tampil pada peta interaktif secara real-time & Berhasil \\
+TC-06 & FR-06 & Ketua Tim memeriksa estimasi waktu pada checkpoint berikutnya & ETA dan ETD anggota tim tampil dan diperbarui secara berkala & Berhasil \\
+TC-07 & FR-07 & Salah satu anggota tim mengirimkan sinyal SOS & Notifikasi darurat tampil pada halaman utama Ketua Tim & Berhasil \\
+TC-08 & FR-08 & Salah satu anggota tim keluar dari rute perlombaan & Notifikasi \textit{lost track} tampil pada halaman utama Ketua Tim & Berhasil \\
+TC-09 & FR-09 & Ketua Tim menekan tombol \textit{generate} kode tim support & Kode/tautan unik untuk tim support berhasil dibuat dan dapat dibagikan & Berhasil \\
+TC-10 & FR-10 & Peserta membuka halaman utama selama perlombaan berlangsung & Posisi peserta dan rute perlombaan tampil pada peta interaktif & Berhasil \\
+TC-11 & FR-11 & Peserta mendekati checkpoint tertentu & ETA dan ETD pada checkpoint tersebut tampil dan diperbarui & Berhasil \\
+TC-12 & FR-12 & Peserta menekan tombol SOS dan menunggu countdown 10 detik tanpa membatalkan & Permintaan bantuan darurat beserta lokasi terkirim ke backend & Berhasil \\
+TC-13 & FR-13 & Peserta menyimpang dari jalur rute yang ditentukan & Peringatan keluar jalur muncul pada antarmuka Peserta & Berhasil \\
+TC-14 & FR-14 & Peserta memasuki area checkpoint & Status checkpoint berubah menjadi “telah dilalui” pada antarmuka & Berhasil \\
+TC-15 & FR-15 & Peserta kategori relay memasuki area pergantian pelari & Fitur pergantian relay muncul dan pelari berikutnya tercatat sebagai pelari aktif & Berhasil \\
+TC-16 & FR-16 & Peserta membuka halaman manajemen tim & Posisi anggota tim relay lain tampil secara real-time & Berhasil \\
+TC-17 & FR-17 & Peserta menekan tombol \textit{generate} kode penonton & Kode/tautan untuk penonton berhasil dibuat dan dapat dibagikan & Berhasil \\
+TC-18 & FR-18 & Peserta mengubah status visibilitas dari privat menjadi publik & Status visibilitas tersimpan dan posisi peserta dapat diakses sesuai pengaturan & Berhasil \\
+TC-19 & FR-19 & Supporter memasukkan kode akses dan membuka halaman utama & Posisi peserta yang dipantau tampil pada peta interaktif & Berhasil \\
+TC-20 & FR-20 & Supporter memeriksa estimasi waktu peserta pada titik tertentu & ETA dan ETD peserta tampil dan diperbarui secara berkala & Berhasil \\
+TC-21 & FR-21 & Peserta yang dipantau Supporter mengirim sinyal SOS & Notifikasi darurat tampil pada halaman utama Supporter & Berhasil \\
+TC-22 & FR-22 & Peserta yang dipantau Supporter keluar dari rute perlombaan & Notifikasi \textit{lost track} tampil pada halaman utama Supporter & Berhasil \\
+TC-23 & FR-23 & Public/Penonton membuka halaman Spectator tanpa kode akses & Posisi pelari yang mengaktifkan visibilitas publik tampil pada peta & Berhasil \\
+TC-24 & FR-24 & Public/Penonton membuka halaman Spectator & Informasi dan logo sponsor tampil pada bagian halaman yang ditentukan & Berhasil \\
+
+\end{longtable}

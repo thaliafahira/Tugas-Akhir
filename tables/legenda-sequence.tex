@@ -1,0 +1,112 @@
+\begin{longtable}{|>{\centering\arraybackslash}m{3.5cm}|>{\centering\arraybackslash}m{3cm}|m{7cm}|}
+\caption{Legenda \textit{Sequence Diagram}}
+\label{tab:legenda-sequence} \\
+\hline
+\textbf{Simbol} & \textbf{Nama} & \multicolumn{1}{c|}{\textbf{Keterangan}} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Simbol} & \textbf{Nama} & \multicolumn{1}{c|}{\textbf{Keterangan}} \\
+\hline
+\endhead
+
+\begin{minipage}[c][1.5cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(10,14)
+    \put(4,0){\framebox(4,14){}}
+  \end{picture}
+\end{minipage} &
+\textit{Activation} &
+Periode waktu di mana suatu objek sedang aktif menjalankan operasi atau menunggu respons. \\
+\hline
+
+\begin{minipage}[c][1.5cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(30,14)
+    \put(0,11){\framebox(30,3){\tiny Object}}
+    \multiput(14,0)(0,2){5}{\line(0,1){1}}
+  \end{picture}
+\end{minipage} &
+\textit{Object Lifeline} &
+Garis vertikal putus-putus yang merepresentasikan keberadaan suatu objek atau komponen selama rentang waktu tertentu dalam interaksi. \\
+\hline
+
+\begin{minipage}[c][1.8cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(20,18)
+    \put(10,16){\circle{3}}
+    \put(10,14.5){\line(0,-1){4}}
+    \put(6,12){\line(1,0){8}}
+    \put(10,10.5){\line(-2,-3){2}}
+    \put(10,10.5){\line(2,-3){2}}
+    \multiput(10,0)(0,2){3}{\line(0,1){1}}
+  \end{picture}
+\end{minipage} &
+\textit{Actor Lifeline} &
+Garis vertikal putus-putus yang menggambarkan keberadaan seorang aktor selama interaksi berlangsung. \\
+\hline
+
+\begin{minipage}[c][1.5cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(30,14)
+    \put(0,0){\framebox(30,14){}}
+    \put(0,10){\framebox(8,4){\tiny loop}}
+  \end{picture}
+\end{minipage} &
+\textit{Loop Fragment} &
+Fragmen kombinasi yang menunjukkan blok pesan yang diulang selama kondisi tertentu terpenuhi. \\
+\hline
+
+\begin{minipage}[c][1.5cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(30,14)
+    \put(0,0){\framebox(30,14){}}
+    \put(0,10){\framebox(6,4){\tiny opt}}
+  \end{picture}
+\end{minipage} &
+\textit{Optional Fragment} &
+Fragmen kombinasi yang menunjukkan blok pesan yang hanya dieksekusi apabila kondisi penjaga (\textit{guard condition}) terpenuhi. \\
+\hline
+
+\begin{minipage}[c][2cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(30,18)
+    \put(0,0){\framebox(30,18){}}
+    \put(0,14){\framebox(6,4){\tiny alt}}
+    \multiput(0,9)(2,0){15}{\line(1,0){1}}
+  \end{picture}
+\end{minipage} &
+\textit{Alternative Fragment} &
+Fragmen kombinasi yang menunjukkan dua atau lebih blok pesan alternatif, di mana hanya satu blok yang dieksekusi berdasarkan kondisi yang berlaku. \\
+\hline
+
+\begin{minipage}[c][1cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(30,6)
+    \put(2,3){\vector(1,0){26}}
+  \end{picture}
+\end{minipage} &
+\textit{Message} &
+Panah solid yang merepresentasikan pengiriman pesan atau pemanggilan operasi dari satu objek ke objek lain. \\
+\hline
+
+\begin{minipage}[c][1cm][c]{3.5cm}
+  \centering
+  \setlength{\unitlength}{1mm}
+  \begin{picture}(30,6)
+    \multiput(2,3)(3,0){9}{\line(1,0){2}}
+    \put(28,3){\vector(1,0){0}}
+  \end{picture}
+\end{minipage} &
+\textit{Return Message} &
+Panah putus-putus yang merepresentasikan pengembalian nilai atau respons dari operasi yang telah dieksekusi. \\
+\hline
+
+\end{longtable}

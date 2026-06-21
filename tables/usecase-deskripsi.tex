@@ -17,72 +17,56 @@
 \hline
 \endlastfoot
 
-UC-01 & Melakukan Registrasi Akun &
-Aktor dapat mendaftarkan diri ke dalam sistem dengan mengisi data identitas
-dan informasi tim. \textit{Use case} ini dapat diakses oleh Peserta dan
-Ketua Tim. \\ \hline
+UC-01 & Mengirim Notifikasi Darurat &
+Peserta dapat mengirimkan notifikasi darurat kepada pihak terkait apabila
+mengalami kondisi tertentu (misalnya cedera atau kendala) selama perlombaan
+berlangsung. \textit{Use case} ini meng-\textit{include} \textit{use case}
+Menerima Notifikasi Darurat (UC-07), sehingga setiap notifikasi yang dikirim
+akan otomatis diteruskan dan diterima oleh aktor terkait. \\ \hline
 
-UC-02 & Melakukan \textit{Login} Akun &
-Aktor melakukan autentikasi untuk mengakses fitur sistem sesuai peran
-masing-masing. Dapat dilakukan oleh seluruh aktor yang memiliki akun, yaitu
-Peserta, Ketua Tim, Supporter, dan Panitia. \\ \hline
+UC-02 & Melihat ETA, ETD \& \textit{Activity Metrics} &
+Peserta dapat melihat estimasi waktu kedatangan (\textit{ETA}) dan estimasi
+waktu keberangkatan (\textit{ETD}) ke \textit{checkpoint} atau garis
+\textit{finish}, serta memantau data performa aktivitas larinya secara
+\textit{real-time}, meliputi kecepatan, jarak tempuh, dan waktu berlari. \\ \hline
 
-UC-03 & Mengundang \textit{Spectator} &
-Peserta dapat mengundang pihak luar (penonton) untuk memantau progresnya
-secara individual melalui tautan atau kode unik yang digenerate sistem. \\ \hline
+UC-03 & Mengubah Visibilitas &
+Peserta dapat mengatur tingkat visibilitas data lokasi dan aktivitasnya,
+yaitu menentukan apakah posisinya dapat dipantau secara publik atau hanya
+oleh pihak tertentu. \textit{Use case} ini merupakan perluasan
+(\textit{extend}) dari \textit{use case} Melihat \textit{Live Tracking}
+(UC-05), yang dijalankan ketika peserta memilih untuk mengubah
+pengaturan visibilitasnya. \\ \hline
 
-UC-04 & Melihat ETA \textit{Information} &
-Peserta dapat melihat estimasi waktu kedatangan ke \textit{checkpoint}
-berikutnya maupun ke garis \textit{finish} berdasarkan kecepatan dan jarak
-tempuh saat ini. \\ \hline
+UC-04 & Mengirim \textit{Live Tracking} &
+Peserta mengirimkan data lokasi secara \textit{real-time} selama perlombaan
+berlangsung agar posisi dan pergerakannya dapat dipantau melalui sistem
+\textit{tracker}. Data lokasi yang dikirim digunakan untuk mendukung
+pemantauan \textit{live tracking}, perhitungan estimasi waktu, dan fitur
+terkait lainnya. \\ \hline
 
-UC-05 & Melihat \textit{Activity Metrics} &
-Peserta dapat memantau data performa aktivitas lari secara \textit{real-time},
-meliputi kecepatan, jarak tempuh, dan waktu berlari. \\ \hline
+UC-05 & Melihat \textit{Live Tracking} &
+Aktor dapat memantau posisi peserta secara \textit{real-time} pada peta
+selama perlombaan berlangsung. \textit{Use case} ini dapat diakses oleh
+Peserta, Panitia, Ketua Tim, \textit{Public}, Penonton, dan
+\textit{Supporter}, sesuai dengan visibilitas yang telah diatur oleh
+masing-masing peserta. \\ \hline
 
-UC-06 & Melakukan \textit{Check-in Checkpoint} &
-Peserta melakukan konfirmasi kehadiran saat tiba di titik \textit{checkpoint}
-yang telah ditentukan sepanjang rute perlombaan. \\ \hline
+UC-06 & Membuat Tautan Undangan &
+Ketua tim dapat membuat dan membagikan tautan undangan kepada \textit{Supporter},
+dan peserta dapat membagikan tautan kepada keluarga atau penonton agar dapat
+mengakses dan memantau jalannya perlombaan melalui sistem \textit{tracker}. \\ \hline
 
-UC-07 & Melakukan Pergantian \textit{Relay} &
-Peserta pada kategori relay melakukan serah terima dengan anggota tim
-berikutnya di titik pergantian yang telah ditetapkan. \\ \hline
+UC-07 & Menerima Notifikasi Darurat &
+Aktor menerima notifikasi darurat yang dikirimkan oleh Peserta terkait
+kondisi tertentu selama perlombaan. \textit{Use case} ini diterima oleh
+Panitia, Ketua Tim, \textit{Public}, dan \textit{Supporter}, dan merupakan
+\textit{use case} yang di-\textit{include} oleh \textit{use case}
+Mengirim Notifikasi Darurat (UC-01). \\ \hline
 
-UC-08 & Melihat Status Marathon &
-Aktor dapat melihat status perlombaan secara keseluruhan, termasuk posisi
-peserta, klasemen, dan kondisi umum \textit{event} secara \textit{real-time}.
-Dapat diakses oleh Peserta, Ketua Tim, dan Supporter. \\ \hline
-
-UC-09 & Mengundang Peserta &
-Ketua Tim dapat mengundang anggota untuk bergabung ke dalam tim relay
-yang telah dibentuk di dalam sistem. \\ \hline
-
-UC-10 & Mengundang \textit{Supporter} &
-Ketua Tim dapat mengundang pihak pendukung untuk terhubung dengan tim
-dan memantau perkembangan perlombaan. \\ \hline
-
-UC-11 & Melihat Tim &
-Ketua Tim dapat melihat informasi seluruh anggota tim, termasuk status aktif
-pelari, posisi, dan progres masing-masing anggota dalam perlombaan. \\ \hline
-
-UC-12 & Mengirim \textit{Alert Notification} &
-Sistem secara otomatis mengirimkan notifikasi peringatan kepada pihak terkait
-ketika terdapat kondisi tertentu, seperti peserta melewati \textit{checkpoint}
-atau terjadi pergantian relay. \textit{Use case} ini bersifat
-\textit{include} dari UC-06 dan UC-07. \\ \hline
-
-UC-13 & Menerima \textit{Alert Notification} &
-Aktor menerima notifikasi yang dikirimkan sistem terkait perkembangan
-perlombaan. Merupakan perluasan (\textit{extend}) dari UC-11 dan dapat
-diterima oleh Ketua Tim, Peserta, dan Supporter. \\ \hline
-
-UC-14 & Memantau Peserta (Individual) &
-Penonton dapat memantau posisi dan progres peserta tertentu secara individual
-melalui tautan yang dikirimkan oleh peserta yang bersangkutan (UC-03). \\ \hline
-
-UC-15 & Mengelola Data Rute, \textit{Checkpoint}, dan \textit{Switch} &
-Panitia dapat mengelola seluruh data operasional perlombaan, termasuk
-mengunggah data rute GPX, menetapkan titik \textit{checkpoint}, dan mengatur
-titik pergantian relay. \\ \hline
+UC-08 & Navigasi ke Lokasi Pelari &
+Panitia, Ketua Tim, dan \textit{Supporter} dapat melakukan navigasi menuju
+lokasi peserta saat ini berdasarkan titik koordinat \textit{live tracking}
+yang tersedia guna memberikan dukungan langsung di lapangan. \\ \hline
 
 \end{longtable}
