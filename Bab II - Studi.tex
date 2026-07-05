@@ -2,10 +2,12 @@
 \chapter{STUDI LITERATUR}
 \label{chap:studi-literatur}
 \section{Olahraga Lari \textit{Ultra-marathon}}
-\textit{Ultra-marathon} adalah cabang olahraga lari jarak jauh yang menempuh jarak lebih dari jarak maraton pada umumnya, yaitu sepanjang 42,195 kilometer. \textit{Event ultra-marathon} dapat berupa lari dengan jarak tetap misalnya 50 km, 100 km, atau lebih. Selain itu, dapat juga berbasis pada waktu, misalnya 6 jam, 12 jam, atau 24 jam, di mana pelari menempuh jarak sejauh mungkin dalam waktu yang ditentukan \cite{scheer2020defining}. \textit{Ultra-marathon} sendiri menuntut pelari memiliki ketahanan fisik dan mental yang luar biasa, serta memerlukan strategi \textit{pacing} dan manajemen energi yang tepat selama kompetisi berlangsung.
 
-Berbeda dengan maraton biasanya, \textit{ultra-marathon} sering kali melibatkan medan yang lebih menantang seperti gunung, \textit{trail}, atau kombinasi berbagai jenis permukaan. Faktor lingkungan seperti elevasi lintasan, cuaca ekstrem, dan durasi kegiatan yang panjang menjadikan aspek keselamatan dan pelacakan peserta sebagai prioritas utama dalam penyelenggaraan kegiatan ini \cite{hoffman2011factors}.
-Oleh karena itu, sistem pendukung untuk komunikasi dan pelacakan menjadi sesuatu yang diperlukan dalam operasional \textit{ultra-marathon}. Kebutuhan ini tidak hanya terbatas pada panitia dan peserta, tetapi juga dibutuhkan oleh tim support dan penonton  agar dapat memantau dan memberikan dukungan secara tepat dan efisien sepanjang kegiatan \textit{Ultra-Maraton} berlangsung.
+\textit{Ultra-marathon} merupakan cabang olahraga lari jarak jauh dengan jarak tempuh yang melebihi jarak maraton standar, yaitu 42,195 kilometer. Perlombaan \textit{ultra-marathon} dapat diselenggarakan berdasarkan jarak tertentu, seperti 50 km, 100 km, atau lebih, maupun berdasarkan durasi waktu, misalnya 6 jam, 12 jam, atau 24 jam, di mana peserta berusaha menempuh jarak sejauh mungkin dalam batas waktu yang telah ditentukan \cite{scheer2020defining}.
+
+Sebagai cabang olahraga dengan durasi perlombaan yang panjang, \textit{ultra-marathon} menuntut peserta memiliki tingkat ketahanan fisik dan mental yang tinggi. Selain itu, pelari perlu menerapkan strategi yang tepat dalam mengatur kecepatan (\textit{pacing}), mengelola energi, memenuhi kebutuhan nutrisi dan hidrasi, serta menjaga kondisi fisik agar mampu menyelesaikan perlombaan dengan optimal.
+
+Berbeda dengan maraton pada umumnya, \textit{ultra-marathon} umumnya diselenggarakan pada lintasan yang lebih bervariasi, seperti jalur pegunungan, \textit{trail}, maupun kombinasi berbagai jenis medan. Kondisi tersebut, ditambah dengan faktor lingkungan seperti perubahan elevasi, cuaca ekstrem, dan durasi perlombaan yang panjang, meningkatkan kompleksitas penyelenggaraan serta risiko yang dihadapi peserta \cite{hoffman2011factors}. Oleh karena itu, aspek keselamatan menjadi salah satu perhatian utama dalam penyelenggaraan \textit{ultra-marathon}. Salah satu upaya yang dapat dilakukan untuk mendukung aspek tersebut adalah dengan menyediakan sistem pelacakan peserta yang mampu menyajikan informasi lokasi secara \textit{real-time}. Sistem pelacakan ini dapat membantu penyelenggara dalam melakukan pemantauan peserta, mempercepat respons terhadap kondisi darurat, serta mendukung koordinasi operasional selama perlombaan berlangsung. Selain itu, informasi pelacakan juga dapat dimanfaatkan oleh pihak-pihak yang berkepentingan untuk memantau perkembangan peserta selama kegiatan berlangsung.
 
 \section{ITB Ultra-Marathon}
 ITB Ultra-Marathon adalah \textit{event} lari jarak ultra yang diselenggarakan oleh Komisariat ITB Ultra dan Ikatan Alumni Institut Teknologi Bandung. Kegiatan ini pertama kali diadakan pada tahun 2017 dan telah menjadi ajang tahunan yang menarik perhatian pelari dari berbagai kalangan \cite{Hafizh2025}. ITB Ultra-Marathon diinisiasi bersama oleh ITB dan Yayasan Solidarity Forever, acara ini konsisten memperkuat ikatan antara sivitas akademika, alumni, beserta keluarga. \textit{Event} ini juga menjadi simbol kontribusi ITB dalam memajukan olahraga daya tahan (\textit{endurance sport}) serta menyuarakan nilai persatuan dalam keberagaman. Berbeda dengan maraton pada umumnya, \textit{event} ini menempuh jarak yang jauh lebih panjang, yaitu sepanjang 180 kilometer, dengan rute yang menantang dari Jakarta dan berakhir di Kampus Ganesha ITB, Bandung.
@@ -78,8 +80,68 @@ Namun, untuk kebutuhan data \textit{real-time} seperti pembaruan posisi peserta 
 
 Selain WebSocket, teknologi \textit{Server-Sent Events} (SSE) juga dapat menjadi alternatif untuk komunikasi satu arah dari server ke klien. SSE lebih sederhana untuk diimplementasikan dibandingkan WebSocket dan didukung secara natif oleh peramban modern, namun hanya mendukung aliran data dari server ke klien saja \cite{pimentel2012websocket}. Pemilihan antara WebSocket, SSE, atau REST \textit{polling} pada akhirnya bergantung pada kebutuhan spesifik aplikasi, termasuk frekuensi pembaruan data, kebutuhan komunikasi dua arah, dan kompleksitas infrastruktur yang dapat ditanggung oleh tim pengembang.
 
+% \subsection{\textit{Cross-Platform Mobile Development}}
+% \textit{Cross-platform mobile development} adalah pendekatan pengembangan aplikasi \textit{mobile} yang memungkinkan satu basis kode digunakan untuk menghasilkan aplikasi yang dapat berjalan di berbagai sistem operasi, khususnya Android dan iOS, tanpa perlu menulis kode yang sepenuhnya terpisah untuk masing-masing platform \cite{nawrocki2021comparison}. Pendekatan ini lahir sebagai respons terhadap fragmentasi ekosistem perangkat \textit{mobile} yang mengharuskan tim pengembang mengelola dua \textit{codebase} berbeda apabila menggunakan pendekatan \textit{native} murni.
+ 
+% Di antara berbagai \textit{framework} \textit{cross-platform} yang tersedia, React Native telah menjadi salah satu pilihan paling dominan di industri. React Native menggunakan JavaScript dan paradigma komponen dari React untuk membangun antarmuka pengguna yang berkomunikasi dengan komponen \textit{native} platform melalui jembatan (\textit{bridge}) asinkron, sehingga tampilan dan perilaku aplikasi terasa alami di masing-masing sistem operasi \cite{eisenman2015learning}. Berbeda dengan pendekatan berbasis \textit{WebView} yang merender antarmuka di dalam peramban tertanam, React Native merender komponen \textit{native} secara langsung, menghasilkan performa yang lebih mendekati aplikasi \textit{native} sesungguhnya.
+ 
+% Expo merupakan kerangka kerja (\textit{framework}) dan platform berbasis React Native yang menyederhanakan proses pengembangan, konfigurasi, dan distribusi aplikasi \textit{mobile} \cite{expo2024docs}. Expo menyediakan sekumpulan API dan modul bawaan yang mengabstraksikan kompleksitas konfigurasi \textit{native}, sehingga pengembang dapat berfokus pada logika aplikasi tanpa harus mengelola kode \textit{native} Android atau iOS secara langsung. Dalam konteks sistem pelacakan ITB Ultra-Marathon, penggunaan React Native dengan Expo memungkinkan aplikasi dijalankan di kedua platform sekaligus dengan memanfaatkan satu basis kode yang terpadu.
+ 
+% \subsection{\textit{Design System} dan Komponen UI}
+% \textit{Design system} adalah kumpulan standar visual dan komponen antarmuka pengguna yang berfungsi sebagai referensi terpusat untuk menjaga konsistensi tampilan dan interaksi di seluruh bagian sebuah produk digital \cite{vesselov2019building}. \textit{Design system} mencakup palet warna, tipografi, ukuran spasi, ikon, serta komponen-komponen UI yang dapat digunakan kembali (\textit{reusable}) seperti tombol, kartu, modal, dan formulir.
+ 
+% Dalam pengembangan aplikasi \textit{mobile} berbasis React Native, penerapan \textit{design system} yang konsisten sangat penting mengingat adanya perbedaan antarmuka antara platform Android dan iOS yang perlu diselaraskan. Komponen-komponen seperti \textit{bottom sheet}, \textit{map overlay}, dan panel informasi perlu dirancang sedemikian rupa sehingga dapat digunakan lintas layar dengan tampilan yang harmonis. Pendekatan berbasis \textit{design token} — yakni variabel yang merepresentasikan nilai desain seperti warna primer, ukuran font, dan radius sudut — memungkinkan konsistensi visual dipelihara secara sistematis meskipun aplikasi terus berkembang \cite{vesselov2019building}.
+ 
+% Selain konsistensi visual, \textit{design system} juga berperan dalam efisiensi pengembangan karena komponen yang telah didefinisikan dapat digunakan ulang di berbagai layar tanpa perlu mendefinisikan ulang gaya visualnya. Hal ini sangat relevan dalam sistem ITB Ultra-Marathon yang memiliki lima peran pengguna dengan layar-layar yang berbeda namun berbagi pola interaksi yang serupa, seperti tampilan peta, daftar peserta, dan panel notifikasi.
+ 
+% \subsection{Alur Autentikasi Berbasis Tautan Undangan}
+% Autentikasi berbasis tautan undangan (\textit{invite link authentication}) adalah mekanisme kontrol akses di mana pengguna memperoleh izin masuk ke dalam sistem melalui tautan atau kode unik yang dibagikan oleh pengguna berwenang, bukan melalui pendaftaran mandiri dengan nama pengguna dan kata sandi \cite{bonneau2012quest}. Mekanisme ini cocok diterapkan pada sistem dengan pengguna terbatas dan terverifikasi, seperti sistem perlombaan di mana peserta, panitia, dan tim support sudah dikenal sebelumnya.
+ 
+% Dalam implementasinya, tautan undangan biasanya mengandung token kriptografis yang memiliki masa berlaku terbatas dan hanya dapat digunakan sekali. Saat pengguna mengakses tautan tersebut, sistem memvalidasi token, menetapkan peran yang sesuai, dan menerbitkan sepasang \textit{access token} serta \textit{refresh token} untuk sesi pengguna selanjutnya. Pendekatan ini menyederhanakan proses \textit{onboarding} pengguna karena tidak memerlukan proses registrasi yang panjang, sekaligus menjaga keamanan sistem dengan memastikan hanya pengguna yang mendapat undangan yang dapat bergabung \cite{bonneau2012quest}.
+ 
+% Pada sistem pelacakan ITB Ultra-Marathon, mekanisme ini diterapkan untuk seluruh peran pengguna. Panitia memperoleh akses melalui konfigurasi awal sistem, Ketua Tim mendistribusikan tautan kepada anggota tim dan tim support, serta Peserta dapat membagikan tautan kepada Penonton (\textit{spectator}). Dengan demikian, akses ke data pelacakan dapat dikontrol secara granular sesuai dengan peran dan hierarki yang berlaku dalam perlombaan.
+
+% \section{Studi Aplikasi Pelacakan Perlombaan Sejenis}
+% \label{sec:studi-aplikasi-sejenis}
+ 
+% Untuk memperoleh referensi desain dan fitur yang relevan, dilakukan tinjauan terhadap beberapa aplikasi pelacakan perlombaan lari jarak jauh yang telah ada dan digunakan secara luas.
+ 
+% \textbf{Garmin LiveTrack} adalah fitur pada perangkat GPS Garmin yang memungkinkan pengguna berbagi data aktivitas secara \textit{real-time} kepada penonton melalui tautan berbasis web \cite{garmin2024livetrack}. Fitur ini menampilkan posisi, kecepatan, detak jantung, dan jarak tempuh pada peta interaktif. Keterbatasannya adalah keharusan memiliki perangkat Garmin sebagai \textit{tracker} utama, sehingga tidak dapat digunakan langsung pada perangkat \textit{smartphone} peserta.
+ 
+% \textbf{Strava Beacon} adalah fitur pada aplikasi Strava yang memungkinkan berbagi lokasi \textit{real-time} kepada kontak terpilih selama sesi lari berlangsung \cite{strava2024beacon}. Fitur ini mudah digunakan karena terintegrasi langsung dalam aplikasi Strava yang sudah populer di kalangan pelari. Namun, fitur ini bersifat individual dan tidak mendukung pemantauan tim secara terpusat, sehingga kurang sesuai untuk kebutuhan koordinasi perlombaan seperti ITB Ultra-Marathon yang melibatkan sistem \textit{relay} dan manajemen darurat.
+ 
+% \textbf{RaceJoy} adalah aplikasi pelacakan yang dirancang khusus untuk penyelenggara perlombaan lari, mendukung pemantauan posisi peserta secara \textit{real-time} bagi penonton dan panitia \cite{racejoy2024}. RaceJoy menyediakan fitur notifikasi saat peserta melewati titik tertentu dan estimasi waktu tiba di garis \textit{finish}. Kelebihan utama RaceJoy adalah fokusnya pada konteks perlombaan resmi, namun keterbatasannya terletak pada tidak adanya dukungan untuk koordinasi tim \textit{relay} dan penanganan kondisi darurat yang terintegrasi dalam antarmuka pengguna.
+ 
+% Berdasarkan tinjauan terhadap aplikasi-aplikasi tersebut, dapat disimpulkan bahwa belum ada solusi yang secara spesifik mengakomodasi kebutuhan unik ITB Ultra-Marathon, yaitu kombinasi sistem \textit{relay} multi-anggota, manajemen darurat terpusat, dukungan multi-peran dalam satu ekosistem aplikasi, serta mekanisme akses berbasis tautan undangan. Hal ini memperkuat kebutuhan pengembangan sistem pelacakan yang dirancang khusus sesuai karakteristik penyelenggaraan ITB Ultra-Marathon.
+ 
+% \begin{table}[H]
+% \centering
+% \caption{Perbandingan Fitur Aplikasi Pelacakan Perlombaan Sejenis}
+% \label{tab:perbandingan-aplikasi}
+% \begin{tabularx}{\textwidth}{|l|X|X|X|X|}
+% \hline
+% \textbf{Fitur} & \textbf{Garmin LiveTrack} & \textbf{Strava Beacon} & \textbf{RaceJoy} & \textbf{Sistem ITB Ultra-Marathon} \\
+% \hline
+% Live tracking & \checkmark & \checkmark & \checkmark & \checkmark \\
+% \hline
+% Multi-peran & -- & -- & Terbatas & \checkmark \\
+% \hline
+% Manajemen relay & -- & -- & -- & \checkmark \\
+% \hline
+% Notifikasi darurat & -- & -- & -- & \checkmark \\
+% \hline
+% Akses berbasis undangan & -- & Terbatas & -- & \checkmark \\
+% \hline
+% Tanpa perangkat khusus & -- & \checkmark & \checkmark & \checkmark \\
+% \hline
+% \end{tabularx}
+% \end{table}
+
+
 
 % \section{Tentang Studi Literatur}
+
+
 % Studi literatur biasanya berisi tentang tinjauan pustaka, landasan teori, dan penelitian-penelitian terdahulu yang relevan dengan topik tugas akhir yang dikerjakan.
 % Dalam subbab ini, penulis diharapkan dapat menjelaskan:
 % \begin{enumerate}

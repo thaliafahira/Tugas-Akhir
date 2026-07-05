@@ -43,6 +43,29 @@ FCM token, bukan untuk pengiriman notifikasi \textit{push}. Tile peta
 disediakan oleh OpenStreetMap sebagai sumber data kartografi \textit{open-source}. \textit{Data Layer} terdiri dari PostgreSQL sebagai basis data relasional utama,
 Redis untuk \textit{caching} dan penyimpanan sesi sementara, serta \textit{object
 store} untuk berkas statis seperti data rute GPX.
+
+section{Rancangan Alur Navigasi}
+\label{sec:navigation-flow}
+ 
+Rancangan alur navigasi mendeskripsikan perpindahan layar yang dapat dilakukan oleh setiap peran pengguna di dalam aplikasi \textit{mobile} ITB Ultra-Marathon. Alur ini dirancang agar pengguna dapat mengakses fitur inti dengan jumlah langkah navigasi yang minimal, sesuai dengan prinsip efisiensi usabilitas \cite{nielsen1994usability}.
+ 
+\subsection{Alur Autentikasi}
+Seluruh pengguna memasuki aplikasi melalui satu alur autentikasi terpadu yang berbasis tautan undangan. Ketika aplikasi pertama kali dibuka atau ketika sesi pengguna telah berakhir, layar \textit{landing} ditampilkan dan pengguna diarahkan untuk memasukkan atau memindai kode undangan yang telah diperoleh sebelumnya. Sistem memvalidasi kode tersebut, menetapkan peran yang sesuai (Peserta, Ketua Tim, Supporter, atau Penonton), lalu menerbitkan \textit{access token} dan \textit{refresh token} untuk sesi pengguna. Setelah autentikasi berhasil, pengguna langsung diarahkan ke halaman utama yang sesuai dengan perannya masing-masing.
+ 
+Khusus untuk Penonton (\textit{spectator}), akses dapat dilakukan tanpa autentikasi penuh melalui tautan publik yang dibagikan oleh Peserta. Dalam kondisi ini, aplikasi menampilkan halaman \textit{spectator} terbatas yang hanya memuat posisi pelari yang telah mengaktifkan visibilitas publik.
+ 
+\subsection{Alur Navigasi Utama per Peran}
+Berdasarkan struktur halaman yang telah dirancang pada subbab \ref{sec:ui-design}, alur navigasi utama untuk masing-masing peran adalah sebagai berikut.
+ 
+\textbf{Peserta} memiliki dua halaman utama yang dapat diakses melalui \textit{bottom navigation bar}: halaman utama (\textit{home}) yang memuat peta \textit{live tracking} dan tombol SOS, serta halaman manajemen yang memuat informasi tim \textit{relay} dan status anggota. Dari halaman utama, Peserta dapat mengakses halaman menu melalui ikon pengaturan untuk mengubah visibilitas dan menghasilkan kode undangan.
+ 
+\textbf{Ketua Tim} memiliki alur serupa dengan Peserta, dengan tambahan fitur manajemen tim yang memungkinkan pengundangan anggota dan pengelolaan struktur \textit{relay} dari halaman manajemen.
+ 
+\textbf{Supporter} mengakses halaman utama yang menampilkan posisi pelari yang dipantau, kemudian dapat berpindah ke halaman manajemen untuk memilih peserta tertentu dan mengakses fitur navigasi langsung ke lokasi pelari.
+ 
+\textbf{Panitia} mengakses \textit{dashboard} pemantauan menyeluruh sebagai halaman utama, dengan akses ke halaman manajemen yang memuat daftar seluruh peserta dan status darurat secara terpusat.
+
+
 \section{Pemodelan Fungsional Sistem}
 Pemodelan fungsional dari aplikasi \textit{tracker} ITB Ultra-Marathon
 direpresentasikan menggunakan \textit{use case diagram} untuk menggambarkan
@@ -191,6 +214,23 @@ Skenario ini menggambarkan proses navigasi Supporter menuju lokasi terkini pelar
     \label{fig:seq8}
 \end{figure}
 
+\section{Rancangan Komponen Antarmuka Lintas Layar}
+\label{sec:design-components}
+ 
+Selain rancangan halaman per peran, terdapat sejumlah komponen antarmuka yang digunakan secara berulang di berbagai layar dan peran. Komponen-komponen ini dirancang sebagai unit yang dapat digunakan kembali (\textit{reusable component}) guna menjaga konsistensi visual dan meminimalkan duplikasi logika antarmuka.
+ 
+\subsection{Komponen Peta Interaktif}
+Komponen peta merupakan komponen inti yang digunakan pada hampir seluruh halaman utama. Komponen ini merender \textit{tile} peta dari OpenStreetMap menggunakan Leaflet.js (untuk platform web) dan pustaka \textit{react-native-maps} (untuk platform \textit{mobile}). Komponen peta menampilkan lapisan-lapisan (\textit{layer}) berikut secara bersamaan: (1) \textit{polyline} jalur perlombaan, (2) penanda (\textit{marker}) posisi pelari yang diperbarui secara periodik, (3) ikon titik \textit{checkpoint}, \textit{water station}, titik \textit{start}, dan \textit{finish}, serta (4) ikon posisi pengguna aktif jika relevan. Konfigurasi lapisan yang ditampilkan disesuaikan dengan peran pengguna melalui properti komponen.
+ 
+\subsection{Komponen Panel Informasi Bawah (\textit{Bottom Sheet})}
+\textit{Bottom sheet} adalah komponen panel yang muncul dari bagian bawah layar dan menampilkan informasi tambahan tanpa menutup tampilan peta sepenuhnya. Komponen ini digunakan untuk menampilkan detail ETA, ETD, metrik aktivitas, dan status \textit{checkpoint} pada halaman Peserta, serta daftar peserta terpilih pada halaman Supporter dan Panitia. Panel ini dirancang dengan dua kondisi tinggi: kondisi \textit{collapsed} yang hanya menampilkan informasi ringkas, dan kondisi \textit{expanded} yang menampilkan detail lengkap. Pengguna dapat menggeser panel ke atas atau ke bawah untuk berpindah antar kondisi.
+ 
+\subsection{Komponen Notifikasi Darurat}
+Komponen notifikasi darurat ditampilkan sebagai \textit{banner} atau \textit{overlay} yang muncul di bagian atas layar ketika sistem mendeteksi sinyal SOS dari peserta. Komponen ini memuat informasi nama pelari, lokasi terakhir, dan waktu kejadian, disertai tombol aksi untuk melihat detail di peta. Komponen ini bersifat persisten hingga notifikasi secara eksplisit ditutup oleh Panitia atau Supporter, memastikan kondisi darurat tidak terlewatkan.
+ 
+\subsection{Komponen \textit{Countdown} Konfirmasi SOS}
+Komponen \textit{countdown} adalah elemen \textit{overlay} yang muncul di atas layar utama ketika Peserta menekan tombol darurat. Komponen ini menampilkan hitung mundur sepuluh detik secara visual, memberikan jendela waktu bagi Peserta untuk membatalkan pengiriman SOS melalui \textit{double tap}. Desain komponen menggunakan warna merah dan animasi pulsa untuk mengkomunikasikan urgensi situasi secara intuitif.
+ 
 
 \section{Rancangan Antarmuka Pengguna}
 

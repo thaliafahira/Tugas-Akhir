@@ -4979,8 +4979,8 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">daftar-pustaka.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">Ronto2024</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">Hafizh2025</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">Hafizh2025</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">Ronto2024</bcf:citekey>
     <bcf:citekey order="3" intorder="1">Hochreiter2024</bcf:citekey>
     <bcf:citekey order="4" intorder="1">higgins2016smartphone</bcf:citekey>
     <bcf:citekey order="5" intorder="1">Caselli2018</bcf:citekey>
@@ -5019,6 +5019,7 @@
     <bcf:citekey order="38" intorder="1">Saaty1980</bcf:citekey>
     <bcf:citekey order="39" intorder="1">Nawrocki2021</bcf:citekey>
     <bcf:citekey order="40" intorder="1">Nawrocki2021</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">nielsen1994usability</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="cms">
