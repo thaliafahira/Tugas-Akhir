@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  5 JUL 2026 17:28
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  6 JUL 2026 20:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1521,17 +1521,6 @@ Package geometry Warning: `a4paper': not available in `\newgeometry'; skipped.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (7 Daftar Isi.tex (TA.toc
-Overfull \hbox (0.58832pt too wide) detected at line 117
-\TU/TimesNewRoman(0)/m/n/12 III.5.1.1 
- []
-
-
-Overfull \hbox (1.06729pt too wide) in paragraph at lines 117--117
- [][] [][][]\TU/TimesNewRoman(0)/m/n/12 Alternatif 1: Optimalisasi Sistem \TU/T
-imesNewRoman(0)/m/it/12 Timing Chip \TU/TimesNewRoman(0)/m/n/12 RFID 
- []
-
-
 Underfull \vbox (badness 5374) has occurred while \output is active []
 
 
@@ -1540,57 +1529,68 @@ Underfull \vbox (badness 5374) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (0.58832pt too wide) detected at line 118
+Overfull \hbox (0.58832pt too wide) detected at line 126
+\TU/TimesNewRoman(0)/m/n/12 III.5.1.1 
+ []
+
+
+Overfull \hbox (1.06729pt too wide) in paragraph at lines 126--126
+ [][] [][][]\TU/TimesNewRoman(0)/m/n/12 Alternatif 1: Optimalisasi Sistem \TU/T
+imesNewRoman(0)/m/it/12 Timing Chip \TU/TimesNewRoman(0)/m/n/12 RFID 
+ []
+
+
+Overfull \hbox (0.58832pt too wide) detected at line 127
 \TU/TimesNewRoman(0)/m/n/12 III.5.1.2 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 119
+Overfull \hbox (0.58832pt too wide) detected at line 128
 \TU/TimesNewRoman(0)/m/n/12 III.5.1.3 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 120
+Overfull \hbox (0.58832pt too wide) detected at line 129
 \TU/TimesNewRoman(0)/m/n/12 III.5.1.4 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 128
+Overfull \hbox (0.58832pt too wide) detected at line 137
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.1 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 129
+Overfull \hbox (0.58832pt too wide) detected at line 138
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.2 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 130
+Overfull \hbox (0.58832pt too wide) detected at line 139
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.3 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 131
+Overfull \hbox (0.58832pt too wide) detected at line 140
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.4 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 134
+Overfull \hbox (0.58832pt too wide) detected at line 143
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.5 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 139
+Overfull \hbox (0.58832pt too wide) detected at line 148
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.6 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 140
+Overfull \hbox (0.58832pt too wide) detected at line 149
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.7 
  []
 
 
-Overfull \hbox (8.11728pt too wide) in paragraph at lines 141--141
+Overfull \hbox (8.11728pt too wide) in paragraph at lines 150--150
  [][] [][][]\TU/TimesNewRoman(0)/b/n/12 PERANCANGAN \TU/TimesNewRoman(0)/b/it/1
 2 FRONT-END \TU/TimesNewRoman(0)/b/n/12 APLIKASI ITB ULTRA-MARATHON[][] []  
  []
@@ -1753,59 +1753,195 @@ Bab II.
 [7
 
 
-]
-File: images/rute2025.png Graphic file (type bmp)
-<images/rute2025.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+] (tables/waypoint-rute.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
+[]|\TU/TimesNewRoman(0)/b/n/10.95 Jarak
+ []
 
 
-[8] (tables/kategori.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
+\TU/TimesNewRoman(0)/b/n/10.95 Kum.
+ []
 
-[9]
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--7
+[]|\TU/TimesNewRoman(0)/b/n/10.95 Elevasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\TU/TimesNewRoman(0)/b/n/10.95 Jarak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+\TU/TimesNewRoman(0)/b/n/10.95 Kum.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\TU/TimesNewRoman(0)/b/n/10.95 Elevasi
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 23--23
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Water Station /
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 24--24
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Water Station /
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 25--25
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Water Station /
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 26--26
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Checkpoint Uta-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Sekolah Vokasi IPB,
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 27--27
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Water Station /
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 28--28
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Water Station /
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 29--29
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Water Station /
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 30--30
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Melrimba Garden, Ci-
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 30--30
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Checkpoint Uta-
+ []
+
+
+Underfull \hbox (badness 6559) in paragraph at lines 31--31
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Hotel Sangga Buana,
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 31--31
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Water Station /
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 32--32
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Toko Tauco Cap Me-
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 32--32
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Water Station /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+[]|\TU/TimesNewRoman(0)/m/n/10.95 WS
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 34--34
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Water Station /
+ []
+
+
+Underfull \hbox (badness 5245) in paragraph at lines 35--35
+[]|\TU/TimesNewRoman(0)/m/n/10.95 WS 12 /
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 35--35
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Checkpoint Uta-
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 36--36
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Water Station /
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 37--37
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Water Station /
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 38--38
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Water Station /
+ []
+
+[8])
+
+[9] (tables/kategori.tex)
 
 [10]
-Underfull \vbox (badness 4779) has occurred while \output is active []
+Underfull \vbox (badness 1412) has occurred while \output is active []
 
 
 
 [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [12]
 
 [13]
+Underfull \vbox (badness 4193) has occurred while \output is active []
 
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 72.
 
 
-Overfull \hbox (2.36052pt too wide) in paragraph at lines 75--76
+[14]
+
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 73.
+
+
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 75.
+
+
+Overfull \hbox (2.36052pt too wide) in paragraph at lines 78--79
 \TU/TimesNewRoman(0)/m/n/12 masing dengan karakteristik dan kasus penggunaan ya
 ng berbeda, di antaranya REST
  []
 
 
-
-[14]
-Overfull \hbox (2.81552pt too wide) in paragraph at lines 77--78
+Overfull \hbox (2.81552pt too wide) in paragraph at lines 80--81
 \TU/TimesNewRoman(0)/m/n/12 TP yang paling banyak digunakan dalam pengembangan 
 aplikasi web modern. REST
  []
 
 
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 81.
-
-) (Bab III - Analisis.tex
 
 [15]
 
-[16
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 84.
 
-]
+) (Bab III - Analisis.tex
+
+[16]
 Bab III.
 
 
 [17
+
 
 ]
 File: images/RFID.png Graphic file (type bmp)
@@ -3363,26 +3499,18 @@ L3 programming layer <2025-09-02>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `TA.out' has not changed.
-(rerunfilecheck)             Checksum: 338F37A01F0AB794625AAA4E9D38946B;20602.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                TA
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: A9BFCBCA6F01D2F5CD5FA146CBA24153;21984.
 Package logreq Info: Writing requests to 'TA.run.xml'.
 \openout1 = `TA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35279 strings out of 403197
- 688974 string characters out of 5453038
- 2197412 words of memory out of 5000000
- 63235 multiletter control sequences out of 15000+600000
- 633603 words of font info for 91 fonts, out of 8000000 for 9000
+ 35291 strings out of 403197
+ 689472 string characters out of 5453038
+ 2198995 words of memory out of 5000000
+ 63241 multiletter control sequences out of 15000+600000
+ 633635 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,15n,95p,2116b,6333s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
