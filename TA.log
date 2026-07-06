@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  6 JUL 2026 20:32
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  6 JUL 2026 21:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1529,68 +1529,68 @@ Underfull \vbox (badness 5374) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (0.58832pt too wide) detected at line 126
+Overfull \hbox (0.58832pt too wide) detected at line 123
 \TU/TimesNewRoman(0)/m/n/12 III.5.1.1 
  []
 
 
-Overfull \hbox (1.06729pt too wide) in paragraph at lines 126--126
+Overfull \hbox (1.06729pt too wide) in paragraph at lines 123--123
  [][] [][][]\TU/TimesNewRoman(0)/m/n/12 Alternatif 1: Optimalisasi Sistem \TU/T
 imesNewRoman(0)/m/it/12 Timing Chip \TU/TimesNewRoman(0)/m/n/12 RFID 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 127
+Overfull \hbox (0.58832pt too wide) detected at line 124
 \TU/TimesNewRoman(0)/m/n/12 III.5.1.2 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 128
+Overfull \hbox (0.58832pt too wide) detected at line 125
 \TU/TimesNewRoman(0)/m/n/12 III.5.1.3 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 129
+Overfull \hbox (0.58832pt too wide) detected at line 126
 \TU/TimesNewRoman(0)/m/n/12 III.5.1.4 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 137
+Overfull \hbox (0.58832pt too wide) detected at line 134
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.1 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 138
+Overfull \hbox (0.58832pt too wide) detected at line 135
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.2 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 139
+Overfull \hbox (0.58832pt too wide) detected at line 136
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.3 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 140
+Overfull \hbox (0.58832pt too wide) detected at line 137
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.4 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 143
+Overfull \hbox (0.58832pt too wide) detected at line 140
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.5 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 148
+Overfull \hbox (0.58832pt too wide) detected at line 145
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.6 
  []
 
 
-Overfull \hbox (0.58832pt too wide) detected at line 149
+Overfull \hbox (0.58832pt too wide) detected at line 146
 \TU/TimesNewRoman(0)/m/n/12 III.5.2.7 
  []
 
 
-Overfull \hbox (8.11728pt too wide) in paragraph at lines 150--150
+Overfull \hbox (8.11728pt too wide) in paragraph at lines 147--147
  [][] [][][]\TU/TimesNewRoman(0)/b/n/12 PERANCANGAN \TU/TimesNewRoman(0)/b/it/1
 2 FRONT-END \TU/TimesNewRoman(0)/b/n/12 APLIKASI ITB ULTRA-MARATHON[][] []  
  []
@@ -1893,70 +1893,149 @@ Underfull \hbox (badness 3758) in paragraph at lines 38--38
 [9] (tables/kategori.tex)
 
 [10]
+
+LaTeX Warning: Citation 'finkenzeller2010' on page 11 undefined on input line 3
+8.
+
+
+LaTeX Warning: Citation 'dabhade2021' on page 11 undefined on input line 38.
+
+File: images/RFID.png Graphic file (type bmp)
+<images/RFID.png>
+
+
+[11]
+
+[12]
 Underfull \vbox (badness 1412) has occurred while \output is active []
 
 
 
-[11]
+[13]
+
+[14]
+
+LaTeX Warning: Citation 'norman1986' on page 15 undefined on input line 75.
+
+
+LaTeX Warning: Citation 'iso92412102019' on page 15 undefined on input line 77.
+
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[12]
+[15]
 
-[13]
-Underfull \vbox (badness 4193) has occurred while \output is active []
-
+LaTeX Warning: Citation 'rosenfeld2015' on page 16 undefined on input line 81.
 
 
-[14]
-
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 73.
+LaTeX Warning: Citation 'garrett2011' on page 16 undefined on input line 88.
 
 
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 75.
+Underfull \vbox (badness 1412) has occurred while \output is active []
 
 
-Overfull \hbox (2.36052pt too wide) in paragraph at lines 78--79
+
+[16]
+
+LaTeX Warning: Citation 'frost2016' on page 17 undefined on input line 91.
+
+
+LaTeX Warning: Citation 'marcotte2017' on page 17 undefined on input line 98.
+
+
+Overfull \hbox (42.8778pt too wide) in paragraph at lines 98--99
+\TU/TimesNewRoman(0)/m/n/12 mengorbankan fungsionalitas maupun kejelasan inform
+asi yang ditampilkan ([]).
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[17]
+
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 106.
+
+
+
+[18]
+
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 108.
+
+
+Overfull \hbox (2.36052pt too wide) in paragraph at lines 111--112
 \TU/TimesNewRoman(0)/m/n/12 masing dengan karakteristik dan kasus penggunaan ya
 ng berbeda, di antaranya REST
  []
 
 
-Overfull \hbox (2.81552pt too wide) in paragraph at lines 80--81
+Overfull \hbox (2.81552pt too wide) in paragraph at lines 113--114
 \TU/TimesNewRoman(0)/m/n/12 TP yang paling banyak digunakan dalam pengembangan 
 aplikasi web modern. REST
  []
 
 
 
-[15]
+[19]
 
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 84.
+LaTeX Warning: Citation 'iso92411182018' on page 20 undefined on input line 120
+.
 
-) (Bab III - Analisis.tex
 
-[16]
+LaTeX Warning: Citation 'nielsen1994' on page 20 undefined on input line 122.
+
+
+Underfull \vbox (badness 4779) has occurred while \output is active []
+
+
+
+[20]
+
+LaTeX Warning: Citation 'dabhade2021' on page 21 undefined on input line 130.
+
+
+Overfull \hbox (8.07486pt too wide) in paragraph at lines 130--131
+\TU/TimesNewRoman(0)/m/n/12 tuk perlombaan lari jarak jauh dengan berbagai pend
+ekatan teknologi. ([])
+ []
+
+
+LaTeX Warning: Citation 'perezdiazdecerio2018' on page 21 undefined on input li
+ne 132.
+
+
+LaTeX Warning: Citation 'hochreiter2024' on page 21 undefined on input line 134
+.
+
+
+LaTeX Warning: Citation 'esh2025' on page 21 undefined on input line 134.
+
+
+
+[21]) (Bab III - Analisis.tex
+
+[22]
 Bab III.
 
 
-[17
+[23
 
 
 ]
-File: images/RFID.png Graphic file (type bmp)
-<images/RFID.png>
 
-
-[18]
+[24]
 File: images/AsIsMarathon.png Graphic file (type bmp)
 <images/AsIsMarathon.png>
 
-Underfull \vbox (badness 1412) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[19] (tables/legenda-swimlane.tex
+[25] (tables/legenda-swimlane.tex
 Overfull \hbox (23.37357pt too wide) in alignment at lines 1--7
  [] [] [] 
  []
@@ -1981,16 +2060,16 @@ Overfull \hbox (23.37357pt too wide) in alignment at lines 11--98
  [] [] [] 
  []
 
-[20])
+[26])
 
-[21]
+[27]
 File: images/ToBeUtama.png Graphic file (type bmp)
 <images/ToBeUtama.png>
 
 
-[22]
+[28]
 
-[23]
+[29]
 File: images/ToBePendukung.png Graphic file (type bmp)
 <images/ToBePendukung.png>
 
@@ -1998,12 +2077,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[24]
+[30]
 
-[25]
+[31]
 
-[26]
-Overfull \hbox (10.63307pt too wide) in paragraph at lines 167--170
+[32]
+Overfull \hbox (10.63307pt too wide) in paragraph at lines 159--162
 []\TU/TimesNewRoman(0)/m/n/12 Tabel [][]III.2[][] merangkum kebutuhan utama dan
  permasalahan yang dihadapi oleh masing-
  []
@@ -2055,7 +2134,7 @@ Overfull \hbox (23.37357pt too wide) in alignment at lines 20--70
 
 
 
-[27] [28]) (tables/fr.tex
+[33] [34]) (tables/fr.tex
 Overfull \hbox (3.45673pt too wide) in alignment at lines 1--5
  [] [] [] 
  []
@@ -2187,7 +2266,7 @@ Overfull \hbox (3.45673pt too wide) in alignment at lines 17--105
  [] [] [] 
  []
 
-[29] [30] [31]) (tables/nfr.tex
+[35] [36] [37]) (tables/nfr.tex
 Overfull \hbox (3.45673pt too wide) in alignment at lines 1--5
  [] [] [] 
  []
@@ -2245,27 +2324,27 @@ Overfull \hbox (3.45673pt too wide) in alignment at lines 17--53
  [] [] [] 
  []
 
-[32])
+[38])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[33]
+[39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[34]
+[40]
 Underfull \vbox (badness 3646) has occurred while \output is active []
 
 
 
-[35]
+[41]
 
-Package biblatex-chicago Warning: Empty Ibidem citation on input line 277.
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 269.
 
 
-Overfull \hbox (3.20702pt too wide) in paragraph at lines 277--278
+Overfull \hbox (3.20702pt too wide) in paragraph at lines 269--270
 []\TU/TimesNewRoman(0)/m/n/12 Penentuan solusi dilakukan menggunakan metode \TU
 /TimesNewRoman(0)/m/it/12 Analytic Hierarchy Process \TU/TimesNewRoman(0)/m/n/1
 2 (AHP)
@@ -2276,39 +2355,39 @@ Underfull \vbox (badness 3058) has occurred while \output is active []
 
 
 
-[36] (tables/ahp-kriteria.tex) (tables/ahp-bobot-kriteria.tex)
+[42] (tables/ahp-kriteria.tex) (tables/ahp-bobot-kriteria.tex)
 Underfull \vbox (badness 1838) has occurred while \output is active []
 
 
 
-[37] (tables/ahp-alt-c1.tex
+[43] (tables/ahp-alt-c1.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
 
-[38] (tables/ahp-alt-c2.tex) (tables/ahp-alt-c3.tex)
-Overfull \hbox (2.30351pt too wide) in paragraph at lines 334--336
+[44] (tables/ahp-alt-c2.tex) (tables/ahp-alt-c3.tex)
+Overfull \hbox (2.30351pt too wide) in paragraph at lines 326--328
 []\TU/TimesNewRoman(0)/b/n/12 Kriteria C4 (Efisiensi Pengembangan) \TU/TimesNew
 Roman(0)/m/n/12 Pada kriteria ini, pendekatan hibrida (Alt. 4)
  []
 
 
-Overfull \hbox (4.86063pt too wide) in paragraph at lines 334--336
+Overfull \hbox (4.86063pt too wide) in paragraph at lines 326--328
 \TU/TimesNewRoman(0)/m/n/12 native untuk fitur tertentu dapat meningkatkan komp
 leksitas pemeliharaan ([][][]Nawrocki
  []
 
 
 
-[39] (tables/ahp-alt-c4.tex) (tables/ahp-alt-c5.tex) (tables/ahp-skor-akhir.tex
+[45] (tables/ahp-alt-c4.tex) (tables/ahp-alt-c5.tex) (tables/ahp-skor-akhir.tex
 )
 
-[40]) (Bab IV - Perancangan.tex
+[46]) (Bab IV - Perancangan.tex
 
-[41]
+[47]
 
-[42
+[48
 
 ]
 Bab IV.
@@ -2316,21 +2395,21 @@ File: images/architecture.png Graphic file (type bmp)
 <images/architecture.png>
 
 
-[43
+[49
 
 ]
 Underfull \vbox (badness 4779) has occurred while \output is active []
 
 
 
-[44]
+[50]
 
-LaTeX Warning: Reference `sec:ui-design' on page 45 undefined on input line 58.
-
-
+LaTeX Warning: Reference `sec:ui-design' on page 51 undefined on input line 58.
 
 
-[45]
+
+
+[51]
 File: images/usecase.png Graphic file (type bmp)
 <images/usecase.png>
  (tables/legenda-usecase.tex
@@ -2359,7 +2438,7 @@ Underfull \vbox (badness 4832) has occurred while \output is active []
 
 
 
-[46]) (tables/usecase-deskripsi.tex
+[52]) (tables/usecase-deskripsi.tex
 Overfull \hbox (23.37357pt too wide) in alignment at lines 1--6
  [] [] [] 
  []
@@ -2386,12 +2465,12 @@ Overfull \hbox (23.37357pt too wide) in alignment at lines 18--72
 
 
 
-[47] [48]) (tables/ketelurusan-sequence.tex)
+[53] [54]) (tables/ketelurusan-sequence.tex)
 Underfull \vbox (badness 3250) has occurred while \output is active []
 
 
 
-[49] (tables/legenda-sequence.tex
+[55] (tables/legenda-sequence.tex
 Overfull \hbox (23.37357pt too wide) in alignment at lines 1--7
  [] [] [] 
  []
@@ -2417,7 +2496,7 @@ Overfull \hbox (23.37357pt too wide) in alignment at lines 11--112
  [] [] [] 
  []
 
-[50])
+[56])
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -2436,7 +2515,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[51]
+[57]
 File: images/sequence/seq2.png Graphic file (type bmp)
 <images/sequence/seq2.png>
 
@@ -2444,7 +2523,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[52]
+[58]
 File: images/sequence/seq3.png Graphic file (type bmp)
 <images/sequence/seq3.png>
 
@@ -2452,7 +2531,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[53]
+[59]
 File: images/sequence/seq4.png Graphic file (type bmp)
 <images/sequence/seq4.png>
 
@@ -2460,7 +2539,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[54]
+[60]
 File: images/sequence/seq5.png Graphic file (type bmp)
 <images/sequence/seq5.png>
 
@@ -2468,7 +2547,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[55]
+[61]
 Overfull \hbox (16.8438pt too wide) in paragraph at lines 183--184
 \TU/TimesNewRoman(0)/m/n/12 nu ”undang” pada aplikasi, lalu aplikasi mengirimka
 n permintaan \TU/lmtt/m/n/12 POST /invite-link
@@ -2481,7 +2560,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[56]
+[62]
 File: images/sequence/seq7.png Graphic file (type bmp)
 <images/sequence/seq7.png>
 
@@ -2489,7 +2568,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[57]
+[63]
 File: images/sequence/seq8.png Graphic file (type bmp)
 <images/sequence/seq8.png>
 
@@ -2497,14 +2576,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[58]
+[64]
 
-[59]
+[65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[60]
+[66]
 File: images/interface/HomePeserta.png Graphic file (type bmp)
 <images/interface/HomePeserta.png>
 File: images/interface/emergency.png Graphic file (type bmp)
@@ -2514,7 +2593,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[61]
+[67]
 File: images/interface/menupelari.png Graphic file (type bmp)
 <images/interface/menupelari.png>
 
@@ -2522,7 +2601,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[62]
+[68]
 File: images/interface/ManagePeserta.png Graphic file (type bmp)
 <images/interface/ManagePeserta.png>
 
@@ -2530,7 +2609,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[63]
+[69]
 File: images/interface/HomeKetua.png Graphic file (type bmp)
 <images/interface/HomeKetua.png>
 
@@ -2538,7 +2617,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[64]
+[70]
 File: images/interface/Manageketua.png Graphic file (type bmp)
 <images/interface/Manageketua.png>
 
@@ -2546,7 +2625,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[65]
+[71]
 File: images/interface/HomeSupporter.png Graphic file (type bmp)
 <images/interface/HomeSupporter.png>
 
@@ -2554,7 +2633,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[66]
+[72]
 File: images/interface/Managesupporter.png Graphic file (type bmp)
 <images/interface/Managesupporter.png>
 
@@ -2562,7 +2641,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[67]
+[73]
 File: images/interface/HomePanitia.png Graphic file (type bmp)
 <images/interface/HomePanitia.png>
 
@@ -2570,14 +2649,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[68]
+[74]
 File: images/interface/notification.png Graphic file (type bmp)
 <images/interface/notification.png>
 File: images/interface/ListPanitia.png Graphic file (type bmp)
 <images/interface/ListPanitia.png>
 
 
-[69]
+[75]
 File: images/interface/HomeSpectator.png Graphic file (type bmp)
 <images/interface/HomeSpectator.png>
 
@@ -2585,9 +2664,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[70]
+[76]
 
-LaTeX Warning: Reference `tab:pemetaan-halaman' on page 71 undefined on input l
+LaTeX Warning: Reference `tab:pemetaan-halaman' on page 77 undefined on input l
 ine 383.
 
 (tables/pemetaan-halaman.tex
@@ -2602,9 +2681,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
 
 
-[71])) (Bab V - Implementasi.tex
+[77])) (Bab V - Implementasi.tex
 
-[72]
+[78]
 Bab V.
 (tables/hw.tex)
 Overfull \hbox (2.2121pt too wide) in paragraph at lines 10--16
@@ -2614,7 +2693,7 @@ embangan sistem terbagi men-
 
 (tables/hw-test.tex)
 
-LaTeX Warning: Reference `tab:sw-mobile' on page 73 undefined on input line 23.
+LaTeX Warning: Reference `tab:sw-mobile' on page 79 undefined on input line 23.
 
 
 (tables/sw.tex) (tables/sw-web.tex)
@@ -2626,12 +2705,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (Bab VI - Evaluasi.tex
 
-[73
+[79
 
 
 ]
 
-[74]
+[80]
 Bab VI.
 (tables/tabel_VI1_functionality.tex
 Overfull \hbox (48.619pt too wide) in alignment at lines 4--9
@@ -2791,10 +2870,10 @@ Overfull \hbox (48.619pt too wide) in alignment at lines 19--46
 
 
 
-[75
+[81
 
 
-] [76] [77]) (tables/tabel_VI2_integration.tex
+] [82] [83]) (tables/tabel_VI2_integration.tex
 Overfull \hbox (91.91722pt too wide) in alignment at lines 4--9
  [] [] [] [] [] [] 
  []
@@ -3262,7 +3341,7 @@ Overfull \hbox (91.91722pt too wide) in alignment at lines 19--36
 
 
 
-[78] [79] [80])
+[84] [85] [86])
 Overfull \hbox (2.02556pt too wide) in paragraph at lines 28--29
 []\TU/TimesNewRoman(0)/m/it/12 User Acceptance Testing \TU/TimesNewRoman(0)/m/n
 /12 (UAT) dilakukan untuk mengukur tingkat penerimaan peng-
@@ -3270,7 +3349,7 @@ Overfull \hbox (2.02556pt too wide) in paragraph at lines 28--29
 
 
 
-[81] (tables/tabel_VI3_uat_demografi.tex
+[87] (tables/tabel_VI3_uat_demografi.tex
 Overfull \hbox (48.26888pt too wide) in paragraph at lines 8--20
  [][] 
  []
@@ -3420,24 +3499,24 @@ Overfull \hbox (11.01173pt too wide) in alignment at lines 19--33
  [] [] [] [] 
  []
 
-[82])
+[88])
 
-[83]) (Bab VII - Penutup.tex
+[89]) (Bab VII - Penutup.tex
 
-[84]
+[90]
 Bab VII.
 
 
-[85
+[91
 
 
 ]
 
-[86])
+[92])
 
-[87]
+[93]
 
-[88
+[94
 
 ]
 Overfull \hbox (3.48174pt too wide) in paragraph at lines 410--410
@@ -3447,11 +3526,11 @@ Overfull \hbox (3.48174pt too wide) in paragraph at lines 410--410
 
 
 
-[89
+[95
 
 ]
 
-[90]
+[96]
 Overfull \hbox (8.40019pt too wide) in paragraph at lines 410--410
 [][]\TU/TimesNewRoman(0)/m/n/12 El-Rabbany, Ahmed. 2002. \TU/TimesNewRoman(0)/m
 /it/12 Introduction to GPS: the global positioning system. \TU/TimesNewRoman(0)
@@ -3460,9 +3539,9 @@ Overfull \hbox (8.40019pt too wide) in paragraph at lines 410--410
 
 (Lampiran-A.tex
 
-[91]
+[97]
 
-[92
+[98
 
 ]
 Lampiran A.
@@ -3470,20 +3549,20 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 8.
 (listings/binary-search-python.tex
 
-[93
+[99
 
 ])) (Lampiran-B.tex
 
-[94]
+[100]
 Lampiran B.
 )
 
-[95
+[101
 
 
 ]
 
-[96
+[102
 
 ]
 
@@ -3500,18 +3579,23 @@ L3 programming layer <2025-09-02>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `TA.out' has not changed.
-(rerunfilecheck)             Checksum: A9BFCBCA6F01D2F5CD5FA146CBA24153;21984.
+(rerunfilecheck)             Checksum: CD4826BBAE6E44C5783880CB06CC5A60;21544.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                TA
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'TA.run.xml'.
 \openout1 = `TA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35291 strings out of 403197
- 689472 string characters out of 5453038
- 2198995 words of memory out of 5000000
- 63241 multiletter control sequences out of 15000+600000
+ 35294 strings out of 403197
+ 689542 string characters out of 5453038
+ 2199028 words of memory out of 5000000
+ 63244 multiletter control sequences out of 15000+600000
  633635 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,15n,95p,2116b,6333s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on TA.pdf (128 pages).
+Output written on TA.pdf (134 pages).

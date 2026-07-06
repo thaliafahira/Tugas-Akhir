@@ -29,6 +29,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
+\contentsline {figure}{\numberline {II.1}{\ignorespaces (a) \textit {Timing Chip} pada gelang; (b) \textit {Timing Chip} nomor dada}}{12}{figure.caption.15}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -70,10 +71,9 @@
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {III.1}{\ignorespaces (a) \textit {Timing Chip} pada gelang; (b) \textit {Timing Chip} nomor dada}}{18}{figure.caption.15}%
-\contentsline {figure}{\numberline {III.2}{\ignorespaces \textit {As-Is Diagram} ITB Ultra-Marathon}}{20}{figure.caption.16}%
-\contentsline {figure}{\numberline {III.3}{\ignorespaces \textit {To-Be Diagram} Proses Utama}}{23}{figure.caption.17}%
-\contentsline {figure}{\numberline {III.4}{\ignorespaces \textit {To-Be Diagram} Proses Pendukung}}{25}{figure.caption.18}%
+\contentsline {figure}{\numberline {III.1}{\ignorespaces \textit {As-Is Diagram} ITB Ultra-Marathon}}{26}{figure.caption.16}%
+\contentsline {figure}{\numberline {III.2}{\ignorespaces \textit {To-Be Diagram} Proses Utama}}{29}{figure.caption.17}%
+\contentsline {figure}{\numberline {III.3}{\ignorespaces \textit {To-Be Diagram} Proses Pendukung}}{31}{figure.caption.18}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -87,30 +87,30 @@
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {IV.1}{\ignorespaces Arsitektur Sistem Aplikasi \textit {Tracker} ITB Ultra-Marathon}}{43}{figure.caption.27}%
+\contentsline {figure}{\numberline {IV.1}{\ignorespaces Arsitektur Sistem Aplikasi \textit {Tracker} ITB Ultra-Marathon}}{49}{figure.caption.27}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {figure}{\numberline {IV.2}{\ignorespaces \textit {Use Case Diagram} Aplikasi \textit {Tracker} ITB Ultra-Marathon}}{46}{figure.caption.28}%
-\contentsline {figure}{\numberline {IV.3}{\ignorespaces \textit {Sequence Diagram} Skenario Mengirim Lokasi Pelari}}{52}{figure.caption.30}%
-\contentsline {figure}{\numberline {IV.4}{\ignorespaces \textit {Sequence Diagram} Skenario Melihat ETD, ETA, dan \textit {Activity Metrics}}}{53}{figure.caption.31}%
-\contentsline {figure}{\numberline {IV.5}{\ignorespaces \textit {Sequence Diagram} Skenario Mengirim Notifikasi Darurat}}{54}{figure.caption.32}%
-\contentsline {figure}{\numberline {IV.6}{\ignorespaces \textit {Sequence Diagram} Skenario Mengubah Visibilitas}}{55}{figure.caption.33}%
-\contentsline {figure}{\numberline {IV.7}{\ignorespaces \textit {Sequence Diagram} Skenario Melihat \textit {Live Tracking}}}{56}{figure.caption.34}%
-\contentsline {figure}{\numberline {IV.8}{\ignorespaces \textit {Sequence Diagram} Skenario Membuat Tautan Undangan}}{57}{figure.caption.35}%
-\contentsline {figure}{\numberline {IV.9}{\ignorespaces \textit {Sequence Diagram} Skenario Menerima Notifikasi Darurat}}{58}{figure.caption.36}%
-\contentsline {figure}{\numberline {IV.10}{\ignorespaces \textit {Sequence Diagram} Skenario Navigasi ke Lokasi Pelari}}{59}{figure.caption.37}%
-\contentsline {figure}{\numberline {IV.11}{\ignorespaces Halaman Utama Peserta}}{61}{figure.caption.38}%
-\contentsline {figure}{\numberline {IV.12}{\ignorespaces \textit {Pop-up} Konfirmasi Darurat}}{62}{figure.caption.39}%
-\contentsline {figure}{\numberline {IV.13}{\ignorespaces Halaman Menu Peserta}}{63}{figure.caption.40}%
-\contentsline {figure}{\numberline {IV.14}{\ignorespaces Halaman Manajemen Peserta}}{64}{figure.caption.41}%
-\contentsline {figure}{\numberline {IV.15}{\ignorespaces Halaman Utama Ketua Tim}}{65}{figure.caption.42}%
-\contentsline {figure}{\numberline {IV.16}{\ignorespaces Halaman Manajemen Ketua Tim}}{66}{figure.caption.43}%
-\contentsline {figure}{\numberline {IV.17}{\ignorespaces Halaman Utama Supporter}}{67}{figure.caption.44}%
-\contentsline {figure}{\numberline {IV.18}{\ignorespaces Halaman Manajemen Supporter}}{68}{figure.caption.45}%
-\contentsline {figure}{\numberline {IV.19}{\ignorespaces Halaman Utama Panitia}}{69}{figure.caption.46}%
-\contentsline {figure}{\numberline {IV.20}{\ignorespaces Notifikasi Panitia}}{69}{figure.caption.47}%
-\contentsline {figure}{\numberline {IV.21}{\ignorespaces Halaman Manajemen Panitia}}{70}{figure.caption.48}%
-\contentsline {figure}{\numberline {IV.22}{\ignorespaces Halaman Utama Spectator}}{71}{figure.caption.49}%
+\contentsline {figure}{\numberline {IV.2}{\ignorespaces \textit {Use Case Diagram} Aplikasi \textit {Tracker} ITB Ultra-Marathon}}{52}{figure.caption.28}%
+\contentsline {figure}{\numberline {IV.3}{\ignorespaces \textit {Sequence Diagram} Skenario Mengirim Lokasi Pelari}}{58}{figure.caption.30}%
+\contentsline {figure}{\numberline {IV.4}{\ignorespaces \textit {Sequence Diagram} Skenario Melihat ETD, ETA, dan \textit {Activity Metrics}}}{59}{figure.caption.31}%
+\contentsline {figure}{\numberline {IV.5}{\ignorespaces \textit {Sequence Diagram} Skenario Mengirim Notifikasi Darurat}}{60}{figure.caption.32}%
+\contentsline {figure}{\numberline {IV.6}{\ignorespaces \textit {Sequence Diagram} Skenario Mengubah Visibilitas}}{61}{figure.caption.33}%
+\contentsline {figure}{\numberline {IV.7}{\ignorespaces \textit {Sequence Diagram} Skenario Melihat \textit {Live Tracking}}}{62}{figure.caption.34}%
+\contentsline {figure}{\numberline {IV.8}{\ignorespaces \textit {Sequence Diagram} Skenario Membuat Tautan Undangan}}{63}{figure.caption.35}%
+\contentsline {figure}{\numberline {IV.9}{\ignorespaces \textit {Sequence Diagram} Skenario Menerima Notifikasi Darurat}}{64}{figure.caption.36}%
+\contentsline {figure}{\numberline {IV.10}{\ignorespaces \textit {Sequence Diagram} Skenario Navigasi ke Lokasi Pelari}}{65}{figure.caption.37}%
+\contentsline {figure}{\numberline {IV.11}{\ignorespaces Halaman Utama Peserta}}{67}{figure.caption.38}%
+\contentsline {figure}{\numberline {IV.12}{\ignorespaces \textit {Pop-up} Konfirmasi Darurat}}{68}{figure.caption.39}%
+\contentsline {figure}{\numberline {IV.13}{\ignorespaces Halaman Menu Peserta}}{69}{figure.caption.40}%
+\contentsline {figure}{\numberline {IV.14}{\ignorespaces Halaman Manajemen Peserta}}{70}{figure.caption.41}%
+\contentsline {figure}{\numberline {IV.15}{\ignorespaces Halaman Utama Ketua Tim}}{71}{figure.caption.42}%
+\contentsline {figure}{\numberline {IV.16}{\ignorespaces Halaman Manajemen Ketua Tim}}{72}{figure.caption.43}%
+\contentsline {figure}{\numberline {IV.17}{\ignorespaces Halaman Utama Supporter}}{73}{figure.caption.44}%
+\contentsline {figure}{\numberline {IV.18}{\ignorespaces Halaman Manajemen Supporter}}{74}{figure.caption.45}%
+\contentsline {figure}{\numberline {IV.19}{\ignorespaces Halaman Utama Panitia}}{75}{figure.caption.46}%
+\contentsline {figure}{\numberline {IV.20}{\ignorespaces Notifikasi Panitia}}{75}{figure.caption.47}%
+\contentsline {figure}{\numberline {IV.21}{\ignorespaces Halaman Manajemen Panitia}}{76}{figure.caption.48}%
+\contentsline {figure}{\numberline {IV.22}{\ignorespaces Halaman Utama Spectator}}{77}{figure.caption.49}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
