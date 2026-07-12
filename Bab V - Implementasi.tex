@@ -25,21 +25,22 @@ Untuk mendukung pengembangan sistem, perangkat lunak yang digunakan terbagi menj
 \label{sec:impl-frontend}
 % ==========================================
 
-Seluruh kode sumber (\textit{source code}) hasil implementasi dapat diakses secara publik melalui repositori \textit{GitHub} pada tautan berikut:
+Pada proses implementasi ini, seluruh \textit{source code} dapat diakses secara publik melalui repositori \textit{GitHub} pada tautan berikut:
 
 \begin{itemize}
-    \item \textbf{Aplikasi Web:} \url{https://github.com/[username]/[repo-web]}
-    \item \textbf{Aplikasi Mobile:} \url{https://github.com/[username]/[repo-mobile]}
+    \item Tautan: \url{https://github.com/thaliafahira/frontend-itbultramarathon}
 \end{itemize}
+
+Berikut ini merupakan penjelasan mengenai implementasi \textit{front-end} aplikasi web dan mobile ITB Ultra-Marathon.
 
 % ==========================================
 \subsection{Implementasi \textit{Front-End} Aplikasi Web}
 \label{sec:impl-web}
 % ==========================================
 
-Aplikasi web dibangun menggunakan \textit{framework} React 19 dengan \textit{build tool} Vite 8. Sistem navigasi menggunakan TanStack Router yang memungkinkan implementasi autentikasi berbasis peran (\textit{role-based routing}) langsung pada level \textit{router loader}. Antarmuka dibangun dengan pendekatan \textit{utility-first CSS} menggunakan Tailwind CSS 4, sedangkan komponen interaktif menggunakan \texttt{radix-ui} untuk memastikan standar aksesibilitas (\textit{a11y}). Untuk peta interaktif, digunakan \texttt{react-leaflet} dan \texttt{leaflet} murni karena performanya yang ringan dalam me-\textit{render} banyak titik vektor secara bersamaan.
+Aplikasi web dibangun menggunakan \textit{framework} React dengan \textit{build tool} Vite. Sistem navigasi menggunakan TanStack Router yang memungkinkan implementasi autentikasi (\textit{role-based routing}) langsung pada level \textit{router loader}. Antarmuka dibangun dengan menggunakan Tailwind CSS, sedangkan komponen interaktif menggunakan \texttt{radix-ui} untuk memastikan standar aksesibilitas. Untuk peta, digunakan \texttt{react-leaflet} dan \texttt{leaflet}.
 
-Struktur direktori proyek aplikasi web diorganisasikan berdasarkan tanggung jawab fungsional (\textit{feature-based structure}) sebagaimana ditunjukkan pada Listing \ref{lst:struktur-web}.
+Struktur direktori proyek aplikasi web diorganisasikan sebagaimana ditunjukkan pada Listing \ref{lst:struktur-web}.
 
 \input{listings/web.tex}
 
@@ -48,7 +49,7 @@ Struktur direktori proyek aplikasi web diorganisasikan berdasarkan tanggung jawa
 \label{sec:impl-mobile}
 % ==========================================
 
-Aplikasi \textit{mobile} dibangun menggunakan \textit{framework} React Native dengan platform Expo SDK 54. Arsitektur navigasi menggunakan Expo Router yang berbasis sistem berkas (\textit{file-based routing}). Untuk kebutuhan peta interaktif, implementasi menggunakan pendekatan hibrida yaitu \texttt{react-native-webview} yang menginjeksi halaman Leaflet HTML secara internal. Pendekatan ini dipilih karena \textit{library} peta murni di React Native sering kali tidak mendukung kustomisasi animasi \textit{marker} tingkat lanjut yang dibutuhkan aplikasi. \textit{State} aplikasi dikelola oleh \texttt{zustand} dan data sesi disimpan secara persisten menggunakan \texttt{@react-native-async-storage/async-storage}.
+Aplikasi \textit{mobile} dibangun menggunakan \textit{framework} React Native dengan platform Expo SDK. Arsitektur navigasi menggunakan Expo Router yang berbasis (\textit{file-based routing}). Untuk kebutuhan peta, implementasi menggunakan \texttt{react-native-webview}. \textit{State} aplikasi dikelola oleh \texttt{zustand} dan data sesi disimpan secara persisten menggunakan \texttt{@react-native-async-storage/async-storage}.
 
 Struktur direktori proyek aplikasi \textit{mobile} dapat dilihat pada Listing \ref{lst:struktur-mobile}.
 
@@ -57,7 +58,7 @@ Struktur direktori proyek aplikasi \textit{mobile} dapat dilihat pada Listing \r
 Aplikasi \textit{mobile} didistribusikan dalam format berkas APK (\textit{Android Package}) untuk platform Android. Berkas APK hasil \textit{build} dapat diunduh pada tautan berikut:
 
 \begin{itemize}
-    \item \textbf{Unduh APK:} \url{https://[link-apk-kamu]}
+    \item \textbf{APK:} \url{https://bit.ly/3T0IXSE}
 \end{itemize}
 
 % ==========================================
@@ -65,7 +66,7 @@ Aplikasi \textit{mobile} didistribusikan dalam format berkas APK (\textit{Androi
 \label{sec:impl-deployment}
 % ==========================================
 
-Aplikasi web telah di-\textit{deploy} dan dapat diakses secara daring. Setiap peran pengguna mengakses antarmuka melalui tautan yang berbeda sesuai dengan hak aksesnya masing-masing, sebagaimana dirinci pada Tabel \ref{tab:deployment-links}.
+Aplikasi web di\textit{deploy} di Netlify dan dapat diakses secara daring. Setiap peran pengguna mengakses antarmuka melalui tautan yang berbeda sesuai dengan hak aksesnya masing-masing, sebagaimana dirinci pada Tabel \ref{tab:deployment-links}.
 
 \begin{table}[H]
     \centering
