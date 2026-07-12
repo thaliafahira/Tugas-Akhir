@@ -1,0 +1,43 @@
+\begin{lstlisting}[language={},caption={Struktur Direktori Aplikasi Web ITB Ultra-Marathon},label={lst:struktur-web}]
+web/
+├── index.html                  # Titik masuk utama (Entry point) HTML
+├── package.json                # Daftar dependensi library web
+├── vite.config.ts              # Konfigurasi Vite bundler
+└── src/
+    ├── main.tsx                # Entry point React
+    ├── router.tsx              # Konfigurasi TanStack Router
+    ├── styles.css              # File CSS global (Tailwind)
+    ├── components/             # Komponen UI (Reusable)
+    │   ├── layout/             # Komponen kerangka halaman (Sidebar, Header)
+    │   ├── race/               # Komponen spesifik lomba (AlertCard, StatusBadge)
+    │   ├── ui/                 # Komponen dasar (Button, Dialog, Input)
+    │   └── RaceMap.tsx         # Komponen utama pe-render peta Leaflet
+    ├── data/                   # Data statis (Dummy Data)
+    │   ├── captains.ts
+    │   ├── race.ts
+    │   └── teams.ts
+    ├── features/               # Pengelompokan fitur berdasarkan peran
+    │   ├── captain/            # Tampilan Ketua Tim
+    │   ├── committee/          # Tampilan Panitia
+    │   ├── public/             # Tampilan Publik
+    │   ├── spectator/          # Tampilan Penonton Individu
+    │   └── supporter/          # Tampilan Supporter
+    ├── hooks/                  # Custom React Hooks
+    │   ├── use-runner-snapshot.ts
+    │   └── use-team-live.ts
+    ├── lib/                    # Fungsi utilitas
+    │   ├── api.ts
+    │   ├── auth/
+    │   ├── format/
+    │   ├── geo/
+    │   └── storage/
+    ├── routes/                 # Routing halaman
+    │   ├── __root.tsx
+    │   ├── index.tsx
+    │   ├── admin.*.tsx
+    │   ├── captain.*.tsx
+    │   ├── team.*.tsx
+    │   └── view.*.tsx
+    └── store/                  # Manajemen state global
+        └── race-store.ts
+\end{lstlisting}

@@ -1,0 +1,35 @@
+\begin{lstlisting}[language={},caption={Struktur Direktori Aplikasi Mobile ITB Ultra-Marathon},label={lst:struktur-mobile}]
+mobile/
+├── app.json                    # Konfigurasi aplikasi Expo
+├── package.json                # Daftar dependensi library mobile
+├── babel.config.js             # Konfigurasi Babel
+├── src/
+│   ├── components/             # Komponen visual
+│   │   ├── atoms/
+│   │   ├── molecules/
+│   │   └── organisms/
+│   ├── constants/              # Variabel konstan
+│   │   └── colors.ts
+│   ├── data/                   # Data statis
+│   │   ├── race.ts
+│   │   └── teams.ts
+│   ├── hooks/
+│   │   └── use-geo-status.ts
+│   ├── lib/
+│   │   └── api.ts
+│   └── store/
+│       └── session.ts
+└── app/                        # Sistem routing Expo Router
+    ├── _layout.tsx
+    ├── index.tsx
+    ├── invite/
+    │   └── index.tsx
+    ├── (auth)/
+    │   └── login.tsx
+    └── (pelari)/
+        ├── _layout.tsx
+        ├── home.tsx
+        ├── emergency.tsx
+        ├── manage.tsx
+        └── menu.tsx
+\end{lstlisting}
