@@ -1,50 +1,58 @@
-\begin{longtable}{|p{4.5cm}|p{8.5cm}|}
-\caption{Pemetaan Halaman Antarmuka dengan Kebutuhan Fungsional}
-\label{tab:pemetaan-halaman-fr} \\
+\begin{longtable}{|p{1.5cm}|p{3.6cm}|p{3.3cm}|p{2.5cm}|p{2.5cm}|}
+\caption{Pemetaan Halaman Antarmuka terhadap Kebutuhan Fungsional dan \textit{Use Case}}
+\label{tab:pemetaan-halaman} \\
 \hline
-\textbf{Halaman} & \textbf{Kebutuhan Fungsional} \\ \hline
+\textbf{Platform} & \textbf{Halaman} & \textbf{Aktor} & \textbf{FR Terkait} & \textbf{UC Terkait} \\ \hline
 \endfirsthead
 
-\caption[]{Pemetaan Halaman Antarmuka dengan Kebutuhan Fungsional (lanjutan)} \\
+\caption[]{Pemetaan Halaman Antarmuka terhadap Kebutuhan Fungsional dan \textit{Use Case} (lanjutan)} \\
 \hline
-\textbf{Halaman} & \textbf{Kebutuhan Fungsional} \\ \hline
+\textbf{Platform} & \textbf{Halaman} & \textbf{Aktor} & \textbf{FR Terkait} & \textbf{UC Terkait} \\ \hline
 \endhead
 
 \hline
-\multicolumn{2}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\multicolumn{5}{r}{\textit{Bersambung ke halaman berikutnya}} \\
 \endfoot
 
 \hline
 \endlastfoot
 
-Halaman Utama Peserta
-& FR-10 Dashboard Pelacakan, FR-11 Visualisasi ETA dan ETD, FR-12 Permintaan Bantuan Darurat, FR-13 Deteksi Keluar Jalur, FR-14 Status \textit{Checkpoint} \\ \hline
+Web & Halaman Utama Peserta (Public) & \textit{Public} & FR-23 & UC-05 \\ \hline
 
-Halaman Menu Peserta
-& FR-17 \textit{Generate} Kode Penonton, FR-18 Pengaturan Visibilitas \\ \hline
+Web & Halaman Direktori Lokasi & \textit{Public} & FR-23 & UC-05 \\ \hline
 
-Halaman Manajemen Peserta
-& FR-15 Pergantian Relay, FR-16 Pemantauan Anggota Tim \\ \hline
+Web & Halaman Direktori Tim & \textit{Public} & FR-23 & UC-05 \\ \hline
 
-Halaman Utama Ketua Tim
-& FR-05 \textit{Dashboard} Pelacakan Tim, FR-06 Visualisasi ETA dan ETD, FR-07 Notifikasi Darurat, FR-08 Notifikasi Keluar Jalur \\ \hline
+Web & Halaman Utama Ketua & Ketua Tim & FR-05, FR-06, FR-07, FR-08 & UC-02, UC-05, UC-07 \\ \hline
 
-Halaman Manajemen Ketua Tim
-& FR-04 Manajemen Tim, FR-09 \textit{Generate} Kode Tim Support \\ \hline
+Web & Halaman Manage Ketua & Ketua Tim & FR-04, FR-09 & UC-06 \\ \hline
 
-Halaman Utama Supporter
-& FR-19 \textit{Dashboard} Pelacakan, FR-20 Visualisasi ETA dan ETD, FR-21 Notifikasi Darurat, FR-22 Notifikasi Keluar Jalur \\ \hline
+Web & Halaman Utama Supporter & \textit{Supporter} & FR-19, FR-20, FR-21, FR-22 & UC-02, UC-05, UC-07 \\ \hline
 
-Halaman Manajemen Supporter
-& FR-19 \textit{Dashboard} Pelacakan \\ \hline
+Web & Halaman Manage Supporter & \textit{Supporter} & FR-19 & UC-05, UC-08 \\ \hline
 
-Halaman Utama Panitia
-& FR-01 \textit{Dashboard} Pemantauan Lomba, FR-02 Daftar dan Notifikasi Darurat, FR-03 Daftar dan Notifikasi Peserta Keluar Jalur \\ \hline
+Web & Halaman Utama Private & \textit{Private} & FR-23 & UC-02, UC-05 \\ \hline
 
-Halaman Manajemen Panitia
-& FR-02 Daftar dan Notifikasi Darurat, FR-03 Daftar dan Notifikasi Peserta Keluar Jalur \\ \hline
+Web & Halaman Live Map Panitia & Panitia & FR-01 & UC-05 \\ \hline
 
-Halaman Spectator
-& FR-23 \textit{Dashboard} Pelacakan Publik, FR-24 Informasi Sponsor \\ \hline
+Web & Halaman Dashboard Panitia & Panitia & FR-01 & UC-05 \\ \hline
+
+Web & Halaman List Tim Panitia & Panitia & FR-01, FR-02, FR-03 & UC-05, UC-07 \\ \hline
+
+Web & Halaman Alert Panitia & Panitia & FR-02, FR-03 & UC-07 \\ \hline
+
+Web & Halaman Statistik Panitia & Panitia & FR-01 & UC-02 \\ \hline
+
+Web & Halaman List Peserta Panitia & Panitia & FR-02, FR-03 & UC-07 \\ \hline
+
+Mobile & Halaman Utama Peserta & Peserta & FR-10, FR-11, FR-13, FR-14 & UC-02, UC-04, UC-05 \\ \hline
+
+Mobile & Halaman Utama Peserta Inactive & Peserta & FR-10 & UC-04 \\ \hline
+
+Mobile & Halaman Info Tim & Peserta & FR-16 & UC-05 \\ \hline
+
+Mobile & Halaman Menu Peserta & Peserta & FR-17, FR-18 & UC-03, UC-06 \\ \hline
+
+Mobile & Halaman Emergency Peserta & Peserta & FR-12 & UC-01 \\ \hline
 
 \end{longtable}

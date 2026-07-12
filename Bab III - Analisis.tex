@@ -7,22 +7,22 @@
 \cleardoublepage
 \chapter{ANALISIS MASALAH}
 \label{chap:analisis-masalah}
-Bab ini membahas analisis masalah yang ada pada sistem saat ini, analisis kebutuhan yang diperlukan untuk menyelesaikan masalah tersebut, serta analisis pemilihan solusi yang diusulkan.
+Bab analisis masalah membahas analisis masalah yang ada pada sistem saat ini, analisis kebutuhan yang diperlukan untuk menyelesaikan masalah tersebut, serta analisis pemilihan solusi yang diusulkan.
 
 \section{Analisis Kondisi Saat Ini (\textit{As-Is})}
 Untuk memahami akar permasalahan yang telah diuraikan pada bab sebelumnya, dilakukan analisis terhadap kondisi spesifik sistem penyelenggaraan ITB Ultra Marathon yang telah dilaksanakan pada tahun-tahun sebelumnya.
 
-Gambar \ref{fig:as-is-diagram} merupakan \textit{Activity diagram} yang menggambarkan kondisi sistem penyelenggaraan \textit{As-Is} ITB Ultra-Marathon, yaitu di tahun 2025. Diagram ini menunjukkan berbagai komponen, proses, serta interaksi yang terjadi dalam penyelenggaraan maraton, mulai dari pendaftaran peserta, pelacakan selama perlombaan, hingga penyajian informasi kepada berbagai pihak yang terlibat.
+Gambar \ref{fig:as-is-diagram} merupakan \textit{Activity diagram} yang menggambarkan kondisi sistem penyelenggaraan ITB Ultra-Marathon di tahun 2025. Diagram ini menunjukkan berbagai komponen, proses, serta interaksi yang terjadi dalam penyelenggaraan maraton, mulai dari pendaftaran peserta, pelacakan selama perlombaan, hingga penyajian informasi kepada berbagai pihak yang terlibat.
 
-Proses dimulai ketika peserta melakukan registrasi marathon melalui website yang telah disediakan oleh panitia. Setelah proses pendaftaran selesai, panitia melakukan verifikasi data peserta untuk memastikan kelengkapan dan validitas informasi yang telah diinputkan. Peserta yang telah terverifikasi kemudian datang ke lokasi acara untuk melakukan proses \textit{check-in}. Pada tahap ini, peserta melakukan konfirmasi kehadiran dan menerima perlengkapan lomba yang diperlukan. Dalam beberapa penyelenggaraan ITB Ultra Marathon, proses \textit{check-in} juga melibatkan distribusi \textit{timing chip} berbasis RFID (\textit{Radio Frequency Identification}) yang dipasang pada gelang atau nomor dada (\textit{bib}) peserta seperti pada gambar \ref{fig:rfid}. Teknologi RFID digunakan untuk membantu proses identifikasi peserta dan pencatatan waktu selama perlombaan berlangsung. Sistem RFID terdiri dari tiga komponen utama, yaitu \textit{RFID tag} yang menyimpan identitas peserta, \textit{tag reader} yang berfungsi membaca sinyal dari tag, serta antena yang memperluas jangkauan pembacaan sinyal. Ketika peserta melewati titik tertentu seperti garis \textit{start}, \textit{checkpoint}, maupun garis \textit{finish}, \textit{tag reader} akan secara otomatis membaca identitas peserta dan mencatat waktu kedatangan. Sistem ini menghasilkan dua jenis data waktu, yaitu \textit{finish time} yang menunjukkan total waktu sejak perlombaan dimulai hingga peserta mencapai garis \textit{finish}, serta \textit{net time} yang menunjukkan waktu aktual yang ditempuh peserta sejak peserta melewati garis \textit{start}. Dibandingkan metode pencatatan manual, penggunaan RFID mampu meningkatkan akurasi pencatatan waktu dan mengurangi risiko kesalahan pencatatan. Namun, pada penyelenggaraan sebelumnya data yang dihasilkan oleh perangkat RFID masih digunakan secara terbatas dan belum terintegrasi dengan sistem pemantauan peserta secara menyeluruh.
+Proses dimulai ketika peserta melakukan registrasi marathon melalui website yang telah disediakan oleh panitia. Setelah proses pendaftaran selesai, panitia melakukan verifikasi data peserta untuk memastikan kelengkapan dan validitas informasi. Peserta yang telah terverifikasi kemudian datang ke lokasi acara untuk melakukan proses \textit{check-in}. Pada tahap ini, peserta melakukan konfirmasi kehadiran dan menerima perlengkapan lomba yang dipelukan, yaitu \textit{timing chip} berbasis RFID (\textit{Radio Frequency Identification}) yang dipasang pada gelang atau nomor dada (\textit{bib}) peserta seperti pada gambar \ref{fig:rfid}. Teknologi RFID digunakan untuk membantu proses identifikasi peserta dan pencatatan waktu selama perlombaan berlangsung. Sistem RFID terdiri dari tiga komponen utama, yaitu \textit{RFID tag} yang menyimpan identitas peserta, \textit{tag reader} yang berfungsi membaca sinyal dari tag, serta antena yang memperluas jangkauan pembacaan sinyal. Ketika peserta melewati titik tertentu seperti garis \textit{start}, \textit{checkpoint}, maupun garis \textit{finish}, \textit{tag reader} akan secara otomatis membaca identitas peserta dan mencatat waktu kedatangan. Sistem ini menghasilkan dua jenis data waktu, yaitu \textit{finish time} yang menunjukkan total waktu sejak perlombaan dimulai hingga peserta mencapai garis \textit{finish}, serta \textit{net time} yang menunjukkan waktu aktual yang ditempuh peserta sejak peserta melewati garis \textit{start}.
 
 Setelah perlombaan dimulai, peserta menjalankan rute yang telah ditentukan dan melewati beberapa \textit{checkpoint} di sepanjang lintasan. Pada tahap ini panitia bertugas memantau perkembangan peserta serta mencatat posisi peserta selama perlombaan berlangsung. Pemantauan peserta masih memanfaatkan aplikasi pihak ketiga seperti Strava dan layanan GPS lainnya. Strava merupakan aplikasi pelacakan aktivitas olahraga yang menggunakan teknologi Global Positioning System (GPS) untuk merekam data aktivitas pengguna, seperti lokasi, jarak tempuh, kecepatan, elevasi, rute perjalanan, dan estimasi waktu kedatangan (\textit{Estimated Time of Arrival}/ETA). Data tersebut digunakan sebagai salah satu sumber informasi untuk mengetahui progres peserta selama perlombaan. Meskipun mampu menyediakan informasi aktivitas secara cukup detail, penggunaan Strava masih bersifat individual karena data yang direkam hanya dapat diakses melalui akun masing-masing peserta. Selain itu, panitia tidak memiliki akses terpusat untuk memantau seluruh peserta secara bersamaan. Oleh karena itu, proses pemantauan peserta masih membutuhkan koordinasi manual untuk memperoleh informasi yang diperlukan. Informasi lokasi peserta yang diperoleh dari aplikasi GPS kemudian dicatat oleh panitia secara manual. Proses pencatatan dilakukan menggunakan Google Sheets sebagai media penyimpanan dan pengelolaan data sementara. Google Sheets dipilih karena mudah diakses secara daring oleh beberapa panitia secara bersamaan sehingga memudahkan proses pembaruan data selama perlombaan berlangsung. Selain itu, koordinasi antar panitia dilakukan menggunakan WhatsApp sebagai sarana komunikasi utama untuk menyampaikan informasi posisi peserta maupun kondisi di lapangan. Meskipun membantu koordinasi operasional, penggunaan Google Sheets dan WhatsApp menyebabkan proses pengelolaan data masih bergantung pada input manual dari panitia sehingga berpotensi menimbulkan keterlambatan informasi maupun kesalahan pencatatan.
 
-Dari sisi penonton, belum tersedia sistem khusus yang dapat menampilkan posisi peserta secara langsung selama perlombaan berlangsung. Untuk mengetahui lokasi pelari, penonton harus mencari informasi secara manual melalui fitur \textit{share location} pada Google Maps yang dibagikan oleh peserta atau memperoleh informasi dari panitia. Google Maps memanfaatkan teknologi GPS untuk menentukan posisi pengguna secara \textit{real-time} dan menampilkan lokasi tersebut pada peta digital. Namun, penggunaan fitur \textit{share location} masih bersifat individual dan tidak dirancang untuk kebutuhan pemantauan banyak peserta dalam suatu perlombaan. Akibatnya, penonton tidak dapat memperoleh informasi seluruh peserta dalam satu platform yang terintegrasi.
+Dari sisi penonton, belum tersedia sistem khusus yang dapat menampilkan posisi peserta secara langsung selama perlombaan berlangsung. Untuk mengetahui lokasi pelari, penonton harus mencari informasi secara manual melalui fitur \textit{share location} pada Google Maps yang dibagikan oleh peserta atau memperoleh informasi dari panitia. Google Maps memanfaatkan teknologi GPS untuk menentukan posisi pengguna secara \textit{real-time} dan menampilkan lokasi tersebut pada peta digital. Namun, penggunaan fitur \textit{share location} masih bersifat individual dan tidak dirancang untuk kebutuhan pemantauan banyak peserta dalam suatu perlombaan. Akibatnya, penonton tidak dapat memperoleh informasi seluruh peserta dalam satu platform .
 
 Setelah peserta menyelesaikan perlombaan, panitia melakukan proses transfer data peserta yang telah dikumpulkan selama kegiatan berlangsung. Data tersebut kemudian direkap secara manual untuk menghasilkan hasil akhir perlombaan. Proses rekapitulasi dilakukan dengan menggabungkan data dari berbagai sumber, seperti hasil pencatatan panitia, data GPS, dan data waktu yang diperoleh dari perangkat RFID. Setelah proses rekapitulasi selesai, panitia melakukan pengumuman hasil marathon kepada peserta dan penonton sebagai tahap akhir dari penyelenggaraan perlombaan.
 
-Berdasarkan analisis kondisi eksisting tersebut, dapat diketahui bahwa penyelenggaraan ITB Ultra Marathon telah memanfaatkan beberapa teknologi digital seperti platform pendaftaran daring, RFID, GPS, Google Maps, Google Sheets, dan WhatsApp. Namun, teknologi-teknologi tersebut masih berjalan secara terpisah dan belum terintegrasi dalam satu sistem yang mampu mendukung proses operasional perlombaan secara menyeluruh. Akibatnya, proses pemantauan peserta, pengelolaan data, penyebaran informasi kepada penonton, serta rekapitulasi hasil perlombaan masih memerlukan banyak intervensi manual dan belum dapat dilakukan secara \textit{real-time}.
+% Berdasarkan analisis kondisi eksisting tersebut, dapat diketahui bahwa penyelenggaraan ITB Ultra Marathon telah memanfaatkan beberapa teknologi digital seperti platform pendaftaran daring, RFID, GPS, Google Maps, Google Sheets, dan WhatsApp. Namun, teknologi-teknologi tersebut masih berjalan secara terpisah dan belum terintegrasi dalam satu sistem yang mampu mendukung proses operasional perlombaan secara menyeluruh. Akibatnya, proses pemantauan peserta, pengelolaan data, penyebaran informasi kepada penonton, serta rekapitulasi hasil perlombaan masih memerlukan banyak intervensi manual dan belum dapat dilakukan secara \textit{real-time}.
 
 \begin{figure}[H]
     \centering
@@ -53,7 +53,7 @@ Dalam proses penyelenggaraan ITB Ultra Marathon, terdapat beberapa kelompok peng
     berperan dalam memastikan pergantian pelari berjalan dengan baik serta
     menjaga komunikasi antaranggota selama perlombaan berlangsung.
 
-    \item \textbf{Peserta lar)} \\
+    \item \textbf{Peserta} \\
     Peserta merupakan pelari yang mengikuti perlombaan secara langsung, baik
     dalam kategori individu maupun relay. Peserta berinteraksi dengan rute
     perlombaan, checkpoint, serta berbagai informasi lomba yang mendukung
@@ -81,6 +81,13 @@ Berdasarkan hasil analisis kondisi ideal (To-Be) dibagi menjadi dua kelompok, ya
 \subsection{Proses Utama Penyelenggaraan Marathon}
 
 Gambar \ref{fig:tobe-utama} menunjukkan proses bisnis utama yang diharapkan pada penyelenggaraan ITB Ultra Marathon. Proses dimulai ketika peserta melakukan pendaftaran kepada panitia. Data peserta yang telah diterima kemudian dimasukkan ke dalam sistem oleh panitia. Setelah data tersimpan, sistem melakukan proses verifikasi data peserta secara otomatis untuk memastikan bahwa seluruh informasi yang dibutuhkan telah lengkap dan valid. Peserta yang telah terverifikasi selanjutnya dapat melakukan proses \textit{check-in} melalui aplikasi. Berbeda dengan kondisi sebelumnya yang masih bergantung pada proses manual dan pencatatan terpisah, pada kondisi ideal seluruh data peserta telah tersimpan pada satu sistem terintegrasi sehingga proses \textit{check-in} dapat dilakukan secara digital. Ketika perlombaan dimulai, peserta menjalankan rute yang telah ditentukan dan melakukan pencatatan \textit{checkpoint} melalui aplikasi. Pada saat yang bersamaan, sistem mulai melakukan proses kalkulasi data perlombaan secara otomatis, sedangkan panitia dapat memantau seluruh peserta melalui dashboard pemantauan tanpa perlu melakukan pencatatan lokasi secara manual.
+Salah satu kebutuhan yang diperoleh dari hasil wawancara adalah dukungan terhadap kategori perlombaan \textit{relay}. Oleh karena itu, setelah peserta mencapai suatu \textit{checkpoint}, sistem akan melakukan pemeriksaan apakah peserta berada pada kategori \textit{relay} atau tidak. Jika peserta merupakan bagian dari tim \textit{relay}, sistem akan menjalankan proses \textit{switch} untuk mencatat pergantian pelari secara otomatis. Setelah proses pergantian selesai, peserta berikutnya dapat melanjutkan perlombaan. Apabila peserta tidak mengikuti kategori \textit{relay}, maka peserta dapat langsung melanjutkan lari menuju \textit{checkpoint} berikutnya atau garis akhir.
+
+Selain pemantauan posisi peserta, sistem juga menyediakan fitur penanganan kondisi darurat (\textit{emergency}). Apabila peserta mengalami keadaan darurat selama perlombaan, sistem akan mengirimkan notifikasi secara otomatis kepada panitia. Panitia kemudian menerima notifikasi tersebut dan dapat segera melakukan tindakan yang diperlukan berdasarkan lokasi peserta yang terdeteksi oleh sistem. Fitur ini diharapkan dapat meningkatkan keselamatan peserta selama perlombaan berlangsung.
+
+Ketika peserta berhasil mencapai garis akhir, sistem secara otomatis melakukan proses rekapitulasi dan kalkulasi hasil perlombaan berdasarkan data yang telah dikumpulkan selama kegiatan berlangsung. Proses ini mencakup perhitungan waktu tempuh, validasi \textit{checkpoint}, serta penentuan hasil akhir perlombaan. Setelah proses kalkulasi selesai, panitia dapat langsung mengumumkan hasil perlombaan tanpa perlu melakukan rekapitulasi manual seperti pada kondisi sebelumnya.
+
+Dengan adanya sistem terintegrasi, proses pemantauan peserta, pencatatan hasil, dan pengolahan data perlombaan dapat dilakukan secara otomatis dan \textit{real-time}, sehingga mengurangi potensi kesalahan pencatatan serta meningkatkan efisiensi operasional panitia.
 
 \begin{figure}[H]
 \centering
@@ -89,13 +96,6 @@ Gambar \ref{fig:tobe-utama} menunjukkan proses bisnis utama yang diharapkan pada
 \label{fig:tobe-utama}
 \end{figure}
 
-Salah satu kebutuhan yang diperoleh dari hasil wawancara adalah dukungan terhadap kategori perlombaan \textit{relay}. Oleh karena itu, setelah peserta mencapai suatu \textit{checkpoint}, sistem akan melakukan pemeriksaan apakah peserta berada pada kategori \textit{relay} atau tidak. Jika peserta merupakan bagian dari tim \textit{relay}, sistem akan menjalankan proses \textit{switch} untuk mencatat pergantian pelari secara otomatis. Setelah proses pergantian selesai, peserta berikutnya dapat melanjutkan perlombaan. Apabila peserta tidak mengikuti kategori \textit{relay}, maka peserta dapat langsung melanjutkan lari menuju \textit{checkpoint} berikutnya atau garis akhir.
-
-Selain pemantauan posisi peserta, sistem juga menyediakan fitur penanganan kondisi darurat (\textit{emergency}). Apabila peserta mengalami keadaan darurat selama perlombaan, sistem akan mengirimkan notifikasi secara otomatis kepada panitia. Panitia kemudian menerima notifikasi tersebut dan dapat segera melakukan tindakan yang diperlukan berdasarkan lokasi peserta yang terdeteksi oleh sistem. Fitur ini diharapkan dapat meningkatkan keselamatan peserta selama perlombaan berlangsung.
-
-Ketika peserta berhasil mencapai garis akhir, sistem secara otomatis melakukan proses rekapitulasi dan kalkulasi hasil perlombaan berdasarkan data yang telah dikumpulkan selama kegiatan berlangsung. Proses ini mencakup perhitungan waktu tempuh, validasi \textit{checkpoint}, serta penentuan hasil akhir perlombaan. Setelah proses kalkulasi selesai, panitia dapat langsung mengumumkan hasil perlombaan tanpa perlu melakukan rekapitulasi manual seperti pada kondisi sebelumnya.
-
-Dengan adanya sistem terintegrasi, proses pemantauan peserta, pencatatan hasil, dan pengolahan data perlombaan dapat dilakukan secara otomatis dan \textit{real-time}, sehingga mengurangi potensi kesalahan pencatatan serta meningkatkan efisiensi operasional panitia.
 
 
 
@@ -183,10 +183,10 @@ Pada tahap ini, beberapa alternatif solusi terlebih dahulu diidentifikasi berdas
 \subsection{Alternatif Solusi}
 Berdasarkan kebutuhan yang telah diidentifikasi, terdapat empat alternatif pendekatan yang dapat dipertimbangkan dalam pengembangan sistem pelacakan ITB Ultra-Marathon.
 
-\subsubsection{Alternatif 1: Optimalisasi Sistem \textit{Timing Chip} RFID yang Ada}
+\subsubsection{ Optimalisasi Sistem \textit{Timing Chip} RFID}
 
 Alternatif pertama adalah mengoptimalkan sistem \textit{timing chip} berbasis
-RFID yang telah digunakan pada penyelenggaraan ITB Ultra Marathon sebelumnya.
+RFID yang telah digunakan pada penyelenggaraan ITB Ultra-Marathon sebelumnya.
 Pendekatan ini tidak mengembangkan antarmuka baru, melainkan memperluas
 pemanfaatan infrastruktur RFID yang ada dengan menambahkan lapisan perangkat
 lunak yang mampu mengolah dan meneruskan data dari \textit{tag reader} ke suatu
@@ -206,7 +206,7 @@ tersebut. Selain itu, pendekatan ini belum mampu menyediakan pengalaman
 pemantauan perlombaan yang interaktif dan \textit{real-time} bagi peserta,
 keluarga, maupun \textit{supporter}.
 
-\subsubsection{Alternatif 2: Aplikasi Mobile \textit{Cross-Platform}}
+\subsubsection{Aplikasi Mobile \textit{Cross-Platform}}
 
 Alternatif kedua adalah pengembangan aplikasi mobile \textit{cross-platform}
 menggunakan \textit{framework} seperti Flutter atau React Native. Pendekatan
@@ -229,7 +229,7 @@ lebar. Selain itu, satu basis kode \textit{cross-platform} terkadang menghasilka
 pengalaman yang kurang optimal di masing-masing platform dibandingkan pendekatan
 native.
 
-\subsubsection{Alternatif 3: Aplikasi Web Berbasis Browser}
+\subsubsection{Aplikasi Web Berbasis Browser}
 
 Alternatif ketiga adalah pengembangan aplikasi web yang dapat diakses langsung
 melalui peramban tanpa memerlukan proses instalasi. Pendekatan ini memungkinkan
@@ -242,28 +242,13 @@ pemantauan posisi peserta secara kontinu selama perlombaan berlangsung.
 Pengalaman penggunaan pada perangkat mobile juga cenderung kurang optimal
 dibandingkan aplikasi mobile khusus.
 
-\subsubsection{Alternatif 4: Aplikasi Hibrida Web dan Mobile}
+\subsubsection{Aplikasi Multi-Platform Web dan Mobile}
 
-Alternatif keempat adalah pendekatan hibrida yang menggabungkan aplikasi web
-untuk kebutuhan administratif dan aplikasi mobile untuk kebutuhan operasional
-di lapangan. Aplikasi web digunakan oleh panitia untuk mengelola data lomba,
-mengunggah rute, dan memantau operasional secara menyeluruh melalui antarmuka
-\textit{desktop} yang lebih luas, sedangkan aplikasi mobile digunakan oleh
-peserta, \textit{supporter}, dan keluarga untuk kebutuhan pelacakan dan
-pemantauan perlombaan di lapangan.
+Alternatif keempat adalah menggabungkan aplikasi web untuk kebutuhan pemantauan serta administratif dan aplikasi \textit{mobile} khusus untuk kebutuhan pelacakan peserta di lapangan. Aplikasi \textit{mobile} digunakan oleh peserta untuk melakukan pelacakan posisi secara \textit{real-time} selama perlombaan berlangsung karena memerlukan akses GPS berkelanjutan, notifikasi \textit{push}, dan optimasi penggunaan satu tangan. Sementara itu, aplikasi web digunakan oleh panitia untuk memantau operasional secara menyeluruh melalui antarmuka \textit{desktop} yang lebih luas, serta digunakan oleh penonton, \textit{supporter}, dan \textit{public} untuk memantau perkembangan peserta melalui peramban tanpa perlu melakukan instalasi.
 
-Pendekatan ini memungkinkan setiap kelompok pengguna memperoleh antarmuka yang
-paling sesuai dengan konteks penggunaannya: panitia mendapatkan \textit{dashboard}
-web yang kaya fitur administratif, sementara peserta dan \textit{supporter}
-mendapatkan aplikasi mobile yang dioptimalkan untuk akses GPS berkelanjutan,
-notifikasi \textit{push}, dan penggunaan satu tangan di lapangan. Dengan
-demikian, pendekatan hibrida mampu mengakomodasi seluruh kebutuhan fungsional
-secara lebih menyeluruh dibandingkan pendekatan tunggal.
+Pendekatan ini memungkinkan setiap kelompok pengguna memperoleh antarmuka yang paling sesuai dengan konteks penggunaannya. Peserta mendapatkan aplikasi \textit{mobile} yang dioptimalkan untuk akses GPS dan penggunaan satu tangan saat berlari, sementara panitia, penonton, \textit{supporter}, dan \textit{public} mendapatkan antarmuka web yang dapat diakses kapan saja tanpa hambatan instalasi. Dengan demikian, pendekatan ini mampu mengakomodasi seluruh kebutuhan fungsional secara lebih menyeluruh dibandingkan pendekatan tunggal.
 
-Meskipun memiliki kompleksitas pengembangan yang lebih tinggi karena memerlukan
-dua basis kode yang dikembangkan dan dikelola secara bersamaan, pendekatan ini
-memberikan keunggulan fungsional yang signifikan bagi seluruh kelompok pengguna
-dalam ekosistem penyelenggaraan ITB Ultra-Marathon.
+Meskipun memiliki kompleksitas pengembangan yang lebih tinggi karena memerlukan dua basis kode yang dikembangkan dan dikelola secara bersamaan, pendekatan ini memberikan keunggulan fungsional yang signifikan bagi seluruh kelompok pengguna dalam ekosistem penyelenggaraan ITB Ultra-Marathon.
 
 \subsection{Analisis Penentuan Solusi}
 Penentuan solusi dilakukan menggunakan metode \textit{Analytic Hierarchy Process} (AHP) yang dikembangkan oleh Thomas L. Saaty. AHP merupakan metode pengambilan keputusan multi-kriteria yang bekerja dengan cara menyusun masalah ke dalam hierarki, membandingkan setiap kriteria dan alternatif secara berpasangan (\textit{pairwise comparison}), kemudian menghitung bobot prioritas masing-masing elemen berdasarkan vektor eigen dari matriks perbandingan tersebut \cite{Saaty1980}. Konsistensi penilaian diukur melalui \textit{Consistency Ratio} (CR), di mana nilai CR $\leq 0{,}10$ menunjukkan bahwa penilaian yang diberikan cukup konsisten dan dapat diterima \cite{Saaty1980}. Metode AHP telah banyak digunakan dalam pemilihan perangkat lunak dan teknologi karena kemampuannya mengakomodasi kriteria kualitatif maupun kuantitatif secara terstruktur \cite{Vaidya2006}.
@@ -319,7 +304,7 @@ Pendekatan hibrida (Alt.~4) dinilai paling sesuai karena mampu memenuhi seluruh 
 \input{tables/ahp-alt-c2.tex}
 
 \textbf{Kriteria C3 (Aksesibilitas Pengguna)}
-Aplikasi web (Alt.~3) paling unggul karena tidak memerlukan instalasi sama sekali dan dapat diakses dari perangkat apa pun. Sistem RFID (Alt.~1) relatif mudah diakses oleh panitia karena infrastrukturnya sudah tersedia. Aplikasi \textit{cross-platform} (Alt.~2) kompetitif karena satu instalasi melayani Android dan iOS sekaligus. Pendekatan hibrida (Alt.~4) memiliki hambatan akses yang lebih tinggi karena pengguna perlu mengakses dua platform berbeda bergantung pada perannya, meskipun masing-masing platform dipilih sesuai konteks penggunaan yang paling natural.
+Aplikasi web (Alt.~3) paling unggul karena tidak memerlukan instalasi sama sekali dan dapat diakses dari perangkat apa pun. Pendekatan hibrida (Alt.~4) pada definisi baru ini memiliki keunggulan aksesibilitas yang lebih tinggi dibandingkan sebelumnya: hanya peserta yang perlu menginstal aplikasi \textit{mobile}, sementara panitia, penonton, \textit{supporter}, dan \textit{public} --- yang merupakan mayoritas kelompok pengguna --- dapat mengakses sistem langsung melalui peramban tanpa instalasi. Hal ini menjadikan Alt.~4 lebih baik dari aplikasi \textit{cross-platform} (Alt.~2) yang mengharuskan seluruh pengguna melakukan instalasi. Sistem RFID (Alt.~1) relatif terbatas karena hanya diakses oleh panitia di titik-titik \textit{checkpoint}.
 
 \input{tables/ahp-alt-c3.tex}
 
@@ -329,7 +314,7 @@ Pada kriteria ini, pendekatan hibrida (Alt.~4) dinilai paling efisien dalam jang
 \input{tables/ahp-alt-c4.tex}
 
 \textbf{Kriteria C5 (Kemudahan Distribusi)}
-Aplikasi web (Alt.~3) paling unggul karena tidak memerlukan distribusi sama sekali --- pengguna cukup mengakses URL. Aplikasi \textit{cross-platform} (Alt.~2) kompetitif karena pembaruan dapat didistribusikan ke kedua platform secara bersamaan melalui mekanisme \textit{over-the-air update}. Pendekatan hibrida (Alt.~4) memerlukan pembaruan terkoordinasi di dua komponen, namun pembaruan komponen web dapat dilakukan secara instan tanpa instalasi ulang. Sistem RFID (Alt.~1) memiliki distribusi paling terbatas karena bergantung pada perangkat keras fisik.
+Aplikasi web (Alt.~3) paling unggul karena tidak memerlukan distribusi sama sekali --- pengguna cukup mengakses URL. Pendekatan hibrida (Alt.~4) pada definisi baru ini lebih kompetitif dibandingkan alternatif \textit{cross-platform}: komponen web untuk panitia, penonton, \textit{supporter}, dan \textit{public} dapat diperbarui secara instan, sedangkan komponen \textit{mobile} hanya perlu didistribusikan kepada peserta. Aplikasi \textit{cross-platform} (Alt.~2) memerlukan distribusi ke semua pengguna melalui \textit{app store}, meskipun pembaruan dapat dilakukan secara bersamaan. Sistem RFID (Alt.~1) memiliki distribusi paling terbatas karena bergantung pada perangkat keras fisik.
 
 \input{tables/ahp-alt-c5.tex}
 
@@ -341,10 +326,10 @@ Skor akhir setiap alternatif dihitung sebagai jumlah tertimbang dari bobot lokal
 
 \subsubsection{Hasil dan Keputusan}
 
-Berdasarkan hasil perhitungan AHP, Alternatif 4 (Aplikasi Hibrida Web dan Mobile) memperoleh skor tertinggi sebesar 0,434 dan ditetapkan sebagai solusi yang akan dikembangkan dalam penelitian ini.
+Berdasarkan hasil perhitungan AHP, Alternatif 4 (Aplikasi Multi-Platform Web dan Mobile) memperoleh skor tertinggi sebesar 0,472 dan ditetapkan sebagai solusi yang akan dikembangkan dalam penelitian ini.
 
-Alternatif 4 unggul secara dominan pada dua kriteria berbobot terbesar, yaitu performa dan akses perangkat keras (C1, bobot 0,419) dengan skor lokal 0,545, serta kesesuaian kebutuhan fungsional (C2, bobot 0,264) dengan skor lokal 0,493. Hal ini mencerminkan bahwa dalam konteks penyelenggaraan ITB Ultra-Marathon yang melibatkan berbagai kelompok pengguna dengan kebutuhan berbeda, pendekatan hibrida mampu menyediakan antarmuka yang paling optimal untuk setiap peran: panitia mendapatkan \textit{dashboard} web yang kaya fitur untuk pengelolaan operasional, sementara peserta, \textit{supporter}, dan keluarga mendapatkan aplikasi mobile yang dioptimalkan untuk pelacakan GPS berkelanjutan, notifikasi \textit{push}, dan penggunaan di lapangan. Selain itu, Alt.~4 juga memperoleh skor tertinggi pada kriteria efisiensi pengembangan (C4) dengan skor lokal 0,542, karena setiap komponen dikembangkan menggunakan teknologi yang paling sesuai sehingga meminimalkan \textit{workaround} teknis.
+Alternatif 4 unggul secara dominan pada dua kriteria berbobot terbesar, yaitu performa dan akses perangkat keras (C1, bobot 0,419) dengan skor lokal 0,545, serta kesesuaian kebutuhan fungsional (C2, bobot 0,264) dengan skor lokal 0,493. Selain itu, Alt.~4 juga memperoleh skor tertinggi pada kriteria efisiensi pengembangan (C4) dengan skor lokal 0,542. Hal ini mencerminkan bahwa dalam konteks penyelenggaraan ITB Ultra-Marathon yang melibatkan berbagai kelompok pengguna dengan kebutuhan berbeda, pendekatan ini mampu menyediakan antarmuka yang paling optimal untuk setiap peran: peserta mendapatkan aplikasi \textit{mobile} yang dioptimalkan untuk pelacakan GPS berkelanjutan dan penggunaan di lapangan, sementara panitia, penonton, \textit{supporter}, dan \textit{public} mendapatkan antarmuka web yang dapat diakses kapan saja tanpa hambatan instalasi.
 
-Alternatif 2 (\textit{cross-platform}) menempati peringkat kedua dengan skor 0,272, unggul pada efisiensi basis kode tunggal, namun menghadapi keterbatasan dalam menyajikan antarmuka yang optimal untuk seluruh kelompok pengguna secara bersamaan. Alternatif 3 (web) menempati peringkat ketiga dengan skor 0,195, unggul pada aksesibilitas dan kemudahan distribusi, namun gugur pada kriteria utama akibat keterbatasan akses GPS latar belakang. Alternatif 1 (RFID) memperoleh skor terendah sebesar 0,098 karena ketidakmampuannya menyediakan pelacakan posisi kontinu dan antarmuka mandiri bagi pengguna.
+Alternatif 2 (\textit{cross-platform}) menempati peringkat kedua dengan skor 0,261, unggul pada efisiensi basis kode tunggal, namun menghadapi keterbatasan dalam menyajikan antarmuka yang optimal untuk seluruh kelompok pengguna. Alternatif 3 (web) menempati peringkat ketiga dengan skor 0,186, unggul pada aksesibilitas dan kemudahan distribusi, namun gugur pada kriteria utama akibat keterbatasan akses GPS latar belakang. Alternatif 1 (RFID) memperoleh skor terendah sebesar 0,080 karena ketidakmampuannya menyediakan pelacakan posisi kontinu dan antarmuka mandiri bagi pengguna.
 
-Dengan demikian, aplikasi hibrida web dan mobile dipilih sebagai solusi yang paling sesuai untuk memenuhi kebutuhan sistem pelacakan ITB Ultra-Marathon secara menyeluruh, dengan penelitian ini berfokus pada pengembangan komponen \textit{front-end} sisi mobile yang digunakan oleh peserta, \textit{supporter}, dan keluarga selama perlombaan berlangsung.
+Dengan demikian, aplikasi multi-platform web dan mobile dipilih sebagai solusi yang paling sesuai untuk memenuhi kebutuhan sistem pelacakan ITB Ultra-Marathon secara menyeluruh, dengan penelitian ini berfokus pada pengembangan komponen \textit{front-end} sisi \textit{mobile} yang digunakan oleh peserta untuk pelacakan di lapangan, serta komponen \textit{front-end} sisi web yang digunakan oleh panitia, penonton, \textit{supporter}, dan \textit{public}.

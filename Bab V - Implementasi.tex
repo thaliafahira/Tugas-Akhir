@@ -4,26 +4,70 @@
 \cleardoublepage
 \chapter{IMPLEMENTASI}
 \label{chap:implementasi}
+
+Bab ini membahas proses implementasi antarmuka \textit{front-end} aplikasi \textit{tracker} ITB Ultra-Marathon berdasarkan rancangan yang telah disusun pada Bab IV. Implementasi mencakup dua platform, yaitu aplikasi \textit{mobile} untuk kebutuhan pelacakan peserta di lapangan dan aplikasi web untuk kebutuhan pemantauan, administrasi, serta akses publik. Seluruh kode dibangun di atas ekosistem JavaScript menggunakan TypeScript sebagai bahasa pemrograman utama.
+
+% ==========================================
 \section{Lingkungan Implementasi}
+% ==========================================
 
+Lingkungan implementasi yang digunakan dalam pengembangan sistem terbagi menjadi dua, yaitu perangkat keras dan perangkat lunak. Perangkat keras yang digunakan mencakup mesin pengembangan serta perangkat pengujian aplikasi \textit{mobile}. Rincian perangkat keras dapat dilihat pada Tabel \ref{tab:hw}.
 
-Lingkungan implementasi yang digunakan dalam pengembangan sistem terbagi
-menjadi dua, yaitu perangkat keras dan perangkat lunak. Perangkat keras
-yang digunakan mencakup mesin pengembangan serta perangkat pengujian
-aplikasi mobile. Rincian perangkat keras untuk pengembangan sistem dapat
-dilihat pada Tabel \ref{tab:hw}.
 \input{tables/hw.tex}
 
-Perangkat keras yang digunakan untuk pengujian aplikasi mobile dapat dilihat pada Tabel \ref{tab:hw-test}.
-\input{tables/hw-test.tex}
+Untuk mendukung pengembangan sistem, perangkat lunak yang digunakan terbagi menjadi dua bagian, yaitu untuk pengembangan aplikasi \textit{mobile} dan pengembangan antarmuka \textit{website}. Rincian perangkat lunak aplikasi \textit{mobile} dapat dilihat pada Tabel \ref{tab:sw}, sedangkan rincian untuk \textit{website} dapat dilihat pada Tabel \ref{tab:sw-web}.
 
-Untuk mendukung pengembangan sistem, perangkat lunak yang digunakan
-terbagi menjadi dua bagian, yaitu untuk pengembangan aplikasi mobile
-dan pengembangan antarmuka website. Rincian perangkat lunak untuk
-aplikasi mobile dapat dilihat pada Tabel \ref{tab:sw-mobile},
 \input{tables/sw.tex}
-Rincian untuk website dapat dilihat pada Tabel \ref{tab:sw-web}.
 \input{tables/sw-web.tex}
 
-\section{Implementasi \textit{Front-End Mobile Application} }
-\section{Implementasi \textit{Front-End Website}}
+% ==========================================
+\section{Implementasi \textit{Front-End} Aplikasi \textit{Mobile}}
+\label{sec:impl-mobile}
+% ==========================================
+
+Aplikasi \textit{mobile} dibangun menggunakan \textit{framework} React Native dengan platform Expo SDK 54. Arsitektur navigasi menggunakan Expo Router yang berbasis sistem berkas (\textit{file-based routing}). Untuk kebutuhan peta interaktif, implementasi menggunakan pendekatan hibrida, yaitu \texttt{react-native-webview} yang menginjeksi halaman Leaflet HTML secara internal. Pendekatan ini dipilih karena \textit{library} peta murni di React Native sering kali tidak mendukung kustomisasi animasi \textit{marker} tingkat lanjut yang dibutuhkan aplikasi. \textit{State} aplikasi dikelola oleh \texttt{zustand} dan data sesi disimpan secara persisten menggunakan \texttt{@react-native-async-storage/async-storage}.
+
+\subsection{Sistem Login \textit{Magic Link}}
+
+Proses autentikasi pelari menggunakan mekanisme \textit{magic link} berbasis token satu kali pakai (\textit{One-Time Password}) sehingga pelari tidak perlu mengingat kata sandi selama perlombaan berlangsung. Alur autentikasi dimulai ketika pelari menerima token enam digit unik melalui WhatsApp atau email dari panitia. Token tersebut dimasukkan pada halaman \textit{login} dan divalidasi ke \textit{endpoint} \texttt{/participants/activate}. Jika validasi berhasil, server menukarkan token tersebut dengan sesi JWT (\textit{JSON Web Token}) yang disimpan secara lokal pada perangkat pelari. Implementasi alur ini berpusat pada berkas \texttt{mobile/src/store/session.ts} dan \texttt{mobile/app/(auth)/login.tsx}. Gambar \ref{fig:impl-login} menampilkan antarmuka halaman login pada aplikasi \textit{mobile}.
+
+\subsection{Pelacak GPS \textit{Background Telemetry}}
+
+Fitur ini merupakan inti dari aplikasi \textit{mobile}. Implementasinya menggunakan \texttt{expo-location} sebagai jembatan ke sensor GPS \textit{native} pada perangkat Android maupun iOS untuk mendapatkan nilai \textit{latitude} dan \textit{longitude} berpresisi tinggi. Data koordinat yang diperoleh selanjutnya dikirimkan ke server melalui HTTP POST ke \textit{endpoint} \texttt{/participants/telemetry/gps} menggunakan pendekatan \textit{fire-and-forget} setiap tiga detik sekali. Seluruh logika ini diimplementasikan sebagai sebuah \textit{custom hook} pada berkas \texttt{mobile/src/hooks/use-geo-status.ts} sehingga dapat digunakan kembali oleh komponen layar mana pun yang membutuhkannya. Gambar \ref{fig:impl-home-mobile} menampilkan halaman utama pelari saat fitur \textit{tracking} aktif.
+
+\subsection{Deteksi \textit{Checkpoint} dan Transisi Estafet}
+
+Untuk menghitung jarak antara posisi pelari saat ini terhadap titik estafet (\textit{checkpoint}) berikutnya, aplikasi mengimplementasikan \textit{Haversine Formula} secara lokal di dalam perangkat. Formula geodetik ini digunakan untuk menghitung jarak lurus antara dua titik koordinat di permukaan bumi yang melengkung. Seluruh data koordinat rute (\texttt{route-coords.json}) disimpan di dalam memori internal aplikasi sehingga kalkulasi tetap dapat berjalan secara \textit{offline} meski pelari berada di zona tanpa sinyal (\textit{blank spot}) di pegunungan. Ketika jarak pelari terhadap titik estafet kurang dari 50 meter, antarmuka secara otomatis menampilkan tombol \textit{"FINISH LEG"} yang mengizinkan terjadinya transisi pergantian pelari. Implementasi logika ini terdapat pada \texttt{mobile/src/hooks/use-geo-status.ts} dan \texttt{mobile/app/(pelari)/home.tsx}.
+
+\subsection{Modul Darurat (\textit{Panic Button})}
+
+Tombol SOS pada aplikasi \textit{mobile} diimplementasikan menggunakan mekanisme \textit{swipe gesture} (geser layar) sebagai pengganti tombol tekan biasa. Mekanisme ini dipilih secara sengaja untuk mencegah aktivasi tidak disengaja (\textit{accidental press}) yang mungkin terjadi saat pelari berlari atau ketika perangkat berada di dalam saku. Halaman darurat menyediakan dua pilihan tindakan, yaitu tombol SOS untuk kondisi darurat medis dan tombol LOST untuk kondisi pelari keluar jalur. Kedua tindakan ini mengirimkan sinyal beserta koordinat lokasi terkini ke panitia secara \textit{real-time}. Implementasi antarmuka ini terdapat pada berkas \texttt{mobile/app/(pelari)/emergency.tsx}. Gambar \ref{fig:impl-emergency} menampilkan tampilan halaman darurat dengan latar merah yang mencolok.
+
+% ==========================================
+\section{Implementasi \textit{Front-End} Aplikasi Web}
+\label{sec:impl-web}
+% ==========================================
+
+Aplikasi web dibangun menggunakan \textit{framework} React 19 dengan \textit{build tool} Vite 8. Sistem navigasi menggunakan TanStack Router yang memungkinkan implementasi autentikasi berbasis peran (\textit{role-based routing}) langsung pada level \textit{router loader}. Antarmuka dibangun dengan pendekatan \textit{utility-first CSS} menggunakan Tailwind CSS 4, sedangkan komponen interaktif menggunakan \texttt{radix-ui} untuk memastikan standar aksesibilitas (\textit{a11y}). Untuk peta interaktif, digunakan \texttt{react-leaflet} dan \texttt{leaflet} murni karena performanya yang ringan dalam me-\textit{render} banyak titik vektor secara bersamaan.
+
+\subsection{Peta Pelacakan Global (\textit{Live Global Tracking Map})}
+
+Peta pemantauan global merupakan komponen utama antarmuka web yang menampilkan posisi seluruh tim secara \textit{real-time}. Data posisi diperbarui setiap tiga detik menggunakan mekanisme \textit{polling} berbasis \texttt{axios}. Peta diimplementasikan dengan tema gelap (\textit{dark mode}) menggunakan \textit{tile layer} kustom sehingga \textit{marker} pelari yang berwarna neon dapat terlihat kontras dan mudah dibedakan. Fitur \textit{auto-center} memastikan kamera peta selalu mengikuti tim yang sedang dipantau. Implementasi komponen ini terdapat pada \texttt{web/src/components/RaceMap.tsx} dan \texttt{web/src/hooks/use-team-live.ts}.
+
+Untuk mengatasi efek \textit{jumping} (titik pelari terlihat melompat-lompat) yang terjadi karena data GPS hanya masuk setiap 3--5 detik, diterapkan algoritma \textbf{Interpolasi Linear (\textit{Linear Interpolation})}. Sistem web menghitung selisih koordinat lama dan koordinat baru, lalu membaginya menjadi 60 \textit{frame} sehingga perpindahan \textit{marker} terlihat sangat mulus meskipun koneksi jaringan lambat. Algoritma ini diimplementasikan pada berkas \texttt{web/src/lib/geo/interpolate.ts}. Gambar \ref{fig:impl-web-map} menampilkan tampilan peta global dengan \textit{marker} neon seluruh tim.
+
+\subsection{Sistem Routing Berbasis Peran (\textit{Role-Based Routing})}
+
+Setiap kelompok pengguna (Panitia, Ketua Tim, Supporter, Penonton) memiliki halaman yang berbeda dan terlindungi dari akses pengguna lain. Implementasi perlindungan akses ini dilakukan pada level \textit{router loader} di TanStack Router. Setiap kali pengguna mencoba mengakses rute tertentu, \textit{loader} memvalidasi isi JWT di \textit{localStorage} melalui fungsi pada \texttt{web/src/lib/auth/validate-token.ts}. Jika peran tidak sesuai, pengguna akan diarahkan ulang (\textit{redirect}) ke halaman yang sesuai dengan haknya. Arsitektur rute utama terdapat pada \texttt{web/src/routes/\_\_root.tsx}.
+
+\subsection{\textit{Command Center} Darurat (Panitia)}
+
+Antarmuka panitia memiliki halaman \textit{Command Center} khusus yang dirancang untuk penanganan situasi darurat secara cepat. Ketika sebuah sinyal SOS atau peringatan keluar jalur diterima dari sistem \textit{backend}, antarmuka secara otomatis memunculkan tabel pelari darurat yang berkedip dengan latar merah (\textit{flashing alert}) disertai data koordinat \textit{latitude/longitude} terkini. Sinkronisasi \textit{state} darurat antar tab \textit{browser} diimplementasikan menggunakan arsitektur \textit{Custom Event Dispatcher} berbasis \texttt{localStorage} (pada berkas \texttt{web/src/features/committee/EmergencyList.tsx} dan \texttt{emergency-store.ts}) tanpa membebani server \textit{backend} dengan koneksi tambahan. Gambar \ref{fig:impl-sos} menampilkan tampilan \textit{command center} saat sinyal SOS aktif.
+
+\subsection{Manajemen Rotasi dan \textit{Share Link} (Ketua Tim)}
+
+Antarmuka ketua tim menyediakan fitur manajemen rotasi pelari apabila terdapat anggota yang tidak dapat melanjutkan lomba karena cedera atau kondisi tertentu. Fitur ini diimplementasikan sebagai antarmuka \textit{drag-and-drop} yang memungkinkan ketua tim mengubah urutan pelari secara interaktif dan menyimpan perubahan ke server. Selain itu, terdapat fitur pembuatan tautan berbagi (\textit{generate link}) yang menghasilkan URL unik yang dapat dibagikan kepada keluarga atau penonton untuk memantau posisi pelari tertentu. Implementasi fitur ini terdapat pada berkas \texttt{web/src/features/captain/CaptainManage.tsx}.
+
+\subsection{Kamera Terkunci Penonton (\textit{Spectator Locking Camera})}
+
+Halaman penonton dirancang untuk memantau satu pelari atau satu tim secara eksklusif. Kamera pada peta secara otomatis mengikuti (\textit{camera follow}) titik pelari ke manapun ia bergerak, tanpa terganggu oleh pergerakan pelari lain. Antarmuka ini diakses melalui tautan unik yang dibagikan oleh ketua tim dan tidak memerlukan proses \textit{login}. Implementasi fitur \textit{camera follow} terdapat pada \texttt{web/src/features/public/PublicView.tsx} dan \texttt{web/src/routes/view.\$runnerToken.tsx}. Gambar \ref{fig:impl-spectator} menampilkan tampilan halaman penonton yang berfokus pada satu pelari.

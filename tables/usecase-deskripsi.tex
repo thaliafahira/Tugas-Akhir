@@ -1,70 +1,67 @@
-\begin{longtable}{|p{1.5cm}|p{5cm}|p{7cm}|}
+\begin{longtable}{|p{1.3cm}|p{3.5cm}|p{3.2cm}|p{6cm}|}
 \caption{Deskripsi \textit{Use Case} Aplikasi \textit{Tracker} ITB Ultra-Marathon}
 \label{tab:usecase-deskripsi} \\
 \hline
-\textbf{ID} & \textbf{Nama \textit{Use Case}} & \textbf{Deskripsi} \\ \hline
+\textbf{ID} & \textbf{Nama \textit{Use Case}} & \textbf{Aktor} & \textbf{Deskripsi} \\ \hline
 \endfirsthead
 
 \caption[]{Deskripsi \textit{Use Case} Aplikasi \textit{Tracker} ITB Ultra-Marathon (lanjutan)} \\
 \hline
-\textbf{ID} & \textbf{Nama \textit{Use Case}} & \textbf{Deskripsi} \\ \hline
+\textbf{ID} & \textbf{Nama \textit{Use Case}} & \textbf{Aktor} & \textbf{Deskripsi} \\ \hline
 \endhead
 
 \hline
-\multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\multicolumn{4}{r}{\textit{Bersambung ke halaman berikutnya}} \\
 \endfoot
 
 \hline
 \endlastfoot
 
-UC-01 & Mengirim Notifikasi Darurat &
-Peserta dapat mengirimkan notifikasi darurat kepada pihak terkait apabila
-mengalami kondisi tertentu (misalnya cedera atau kendala) selama perlombaan
-berlangsung. \textit{Use case} ini meng-\textit{include} \textit{use case}
-Menerima Notifikasi Darurat (UC-07), sehingga setiap notifikasi yang dikirim
+UC-01 & Mengirim Notifikasi Darurat & Peserta &
+Aktor dapat mengirimkan notifikasi darurat kepada pihak terkait apabila
+mengalami kendala tertentu selama perlombaan
+berlangsung. \textit{Use case} ini meng-\textit{include} UC-07, sehingga setiap notifikasi yang dikirim
 akan otomatis diteruskan dan diterima oleh aktor terkait. \\ \hline
 
-UC-02 & Melihat ETA, ETD \& \textit{Activity Metrics} &
-Peserta dapat melihat estimasi waktu kedatangan (\textit{ETA}) dan estimasi
+UC-02 & Melihat ETA, ETD \& \textit{Activity Metrics} & \textit{Private}, \textit{Supporter}, Ketua, Panitia, Peserta &
+Aktor dapat melihat estimasi waktu kedatangan (\textit{ETA}) dan estimasi
 waktu keberangkatan (\textit{ETD}) ke \textit{checkpoint} atau garis
 \textit{finish}, serta memantau data performa aktivitas larinya secara
 \textit{real-time}, meliputi kecepatan, jarak tempuh, dan waktu berlari. \\ \hline
 
-UC-03 & Mengubah Visibilitas &
-Peserta dapat mengatur tingkat visibilitas data lokasi dan aktivitasnya,
+UC-03 & Mengubah Visibilitas & Peserta &
+Aktor dapat mengatur visibilitas data lokasi dan aktivitasnya,
 yaitu menentukan apakah posisinya dapat dipantau secara publik atau hanya
-oleh pihak tertentu. \textit{Use case} ini merupakan perluasan
-(\textit{extend}) dari \textit{use case} Melihat \textit{Live Tracking}
-(UC-05), yang dijalankan ketika peserta memilih untuk mengubah
+oleh pihak tertentu. \textit{Use case} ini merupakan
+(\textit{extend}) dari UC-05, yang dijalankan \textit{Public} ketika peserta memilih untuk mengubah
 pengaturan visibilitasnya. \\ \hline
 
-UC-04 & Mengirim \textit{Live Tracking} &
+UC-04 & Mengirim \textit{Live Tracking} & Peserta &
 Peserta mengirimkan data lokasi secara \textit{real-time} selama perlombaan
 berlangsung agar posisi dan pergerakannya dapat dipantau melalui sistem
 \textit{tracker}. Data lokasi yang dikirim digunakan untuk mendukung
 pemantauan \textit{live tracking}, perhitungan estimasi waktu, dan fitur
 terkait lainnya. \\ \hline
 
-UC-05 & Melihat \textit{Live Tracking} &
+UC-05 & Melihat \textit{Live Tracking} & Peserta, Panitia, Ketua Tim, \textit{Public}, \textit{Private} \textit{Supporter} &
 Aktor dapat memantau posisi peserta secara \textit{real-time} pada peta
 selama perlombaan berlangsung. \textit{Use case} ini dapat diakses oleh
 Peserta, Panitia, Ketua Tim, \textit{Public}, Penonton, dan
 \textit{Supporter}, sesuai dengan visibilitas yang telah diatur oleh
 masing-masing peserta. \\ \hline
 
-UC-06 & Membuat Tautan Undangan &
+UC-06 & Membuat Tautan Undangan & Ketua Tim, Peserta &
 Ketua tim dapat membuat dan membagikan tautan undangan kepada \textit{Supporter},
-dan peserta dapat membagikan tautan kepada keluarga atau penonton agar dapat
-mengakses dan memantau jalannya perlombaan melalui sistem \textit{tracker}. \\ \hline
+dan peserta dapat membagikan tautan kepada penonton \textit{private} agar dapat
+mengakses sistem ITB Ultra-Marathon. \\ \hline
 
-UC-07 & Menerima Notifikasi Darurat &
+UC-07 & Menerima Notifikasi Darurat & Panitia, Ketua Tim, \textit{Supporter} &
 Aktor menerima notifikasi darurat yang dikirimkan oleh Peserta terkait
 kondisi tertentu selama perlombaan. \textit{Use case} ini diterima oleh
 Panitia, Ketua Tim, \textit{Public}, dan \textit{Supporter}, dan merupakan
-\textit{use case} yang di-\textit{include} oleh \textit{use case}
-Mengirim Notifikasi Darurat (UC-01). \\ \hline
+\textit{use case} yang di-\textit{include} oleh UC-01. \\ \hline
 
-UC-08 & Navigasi ke Lokasi Pelari &
+UC-08 & Navigasi ke Lokasi Pelari & Panitia, Ketua Tim, \textit{Supporter} &
 Panitia, Ketua Tim, dan \textit{Supporter} dapat melakukan navigasi menuju
 lokasi peserta saat ini berdasarkan titik koordinat \textit{live tracking}
 yang tersedia guna memberikan dukungan langsung di lapangan. \\ \hline
