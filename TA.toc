@@ -398,5 +398,11 @@
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \contentsline {chapter}{Lampiran \numberline {A}HASIL IMPLEMENTASI}{111}{appendix.1.A}%
-\contentsline {chapter}{Lampiran \numberline {B}HASIL FORM TESTING}{113}{appendix.1.B}%
-\contentsline {chapter}{Lampiran \numberline {C}WAWANCARA USER}{115}{appendix.1.C}%
+\contentsline {section}{A.1 Aplikasi \textit {Mobile}}{111}{section*.76}%
+\contentsline {section}{A.2 Aplikasi Web --- Halaman Publik}{114}{table.1.A.1}%
+\contentsline {section}{A.3 Aplikasi Web --- Halaman Ketua Tim}{115}{table.1.A.2}%
+\contentsline {section}{A.4 Aplikasi Web --- Halaman Supporter}{116}{table.1.A.3}%
+\contentsline {section}{A.5 Aplikasi Web --- Halaman Panitia}{117}{table.1.A.4}%
+\contentsline {section}{A.6 Aplikasi Web --- Halaman Penonton}{119}{table.1.A.5}%
+\contentsline {chapter}{Lampiran \numberline {B}DATA MENTAH \textit {USER ACCEPTANCE TESTING}}{121}{appendix.1.B}%
+\contentsline {chapter}{Lampiran \numberline {C}BUKTI WAWANCARA}{129}{appendix.1.C}%
