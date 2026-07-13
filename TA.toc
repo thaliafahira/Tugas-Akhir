@@ -55,12 +55,12 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.3.1}\textit {Timing Chip}}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {II.3.1}\textit {Timing Chip}}{12}{subsection.2.3.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {II.4}Konsep Dasar \textit {Front-End Development}}{12}{section.2.4}%
+\contentsline {section}{\numberline {II.4}Konsep Dasar \textit {Front-End Development}}{13}{section.2.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -85,7 +85,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.4.2}\textit {User Interface (UI)} dan \textit {User Experience (UX)}}{15}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {II.4.2}\textit {User Interface (UI)} dan \textit {User Experience (UX)}}{16}{subsection.2.4.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -94,7 +94,7 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.4.3}\textit {User-Centered Design}}{16}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {II.4.3}\textit {User-Centered Design}}{17}{subsection.2.4.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -102,50 +102,47 @@
 \contentsline {subsection}{\numberline {II.4.4}\textit {Information Architecture}}{17}{subsection.2.4.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.4.5}User Flow}{17}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {II.4.5}User Flow}{18}{subsection.2.4.5}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \contentsline {subsection}{\numberline {II.4.6}\textit {Design System}}{18}{subsection.2.4.6}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.4.7}Responsive Design}{18}{subsection.2.4.7}%
+\contentsline {subsection}{\numberline {II.4.7}Responsive Design}{19}{subsection.2.4.7}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.4.8}\textit {Dark Mode} dan \textit {Light Mode}}{19}{subsection.2.4.8}%
+\contentsline {subsection}{\numberline {II.4.8}\textit {State Management} dan Sinkronisasi Data \textit {Real-Time}}{20}{subsection.2.4.8}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.9}\textit {Dark Mode} dan \textit {Light Mode}}{20}{subsection.2.4.9}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.4.9}Teknologi Integrasi Data}{20}{subsection.2.4.9}%
+\contentsline {subsection}{\numberline {II.4.10}Teknologi Integrasi Data}{21}{subsection.2.4.10}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.4.10}\textit {Cross-Platform Mobile Development}}{21}{subsection.2.4.10}%
+\contentsline {subsection}{\numberline {II.4.11}\textit {Cross-Platform Mobile Development}}{22}{subsection.2.4.11}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.4.11}Aplikasi Web (\textit {Single-Page Application})}{22}{subsection.2.4.11}%
+\contentsline {subsection}{\numberline {II.4.12}Aplikasi Web (\textit {Single-Page Application})}{22}{subsection.2.4.12}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.4.12}\textit {Progressive Web App} (PWA)}{23}{subsection.2.4.12}%
+\contentsline {subsection}{\numberline {II.4.13}\textit {Progressive Web App} (PWA)}{23}{subsection.2.4.13}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -154,12 +151,8 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {II.5}\textit {Usability}}{24}{section.2.5}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {II.6}\textit {Benchmarking} Aplikasi Sejenis}{24}{section.2.6}%
+\contentsline {subsection}{\numberline {II.4.14}Evaluasi \textit {Usability} dan \textit {User Acceptance Testing}}{24}{subsection.2.4.14}%
+\contentsline {section}{\numberline {II.5}\textit {Benchmarking} Aplikasi Sejenis}{24}{section.2.5}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -172,20 +165,20 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {II.7}Metode \textit {Analytic Hierarchy Process} (AHP)}{27}{section.2.7}%
+\contentsline {section}{\numberline {II.6}Metode \textit {Analytic Hierarchy Process} (AHP)}{27}{section.2.6}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.7.1}Perbandingan Berpasangan}{27}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {II.6.1}Perbandingan Berpasangan}{27}{subsection.2.6.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.7.2}Normalisasi dan Perhitungan Bobot Prioritas}{28}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {II.6.2}Normalisasi dan Perhitungan Bobot Prioritas}{28}{subsection.2.6.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {II.7.3}Uji Konsistensi}{28}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {II.6.3}Uji Konsistensi}{28}{subsection.2.6.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
@@ -391,18 +384,12 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
 \contentsline {chapter}{Lampiran \numberline {A}HASIL IMPLEMENTASI}{111}{appendix.1.A}%
 \contentsline {section}{A.1 Aplikasi \textit {Mobile}}{111}{section*.76}%
-\contentsline {section}{A.2 Aplikasi Web --- Halaman Publik}{114}{table.1.A.1}%
-\contentsline {section}{A.3 Aplikasi Web --- Halaman Ketua Tim}{115}{table.1.A.2}%
-\contentsline {section}{A.4 Aplikasi Web --- Halaman Supporter}{116}{table.1.A.3}%
-\contentsline {section}{A.5 Aplikasi Web --- Halaman Panitia}{117}{table.1.A.4}%
-\contentsline {section}{A.6 Aplikasi Web --- Halaman Penonton}{119}{table.1.A.5}%
-\contentsline {chapter}{Lampiran \numberline {B}DATA MENTAH \textit {USER ACCEPTANCE TESTING}}{121}{appendix.1.B}%
-\contentsline {chapter}{Lampiran \numberline {C}BUKTI WAWANCARA}{129}{appendix.1.C}%
+\contentsline {section}{A.2 Aplikasi Web --- Halaman Publik}{113}{table.1.A.1}%
+\contentsline {section}{A.3 Aplikasi Web --- Halaman Ketua Tim}{114}{table.1.A.2}%
+\contentsline {section}{A.4 Aplikasi Web --- Halaman Supporter}{114}{table.1.A.3}%
+\contentsline {section}{A.5 Aplikasi Web --- Halaman Panitia}{115}{table.1.A.4}%
+\contentsline {section}{A.6 Aplikasi Web --- Halaman Penonton}{116}{table.1.A.5}%
+\contentsline {chapter}{Lampiran \numberline {B}DATA MENTAH \textit {USER ACCEPTANCE TESTING}}{117}{appendix.1.B}%
+\contentsline {chapter}{Lampiran \numberline {C}BUKTI WAWANCARA}{125}{appendix.1.C}%

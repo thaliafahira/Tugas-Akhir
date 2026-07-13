@@ -5016,46 +5016,44 @@
     <bcf:citekey order="35" intorder="1">garrett2011</bcf:citekey>
     <bcf:citekey order="36" intorder="1">frost2016</bcf:citekey>
     <bcf:citekey order="37" intorder="1">marcotte2017</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">shieh2000effects</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">dong2009power</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">lazuardy2022modern</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">shieh2000effects</bcf:citekey>
     <bcf:citekey order="40" intorder="1">dong2009power</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">zhang2021dark</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">google2022material</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">apple2023darkmode</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">richardson2008restful</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">fielding2000architectural</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">pimentel2012websocket</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">nawrocki2021comparison</bcf:citekey>
-    <bcf:citekey order="48" intorder="1">heitkotter2012evaluating</bcf:citekey>
-    <bcf:citekey order="49" intorder="1">majchrzak2017comprehensive</bcf:citekey>
-    <bcf:citekey order="50" intorder="1">mikowski2013single</bcf:citekey>
-    <bcf:citekey order="51" intorder="1">osmani2023learning</bcf:citekey>
-    <bcf:citekey order="52" intorder="1">richardson2008restful</bcf:citekey>
+    <bcf:citekey order="40" intorder="2">zhang2021dark</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">richardson2008restful</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">fielding2000architectural</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">pimentel2012websocket</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">nawrocki2021comparison</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">heitkotter2012evaluating</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">majchrzak2017comprehensive</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">mikowski2013single</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">osmani2023learning</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">richardson2008restful</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">biorn2017progressive</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">malavolta2017assessing</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">tandel2018impact</bcf:citekey>
     <bcf:citekey order="53" intorder="1">biorn2017progressive</bcf:citekey>
-    <bcf:citekey order="54" intorder="1">malavolta2017assessing</bcf:citekey>
-    <bcf:citekey order="55" intorder="1">tandel2018impact</bcf:citekey>
-    <bcf:citekey order="56" intorder="1">biorn2017progressive</bcf:citekey>
-    <bcf:citekey order="57" intorder="1">iso92411182018</bcf:citekey>
-    <bcf:citekey order="58" intorder="1">nielsen1994</bcf:citekey>
-    <bcf:citekey order="59" intorder="1">strava2024beacon</bcf:citekey>
-    <bcf:citekey order="60" intorder="1">garmin2024livetrack</bcf:citekey>
-    <bcf:citekey order="61" intorder="1">nycmarathon2024app</bcf:citekey>
-    <bcf:citekey order="61" intorder="2">berlinmarathon2024app</bcf:citekey>
-    <bcf:citekey order="62" intorder="1">tokyomarathon2024app</bcf:citekey>
-    <bcf:citekey order="62" intorder="2">sydneymarathon2024app</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">cimperko2019user</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">joshi2015likert</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">strava2024beacon</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">garmin2024livetrack</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">nycmarathon2024app</bcf:citekey>
+    <bcf:citekey order="58" intorder="2">berlinmarathon2024app</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">tokyomarathon2024app</bcf:citekey>
+    <bcf:citekey order="59" intorder="2">sydneymarathon2024app</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">Saaty1980</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">saaty2008decision</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">Vaidya2006</bcf:citekey>
     <bcf:citekey order="63" intorder="1">Saaty1980</bcf:citekey>
     <bcf:citekey order="64" intorder="1">saaty2008decision</bcf:citekey>
-    <bcf:citekey order="65" intorder="1">Vaidya2006</bcf:citekey>
-    <bcf:citekey order="66" intorder="1">Saaty1980</bcf:citekey>
-    <bcf:citekey order="67" intorder="1">saaty2008decision</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">Saaty1980</bcf:citekey>
+    <bcf:citekey order="66" intorder="1">Vaidya2006</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">Saaty1980</bcf:citekey>
     <bcf:citekey order="68" intorder="1">Saaty1980</bcf:citekey>
     <bcf:citekey order="69" intorder="1">Vaidya2006</bcf:citekey>
     <bcf:citekey order="70" intorder="1">Saaty1980</bcf:citekey>
-    <bcf:citekey order="71" intorder="1">Saaty1980</bcf:citekey>
-    <bcf:citekey order="72" intorder="1">Vaidya2006</bcf:citekey>
-    <bcf:citekey order="73" intorder="1">Saaty1980</bcf:citekey>
-    <bcf:citekey order="74" intorder="1">Nawrocki2021</bcf:citekey>
-    <bcf:citekey order="75" intorder="1">Nawrocki2021</bcf:citekey>
+    <bcf:citekey order="71" intorder="1">Nawrocki2021</bcf:citekey>
+    <bcf:citekey order="72" intorder="1">Nawrocki2021</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="cms">

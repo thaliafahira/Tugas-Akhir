@@ -52,39 +52,6 @@
       \verb https://www.bmw-berlin-marathon.com/en/infos/app.html
       \endverb
     \endentry
-    \entry{apple2023darkmode}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=3325b015fbae57ba74629a53f1ead961}{%
-           family={{Apple Inc.}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{3325b015fbae57ba74629a53f1ead961}
-      \strng{fullhash}{3325b015fbae57ba74629a53f1ead961}
-      \strng{fullhashraw}{3325b015fbae57ba74629a53f1ead961}
-      \strng{bibnamehash}{3325b015fbae57ba74629a53f1ead961}
-      \strng{authorbibnamehash}{3325b015fbae57ba74629a53f1ead961}
-      \strng{authornamehash}{3325b015fbae57ba74629a53f1ead961}
-      \strng{authorfullhash}{3325b015fbae57ba74629a53f1ead961}
-      \strng{authorfullhashraw}{3325b015fbae57ba74629a53f1ead961}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Human Interface Guidelines: Dark Mode}
-      \field{urlday}{10}
-      \field{urlmonth}{7}
-      \field{urlyear}{2026}
-      \field{year}{2023}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://developer.apple.com/design/human-interface-guidelines/dark-mode
-      \endverb
-      \verb{url}
-      \verb https://developer.apple.com/design/human-interface-guidelines/dark-mode
-      \endverb
-    \endentry
     \entry{baca2009ubiquitous}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=31df303c870a6232f0deab5b539e6d6a}{%
@@ -632,39 +599,6 @@
       \field{pages}{1525\bibrangedash 1532}
       \range{pages}{8}
     \endentry
-    \entry{google2022material}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=8b36e9207c24c76e6719268e49201d94}{%
-           family={{Google}},
-           familyi={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
-      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
-      \strng{fullhashraw}{8b36e9207c24c76e6719268e49201d94}
-      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
-      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
-      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
-      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
-      \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Material Design: Dark Theme}
-      \field{urlday}{10}
-      \field{urlmonth}{7}
-      \field{urlyear}{2026}
-      \field{year}{2022}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://m2.material.io/design/color/dark-theme.html
-      \endverb
-      \verb{url}
-      \verb https://m2.material.io/design/color/dark-theme.html
-      \endverb
-    \endentry
     \entry{googlemaps2024}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=6bc28252c14133d21331dc54856c1797}{%
@@ -923,34 +857,6 @@
       \field{pages}{25\bibrangedash 37}
       \range{pages}{13}
     \endentry
-    \entry{iso92411182018}{report}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=7058e4bd76f877c52b621c942b30613c}{%
-           family={{International Organization for Standardization}},
-           familyi={I\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {ISO}%
-      }
-      \strng{namehash}{7058e4bd76f877c52b621c942b30613c}
-      \strng{fullhash}{7058e4bd76f877c52b621c942b30613c}
-      \strng{fullhashraw}{7058e4bd76f877c52b621c942b30613c}
-      \strng{bibnamehash}{7058e4bd76f877c52b621c942b30613c}
-      \strng{authorbibnamehash}{7058e4bd76f877c52b621c942b30613c}
-      \strng{authornamehash}{7058e4bd76f877c52b621c942b30613c}
-      \strng{authorfullhash}{7058e4bd76f877c52b621c942b30613c}
-      \strng{authorfullhashraw}{7058e4bd76f877c52b621c942b30613c}
-      \field{extraname}{1}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{ISO 9241-11:2018 --- Ergonomics of Human-System Interaction --- Part 11: Usability: Definitions and Concepts}
-      \field{type}{techreport}
-      \field{year}{2018}
-    \endentry
     \entry{iso92412102019}{report}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=7058e4bd76f877c52b621c942b30613c}{%
@@ -968,7 +874,6 @@
       \strng{authornamehash}{7058e4bd76f877c52b621c942b30613c}
       \strng{authorfullhash}{7058e4bd76f877c52b621c942b30613c}
       \strng{authorfullhashraw}{7058e4bd76f877c52b621c942b30613c}
-      \field{extraname}{2}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{extradatescope}{labelyear}
@@ -1065,6 +970,43 @@
       \field{year}{2021}
       \field{pages}{3687}
       \range{pages}{1}
+    \endentry
+    \entry{lazuardy2022modern}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f3a2a9d700aa4366997d13da7008e153}{%
+           family={Lazuardy},
+           familyi={L\bibinitperiod},
+           given={Mochammad\bibnamedelimb Fariz\bibnamedelima Syah},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4567c5375850e71b6b8da8caa8245c61}{%
+           family={Anggraini},
+           familyi={A\bibinitperiod},
+           given={Dyah},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{611bf1baa792a423cb6626396e13d6bf}
+      \strng{fullhash}{611bf1baa792a423cb6626396e13d6bf}
+      \strng{fullhashraw}{611bf1baa792a423cb6626396e13d6bf}
+      \strng{bibnamehash}{611bf1baa792a423cb6626396e13d6bf}
+      \strng{authorbibnamehash}{611bf1baa792a423cb6626396e13d6bf}
+      \strng{authornamehash}{611bf1baa792a423cb6626396e13d6bf}
+      \strng{authorfullhash}{611bf1baa792a423cb6626396e13d6bf}
+      \strng{authorfullhashraw}{611bf1baa792a423cb6626396e13d6bf}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Research Journal of Advanced Engineering and Science}
+      \field{number}{1}
+      \field{title}{Modern front end web architectures with react. js and next. js}
+      \field{volume}{7}
+      \field{year}{2022}
+      \field{pages}{132\bibrangedash 141}
+      \range{pages}{10}
     \endentry
     \entry{longley2015geographic}{book}{}{}
       \name{author}{4}{}{%
@@ -1563,46 +1505,13 @@
       \strng{authornamehash}{753054f71283d85f82cda8e35daf6bac}
       \strng{authorfullhash}{753054f71283d85f82cda8e35daf6bac}
       \strng{authorfullhashraw}{753054f71283d85f82cda8e35daf6bac}
-      \field{extraname}{1}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Usability engineering}
-      \field{year}{1994}
-    \endentry
-    \entry{nielsen1994}{book}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=753054f71283d85f82cda8e35daf6bac}{%
-           family={Nielsen},
-           familyi={N\bibinitperiod},
-           given={Jakob},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Morgan Kaufmann}%
-      }
-      \strng{namehash}{753054f71283d85f82cda8e35daf6bac}
-      \strng{fullhash}{753054f71283d85f82cda8e35daf6bac}
-      \strng{fullhashraw}{753054f71283d85f82cda8e35daf6bac}
-      \strng{bibnamehash}{753054f71283d85f82cda8e35daf6bac}
-      \strng{authorbibnamehash}{753054f71283d85f82cda8e35daf6bac}
-      \strng{authornamehash}{753054f71283d85f82cda8e35daf6bac}
-      \strng{authorfullhash}{753054f71283d85f82cda8e35daf6bac}
-      \strng{authorfullhashraw}{753054f71283d85f82cda8e35daf6bac}
-      \field{extraname}{2}
-      \field{sortinit}{N}
-      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Usability Engineering}
       \field{year}{1994}
     \endentry
     \entry{norman1986}{book}{}{}
@@ -2290,6 +2199,8 @@
       \range{pages}{25}
     \endentry
   \enddatalist
+  \missing{cimperko2019user}
+  \missing{joshi2015likert}
 \endrefsection
 \endinput
 
