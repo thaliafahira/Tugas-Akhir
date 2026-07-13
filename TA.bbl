@@ -270,6 +270,37 @@
       \verb https://www.pmd.igdp.org.br/article/doi/10.4322/pmd.2018.004
       \endverb
     \endentry
+    \entry{cimperman2006uat}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a5db3bffd23eabe1a5151d6c31612d69}{%
+           family={Cimperman},
+           familyi={C\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{a5db3bffd23eabe1a5151d6c31612d69}
+      \strng{fullhash}{a5db3bffd23eabe1a5151d6c31612d69}
+      \strng{fullhashraw}{a5db3bffd23eabe1a5151d6c31612d69}
+      \strng{bibnamehash}{a5db3bffd23eabe1a5151d6c31612d69}
+      \strng{authorbibnamehash}{a5db3bffd23eabe1a5151d6c31612d69}
+      \strng{authornamehash}{a5db3bffd23eabe1a5151d6c31612d69}
+      \strng{authorfullhash}{a5db3bffd23eabe1a5151d6c31612d69}
+      \strng{authorfullhashraw}{a5db3bffd23eabe1a5151d6c31612d69}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780321498144}
+      \field{note}{Verifikasi: cek tahun edisi yang sebenarnya dikutip (key asli di draf Anda ``cimperko2019user'' -- kemungkinan salah eja nama penulis dan/atau tahun edisi cetak ulang)}
+      \field{title}{UAT Defined: A Guide to Practical User Acceptance Testing}
+      \field{year}{2006}
+    \endentry
     \entry{dabhade2021}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=a32f857c5063ba821b6f969b8649dc6b}{%
@@ -883,6 +914,58 @@
       \field{title}{ISO 9241-210:2019 --- Ergonomics of Human-System Interaction --- Part 210: Human-Centred Design for Interactive Systems}
       \field{type}{techreport}
       \field{year}{2019}
+    \endentry
+    \entry{joshi2015likert}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b89883fe4b946d9f158640c7400c561f}{%
+           family={Joshi},
+           familyi={J\bibinitperiod},
+           given={Ankur},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=042e7f4ccb547ad7447d57151c288049}{%
+           family={Kale},
+           familyi={K\bibinitperiod},
+           given={Saket},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c1aa6b3ce2c9ffbdd5e8c697aa4ac242}{%
+           family={Chandel},
+           familyi={C\bibinitperiod},
+           given={Satish},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9734fedde489fa71bf8c490584c8140}{%
+           family={Pal},
+           familyi={P\bibinitperiod},
+           given={D.\bibnamedelimi K.},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{21e0056b361c2209912898c3a0fb2ed2}
+      \strng{fullhash}{2464a5b47b796f1bc978ccf4ffc8c5b8}
+      \strng{fullhashraw}{2464a5b47b796f1bc978ccf4ffc8c5b8}
+      \strng{bibnamehash}{2464a5b47b796f1bc978ccf4ffc8c5b8}
+      \strng{authorbibnamehash}{2464a5b47b796f1bc978ccf4ffc8c5b8}
+      \strng{authornamehash}{21e0056b361c2209912898c3a0fb2ed2}
+      \strng{authorfullhash}{2464a5b47b796f1bc978ccf4ffc8c5b8}
+      \strng{authorfullhashraw}{2464a5b47b796f1bc978ccf4ffc8c5b8}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{British Journal of Applied Science \& Technology}
+      \field{number}{4}
+      \field{title}{Likert Scale: Explored and Explained}
+      \field{volume}{7}
+      \field{year}{2015}
+      \field{pages}{396\bibrangedash 403}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.9734/BJAST/2015/14975
+      \endverb
     \endentry
     \entry{kaplan2017understanding}{book}{}{}
       \name{author}{2}{}{%
@@ -2199,8 +2282,6 @@
       \range{pages}{25}
     \endentry
   \enddatalist
-  \missing{cimperko2019user}
-  \missing{joshi2015likert}
 \endrefsection
 \endinput
 
