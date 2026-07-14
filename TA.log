@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  14 JUL 2026 07:49
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.21)  14 JUL 2026 19:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -954,3 +954,405 @@ File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'chicago-authordate.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count430
+\c@savedafterword=\count431
+\c@annotator=\count432
+\c@savedannotator=\count433
+\c@author=\count434
+\c@savedauthor=\count435
+\c@bookauthor=\count436
+\c@savedbookauthor=\count437
+\c@commentator=\count438
+\c@savedcommentator=\count439
+\c@editor=\count440
+\c@savededitor=\count441
+\c@editora=\count442
+\c@savededitora=\count443
+\c@editorb=\count444
+\c@savededitorb=\count445
+\c@editorc=\count446
+\c@savededitorc=\count447
+\c@foreword=\count448
+\c@savedforeword=\count449
+\c@holder=\count450
+\c@savedholder=\count451
+\c@introduction=\count452
+\c@savedintroduction=\count453
+\c@namea=\count454
+\c@savednamea=\count455
+\c@nameb=\count456
+\c@savednameb=\count457
+\c@namec=\count458
+\c@savednamec=\count459
+\c@translator=\count460
+\c@savedtranslator=\count461
+\c@shortauthor=\count462
+\c@savedshortauthor=\count463
+\c@shorteditor=\count464
+\c@savedshorteditor=\count465
+\c@labelname=\count466
+\c@savedlabelname=\count467
+\c@institution=\count468
+\c@savedinstitution=\count469
+\c@lista=\count470
+\c@savedlista=\count471
+\c@listb=\count472
+\c@savedlistb=\count473
+\c@listc=\count474
+\c@savedlistc=\count475
+\c@listd=\count476
+\c@savedlistd=\count477
+\c@liste=\count478
+\c@savedliste=\count479
+\c@listf=\count480
+\c@savedlistf=\count481
+\c@location=\count482
+\c@savedlocation=\count483
+\c@organization=\count484
+\c@savedorganization=\count485
+\c@origlocation=\count486
+\c@savedoriglocation=\count487
+\c@origpublisher=\count488
+\c@savedorigpublisher=\count489
+\c@publisher=\count490
+\c@savedpublisher=\count491
+\c@language=\count492
+\c@savedlanguage=\count493
+\c@origlanguage=\count494
+\c@savedoriglanguage=\count495
+\c@pageref=\count496
+\c@savedpageref=\count497
+\shorthandwidth=\skip124
+\shortjournalwidth=\skip125
+\shortserieswidth=\skip126
+\shorttitlewidth=\skip127
+\shortauthorwidth=\skip128
+\shorteditorwidth=\skip129
+\locallabelnumberwidth=\skip130
+\locallabelalphawidth=\skip131
+\localshorthandwidth=\skip132
+\localshortjournalwidth=\skip133
+\localshortserieswidth=\skip134
+\localshorttitlewidth=\skip135
+\localshortauthorwidth=\skip136
+\localshorteditorwidth=\skip137
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\
+blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\
+blx-compat.def
+File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\
+biblatex.def
+File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+\c@textcitecount=\count498
+\c@textcitetotal=\count499
+\c@textcitemaxnames=\count500
+\c@biburlbigbreakpenalty=\count501
+\c@biburlbreakpenalty=\count502
+\c@biburlnumpenalty=\count503
+\c@biburlucpenalty=\count504
+\c@biburllcpenalty=\count505
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count506
+)
+Package biblatex Info: Trying to load bibliography style 'chicago-authordate'..
+.
+Package biblatex Info: ... file 'chicago-authordate.bbx' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-
+chicago\chicago-authordate.bbx
+File: chicago-authordate.bbx 2022/11/17 v 3.18b biblatex bibliography style
+\lositemsep=\skip138
+Package biblatex Info: Delimiter 'revsdnamedelim' in context '' already defined
+, overwriting.
+\cms@tempcnta=\count507
+\cms@tempcntb=\count508
+\c@bbx:relatedcount=\count509
+\c@bbx:relatedtotal=\count510
+)
+Package biblatex Info: Trying to load citation style 'chicago-authordate'...
+Package biblatex Info: ... file 'chicago-authordate.cbx' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-
+chicago\chicago-authordate.cbx
+File: chicago-authordate.cbx 2022/07/02 v 3.18 biblatex citation style
+Package biblatex Info: Trying to load citation style 'chicago-dates-common'...
+Package biblatex Info: ... file 'chicago-dates-common.cbx' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-
+chicago\chicago-dates-common.cbx
+File: chicago-dates-common.cbx 2024/04/15 v 3.20 biblatex citation style
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\citetitle'.
+Package biblatex Info: Redefining '\footfullcite'.
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetexts'.
+\c@cms@punct=\count511
+Package biblatex Info: Delimiter 'dateeradelim' in context '' already defined, 
+overwriting.
+))
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\
+biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2025-09-02 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\
+blx-case-expl3.sty
+Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
+)))
+Package hyperref Info: Option `colorlinks' set `true' on input line 163.
+\c@myequations=\count512
+\cftbeforemyequationsskip=\skip139
+\cftmyequationsindent=\skip140
+\cftmyequationsnumwidth=\skip141
+\c@equdepth=\count513
+\cftbeforeequtitleskip=\skip142
+\cftafterequtitleskip=\skip143
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/listings\
+lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+
+
+Package csquotes Warning: No style for language 'indonesian'.
+(csquotes)                Using fallback style on input line 341.
+
+Package csquotes Info: Redefining alias 'default' -> 'fallback'.
+(TA.aux
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/generic/babel/l
+ocale/en\babel-english.tex)
+Package babel Info: Importing data for english
+(babel)             from babel-en.ini. Reported on input line 56.
+)
+\openout1 = `TA.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 341.
+LaTeX Font Info:    ... okay on input line 341.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 341.
+LaTeX Font Info:    ... okay on input line 341.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 341.
+LaTeX Font Info:    ... okay on input line 341.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 341.
+LaTeX Font Info:    ... okay on input line 341.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 341.
+LaTeX Font Info:    ... okay on input line 341.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 341.
+LaTeX Font Info:    ... okay on input line 341.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 341.
+LaTeX Font Info:    ... okay on input line 341.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 341.
+LaTeX Font Info:    ... okay on input line 341.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 341.
+LaTeX Font Info:    ... okay on input line 341.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 341.
+LaTeX Font Info:    ... okay on input line 341.
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 341.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 341.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 341.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 341.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 341.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 341.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 341.
+LaTeX Font Info:    Redeclaring math accent \check on input line 341.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 341.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 341.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 341.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 341.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 341.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 341.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 341.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 341.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 341.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 341.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 341.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 341.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 341.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 341.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 341.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 341.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 341.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 3
+41.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 341.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
+341.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
+input line 341.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
+ 341.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
+341.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 341.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 341.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
+input line 341.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
+e 341.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 341.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 341.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/caption\l
+tcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: Fixing longtable code of `floatrow' package.
+Package caption Info: threeparttable package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/floatrow\
+fr-longtable.sty
+Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
+
+\flrow@LT@lasthead=\box72
+\flrow@LT@prelastfoot=\box73
+\c@FBLTpage=\count514
+)
+\c@lstlisting=\count515
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(113.81102pt, 398.3386pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=398.3386pt
+* \textheight=674.33032pt
+* \oddsidemargin=41.54103pt
+* \evensidemargin=13.08827pt
+* \topmargin=-18.78552pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 341.
+Package microtype Info: Applying patch `item' on input line 341.
+Package microtype Info: Applying patch `toc' on input line 341.
+Package microtype Info: Applying patch `eqnum' on input line 341.
+Package microtype Info: Applying patch `footnote' on input line 341.
+Package microtype Info: Applying patch `verbatim' on input line 341.
+LaTeX Info: Redefining \microtypesetup on input line 341.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `TimesNewRoman' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package hyperref Info: Link coloring ON on input line 341.
+(TA.out) (TA.out)
+\@outlinefile=\write4
+\openout4 = `TA.out'.
+
+
+
+Package picture Warning: The picture package has been disabled as most
+(picture)                of its functionality is now provided by LaTeX directly
+.
+(picture)                To force the loading of the previous version use
+(picture)                `\usepackage{picture}[=v1]`
+(picture)                or `\usepackage[calc]{picture}`  on input line 341.
+
+Package biblatex Info: Trying to load language 'indonesian'...
+Package biblatex Info: ... file 'indonesian.lbx' not found.
+
+Package biblatex Warning: Language 'indonesian' not supported.
+(biblatex)                Using dummy definitions on input line 341.
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(C:\Users\Dinda Thalia Fahira\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/
+lbx\english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `TA.bcf'.

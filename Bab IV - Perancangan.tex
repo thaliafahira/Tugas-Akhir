@@ -92,20 +92,14 @@ dijelaskan pada Tabel \ref{tab:usecase-deskripsi}.
 \textit{Information architecture} pada aplikasi ITB
 Ultra-Marathon disusun menggunakan pendekatan \textit{role-based routing}, yaitu
 setiap kelompok pengguna diarahkan ke kumpulan halaman yang berbeda sesuai
-dengan peran dan hak aksesnya masing-masing. Pendekatan ini diterapkan baik
-pada aplikasi \textit{web} maupun aplikasi \textit{mobile}, meskipun dengan
-struktur navigasi yang berbeda sesuai dengan kebutuhan penggunanya.
+dengan peran dan hak aksesnya masing-masing.
 
 \subsection{Sitemap Aplikasi \textit{Web}}
 
 Aplikasi \textit{web} dibangun dengan struktur navigasi yang terbagi menjadi lima modul, yaitu \textit{Public}, \textit{Private}, Panitia, Ketua Tim, dan \textit{Supporter}.
-
 Modul \textit{Public} dapat diakses oleh seluruh pengguna tanpa memerlukan autentikasi dan berfungsi sebagai halaman utama yang menampilkan \textit{landing page} serta peta pelacakan seluruh tim secara \textit{live}. Modul \textit{Private} diakses melalui tautan \url{/view/{runnerToken}} yang digunakan untuk memantau satu pelari tertentu secara spesifik.
-
 Modul Panitia menggunakan awalan URL \url{/admin} dan hanya dapat diakses oleh pengguna yang telah terautentikasi menggunakan mekanisme autentikasi berbasis \textit{JSON Web Token} (JWT) khusus panitia. Modul ini terdiri atas enam halaman utama, yaitu halaman \textit{dashboard} (\url{/admin}), halaman peta panitia (\url{/admin/map}), halaman manajemen tim (\url{/admin/teams}), halaman manajemen pelari (\url{/admin/runners}), halaman notifikasi peringatan sistem (\url{/admin/alerts}), serta halaman statistik performa lari (\url{/admin/stats}).
-
 Modul Ketua Tim diakses menggunakan token khusus ketua tim dan terdiri atas dua halaman, yaitu halaman \textit{dashboard} tim (\url{/captain/{captainToken}}) serta halaman manajemen tim (\url{/captain/{captainToken}/manage}).
-
 Modul \textit{Supporter} memiliki struktur URL yang serupa dengan modul Ketua Tim. Modul ini terdiri atas halaman peta yang berfokus pada pemantauan anggota tim (\url{/team/{teamToken}}) serta halaman manajemen logistik tim (\url{/team/{teamToken}/manage}).
 
 \textit{Sitemap} aplikasi \textit{web} secara keseluruhan dapat dilihat pada Gambar \ref{fig:sitemap-web}.
@@ -113,7 +107,7 @@ Modul \textit{Supporter} memiliki struktur URL yang serupa dengan modul Ketua Ti
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
-    \includegraphics[width=0.95\textwidth]{images/sm-w.png}
+    \includegraphics[width=0.9\textwidth]{images/sm-w.png}
     \caption{\textit{Sitemap} Aplikasi \textit{Web} ITB Ultra-Marathon}
     \label{fig:sitemap-web}
 \end{figure}
@@ -232,7 +226,7 @@ Skenario ini menggambarkan proses navigasi menuju lokasi peserta menggunakan apl
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
-    \includegraphics[width=0.5\textwidth]{images/sequence/seq8.png}
+    \includegraphics[width=0.7\textwidth]{images/sequence/seq8.png}
     \caption{\textit{Sequence Diagram} Skenario Navigasi ke Lokasi Pelari}
     \label{fig:seq8}
 \end{figure}
@@ -267,7 +261,7 @@ Alur \textit{supporter} serupa dengan alur ketua tim pada tahap validasi tautan 
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
-    \includegraphics[width=0.5\textwidth]{images/flow/flowsupporter.png}
+    \includegraphics[width=0.7\textwidth]{images/flow/flowsupporter.png}
     \caption{\textit{User Flow} \textit{Supporter}}
     \label{fig:flowsuppporter}
 \end{figure}
@@ -489,7 +483,7 @@ Rincian komponen peta yang digunakan ditunjukkan pada Tabel~\ref{tab:komponen-pe
 \subsubsection{\textit{Containers}}
 \label{subsubsec:containers-surfaces}
  
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \small
     \caption{\textit{Containers}}
@@ -523,7 +517,7 @@ Gambar \ref{fig:w1} merupakan halaman utama Peserta yang menampilkan peta pelaca
     \label{fig:w1}
 \end{figure}
 
-Gambar \ref{fig:w2} merupakan halaman direktori lokasi yang menampilkan daftar titik \textit{checkpoint} dan posisi penting sepanjang rute perlombaan.
+Gambar \ref{fig:w2} merupakan halaman direktori lokasi yang menampilkan daftar titik \textit{checkpoint} dan \textit{water station}.
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
@@ -532,7 +526,7 @@ Gambar \ref{fig:w2} merupakan halaman direktori lokasi yang menampilkan daftar t
     \label{fig:w2}
 \end{figure}
 
-Gambar \ref{fig:w3} merupakan halaman direktori tim yang menampilkan daftar seluruh tim beserta status keikutsertaannya dalam perlombaan.
+Gambar \ref{fig:w3} merupakan halaman direktori tim yang menampilkan daftar seluruh tim yang mengatur status visibilitas public.
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
@@ -552,7 +546,7 @@ Gambar \ref{fig:w6} merupakan halaman utama Ketua Tim yang menampilkan \textit{d
     \label{fig:w6}
       \end{figure}
 
-Gambar \ref{fig:w7} merupakan halaman manajemen Ketua Tim yang menyediakan fitur pengelolaan tim relay dan pembuatan tautan undangan.
+Gambar \ref{fig:w7} merupakan halaman manajemen Ketua Tim yang menyediakan fitur pembuatan tautan undangan untuk \textit{supporter}.
       \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
@@ -621,7 +615,7 @@ Gambar \ref{fig:w10} merupakan halaman daftar tim Panitia yang menampilkan selur
     \label{fig:w10}
       \end{figure}
 
-Gambar \ref{fig:w11} merupakan halaman peringatan (\textit{alert}) Panitia yang menampilkan notifikasi darurat dan peserta yang keluar jalur secara \textit{real-time}.
+Gambar \ref{fig:w11} merupakan halaman peringatan Panitia yang menampilkan notifikasi darurat dan peserta yang keluar jalur secara \textit{real-time}.
       \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
