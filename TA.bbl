@@ -2229,6 +2229,37 @@
       \verb 10.1016/j.ejor.2004.04.028
       \endverb
     \endentry
+    \entry{WMS2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=901eb6746360c744903e87ea740b78cc}{%
+           family={{Wilderness Medical Society}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{901eb6746360c744903e87ea740b78cc}
+      \strng{fullhash}{901eb6746360c744903e87ea740b78cc}
+      \strng{fullhashraw}{901eb6746360c744903e87ea740b78cc}
+      \strng{bibnamehash}{901eb6746360c744903e87ea740b78cc}
+      \strng{authorbibnamehash}{901eb6746360c744903e87ea740b78cc}
+      \strng{authornamehash}{901eb6746360c744903e87ea740b78cc}
+      \strng{authorfullhash}{901eb6746360c744903e87ea740b78cc}
+      \strng{authorfullhashraw}{901eb6746360c744903e87ea740b78cc}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Wilderness Medicine Magazine, Vol.~41, No.~4}
+      \field{note}{Diakses pada 14 Juli 2026}
+      \field{title}{Ultramarathons}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://wms.org/magazine/magazine/1508/Ultramarathons/default.aspx
+      \endverb
+      \verb{url}
+      \verb https://wms.org/magazine/magazine/1508/Ultramarathons/default.aspx
+      \endverb
+    \endentry
     \entry{zhang2021dark}{article}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=3a1f1a0016bb4e33e52e9bd0f48cfd33}{%

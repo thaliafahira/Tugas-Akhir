@@ -1,6 +1,6 @@
 \begin{lstlisting}[language={},caption={Struktur Direktori Aplikasi Web ITB Ultra-Marathon},label={lst:struktur-web}]
 web/
-├── index.html                  # Titik masuk utama (Entry point) HTML
+├── index.html                  # Entry point HTML
 ├── package.json                # Daftar dependensi library web
 ├── vite.config.ts              # Konfigurasi Vite bundler
 └── src/
@@ -8,10 +8,10 @@ web/
     ├── router.tsx              # Konfigurasi TanStack Router
     ├── styles.css              # File CSS global (Tailwind)
     ├── components/             # Komponen UI (Reusable)
-    │   ├── layout/             # Komponen kerangka halaman (Sidebar, Header)
-    │   ├── race/               # Komponen spesifik lomba (AlertCard, StatusBadge)
-    │   ├── ui/                 # Komponen dasar (Button, Dialog, Input)
-    │   └── RaceMap.tsx         # Komponen utama pe-render peta Leaflet
+    │   ├── layout/             # Komponen kerangka halaman 
+    │   ├── race/               # Komponen spesifik lomba 
+    │   ├── ui/                 # Komponen dasar 
+    │   └── RaceMap.tsx         # Komponen utama rendering peta Leaflet
     ├── data/                   # Data statis (Dummy Data)
     │   ├── captains.ts
     │   ├── race.ts
