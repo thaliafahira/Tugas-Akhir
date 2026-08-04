@@ -5,7 +5,7 @@
 \chapter{IMPLEMENTASI \textit{FRONT-END} APLIKASI ITB ULTRA-MARATHON}
 \label{chap:implementasi}
 
-Bab ini membahas proses implementasi antarmuka \textit{front-end} aplikasi \textit{tracker} ITB Ultra-Marathon berdasarkan rancangan yang telah disusun pada Bab IV. Implementasi mencakup dua platform, yaitu aplikasi \textit{mobile} untuk kebutuhan pelacakan peserta di lapangan dan aplikasi web untuk kebutuhan pemantauan, administrasi, serta akses publik. Seluruh kode dibangun di atas ekosistem JavaScript menggunakan TypeScript sebagai bahasa pemrograman utama.
+Bab ini membahas proses implementasi antarmuka \textit{front-end} aplikasi UltraTrack, sistem \textit{tracker} ITB Ultra-Marathon, berdasarkan rancangan yang telah disusun pada Bab IV. Implementasi mencakup dua platform, yaitu aplikasi \textit{mobile} untuk kebutuhan pelacakan peserta di lapangan dan aplikasi web untuk kebutuhan pemantauan, administrasi, serta akses publik. Seluruh kode dibangun di atas ekosistem JavaScript menggunakan TypeScript sebagai bahasa pemrograman utama.
 
 % ==========================================
 \section{Lingkungan Implementasi}
@@ -25,11 +25,7 @@ Untuk mendukung pengembangan sistem, perangkat lunak yang digunakan terbagi menj
 \label{sec:impl-frontend}
 % ==========================================
 
-Pada proses implementasi ini, seluruh \textit{source code} dapat diakses secara publik melalui repositori GitHub pada tautan berikut:
-
-\begin{itemize}
-    \item Tautan: \url{https://github.com/thaliafahira/frontend-itbultramarathon}
-\end{itemize}
+Seluruh \textit{source code} hasil implementasi pada penelitian ini dipublikasikan melalui repositori GitHub dan dapat diakses secara terbuka pada tautan \url{https://github.com/thaliafahira/frontend-itbultramarathon}.
 
 Berikut ini merupakan penjelasan mengenai implementasi \textit{front-end} aplikasi web dan mobile ITB Ultra-Marathon.
 
@@ -55,22 +51,14 @@ Struktur direktori proyek aplikasi \textit{mobile} dapat dilihat pada Listing \r
 
 \input{listings/mobile.tex}
 
-Aplikasi \textit{mobile} didistribusikan dalam format berkas APK (\textit{Android Package}) untuk platform Android. Berkas APK hasil \textit{build} dapat diunduh pada tautan berikut:
-
-\begin{itemize}
-    \item \textbf{APK:} \url{https://bit.ly/3T0IXSE}
-\end{itemize}
+Aplikasi \textit{mobile} yang dikembangkan pada penelitian ini didistribusikan dalam format APK (\textit{Android Package}) untuk platform Android. Berkas APK hasil implementasi dapat diunduh melalui tautan \url{https://bit.ly/3T0IXSE}.
 
 % ==========================================
 \subsection{\textit{Deployment} dan Tautan Akses}
 \label{sec:impl-deployment}
 % ==========================================
 
-Aplikasi web di\textit{deploy} di Netlify dan dapat diakses secara daring melalui tautan berikut. 
-\begin{itemize}
-    \item \textbf{Web:} \url{https://itbultramarathon.netlify.app/}
-\end{itemize}
-
+Aplikasi web telah di-\textit{deploy} menggunakan layanan Netlify sehingga dapat diakses secara daring melalui tautan \url{https://itbultramarathon.netlify.app/}. Deployment ini memungkinkan aplikasi digunakan dan diuji secara langsung melalui peramban web tanpa memerlukan proses instalasi tambahan.
 Setiap peran pengguna mengakses antarmuka melalui tautan yang berbeda sesuai dengan hak aksesnya masing-masing, sebagaimana dirinci pada Tabel \ref{tab:deployment-links}.
 
 \begin{table}[H]

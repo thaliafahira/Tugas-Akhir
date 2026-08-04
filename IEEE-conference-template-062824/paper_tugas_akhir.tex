@@ -1,0 +1,211 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{UltraTrack: Development of a Cross-Platform Front-End User Interface for Real-Time Ultra-Marathon Participant Tracking}
+
+\author{\IEEEauthorblockN{Dinda Thalia Fahira}
+\IEEEauthorblockA{\textit{School of Electrical Engineering and Informatics} \\
+\textit{Institut Teknologi Bandung}\\
+Bandung, Indonesia \\
+18222055@mahasiswa.itb.ac.id}
+}
+
+\maketitle
+
+\begin{abstract}
+This study aims to develop and implement the front-end user interface for an ITB Ultra-Marathon tracking system named UltraTrack. The system is specifically designed to visualize participant positions and movements in real-time, providing a comprehensive tracking interface tailored for various user groups, including runners, team leaders, organizers, supporters, and spectators.
+
+The development is motivated by the high operational complexity of large-scale ultra-marathon events in Indonesia. Tracking solutions used in previous events were passive, fragmented, and heavily reliant on manual processes. These limitations made it difficult for organizers to simultaneously monitor thousands of participants, coordinate team logistics, and rapidly respond to emergency situations along challenging routes.
+
+The development process was conducted using the Waterfall Software Development Life Cycle (SDLC) model. Based on technology selection using the Analytic Hierarchy Process (AHP) with a consistency ratio (CR) of 0.016, a cross-platform system was built. A React Native/Expo mobile application was developed for on-field runner tracking, while a React/Vite web application was built for centralized monitoring. The interface design specifically adopted night-optimized and glanceable principles to accommodate the physical limitations of runners and low-light environments.
+
+Testing results confirmed that the developed system met all success criteria. Functionality Testing demonstrated a 100\% success rate across 26 functional scenarios. Through End-to-End Simulation Testing, the interface proved capable of seamlessly handling data visualization scalability for a load of 300 teams. Furthermore, User Acceptance Testing (UAT) with 35 respondents achieved an average score of 4.56 out of 5.00, affirming that the tracking system's interface is highly functional, responsive, and delivers an excellent user experience.
+\end{abstract}
+
+\begin{IEEEkeywords}
+ultra-marathon, real-time tracking, front-end, React Native, cross-platform, AHP, glanceable UI.
+\end{IEEEkeywords}
+
+%==========================================================
+\section{Introduction}
+%==========================================================
+
+Ultra-marathon events, defined as running competitions exceeding 42.195 km, have grown substantially worldwide---a 1,676\% increase in participation since the late 1990s, with over 600,000 participants globally in 2018 \cite{WMS2024}. The ITB Ultra-Marathon, held annually in Indonesia since 2017, is one of the most prominent examples, featuring a multi-segment relay format that stretches across remote mountainous routes, often running overnight \cite{Hafizh2025}.
+
+Coordinating such events across hundreds of relay teams presents substantial operational challenges. Prior editions of the ITB Ultra-Marathon relied on a fragmented set of tools: RFID timing chips at fixed checkpoints, manual location reporting via Strava shared individually per runner, Google Sheets for data consolidation, and WhatsApp for inter-organizer communication. This siloed approach created three critical problems: (1) no centralized real-time map for organizers to simultaneously monitor all participants; (2) no structured channel for spectators and support teams to track specific runners without manual information requests; and (3) delayed emergency response due to the absence of an integrated SOS notification mechanism.
+
+These shortcomings motivate the development of UltraTrack---a dedicated, role-aware, cross-platform front-end tracking system. This paper specifically focuses on the front-end layer (mobile and web user interfaces), which serves as the primary point of interaction for all user groups involved in the event.
+
+%==========================================================
+\section{Related Work and Background}
+%==========================================================
+
+GPS-based tracking systems have been widely applied in sport events to improve safety and spectator engagement \cite{Hochreiter2024}. Existing commercial solutions such as Strava are designed for individual activity logging and lack multi-user administrative dashboards. Research on sports event tracking systems has explored the use of mobile GPS combined with web dashboards, yet few studies address the front-end design challenges specific to ultra-endurance races---particularly the requirements for night-time usability, relay-specific workflows, and large-scale concurrent participant visualization \cite{higgins2016smartphone}.
+
+The AHP method, introduced by Saaty \cite{Saaty1980}, provides a structured multi-criteria framework for technology selection and has been widely applied in software engineering decisions \cite{Vaidya2006}. Cross-platform development using React Native has been shown to offer near-native performance with significantly reduced development effort compared to maintaining separate native codebases \cite{Nawrocki2021}.
+
+%==========================================================
+\section{Methodology}
+%==========================================================
+
+The development of UltraTrack followed the Waterfall SDLC model, comprising six sequential phases: (1) Requirements Analysis, (2) System Design, (3) Implementation, (4) Deployment, (5) Testing, and (6) Evaluation. Requirement elicitation was conducted through direct interviews with the ITB Ultra-Marathon 2025 organizing committee and observational analysis of past event operations.
+
+\subsection{User Groups}
+Six distinct user groups were identified: (1) \textit{Runner (Peserta)}: relay participants actively running on-field; (2) \textit{Team Leader (Ketua Tim)}: coordinators managing team relay logistics; (3) \textit{Supporter}: logistics team members tracking runner positions; (4) \textit{Organizer (Panitia)}: event staff overseeing the entire race operationally; (5) \textit{Private Spectator}: family members or individuals linked to a specific runner via a unique token URL; and (6) \textit{Public Spectator}: general public accessing the live map without authentication.
+
+\subsection{Technology Selection via AHP}
+Three development alternatives were evaluated: A1 (Cross-Platform Mobile Only, e.g., Flutter/React Native), A2 (Web Application Only), and A3 (Multi-Platform: React Native mobile + React/Vite web). Evaluation was performed against five weighted criteria:
+
+\begin{itemize}
+    \item \textbf{C1 -- Hardware Access \& Performance} (weight: 0.419): sustained GPS, push notifications, motion sensors.
+    \item \textbf{C2 -- Functional Coverage} (weight: 0.264): ability to satisfy all identified functional requirements.
+    \item \textbf{C3 -- User Accessibility} (weight: 0.149): ease of access across all user groups.
+    \item \textbf{C4 -- Development Efficiency} (weight: 0.100): resource requirements for development and maintenance.
+    \item \textbf{C5 -- Distribution Ease} (weight: 0.068): speed of deployment and update propagation.
+\end{itemize}
+
+Pairwise comparisons were conducted using the Saaty 1--9 scale. The Consistency Ratio for the criteria matrix was CR = 0.016 $\leq$ 0.10, confirming logical consistency \cite{Saaty1980}. The final weighted scores were:
+
+\begin{table}[htbp]
+\centering
+\caption{AHP Final Scores per Alternative}
+\label{tab:ahp-result}
+\begin{tabular}{lcl}
+\toprule
+\textbf{Alternative} & \textbf{Score} & \textbf{Rank} \\
+\midrule
+A3: Multi-Platform (Web + Mobile) & 0.539 & \textbf{1\textsuperscript{st}} \\
+A1: Cross-Platform Mobile Only    & 0.266 & 2\textsuperscript{nd} \\
+A2: Web Application Only          & 0.195 & 3\textsuperscript{rd} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A3 dominated on the two highest-weighted criteria: hardware access (local score 0.627) and functional coverage (local score 0.557). Consequently, A3 was selected: a React Native/Expo mobile app for runners paired with a React/Vite web application for all other roles.
+
+%==========================================================
+\section{System Design}
+%==========================================================
+
+\subsection{Information Architecture}
+The web application is structured into five role-based modules with distinct URL namespaces: \texttt{/} (Public), \texttt{/view/\{runnerToken\}} (Private), \texttt{/admin} (Organizer), \texttt{/captain/\{captainToken\}} (Team Leader), and \texttt{/team/\{teamToken\}} (Supporter). The mobile application provides four core screens: Home (live map + metrics), Emergency (SOS), Team Management, and Menu.
+
+Access control is enforced through JWT-based authentication for Organizers, and via unique invite-link tokens (deep links) for Runners, Team Leaders, and Supporters---removing the need for conventional username/password flows and reducing friction for field users.
+
+\subsection{Behavioral Design}
+Eight sequence diagram scenarios (SK-01 to SK-08) were specified to formalize system interactions: location transmission (SK-01), ETA/ETD retrieval (SK-02), emergency SOS dispatch (SK-03), visibility toggle (SK-04), live tracking view (SK-05), invite link generation (SK-06), emergency notification receipt (SK-07), and external map navigation (SK-08).
+
+\subsection{UI Design System}
+The design system was formulated around two core principles derived from the ultra-marathon context:
+
+\textbf{Night-Optimized (Dark Mode)}: A dark-themed palette was implemented as the default, using a near-black background (\texttt{\#0A0A0F}) and a lime-green primary accent (\texttt{\#CCFF00}). This minimizes eye strain during overnight racing and reduces OLED power consumption during long-duration events.
+
+\textbf{Glanceability}: The mobile UI employs oversized, monospaced typography for critical real-time metrics (Remaining Distance, Current Pace, ETA) so that runners can read their dashboard in under one second while in motion.
+
+The color system uses semantic tokens: blue (\texttt{\#3B82F6}) for active runners, green (\texttt{\#00E676}) for finished segments, amber (\texttt{\#FFB020}) for standby/next-up, and red (\texttt{\#FF3B5C}) for emergency/SOS states. Typography uses Inter (sans-serif) for UI elements and a monospaced tabular font for numeric metrics to prevent layout shift during real-time updates.
+
+\subsection{Functional Requirements}
+A total of 24 functional requirements (FR-01 to FR-24) were specified across all six user roles, including a live interactive map (FR-01), SOS notification dispatch and receipt (FR-02, FR-03, FR-07, FR-08, FR-12, FR-21, FR-22), real-time ETA/ETD visualization (FR-06, FR-11, FR-20), relay management (FR-15), visibility toggle (FR-18), invite-link generation (FR-09), and public/private spectator dashboards (FR-23). Non-functional requirements (NF-01 to NF-10) covered usability, security, efficiency, correctness, maintainability, flexibility, reusability, portability, and accessibility/environmental fit for low-light, high-fatigue conditions (NF-10).
+
+%==========================================================
+\section{Implementation}
+%==========================================================
+
+The system testing scope was constrained to 15 teams $\times$ 16 runners = 240 runners, representing approximately 8\% of the estimated 3,000 actual participants. Key implemented components include:
+
+\begin{itemize}
+    \item \textbf{Mobile App (Runner)}: Auto-centering live map with OpenStreetMap tiles, real-time pace/ETA/distance metrics panel, one-tap SOS countdown interface with double-tap cancellation, public/private visibility toggle switch, and spectating mode for inactive (waiting) relay runners.
+    \item \textbf{Web App -- Organizer}: Full-race live map dashboard, runner list with status indicators (active/standby/emergency), emergency alert panel with red markers for SOS/lost-track events, and race statistics dashboard.
+    \item \textbf{Web App -- Team Leader}: Team-scoped live map, ETA-based relay handover planning interface, and supporter invite-link generator.
+    \item \textbf{Web App -- Supporter}: Focused map tracking assigned runners with emergency push notifications.
+    \item \textbf{Web App -- Public/Private Spectator}: Public map displaying runners with public visibility; private view at \texttt{/view/\{runnerToken\}} showing a single runner's activity metrics.
+\end{itemize}
+
+Location simulation was performed using three methods: emulator-based simulation, actual field GPS on a custom test route, and the Fake GPS Simulator Joystick application to replicate the actual ITB Ultra-Marathon course.
+
+%==========================================================
+\section{Evaluation and Results}
+%==========================================================
+
+\subsection{Functionality Testing}
+Black-box testing using equivalence partitioning was applied to 26 test scenarios: 11 covering the mobile application (TC-01 to TC-11) and 15 covering the web application across all roles (TC-12 to TC-26). All scenarios passed with a 100\% success rate, confirming that all functional requirements were satisfied.
+
+\subsection{End-to-End Simulation Testing}
+A chronological real-event simulation was conducted to evaluate the integrated user experience and system scalability under conditions approximating a real race day:
+
+\begin{enumerate}
+    \item \textbf{16:00 (Preparation)}: Runners open the mobile app; the map displays the race route with all metrics at zero state. The organizer dashboard shows all teams in standby status.
+    \item \textbf{16:45 (At Start Area)}: Runner 1 enters the start zone. The system records the initial coordinate. Inactive team members (Runner 2 onwards) can observe Runner 1's position via spectating mode.
+    \item \textbf{17:00 (Race Start)}: As runners begin moving, the app dynamically computes ETA, remaining distance, elapsed time, and pace in real time. The map auto-centers on the active runner. The public web map displays hundreds of runner markers moving along the route simultaneously.
+    \item \textbf{Relay Handover}: As Runner 1 approaches a water station, Runner 2 uses the ETA display to estimate arrival time and prepare physically. After handover, Runner 2 becomes the active tracked entity.
+\end{enumerate}
+
+The simulation further evaluated three UI scalability mechanisms for concurrent display of 300+ teams: (1) \textit{Zoom-dependent scaling}---markers shrink to unlabeled dots when zoomed out, preventing clutter; (2) \textit{Tiered filtering}---a sidebar filter allows organizers and spectators to isolate runners by category (faculty, public, alumni cohort), drastically reducing visual density; (3) \textit{Segment-completion fading}---runners who finish their relay segment transition to gray markers and are automatically hidden from the map after a 10-minute delay, keeping visual focus on active participants.
+
+\subsection{User Acceptance Testing}
+UAT was conducted with 35 respondents using a 26-item Likert-scale questionnaire (1--5) covering five dimensions: ease of use, interface clarity, perceived performance, information quality, and overall satisfaction. Results are summarized in Table~\ref{tab:uat-results}.
+
+\begin{table}[htbp]
+\centering
+\caption{UAT Results Summary}
+\label{tab:uat-results}
+\begin{tabular}{lc}
+\toprule
+\textbf{Dimension} & \textbf{Avg. Score} \\
+\midrule
+Ease of Use               & 4.58 \\
+Interface Clarity         & 4.50 \\
+Perceived Performance     & 4.50 \\
+Information Quality       & 4.60 \\
+Overall Satisfaction      & 4.65 \\
+\midrule
+\textbf{Overall Average}  & \textbf{4.56 / 5.00} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The highest individual item score was for ease of finding summary information (4.74), confirming the effectiveness of the glanceable design approach. The lowest score was for initial page-purpose comprehension (4.23), which remains above the ``agree'' threshold ($>$ 4.00), indicating room for minor onboarding improvements.
+
+%==========================================================
+\section{Discussion}
+%==========================================================
+
+The AHP-driven selection of the multi-platform architecture proved justified: the mobile component's uncompromised GPS access was critical for accurate pace and ETA computation, while the web component's zero-installation accessibility was decisive for Supporter and Public Spectator adoption. The night-optimized dark palette and lime accent consistently received positive feedback from respondents accustomed to outdoor night use.
+
+The 8\% test coverage (240 of $\approx$3,000 runners) represents a key limitation. While functional correctness was confirmed at this scale, comprehensive load and latency testing under full-scale concurrent usage remains as future work. The End-to-End simulation and UI scalability evaluation partially address this gap by analytically validating the three visual management mechanisms.
+
+Additionally, iOS platform support, battery consumption optimization under continuous GPS polling, and auth-flow testing via deep links on production APKs were identified as the primary directions for future development.
+
+%==========================================================
+\section{Conclusion}
+%==========================================================
+
+This paper presented UltraTrack, a cross-platform front-end system for real-time participant tracking at the ITB Ultra-Marathon. The system was designed through a structured AHP-based technology selection process, implemented following the Waterfall SDLC, and evaluated across three complementary testing approaches. Key contributions include: (1) a role-aware, six-dashboard UI architecture tailored to each stakeholder's operational context; (2) a night-optimized, glanceable design system specifically engineered for ultra-endurance race conditions; (3) validated scalability mechanisms for visualizing 300+ concurrent teams on a single interactive map; and (4) comprehensive evaluation confirming 100\% functional coverage and a UAT score of 4.56/5.0. Future work will extend to iOS support, production APK testing, and full-scale load validation during an actual race event.
+
+\section*{Acknowledgment}
+The author thanks Institut Teknologi Bandung, the ITB Ultra-Marathon 2025 organizing committee for their cooperation during requirement elicitation, and all 35 UAT respondents for their valuable feedback.
+
+\begin{thebibliography}{00}
+\bibitem{WMS2024} World Marathon Statistics, ``Global Ultra-Marathon Participation Report,'' 2024.
+\bibitem{Hafizh2025} M. Hafizh et al., ``ITB Ultra-Marathon 2025 Event Documentation,'' Institut Teknologi Bandung, 2025.
+\bibitem{Ronto2024} P. Ronto, ``What is an Ultra-Marathon?,'' Runner's World, 2024.
+\bibitem{Hochreiter2024} S. Hochreiter, ``GPS Tracking Systems for Endurance Sports Events,'' \textit{J. Sports Technology}, 2024.
+\bibitem{higgins2016smartphone} J. P. Higgins et al., ``Smartphone Applications for Patients' Health and Fitness,'' \textit{The American Journal of Medicine}, vol. 129, no. 1, pp. 11--19, 2016.
+\bibitem{Caselli2018} F. Caselli, ``The Role of Front-End Development in User Experience Design,'' \textit{UX Design Journal}, 2018.
+\bibitem{pressman2014} R. S. Pressman, \textit{Software Engineering: A Practitioner's Approach}, 8th ed. McGraw-Hill, 2014.
+\bibitem{Saaty1980} T. L. Saaty, ``The Analytic Hierarchy Process,'' McGraw-Hill, 1980.
+\bibitem{Vaidya2006} O. S. Vaidya and S. Kumar, ``Analytic Hierarchy Process: An Overview of Applications,'' \textit{European Journal of Operational Research}, vol. 169, no. 1, pp. 1--29, 2006.
+\bibitem{Nawrocki2021} P. Nawrocki et al., ``A Comparison of Native and Cross-Platform Frameworks for Mobile Applications,'' \textit{Computer Standards \& Interfaces}, vol. 73, 2021.
+\end{thebibliography}
+
+\end{document}

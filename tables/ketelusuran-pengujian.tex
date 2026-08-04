@@ -1,0 +1,48 @@
+\begin{longtable}{|p{1.5cm}|p{6cm}|p{2.5cm}|p{2.5cm}|}
+\caption{Matriks Ketelusuran Pengujian terhadap FR dan NFR}
+\label{tab:ketelusuran-pengujian} \\
+\hline
+\textbf{ID Uji} & \textbf{Deskripsi Skenario} & \textbf{FR} & \textbf{NFR} \\ \hline
+\endfirsthead
+
+\caption[]{Matriks Ketelusuran Pengujian (lanjutan)} \\
+\hline
+\textbf{ID Uji} & \textbf{Deskripsi Skenario} & \textbf{FR} & \textbf{NFR} \\ \hline
+\endhead
+
+\hline
+\multicolumn{4}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+TC-01 & Pelari bergerak (update ETA, jarak, pace) & FR-10, FR-11 & NF-03, NF-04 \\ \hline
+TC-02 & Pelari memusatkan peta (center) & FR-10 & NF-01 \\ \hline
+TC-03 & Pelari mengirim sinyal darurat (SOS) & FR-12 & NF-01, NF-04 \\ \hline
+TC-04 & Pelari membuka laci menu navigasi & - & NF-01 \\ \hline
+TC-05 & Pelari melihat informasi tim & - & NF-01 \\ \hline
+TC-06 & Pelari mengubah visibilitas (public/private) & FR-18 & NF-02 \\ \hline
+TC-07 & Pelari melakukan logout & - & NF-02 \\ \hline
+TC-08 & Pelari membatalkan (cancel) sinyal SOS & FR-12 & NF-01 \\ \hline
+TC-09 & Pelari \textit{inactive} memantau rekan tim & FR-16 & NF-01 \\ \hline
+TC-10 & Pelari bergerak menggunakan GPS aktual & FR-10, FR-11 & NF-03, NF-04 \\ \hline
+TC-11 & Pelari bergerak menggunakan aplikasi \textit{Fake GPS} & FR-10, FR-11 & NF-03, NF-04 \\ \hline
+TC-12 & Public membuka peta pelari publik & FR-23 & NF-04 \\ \hline
+TC-13 & Public melihat detail informasi pelari & FR-23 & NF-01 \\ \hline
+TC-14 & Public mencari direktori tim & - & NF-01 \\ \hline
+TC-15 & Public mencari \textit{water station} & - & NF-01 \\ \hline
+TC-16 & Ketua Tim menerima notifikasi SOS/Tersesat & FR-07, FR-08 & NF-04 \\ \hline
+TC-17 & Ketua Tim melihat detail posisi pelari tim & FR-05, FR-06 & NF-01 \\ \hline
+TC-18 & Ketua Tim membagikan tautan supporter & FR-04, FR-09 & NF-02 \\ \hline
+TC-19 & Supporter menerima notifikasi peringatan & FR-21, FR-22 & NF-04 \\ \hline
+TC-20 & Supporter memantau detail pelari & FR-19, FR-20 & NF-01 \\ \hline
+TC-21 & Panitia memantau detail pelari keseluruhan & FR-01 & NF-04 \\ \hline
+TC-22 & Panitia melihat rincian informasi tim & - & NF-01 \\ \hline
+TC-23 & Panitia melihat daftar status pelari & - & NF-01 \\ \hline
+TC-24 & Panitia melihat dasbor statistik & - & NF-01 \\ \hline
+TC-25 & Panitia menerima peringatan SOS/Tersesat & FR-02, FR-03 & NF-04 \\ \hline
+TC-26 & Penonton Private memantau pelari tertentu & FR-23 & NF-02, NF-04 \\ \hline
+UAT & Pengujian penerimaan oleh pengguna akhir & - & NF-01, NF-03, NF-04, NF-10 \\ \hline
+
+\end{longtable}

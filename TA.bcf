@@ -5018,4 +5018,95 @@
     <bcf:citekey order="37" intorder="1">garrett2011</bcf:citekey>
     <bcf:citekey order="38" intorder="1">frost2016</bcf:citekey>
     <bcf:citekey order="39" intorder="1">marcotte2017</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">
+    <bcf:citekey order="40" intorder="1">lazuardy2022modern</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">shieh2000effects</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">dong2009power</bcf:citekey>
+    <bcf:citekey order="42" intorder="2">zhang2021dark</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">richardson2008restful</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">fielding2000architectural</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">pimentel2012websocket</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">nawrocki2021comparison</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">heitkotter2012evaluating</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">majchrzak2017comprehensive</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">mikowski2013single</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">osmani2023learning</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">richardson2008restful</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">biorn2017progressive</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">malavolta2017assessing</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">tandel2018impact</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">biorn2017progressive</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">cimperman2006uat</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">joshi2015likert</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">strava2024beacon</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">garmin2024livetrack</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">nycmarathon2024app</bcf:citekey>
+    <bcf:citekey order="60" intorder="2">berlinmarathon2024app</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">tokyomarathon2024app</bcf:citekey>
+    <bcf:citekey order="61" intorder="2">sydneymarathon2024app</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">Saaty1980</bcf:citekey>
+    <bcf:citekey order="63" intorder="1">saaty2008decision</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">Vaidya2006</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">Saaty1980</bcf:citekey>
+    <bcf:citekey order="66" intorder="1">saaty2008decision</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">Saaty1980</bcf:citekey>
+    <bcf:citekey order="68" intorder="1">Vaidya2006</bcf:citekey>
+    <bcf:citekey order="69" intorder="1">Saaty1980</bcf:citekey>
+    <bcf:citekey order="70" intorder="1">Saaty1980</bcf:citekey>
+    <bcf:citekey order="71" intorder="1">Vaidya2006</bcf:citekey>
+    <bcf:citekey order="72" intorder="1">Saaty1980</bcf:citekey>
+    <bcf:citekey order="73" intorder="1">Nawrocki2021</bcf:citekey>
+    <bcf:citekey order="74" intorder="1">Nawrocki2021</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="cms">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">namea</bcf:sortitem>
+      <bcf:sortitem order="4">editor</bcf:sortitem>
+      <bcf:sortitem order="5">nameb</bcf:sortitem>
+      <bcf:sortitem order="6">translator</bcf:sortitem>
+      <bcf:sortitem order="7">namec</bcf:sortitem>
+      <bcf:sortitem order="8">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="9">journaltitle</bcf:sortitem>
+      <bcf:sortitem order="10">organization</bcf:sortitem>
+      <bcf:sortitem order="11">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">labelyear</bcf:sortitem>
+      <bcf:sortitem order="3">year</bcf:sortitem>
+      <bcf:sortitem order="4">origyear</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1">endyear</bcf:sortitem>
+      <bcf:sortitem order="2">eventendyear</bcf:sortitem>
+      <bcf:sortitem order="3">origendyear</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="7">
+      <bcf:sortitem order="1" pad_side="left" pad_width="4" pad_char="0">volume</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">0000</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="cms/global//global/global/global"
+                type="entry"
+                sortingtemplatename="cms"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global"
+                namehashtemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>

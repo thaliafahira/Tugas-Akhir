@@ -1,0 +1,410 @@
+\babel@toc {indonesian}{}\relax 
+\setlength {\cftbeforechapskip }{0pt}
+\renewcommand {\cftchapfont }{\normalfont }
+\renewcommand {\cftchappagefont }{\normalfont }
+\contentsline {chapter}{LEMBAR PENGESAHAN}{iii}{chapter*.2}%
+\contentsline {chapter}{PERNYATAAN ORISINALITAS}{v}{chapter*.3}%
+\contentsline {chapter}{PERNYATAAN PENGGUNAAN AI}{vii}{chapter*.4}%
+\contentsline {chapter}{ABSTRAK}{ix}{chapter*.6}%
+\contentsline {chapter}{KATA PENGANTAR}{xi}{chapter*.7}%
+\contentsline {chapter}{DAFTAR ISI}{xiii}{section*.8}%
+\contentsline {chapter}{DAFTAR GAMBAR}{xvii}{section*.9}%
+\contentsline {chapter}{DAFTAR TABEL}{xix}{section*.10}%
+\contentsline {chapter}{DAFTAR \textit {LISTING}}{xxi}{chapter*.11}%
+\contentsline {chapter}{DAFTAR SIMBOL}{xxiii}{chapter*.11}%
+\contentsline {chapter}{DAFTAR SINGKATAN}{xxv}{table.0.1}%
+\setlength {\cftbeforechapskip }{10pt}
+\renewcommand {\cftchapfont }{\bfseries }
+\renewcommand {\cftchappagefont }{\bfseries }
+\contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}%
+\contentsline {section}{\numberline {I.1}Latar Belakang}{1}{section.1.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {I.2}Rumusan Masalah}{2}{section.1.2}%
+\contentsline {section}{\numberline {I.3}Tujuan}{3}{section.1.3}%
+\contentsline {section}{\numberline {I.4}Batasan Masalah}{3}{section.1.4}%
+\contentsline {section}{\numberline {I.5}Metodologi}{4}{section.1.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {I.6}Sistematika Penulisan}{5}{section.1.6}%
+\contentsline {chapter}{\numberline {II}STUDI LITERATUR}{7}{chapter.2}%
+\contentsline {section}{\numberline {II.1}Olahraga Lari \textit {Ultra-marathon}}{7}{section.2.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.2}ITB Ultra-Marathon}{8}{section.2.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.3}Sistem \textit {tracker} dalam Perlombaan Lari Jarak Jauh}{10}{section.2.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.3.1}\textit {Timing Chip}}{12}{subsection.2.3.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.4}Konsep Dasar \textit {Front-End Development}}{13}{section.2.4}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.1}\textit {Geographic Information System (GIS)} dan Visualisasi Peta}{14}{subsection.2.4.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsubsection}{\numberline {II.4.1.1}Penyedia Layanan Peta}{15}{subsubsection.2.4.1.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.2}\textit {User Interface (UI)} dan \textit {User Experience (UX)}}{16}{subsection.2.4.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.3}\textit {User-Centered Design}}{17}{subsection.2.4.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.4}\textit {Information Architecture}}{17}{subsection.2.4.4}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.5}User Flow}{18}{subsection.2.4.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.6}\textit {Design System}}{18}{subsection.2.4.6}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.7}Responsive Design}{19}{subsection.2.4.7}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.8}\textit {State Management} dan Sinkronisasi Data \textit {Real-Time}}{19}{subsection.2.4.8}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.9}\textit {Dark Mode} dan \textit {Light Mode}}{20}{subsection.2.4.9}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.10}Teknologi Integrasi Data}{21}{subsection.2.4.10}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.11}\textit {Cross-Platform Mobile Development}}{21}{subsection.2.4.11}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.12}Aplikasi Web (\textit {Single-Page Application})}{22}{subsection.2.4.12}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.13}\textit {Progressive Web App} (PWA)}{23}{subsection.2.4.13}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.4.14}Evaluasi \textit {Usability} dan \textit {User Acceptance Testing}}{24}{subsection.2.4.14}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.5}Aplikasi Lari dan Maraton}{24}{section.2.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.6}Metode \textit {Analytic Hierarchy Process} (AHP)}{27}{section.2.6}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.6.1}Perbandingan Berpasangan}{27}{subsection.2.6.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.6.2}Normalisasi dan Perhitungan Bobot Prioritas}{28}{subsection.2.6.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.6.3}Uji Konsistensi}{28}{subsection.2.6.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{31}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini (\textit {As-Is})}{31}{section.3.1}%
+\contentsline {section}{\numberline {III.2}Analisis Kondisi Ideal (\textit {To-Be})}{34}{section.3.2}%
+\contentsline {subsection}{\numberline {III.2.1}Proses Utama Penyelenggaraan Marathon}{35}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {III.2.2}Proses Pendukung dan Akses Informasi Publik}{37}{subsection.3.2.2}%
+\contentsline {section}{\numberline {III.3}Identifikasi Kesenjangan dan Implikasi terhadap Fokus Penelitian}{39}{section.3.3}%
+\contentsline {section}{\numberline {III.4}Analisis Kebutuhan}{40}{section.3.4}%
+\contentsline {subsection}{\numberline {III.4.1}Identifikasi Masalah Pengguna}{40}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {III.4.2}Kebutuhan Fungsional}{42}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {III.4.3}Kebutuhan Nonfungsional}{45}{subsection.3.4.3}%
+\contentsline {section}{\numberline {III.5}Analisis Pemilihan Solusi}{47}{section.3.5}%
+\contentsline {subsection}{\numberline {III.5.1}Alternatif Solusi}{47}{subsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {III.5.1.1}Aplikasi Mobile \textit {Cross-Platform}}{47}{subsubsection.3.5.1.1}%
+\contentsline {subsubsection}{\numberline {III.5.1.2}Aplikasi Web Berbasis Browser}{48}{subsubsection.3.5.1.2}%
+\contentsline {subsubsection}{\numberline {III.5.1.3}Aplikasi Multi-Platform Web dan Mobile}{48}{subsubsection.3.5.1.3}%
+\contentsline {subsection}{\numberline {III.5.2}Analisis Penentuan Solusi}{48}{subsection.3.5.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsubsection}{\numberline {III.5.2.1}Penetapan Kriteria}{49}{subsubsection.3.5.2.1}%
+\contentsline {subsubsection}{\numberline {III.5.2.2}Perbandingan Berpasangan Antar Kriteria}{49}{subsubsection.3.5.2.2}%
+\contentsline {subsubsection}{\numberline {III.5.2.3}Normalisasi Matriks dan Perhitungan Bobot}{50}{subsubsection.3.5.2.3}%
+\contentsline {subsubsection}{\numberline {III.5.2.4}Uji Konsistensi Kriteria}{50}{subsubsection.3.5.2.4}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsubsection}{\numberline {III.5.2.5}Perbandingan Berpasangan Antar Alternatif}{51}{subsubsection.3.5.2.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsubsection}{\numberline {III.5.2.6}Perhitungan Skor Akhir}{53}{subsubsection.3.5.2.6}%
+\contentsline {subsubsection}{\numberline {III.5.2.7}Hasil dan Keputusan}{53}{subsubsection.3.5.2.7}%
+\contentsline {chapter}{\numberline {IV}PERANCANGAN \textit {FRONT-END} APLIKASI ITB ULTRA-MARATHON}{55}{chapter.4}%
+\contentsline {section}{\numberline {IV.1}Pemodelan Fungsional Sistem}{55}{section.4.1}%
+\contentsline {section}{\numberline {IV.2}\textit {Information Architecture}}{60}{section.4.2}%
+\contentsline {subsection}{\numberline {IV.2.1}Sitemap Aplikasi \textit {Web}}{60}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {IV.2.2}Sitemap Aplikasi \textit {Mobile}}{61}{subsection.4.2.2}%
+\contentsline {section}{\numberline {IV.3}Rancangan \textit {Behavioral}}{61}{section.4.3}%
+\contentsline {subsection}{\numberline {IV.3.1}SK-01 Mengirim Lokasi}{63}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {IV.3.2}SK-02 Melihat ETD, ETA, dan \textit {Activity Metrics}}{63}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {IV.3.3}SK-03 Mengirim Notifikasi Darurat}{64}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {IV.3.4}SK-04 Mengubah Visibilitas}{65}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {IV.3.5}SK-05 Melihat \textit {Live Tracking}}{65}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {IV.3.6}SK-06 Membuat Tautan Undangan}{66}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {IV.3.7}SK-07 Menerima Notifikasi Darurat}{66}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {IV.3.8}SK-08 Navigasi ke Lokasi Pelari}{67}{subsection.4.3.8}%
+\contentsline {section}{\numberline {IV.4}Rancangan Alur Navigasi}{67}{section.4.4}%
+\contentsline {subsection}{\numberline {IV.4.1}Alur Aplikasi Pelari}{67}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {IV.4.2}Alur Ketua Tim}{69}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {IV.4.3}Alur \textit {Supporter}}{69}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {IV.4.4}Alur Panitia}{70}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {IV.4.5}Alur Penonton}{70}{subsection.4.4.5}%
+\contentsline {section}{\numberline {IV.5}\textit {Design System}}{71}{section.4.5}%
+\contentsline {subsection}{\numberline {IV.5.1}\textit {Design Principles}}{71}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {IV.5.2}\textit {Color Tokens}}{72}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {IV.5.3}Tipografi}{73}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {IV.5.4}\textit {Core Components}}{73}{subsection.4.5.4}%
+\contentsline {subsubsection}{\numberline {IV.5.4.1}\textit {Action Components}}{73}{subsubsection.4.5.4.1}%
+\contentsline {subsubsection}{\numberline {IV.5.4.2}Indikator Status dan Progres}{74}{subsubsection.4.5.4.2}%
+\contentsline {subsubsection}{\numberline {IV.5.4.3}Komponen Peta}{74}{subsubsection.4.5.4.3}%
+\contentsline {subsubsection}{\numberline {IV.5.4.4}\textit {Containers}}{75}{subsubsection.4.5.4.4}%
+\contentsline {section}{\numberline {IV.6}Rancangan Antarmuka Pengguna}{75}{section.4.6}%
+\contentsline {subsection}{\numberline {IV.6.1}Halaman pada Aplikasi Web}{75}{subsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {IV.6.1.1}Halaman Public}{75}{subsubsection.4.6.1.1}%
+\contentsline {subsubsection}{\numberline {IV.6.1.2}Halaman Ketua}{76}{subsubsection.4.6.1.2}%
+\contentsline {subsubsection}{\numberline {IV.6.1.3}Halaman Supporter}{77}{subsubsection.4.6.1.3}%
+\contentsline {subsubsection}{\numberline {IV.6.1.4}Halaman Private}{78}{subsubsection.4.6.1.4}%
+\contentsline {subsubsection}{\numberline {IV.6.1.5}Halaman Panitia}{79}{subsubsection.4.6.1.5}%
+\contentsline {subsection}{\numberline {IV.6.2}Halaman Peserta pada Aplikasi Mobile}{82}{subsection.4.6.2}%
+\contentsline {chapter}{\numberline {V}IMPLEMENTASI \textit {FRONT-END} APLIKASI ITB ULTRA-MARATHON}{87}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Lingkungan Implementasi}{87}{section.5.1}%
+\contentsline {section}{\numberline {V.2}Implementasi \textit {Front-End}}{88}{section.5.2}%
+\contentsline {subsection}{\numberline {V.2.1}Implementasi \textit {Front-End} Aplikasi Web}{89}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {V.2.2}Implementasi \textit {Front-End} Aplikasi \textit {Mobile}}{90}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {V.2.3}\textit {Deployment} dan Tautan Akses}{91}{subsection.5.2.3}%
+\contentsline {chapter}{\numberline {VI}EVALUASI}{93}{chapter.6}%
+\contentsline {section}{\numberline {VI.1}\textit {Functionality Testing}}{93}{section.6.1}%
+\contentsline {section}{\numberline {VI.2}\textit {End-to-End Testing}}{97}{section.6.2}%
+\contentsline {section}{\numberline {VI.3}\textit {User Acceptance Testing}}{100}{section.6.3}%
+\contentsline {section}{\numberline {VI.4}Matriks Ketelusuran Pengujian}{103}{section.6.4}%
+\contentsline {chapter}{\numberline {VII}PENUTUP}{107}{chapter.7}%
+\contentsline {section}{\numberline {VII.1}Kesimpulan}{107}{section.7.1}%
+\contentsline {section}{\numberline {VII.2}Saran}{108}{section.7.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {chapter}{Lampiran \numberline {A}HASIL IMPLEMENTASI}{117}{appendix.1.A}%
+\contentsline {section}{A.1 Aplikasi \textit {Mobile}}{117}{section*.77}%
+\contentsline {section}{A.2 Aplikasi Web Halaman Publik}{119}{table.1.A.1}%
+\contentsline {section}{A.3 Aplikasi Web Halaman Ketua Tim}{120}{table.1.A.2}%
+\contentsline {section}{A.4 Aplikasi Web Halaman Supporter}{120}{table.1.A.3}%
+\contentsline {section}{A.5 Aplikasi Web Halaman Panitia}{121}{table.1.A.4}%
+\contentsline {section}{A.6 Aplikasi Web Halaman Penonton}{122}{table.1.A.5}%
+\contentsline {chapter}{Lampiran \numberline {B}DATA MENTAH \textit {USER ACCEPTANCE TESTING}}{123}{appendix.1.B}%
+\contentsline {chapter}{Lampiran \numberline {C}BUKTI WAWANCARA}{131}{appendix.1.C}%

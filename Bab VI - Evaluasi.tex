@@ -10,11 +10,12 @@ Bab ini membahas hasil pengujian dan evaluasi terhadap antarmuka aplikasi tracke
 \textit{Functionality Testing} dilakukan menggunakan metode \textit{black-box testing} dengan teknik \textit{equivalence partitioning}, yaitu pengujian yang berfokus pada keluaran sistem terhadap suatu masukan tanpa memeriksa struktur kode program secara langsung. Pengujian ini bertujuan untuk memastikan bahwa setiap kebutuhan fungsional (FR) yang telah didefinisikan pada Tabel III.3 dapat dijalankan dengan benar oleh antarmuka yang telah diimplementasikan, baik pada aplikasi mobile maupun aplikasi web.
 
 Perangkat keras yang digunakan untuk pengujian \textit{website} dapat dilihat pada Tabel \ref{tab:hwt}.
-\input{tables/hw-testw.tex}
+\input{tables/hw-testweb.tex}
 
 Perangkat keras yang digunakan untuk pengujian aplikasi mobile dapat dilihat pada Tabel \ref{tab:hw-test}.
 \input{tables/hw-test.tex}
-Pengujian dilakukan menggunakan peramban Google Chrome untuk aplikasi web dan perangkat Android untuk aplikasi mobile. Pada pengujian aplikasi mobile, simulasi perpindahan lokasi dilakukan menggunakan aplikasi \textit{Fake GPS Simulator Joystick} untuk memverifikasi fungsi-fungsi yang bergantung pada data lokasi. Skenario pengujian disusun berdasarkan peran pengguna, kemudian dikelompokkan berdasarkan platform pengujian, yaitu aplikasi mobile dan aplikasi web. Setiap skenario dirancang untuk memverifikasi satu kebutuhan fungsional secara spesifik.
+
+Pengujian dilakukan menggunakan peramban Google Chrome untuk aplikasi web serta perangkat Android untuk aplikasi \textit{mobile}. Pada pengujian aplikasi \textit{mobile}, simulasi perpindahan lokasi dilakukan melalui dua metode, yaitu menggunakan simulator, GPS aktual dengan membuat rute baru di sekitar lokasi pengujian, serta aplikasi \textit{Fake GPS Simulator Joystick}. Ketiga metode tersebut digunakan untuk memverifikasi fungsi-fungsi yang bergantung pada data lokasi. Skenario pengujian disusun berdasarkan peran pengguna dan dikelompokkan sesuai platform pengujian, yaitu aplikasi \textit{mobile} dan aplikasi web. Setiap skenario dirancang untuk memverifikasi satu kebutuhan fungsional secara spesifik.
 
 Rincian skenario serta hasil pengujian pada aplikasi mobile, yang digunakan oleh peran Pelari, disajikan pada Tabel \ref{tab:functionality-testing-mobile}.
 
@@ -24,7 +25,7 @@ Sementara itu, rincian skenario serta hasil pengujian pada aplikasi web, yang me
 
 \input{tables/functionalityw.tex}
 
-Berdasarkan hasil pengujian pada Tabel \ref{tab:functionality-testing-mobile} dan Tabel \ref{tab:functionality-testing-web}, seluruh 24 skenario pengujian fungsionalitas yang meliputi 9 skenario pada aplikasi mobile dan 15 skenario pada aplikasi web untuk berbagai peran pengguna berhasil dijalankan sesuai dengan hasil yang diharapkan, sehingga diperoleh tingkat keberhasilan pengujian fungsionalitas sebesar 100\%. Hal ini menunjukkan bahwa antarmuka yang dikembangkan, baik pada platform mobile maupun web, telah memenuhi seluruh spesifikasi fungsional yang dirancang pada Bab IV.
+Berdasarkan hasil pengujian pada Tabel \ref{tab:functionality-testing-mobile} dan Tabel \ref{tab:functionality-testing-web}, seluruh 26 skenario pengujian fungsionalitas yang meliputi 11 skenario pada aplikasi mobile dan 15 skenario pada aplikasi web untuk berbagai peran pengguna berhasil dijalankan sesuai dengan hasil yang diharapkan, sehingga diperoleh tingkat keberhasilan pengujian fungsionalitas sebesar 100\%. Hal ini menunjukkan bahwa antarmuka yang dikembangkan, baik pada platform mobile maupun web, telah memenuhi seluruh spesifikasi fungsional yang dirancang pada Bab IV.
 
 % \section{\textit{System Integration Testing}}
 % \textit{System Integration Testing} dilakukan untuk memastikan bahwa komunikasi data antara front-end (aplikasi mobile berbasis React Native/Expo dan aplikasi web berbasis React) dengan back-end melalui \textit{API Gateway} dapat berjalan dengan baik. Pengujian ini berfokus pada validasi setiap titik integrasi (\textit{endpoint}) yang telah dirancang pada rancangan \textit{behavioral} (SK-01 hingga SK-08) pada Bab IV, termasuk pengujian terhadap skenario kegagalan seperti gangguan jaringan dan terputusnya sinyal GPS.
@@ -35,6 +36,28 @@ Berdasarkan hasil pengujian pada Tabel \ref{tab:functionality-testing-mobile} da
 
 % Berdasarkan hasil pengujian pada Tabel \ref{tab:integration-testing}, seluruh skenario integrasi antara front-end dan back-end berhasil dijalankan sesuai dengan hasil yang diharapkan. Mekanisme penanganan kegagalan, seperti penyimpanan data lokasi sementara pada \textit{cache} lokal saat jaringan terputus (IT-02) serta pembatasan akses data peserta dengan visibilitas privat (IT-08), juga terbukti berfungsi dengan baik. Dengan demikian, dapat disimpulkan bahwa integrasi antara front-end dan back-end pada aplikasi tracker ITB Ultra-Marathon telah berjalan secara efektif dan sesuai dengan rancangan komunikasi data yang telah ditetapkan.
 
+\section{\textit{End-to-End Testing}}
+Selain pengujian fungsionalitas per modul, dilakukan pula pengujian simulasi terintegrasi secara kronologis untuk mengevaluasi pengalaman pengguna secara menyeluruh. Pengujian ini mensimulasikan kondisi riil sebuah ajang lari jarak jauh \textit{relay} dengan banyak peserta, mulai dari tahap persiapan hingga pergantian segmen.
+
+Pengujian ini dirancang untuk merepresentasikan satu hari perlombaan penuh. Rincian skenario, aksi yang dilakukan, beserta respons antarmuka pada setiap fase waktu disajikan pada Tabel \ref{tab:simulasi-riil}.
+
+\input{tables/simulasi-riil.tex}
+
+% \subsection{Evaluasi Skalabilitas Antarmuka dan Pengalaman Pengguna}
+% Salah satu tantangan terbesar dari sisi \textit{front-end} adalah menangani visualisasi data masif saat hari perlombaan (sebagai contoh, saat 300 tim berlari secara bersamaan). Apabila 300 lingkaran penanda (\textit{marker}) pelari berukuran penuh dan label namanya dirender secara bersamaan pada satu tampilan peta yang diperkecil (\textit{zoom out}), antarmuka akan menjadi sangat sesak (\textit{cluttered}) dan sulit dibaca. Untuk mengatasi hal tersebut, dilakukan evaluasi terhadap beberapa pendekatan desain interaksi antarmuka:
+
+% \begin{itemize}
+%     \item \textbf{Penyesuaian Skala Visual (\textit{Zoom-dependent Scaling}):} 
+%     Sistem merender ukuran lingkaran pelari secara proporsional terhadap tingkat perbesaran peta. Pada tingkat perbesaran rendah (\textit{zoom out}), penanda pelari direpresentasikan sebagai titik-titik kecil tanpa teks (hanya warna yang mewakili status). Nama tim dan informasi detail lainnya baru akan dirender dan ditampilkan ketika pengguna melakukan \textit{zoom in} atau mengeklik titik tertentu.
+    
+%     \item \textbf{Mekanisme \textit{Filter} Berjenjang:}
+%     Untuk memudahkan panitia dan penonton dalam menemukan tim, disediakan fitur \textit{filter} pada laci samping (\textit{sidebar}). Pengguna dapat menyortir pelari berdasarkan kategori tertentu (misalnya, kategori Fakultas, Umum, atau Angkatan). Ketika \textit{filter} aktif, hanya titik pelari pada kategori tersebut yang dirender di layar, sehingga sangat efektif mengurangi kepadatan visual.
+    
+%     \item \textbf{Penanganan Visibilitas Pelari Selesai Segmen:}
+%     Pengujian juga mengevaluasi tata letak bagi pelari yang telah menyelesaikan segmen estafetnya. Agar titik-titik di sepanjang rute yang sudah dilewati tidak tertinggal dan menumpuk di layar secara permanen, antarmuka dirancang untuk memudarkan warna penanda (menjadi abu-abu) setelah pelari mencapai titik finis segmen, lalu sistem akan secara otomatis menyembunyikan (\textit{hide}) titik tersebut dari lapisan peta utama setelah waktu tunda tertentu (misalnya 10 menit). Dengan demikian, perhatian pengguna (terutama panitia pemantau) selalu terpusat pada kumpulan pelari yang masih aktif bergerak di lintasan.
+% \end{itemize}
+
+% Evaluasi ini menyimpulkan bahwa mekanisme interaksi dan pengaturan tata letak di sisi \textit{front-end} mampu menjaga kinerja aplikasi tetap stabil dan visualisasi peta tetap bersih, terstruktur, serta informatif meskipun harus menangani lalu lintas data visual bervolume tinggi.
 \section{\textit{User Acceptance Testing}}
 \textit{User Acceptance Testing} (UAT) dilakukan untuk mengukur tingkat penerimaan pengguna terhadap antarmuka aplikasi \textit{tracker} ITB Ultra-Marathon yang telah dikembangkan, khususnya pada antarmuka \textit{Public}. Pengujian ini dilakukan dengan menyebarkan tautan aplikasi untuk disimulasikan secara mandiri, yang diikuti oleh 35 responden menggunakan berbagai jenis perangkat keras (komputer maupun \textit{smartphone}). Rincian demografi responden berdasarkan perangkat yang digunakan disajikan pada Tabel \ref{tab:uat-demografi}.
 
@@ -47,3 +70,9 @@ Setelah melakukan simulasi penggunaan aplikasi, responden diminta untuk mengisi 
 Berdasarkan hasil pada Tabel \ref{tab:uat-hasil}, diperoleh rata-rata skor keseluruhan sebesar 4,56 dari skala maksimum 5,0. Skor tertinggi diperoleh pada aspek kemudahan menemukan informasi ringkasan (P02) dengan nilai rata-rata 4,74, serta aspek kesediaan menggunakan aplikasi ini kembali di masa mendatang (P25) dengan nilai 4,69. Hal ini menunjukkan tingkat kepuasan yang sangat tinggi dan penerimaan yang positif dari pengguna. Sementara itu, skor terendah berada pada pernyataan mengenai kemudahan memahami tujuan halaman pada pandangan pertama (P01) dengan nilai 4,23. Meskipun merupakan skor terendah, nilai tersebut masih berada pada rentang kategori “setuju” (di atas 4,00) yang mengindikasikan bahwa halaman pada akhirnya tetap dapat dipahami dengan baik oleh pengguna.
 
 Secara keseluruhan, hasil UAT menunjukkan bahwa antarmuka \textit{Public} ITB Ultra-Marathon yang dikembangkan telah memenuhi kriteria keberhasilan dari sisi kemudahan penggunaan, kejelasan penyajian informasi visual peta, persepsi kelancaran kinerja, serta tingkat kepuasan pengguna akhir yang tinggi.
+
+\section{Matriks Ketelusuran Pengujian}
+Untuk memastikan bahwa setiap skenario pengujian yang telah dilakukan selaras dengan spesifikasi sistem yang dirancang, disusun sebuah matriks ketelusuran. Matriks ini memetakan setiap ID pengujian, baik yang berasal dari \textit{Functionality Testing} maupun \textit{User Acceptance Testing} (UAT), terhadap Kebutuhan Fungsional (FR) dan Kebutuhan Non-Fungsional (NFR) yang bersesuaian. 
+
+Tabel \ref{tab:ketelusuran-pengujian} menyajikan rincian ketelusuran tersebut, di mana satu skenario pengujian dapat memverifikasi lebih dari satu kebutuhan secara bersamaan.
+\input{tables/ketelusuran-pengujian.tex}

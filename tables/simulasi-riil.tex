@@ -1,0 +1,39 @@
+\begin{longtable}{|c|p{2cm}|p{1.5cm}|p{3cm}|p{5cm}|}
+\caption{Skenario \textit{End-to-End Testing}} \label{tab:simulasi-riil} \\
+\hline
+\textbf{No} & \textbf{Waktu} & \textbf{Peran} & \textbf{Skenario} & \textbf{Hasil} \\ \hline
+\endfirsthead
+
+\caption[]{Skenario \textit{End-to-End Testing} (lanjutan)} \\
+\hline
+\textbf{No} & \textbf{Waktu} & \textbf{Peran} & \textbf{Skenario} & \textbf{Hasil} \\ \hline
+\endhead
+
+\hline
+\multicolumn{5}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+1 & 16:00 WIB (Persiapan) & Pelari ke-1 & Membuka aplikasi \textit{mobile} sebelum perlombaan dimulai & Layar menampilkan peta rute tanpa pergerakan. Metrik waktu, jarak, dan \textit{pace} tampil dalam kondisi \textit{zero state} (nol). \\ \hline
+2 & 16:00 WIB (Persiapan) & Panitia & Membuka dasbor pemantauan utama & Menampilkan seluruh tim dalam daftar dengan status bersiap atau menunggu di area \textit{start}. \\ \hline
+3 & 16:45 WIB (Di area \textit{Start}) & Pelari ke-1 & Memasuki radius koordinat garis \textit{start} & Sistem merekam titik koordinat awal dan memperbarui status pelari menjadi "\textit{At Start}". \\ \hline
+4 & 16:45 WIB (Di area \textit{Start}) & Pelari ke-2 (\textit{inactive}) & Memantau rekan tim melalui aplikasi \textit{mobile} & Titik pelari pertama terlihat siap di area \textit{start}, memvalidasi sinkronisasi tim sebelum lomba. \\ \hline
+5 & 17:00 WIB (\textit{Start}) & Pelari ke-1 & Mulai berlari meninggalkan garis \textit{start} & Aplikasi secara dinamis mulai menghitung ETA, jarak tersisa, waktu tempuh, dan \textit{pace}. Peta otomatis \textit{auto-center} mengikuti pergerakan pelari. \\ \hline
+6 & 17:00 WIB (\textit{Start}) & Penonton & Membuka peta publik secara bersamaan & Menampilkan ratusan titik pelari bergerak keluar dari area \textit{start} menyusuri rute secara (\textit{real-time}). \\ \hline
+7 & Menjelang \textit{Relay} & Pelari ke-2 (\textit{inactive}) & Bersiap di area pergantian (\textit{water station}) & Melalui layar pemantauan, melihat ETA kedatangan pelari pertama ke \textit{checkpoint} tersebut untuk bersiap fisik mengambil alih. \\ \hline
+8 & Pergantian \textit{Relay} & Sistem & Pelari pertama menyelesaikan segmen, pelari kedua berlari & Sesi pelari kedua menjadi aktif. Penanda pelari pertama memudar menjadi warna abu-abu, lalu dihilangkan otomatis dari peta publik setelah 10 menit agar tidak memadati layar. \\ \hline
+9 & Tengah Perlombaan & Ketua Tim & Membuka dasbor pemantauan tim & Menampilkan struktur tim relay beserta posisi tiap anggota secara \textit{real-time} dalam bentuk peta interaktif. \\ \hline
+10 & Tengah Perlombaan & Ketua Tim & Membuat dan membagikan tautan undangan kepada \textit{supporter} & Sistem menghasilkan kode/tautan unik yang dapat digunakan \textit{supporter} untuk mengakses data tim. \\ \hline
+11 & Tengah Perlombaan & \textit{Supporter} & Membuka tautan undangan yang diterima & Aplikasi menampilkan dasbor pelacakan tim beserta ETA/ETD anggota tim pada titik tertentu, sesuai hak akses \textit{supporter}. \\ \hline
+12 & Tengah Perlombaan (\textit{Blank Spot}) & Pelari ke-1 & Memasuki area tanpa sinyal seluler & Aplikasi tetap merekam titik koordinat secara lokal (\textit{local buffering}) tanpa mengirim data ke server. \\ \hline
+13 & Sinyal Kembali & Sistem & Perangkat pelari kembali terhubung ke internet & Data koordinat yang tertampung dikirimkan kembali secara berurutan ke server, sehingga rute pada peta terisi tanpa terputus. \\ \hline
+14 & Tengah Perlombaan & Pelari ke-3 & Keluar dari rute perlombaan yang ditentukan (\textit{lost track}) & Sistem mendeteksi penyimpangan rute dan menampilkan peringatan pada aplikasi pelari, serta notifikasi \textit{lost track} pada dasbor Panitia, Ketua Tim, dan \textit{Supporter} terkait. \\ \hline
+15 & Tengah Perlombaan & Panitia & Melakukan navigasi ke lokasi pelari yang terdeteksi keluar jalur & Aplikasi mengarahkan Panitia menuju titik koordinat pelari saat ini berdasarkan data \textit{live tracking} untuk memberikan bantuan langsung. \\ \hline
+16 & Tengah Perlombaan (Kondisi Darurat) & Pelari ke-4 & Mengirim notifikasi darurat (SOS) & Permintaan bantuan beserta lokasi pelari terkirim dan langsung muncul sebagai notifikasi \textit{real-time} pada dasbor Panitia, Ketua Tim, dan \textit{Supporter}. \\ \hline
+17 & Tengah Perlombaan & Peserta & Mengubah pengaturan visibilitas menjadi privat & Titik lokasi peserta tidak lagi muncul pada peta Penonton \textit{Public}, namun tetap terlihat oleh Penonton \textit{Private} yang telah diundang. \\ \hline
+18 & Menjelang \textit{Checkpoint} & Pelari ke-1 & Memasuki area \textit{checkpoint} & Status pelari diperbarui menjadi ``Melewati \textit{Checkpoint}'' beserta waktu kedatangan, terlihat pada aplikasi pelari maupun dasbor Panitia. \\ \hline
+19 & Garis \textit{Finish} & Pelari Terakhir & Menyelesaikan segmen terakhir dan melintasi garis \textit{finish} & Status tim berubah menjadi ``\textit{Finished}'', waktu total perlombaan tercatat, dan penanda tim pada peta publik dihentikan pembaruannya. \\ \hline
+20 & Setelah Perlombaan & Panitia & Membuka dasbor statistik setelah lomba selesai & Menampilkan rekapitulasi akhir seluruh tim, meliputi status penyelesaian, waktu tempuh total, dan jumlah tim yang \textit{finish} maupun DNF. \\ \hline
+\end{longtable}

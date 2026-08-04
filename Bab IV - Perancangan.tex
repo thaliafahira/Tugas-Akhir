@@ -128,7 +128,7 @@ Halaman utama (\url{/home}) menampilkan peta, nilai \textit{pace}, ETA menuju \t
     \label{fig:sitemap-mobile}
 \end{figure} 
 \section{Rancangan \textit{Behavioral}}
-Berdasarkan rancangan antarmuka pengguna dan pemodelan fungsional sistem, rancangan \textit{behavioral} direpresentasikan menggunakan \textit{sequence diagram}. Diagram ini digunakan untuk menggambarkan urutan interaksi antara aktor dan sistem dalam menjalankan fungsi-fungsi utama aplikasi berdasarkan alur waktu eksekusi proses. Alur interaksi sistem dibagi ke dalam delapan skenario sesuai dengan proses utama yang dilakukan oleh masing-masing aktor. Ketelurusan setiap skenario terhadap \textit{use case} yang bersesuaian dirangkum pada Tabel \ref{tab:ketelurusan-sequence}.
+Berdasarkan pemodelan fungsional sistem, rancangan \textit{behavioral} direpresentasikan menggunakan \textit{sequence diagram}. Diagram ini digunakan untuk menggambarkan urutan interaksi antara aktor dan sistem dalam menjalankan fungsi-fungsi utama aplikasi berdasarkan alur waktu eksekusi proses. Alur interaksi sistem dibagi ke dalam delapan skenario sesuai dengan proses utama yang dilakukan oleh masing-masing aktor. Ketelurusan setiap skenario terhadap \textit{use case} yang bersesuaian dirangkum pada Tabel \ref{tab:ketelurusan-sequence}.
 
 \input{tables/ketelurusan-sequence.tex}
 
@@ -234,7 +234,7 @@ Skenario ini menggambarkan proses navigasi menuju lokasi peserta menggunakan apl
 \section{Rancangan Alur Navigasi}
 \label{sec:navigation-flow}
 
-Pada bagian ini dipetakan (\textit{User Flow}) dari semua pengguna untuk memberikan gambaran yang jelas mengenai bagaimana layar-layar dihubungkan satu sama lain.
+Pada bagian ini dipetakan \textit{User Flow} dari semua pengguna untuk memberikan gambaran yang jelas mengenai bagaimana layar-layar dihubungkan satu sama lain.
 
 \subsection{Alur Aplikasi Pelari}
 Alur pelari dimulai dari penerimaan tautan undangan, pengecekan status instalasi aplikasi, hingga validasi token akses. Setelah tervalidasi, pelari dapat mengamati tim saat menunggu giliran atau membuat undangan \textit{private} untuk mengundang penonton, dan akan berlari hingga tiba di titik \textit{checkpoint}. Jika terjadi kondisi darurat, pelari dapat mengaktifkan tombol \textit{emergency} kapan pun selama proses berlangsung.
@@ -245,13 +245,21 @@ Alur pelari dimulai dari penerimaan tautan undangan, pengecekan status instalasi
     \caption{\textit{User Flow} Pelari}
     \label{fig:flowpelari}
 \end{figure}
+Alur pelari \textit{inactive} dimulai setelah pelari menyelesaikan segmen larinya dan tiba di checkpoint. Pada kondisi ini, status pelari berubah menjadi inactive. Meskipun tidak lagi berpartisipasi secara aktif dalam perlombaan, pelari tetap dapat memantau progres tim relay melalui informasi Estimated Time of Arrival (ETA) dan Estimated Time of Departure (ETD) hingga perlombaan selesai. Ketika pelari belum mulai berlari, status pelari juga akan tetap \textit{inactive} dan dapat memantau progres tim relay.
+\begin{figure}[H]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=0.2\textwidth]{images/flow/flowinactive.png}
+    \caption{\textit{User Flow} Pelari \textit{inactive}}
+    \label{fig:flowpelariiinactive}
+\end{figure}
 
 \subsection{Alur Ketua Tim}
 Alur ketua tim diawali dengan penerimaan dan validasi tautan undangan sebelum masuk ke \textit{dashboard} pemantauan tim. Dari \textit{dashboard}, ketua tim dapat membuka menu manajemen untuk memeriksa notifikasi \textit{emergency} dan melacak posisi peserta, atau membuat tautan \textit{supporter} untuk dibagikan kepada penonton.
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
-    \includegraphics[width=0.5\textwidth]{images/flow/flowketua.png}
+    \includegraphics[width=0.7\textwidth]{images/flow/flowketua.png}
     \caption{\textit{User Flow} Ketua Tim}
     \label{fig:flowketua}
 \end{figure}
@@ -261,7 +269,7 @@ Alur \textit{supporter} serupa dengan alur ketua tim pada tahap validasi tautan 
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
-    \includegraphics[width=0.7\textwidth]{images/flow/flowsupporter.png}
+    \includegraphics[width=0.5\textwidth]{images/flow/flowsupporter.png}
     \caption{\textit{User Flow} \textit{Supporter}}
     \label{fig:flowsuppporter}
 \end{figure}
@@ -271,7 +279,7 @@ Alur panitia berfokus pada pengawasan perlombaan secara keseluruhan melalui \tex
 \begin{figure}[H]
     \centering
     \captionsetup{justification=centering}
-    \includegraphics[width=0.5\textwidth]{images/flow/flowpanitia.png}
+    \includegraphics[width=0.2\textwidth]{images/flow/flowpanitia.png}
     \caption{\textit{User Flow} Panitia}
     \label{fig:flowpanitia}
 \end{figure}
@@ -320,7 +328,7 @@ Tabel~\ref{tab:prinsip-desain} merangkum prinsip utama yang mendasari seluruh ke
         Latar belakang gelap absolut (\texttt{\#0A0A0F}) dengan warna aksen
         neon untuk menghasilkan kontras tingkat tinggi, sekaligus mengurangi
         konsumsi daya pada layar OLED/AMOLED selama pemakaian jangka panjang. &
-        NF-03, NF-12 \\
+        NF-03, NF-10 \\
         \hline
         Tactile \& Responsive &
         Setiap interaksi menggunakan \textit{spring animation}
