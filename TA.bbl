@@ -301,36 +301,6 @@
       \field{title}{UAT Defined: A Guide to Practical User Acceptance Testing}
       \field{year}{2006}
     \endentry
-    \entry{dabhade2021}{article}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a32f857c5063ba821b6f969b8649dc6b}{%
-           family={Dabhade},
-           familyi={D\bibinitperiod},
-           given={R.\bibnamedelimi H.},
-           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{a32f857c5063ba821b6f969b8649dc6b}
-      \strng{fullhash}{a32f857c5063ba821b6f969b8649dc6b}
-      \strng{fullhashraw}{a32f857c5063ba821b6f969b8649dc6b}
-      \strng{bibnamehash}{a32f857c5063ba821b6f969b8649dc6b}
-      \strng{authorbibnamehash}{a32f857c5063ba821b6f969b8649dc6b}
-      \strng{authornamehash}{a32f857c5063ba821b6f969b8649dc6b}
-      \strng{authorfullhash}{a32f857c5063ba821b6f969b8649dc6b}
-      \strng{authorfullhashraw}{a32f857c5063ba821b6f969b8649dc6b}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{author}
-      \field{journaltitle}{International Journal for Research in Applied Science \& Engineering Technology (IJRASET)}
-      \field{title}{RFID Based Marathon Tracking System}
-      \field{volume}{9}
-      \field{year}{2021}
-      \field{pages}{1207\bibrangedash 1212}
-      \range{pages}{6}
-    \endentry
     \entry{dong2009power}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=e7327f12430c40fd8635237de9cbc9bf}{%
@@ -397,36 +367,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Architectural styles and the design of network-based software architectures}
       \field{year}{2000}
-    \endentry
-    \entry{finkenzeller2010}{book}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=41ecbab034ca384b6721520f4d82a83f}{%
-           family={Finkenzeller},
-           familyi={F\bibinitperiod},
-           given={Klaus},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley}%
-      }
-      \strng{namehash}{41ecbab034ca384b6721520f4d82a83f}
-      \strng{fullhash}{41ecbab034ca384b6721520f4d82a83f}
-      \strng{fullhashraw}{41ecbab034ca384b6721520f4d82a83f}
-      \strng{bibnamehash}{41ecbab034ca384b6721520f4d82a83f}
-      \strng{authorbibnamehash}{41ecbab034ca384b6721520f4d82a83f}
-      \strng{authornamehash}{41ecbab034ca384b6721520f4d82a83f}
-      \strng{authorfullhash}{41ecbab034ca384b6721520f4d82a83f}
-      \strng{authorfullhashraw}{41ecbab034ca384b6721520f4d82a83f}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{3rd}
-      \field{title}{RFID Handbook: Fundamentals and Applications in Contactless Smart Cards, Radio Frequency Identification and Near-Field Communication}
-      \field{year}{2010}
     \endentry
     \entry{frost2016}{book}{}{}
       \name{author}{1}{}{%

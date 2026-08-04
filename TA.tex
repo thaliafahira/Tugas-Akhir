@@ -88,6 +88,7 @@
 \usepackage{amssymb} % for math symbols
 \usepackage[shortlabels]{enumitem} % for customizing lists
 \usepackage[skip=12pt]{parskip} % for spacing between paragraphs
+\raggedbottom % mencegah LaTeX me-stretch spasi antar paragraf agar selalu konsisten
 \usepackage{longtable} % for long tables
 \usepackage{booktabs} % for better table rules
 \usepackage[bahasai]{datetime2} % for date formatting in Indonesian
@@ -119,6 +120,9 @@
 \setmainfont{Times New Roman} % set main font to Times New Roman
 \onehalfspacing % spasi 1.5
 
+\usepackage{etoolbox}
+\AtBeginEnvironment{table}{\singlespacing\small}
+\AtBeginEnvironment{longtable}{\singlespacing\small}
 % --- Bibliography menggunakan BibLaTeX dengan gaya Chicago ---
 \usepackage[
     backend=biber,
